@@ -8,11 +8,11 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Live Streaming
-  - Video Processing
-  - Broadcasting
-  - Media
   - AWS
+  - Broadcasting
+  - Live Streaming
+  - Media
+  - Video Processing
 url: >-
   https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/apis.yml
 created: '2026-03-16'
@@ -28,9 +28,9 @@ apis:
     humanURL: https://aws.amazon.com/medialive/
     baseURL: https://medialive.amazonaws.com
     tags:
+      - Broadcasting
       - Live Streaming
       - Video Processing
-      - Broadcasting
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/medialive/latest/apireference/welcome.html
