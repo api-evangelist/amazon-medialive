@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-h264-syntax-structure.json",
+  "name": "H264Syntax",
+  "type": "string",
+  "description": "H264 Syntax",
+  "enum": [
+    "DEFAULT",
+    "RP2027"
+  ]
+}

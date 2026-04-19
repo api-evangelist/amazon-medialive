@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-hls-output-settings-structure.json",
+  "name": "HlsOutputSettings",
+  "type": "object",
+  "description": "Hls Output Settings",
+  "properties": {
+    "H265PackagingType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/HlsH265PackagingType"
+        },
+        {
+          "xml": {
+            "name": "h265PackagingType"
+          },
+          "description": "Only applicable when this output is referencing an H.265 video description.\nSpecifies whether MP4 segments should be packaged as HEV1 or HVC1."
+        }
+      ]
+    },
+    "HlsSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/HlsSettings"
+        },
+        {
+          "xml": {
+            "name": "hlsSettings"
+          },
+          "description": "Settings regarding the underlying stream. These settings are different for audio-only outputs."
+        }
+      ]
+    },
+    "NameModifier": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMin1"
+        },
+        {
+          "xml": {
+            "name": "nameModifier"
+          },
+          "description": "String concatenated to the end of the destination filename. Accepts \\\"Format Identifiers\\\":#formatIdentifierParameters."
+        }
+      ]
+    },
+    "SegmentModifier": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "segmentModifier"
+          },
+          "description": "String concatenated to end of segment filenames."
+        }
+      ]
+    }
+  },
+  "required": [
+    "HlsSettings"
+  ]
+}

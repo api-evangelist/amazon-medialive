@@ -1,0 +1,7 @@
+{
+  "ConnectionRetryInterval": "example-value",
+  "FilecacheDuration": "example-value",
+  "MediaStoreStorageClass": "example-value",
+  "NumRetries": "example-value",
+  "RestartDelay": "example-value"
+}

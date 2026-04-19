@@ -1,0 +1,13 @@
+{
+  "AudioNormalizationSettings": "example-value",
+  "AudioSelectorName": "example-resource",
+  "AudioType": "STANDARD",
+  "AudioTypeControl": "STANDARD",
+  "AudioWatermarkingSettings": "example-value",
+  "CodecSettings": "example-value",
+  "LanguageCode": "example-value",
+  "LanguageCodeControl": "example-value",
+  "Name": "example-resource",
+  "RemixSettings": "example-value",
+  "StreamName": "example-resource"
+}

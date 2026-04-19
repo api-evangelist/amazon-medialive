@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-nielsen-watermarks-settings-structure.json",
+  "name": "NielsenWatermarksSettings",
+  "type": "object",
+  "description": "Nielsen Watermarks Settings",
+  "properties": {
+    "NielsenCbetSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NielsenCBET"
+        },
+        {
+          "xml": {
+            "name": "nielsenCbetSettings"
+          },
+          "description": "Complete these fields only if you want to insert watermarks of type Nielsen CBET"
+        }
+      ]
+    },
+    "NielsenDistributionType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NielsenWatermarksDistributionTypes"
+        },
+        {
+          "xml": {
+            "name": "nielsenDistributionType"
+          },
+          "description": "Choose the distribution types that you want to assign to the watermarks:\n- PROGRAM_CONTENT\n- FINAL_DISTRIBUTOR"
+        }
+      ]
+    },
+    "NielsenNaesIiNwSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NielsenNaesIiNw"
+        },
+        {
+          "xml": {
+            "name": "nielsenNaesIiNwSettings"
+          },
+          "description": "Complete these fields only if you want to insert watermarks of type Nielsen NAES II (N2) and Nielsen NAES VI (NW)."
+        }
+      ]
+    }
+  }
+}

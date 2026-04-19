@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-dvb-tdt-settings-structure.json",
+  "name": "DvbTdtSettings",
+  "type": "object",
+  "description": "DVB Time and Date Table (SDT)",
+  "properties": {
+    "RepInterval": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin1000Max30000"
+        },
+        {
+          "xml": {
+            "name": "repInterval"
+          },
+          "description": "The number of milliseconds between instances of this table in the output transport stream."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-ebu-tt-d-destination-style-control-structure.json",
+  "name": "EbuTtDDestinationStyleControl",
+  "type": "string",
+  "description": "Ebu Tt DDestination Style Control",
+  "enum": [
+    "EXCLUDE",
+    "INCLUDE"
+  ]
+}

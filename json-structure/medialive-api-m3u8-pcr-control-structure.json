@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-m3u8-pcr-control-structure.json",
+  "name": "M3u8PcrControl",
+  "type": "string",
+  "description": "M3u8 Pcr Control",
+  "enum": [
+    "CONFIGURED_PCR_PERIOD",
+    "PCR_EVERY_PES_PACKET"
+  ]
+}

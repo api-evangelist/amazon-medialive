@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-offering-type-schema.json",
+  "title": "OfferingType",
+  "description": "Offering type, e.g. 'NO_UPFRONT'",
+  "type": "string",
+  "enum": [
+    "NO_UPFRONT"
+  ]
+}

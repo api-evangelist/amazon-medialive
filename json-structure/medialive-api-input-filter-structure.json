@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-filter-structure.json",
+  "name": "InputFilter",
+  "type": "string",
+  "description": "Input Filter",
+  "enum": [
+    "AUTO",
+    "DISABLED",
+    "FORCED"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-update-multiplex-response-schema.json",
+  "title": "UpdateMultiplexResponse",
+  "description": "Placeholder documentation for UpdateMultiplexResponse",
+  "type": "object",
+  "properties": {
+    "Multiplex": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Multiplex"
+        },
+        {
+          "xml": {
+            "name": "multiplex"
+          },
+          "description": "The updated multiplex."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-device-connection-state-structure.json",
+  "name": "InputDeviceConnectionState",
+  "type": "string",
+  "description": "The state of the connection between the input device and AWS.",
+  "enum": [
+    "DISCONNECTED",
+    "CONNECTED"
+  ]
+}

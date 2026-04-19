@@ -1,0 +1,269 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-eac3-settings-structure.json",
+  "name": "Eac3Settings",
+  "type": "object",
+  "description": "Eac3 Settings",
+  "properties": {
+    "AttenuationControl": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Eac3AttenuationControl"
+        },
+        {
+          "xml": {
+            "name": "attenuationControl"
+          },
+          "description": "When set to attenuate3Db, applies a 3 dB attenuation to the surround channels. Only used for 3/2 coding mode."
+        }
+      ]
+    },
+    "Bitrate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__double"
+        },
+        {
+          "xml": {
+            "name": "bitrate"
+          },
+          "description": "Average bitrate in bits/second. Valid bitrates depend on the coding mode."
+        }
+      ]
+    },
+    "BitstreamMode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Eac3BitstreamMode"
+        },
+        {
+          "xml": {
+            "name": "bitstreamMode"
+          },
+          "description": "Specifies the bitstream mode (bsmod) for the emitted E-AC-3 stream. See ATSC A/52-2012 (Annex E) for background on these values."
+        }
+      ]
+    },
+    "CodingMode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Eac3CodingMode"
+        },
+        {
+          "xml": {
+            "name": "codingMode"
+          },
+          "description": "Dolby Digital Plus coding mode. Determines number of channels."
+        }
+      ]
+    },
+    "DcFilter": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Eac3DcFilter"
+        },
+        {
+          "xml": {
+            "name": "dcFilter"
+          },
+          "description": "When set to enabled, activates a DC highpass filter for all input channels."
+        }
+      ]
+    },
+    "Dialnorm": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin1Max31"
+        },
+        {
+          "xml": {
+            "name": "dialnorm"
+          },
+          "description": "Sets the dialnorm for the output. If blank and input audio is Dolby Digital Plus, dialnorm will be passed through."
+        }
+      ]
+    },
+    "DrcLine": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Eac3DrcLine"
+        },
+        {
+          "xml": {
+            "name": "drcLine"
+          },
+          "description": "Sets the Dolby dynamic range compression profile."
+        }
+      ]
+    },
+    "DrcRf": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Eac3DrcRf"
+        },
+        {
+          "xml": {
+            "name": "drcRf"
+          },
+          "description": "Sets the profile for heavy Dolby dynamic range compression, ensures that the instantaneous signal peaks do not exceed specified levels."
+        }
+      ]
+    },
+    "LfeControl": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Eac3LfeControl"
+        },
+        {
+          "xml": {
+            "name": "lfeControl"
+          },
+          "description": "When encoding 3/2 audio, setting to lfe enables the LFE channel"
+        }
+      ]
+    },
+    "LfeFilter": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Eac3LfeFilter"
+        },
+        {
+          "xml": {
+            "name": "lfeFilter"
+          },
+          "description": "When set to enabled, applies a 120Hz lowpass filter to the LFE channel prior to encoding. Only valid with codingMode32 coding mode."
+        }
+      ]
+    },
+    "LoRoCenterMixLevel": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__double"
+        },
+        {
+          "xml": {
+            "name": "loRoCenterMixLevel"
+          },
+          "description": "Left only/Right only center mix level. Only used for 3/2 coding mode."
+        }
+      ]
+    },
+    "LoRoSurroundMixLevel": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__double"
+        },
+        {
+          "xml": {
+            "name": "loRoSurroundMixLevel"
+          },
+          "description": "Left only/Right only surround mix level. Only used for 3/2 coding mode."
+        }
+      ]
+    },
+    "LtRtCenterMixLevel": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__double"
+        },
+        {
+          "xml": {
+            "name": "ltRtCenterMixLevel"
+          },
+          "description": "Left total/Right total center mix level. Only used for 3/2 coding mode."
+        }
+      ]
+    },
+    "LtRtSurroundMixLevel": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__double"
+        },
+        {
+          "xml": {
+            "name": "ltRtSurroundMixLevel"
+          },
+          "description": "Left total/Right total surround mix level. Only used for 3/2 coding mode."
+        }
+      ]
+    },
+    "MetadataControl": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Eac3MetadataControl"
+        },
+        {
+          "xml": {
+            "name": "metadataControl"
+          },
+          "description": "When set to followInput, encoder metadata will be sourced from the DD, DD+, or DolbyE decoder that supplied this audio data. If audio was not supplied from one of these streams, then the static metadata settings will be used."
+        }
+      ]
+    },
+    "PassthroughControl": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Eac3PassthroughControl"
+        },
+        {
+          "xml": {
+            "name": "passthroughControl"
+          },
+          "description": "When set to whenPossible, input DD+ audio will be passed through if it is present on the input. This detection is dynamic over the life of the transcode. Inputs that alternate between DD+ and non-DD+ content will have a consistent DD+ output as the system alternates between passthrough and encoding."
+        }
+      ]
+    },
+    "PhaseControl": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Eac3PhaseControl"
+        },
+        {
+          "xml": {
+            "name": "phaseControl"
+          },
+          "description": "When set to shift90Degrees, applies a 90-degree phase shift to the surround channels. Only used for 3/2 coding mode."
+        }
+      ]
+    },
+    "StereoDownmix": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Eac3StereoDownmix"
+        },
+        {
+          "xml": {
+            "name": "stereoDownmix"
+          },
+          "description": "Stereo downmix preference. Only used for 3/2 coding mode."
+        }
+      ]
+    },
+    "SurroundExMode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Eac3SurroundExMode"
+        },
+        {
+          "xml": {
+            "name": "surroundExMode"
+          },
+          "description": "When encoding 3/2 audio, sets whether an extra center back surround channel is matrix encoded into the left and right surround channels."
+        }
+      ]
+    },
+    "SurroundMode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Eac3SurroundMode"
+        },
+        {
+          "xml": {
+            "name": "surroundMode"
+          },
+          "description": "When encoding 2/0 audio, sets whether Dolby Surround is matrix encoded into the two channels."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-smooth-group-audio-only-timecode-control-structure.json",
+  "name": "SmoothGroupAudioOnlyTimecodeControl",
+  "type": "string",
+  "description": "Smooth Group Audio Only Timecode Control",
+  "enum": [
+    "PASSTHROUGH",
+    "USE_CONFIGURED_CLOCK"
+  ]
+}

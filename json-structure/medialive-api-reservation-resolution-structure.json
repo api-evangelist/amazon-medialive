@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-reservation-resolution-structure.json",
+  "name": "ReservationResolution",
+  "type": "string",
+  "description": "Resolution based on lines of vertical resolution; SD is less than 720 lines, HD is 720 to 1080 lines, FHD is 1080 lines, UHD is greater than 1080 lines\n",
+  "enum": [
+    "SD",
+    "HD",
+    "FHD",
+    "UHD"
+  ]
+}

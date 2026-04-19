@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-burn-in-alignment-structure.json",
+  "name": "BurnInAlignment",
+  "type": "string",
+  "description": "Burn In Alignment",
+  "enum": [
+    "CENTERED",
+    "LEFT",
+    "SMART"
+  ]
+}

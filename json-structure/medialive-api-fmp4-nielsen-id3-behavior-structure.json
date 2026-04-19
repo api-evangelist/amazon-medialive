@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-fmp4-nielsen-id3-behavior-structure.json",
+  "name": "Fmp4NielsenId3Behavior",
+  "type": "string",
+  "description": "Fmp4 Nielsen Id3 Behavior",
+  "enum": [
+    "NO_PASSTHROUGH",
+    "PASSTHROUGH"
+  ]
+}

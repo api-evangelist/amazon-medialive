@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-m2ts-absent-input-audio-behavior-structure.json",
+  "name": "M2tsAbsentInputAudioBehavior",
+  "type": "string",
+  "description": "M2ts Absent Input Audio Behavior",
+  "enum": [
+    "DROP",
+    "ENCODE_SILENCE"
+  ]
+}

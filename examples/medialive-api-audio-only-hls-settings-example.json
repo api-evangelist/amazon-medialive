@@ -1,0 +1,6 @@
+{
+  "AudioGroupId": "id-abc123",
+  "AudioOnlyImage": "example-value",
+  "AudioTrackType": "STANDARD",
+  "SegmentType": "STANDARD"
+}

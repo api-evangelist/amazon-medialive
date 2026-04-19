@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-hls-manifest-duration-format-structure.json",
+  "name": "HlsManifestDurationFormat",
+  "type": "string",
+  "description": "Hls Manifest Duration Format",
+  "enum": [
+    "FLOATING_POINT",
+    "INTEGER"
+  ]
+}

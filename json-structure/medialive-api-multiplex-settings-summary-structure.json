@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-multiplex-settings-summary-structure.json",
+  "name": "MultiplexSettingsSummary",
+  "type": "object",
+  "description": "Contains summary configuration for a Multiplex event.",
+  "properties": {
+    "TransportStreamBitrate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin1000000Max100000000"
+        },
+        {
+          "xml": {
+            "name": "transportStreamBitrate"
+          },
+          "description": "Transport stream bit rate."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-automatic-input-failover-settings-structure.json",
+  "name": "AutomaticInputFailoverSettings",
+  "type": "object",
+  "description": "The settings for Automatic Input Failover.",
+  "properties": {
+    "ErrorClearTimeMsec": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin1"
+        },
+        {
+          "xml": {
+            "name": "errorClearTimeMsec"
+          },
+          "description": "This clear time defines the requirement a recovered input must meet to be considered healthy. The input must have no failover conditions for this length of time. Enter a time in milliseconds. This value is particularly important if the input_preference for the failover pair is set to PRIMARY_INPUT_PREFERRED, because after this time, MediaLive will switch back to the primary input."
+        }
+      ]
+    },
+    "FailoverConditions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfFailoverCondition"
+        },
+        {
+          "xml": {
+            "name": "failoverConditions"
+          },
+          "description": "A list of failover conditions. If any of these conditions occur, MediaLive will perform a failover to the other input."
+        }
+      ]
+    },
+    "InputPreference": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputPreference"
+        },
+        {
+          "xml": {
+            "name": "inputPreference"
+          },
+          "description": "Input preference when deciding which input to make active when a previously failed input has recovered."
+        }
+      ]
+    },
+    "SecondaryInputId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "secondaryInputId"
+          },
+          "description": "The input ID of the secondary input in the automatic input failover pair."
+        }
+      ]
+    }
+  },
+  "required": [
+    "SecondaryInputId"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-multiplex-media-connect-output-destination-settings-schema.json",
+  "title": "MultiplexMediaConnectOutputDestinationSettings",
+  "description": "Multiplex MediaConnect output destination settings.",
+  "type": "object",
+  "properties": {
+    "EntitlementArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMin1"
+        },
+        {
+          "xml": {
+            "name": "entitlementArn"
+          },
+          "description": "The MediaConnect entitlement ARN available as a Flow source."
+        }
+      ]
+    }
+  }
+}

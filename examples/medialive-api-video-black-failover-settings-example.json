@@ -1,0 +1,4 @@
+{
+  "BlackDetectThreshold": "example-value",
+  "VideoBlackThresholdMsec": "id-abc123"
+}

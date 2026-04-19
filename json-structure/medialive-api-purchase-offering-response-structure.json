@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-purchase-offering-response-structure.json",
+  "name": "PurchaseOfferingResponse",
+  "type": "object",
+  "description": "Placeholder documentation for PurchaseOfferingResponse",
+  "properties": {
+    "Reservation": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Reservation"
+        },
+        {
+          "xml": {
+            "name": "reservation"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-pass-through-settings-schema.json",
+  "title": "PassThroughSettings",
+  "description": "Pass Through Settings",
+  "type": "object",
+  "properties": {}
+}

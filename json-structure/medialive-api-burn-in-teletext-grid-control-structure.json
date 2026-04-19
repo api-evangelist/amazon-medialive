@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-burn-in-teletext-grid-control-structure.json",
+  "name": "BurnInTeletextGridControl",
+  "type": "string",
+  "description": "Burn In Teletext Grid Control",
+  "enum": [
+    "FIXED",
+    "SCALED"
+  ]
+}

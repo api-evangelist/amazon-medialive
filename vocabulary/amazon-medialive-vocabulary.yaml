@@ -1,0 +1,462 @@
+vocabulary: 1.0.0
+info:
+  provider: Amazon MediaLive
+  description: Unified vocabulary for Amazon MediaLive APIs and capabilities.
+  created: '2026-04-19'
+  modified: '2026-04-19'
+operational:
+  apis:
+  - name: Amazon MediaLive API
+    namespace: medialive
+    version: '2018-11-14'
+    baseUrl: http://medialive.{region}.amazonaws.com
+    status: active
+  resources:
+  - name: prod
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: inputDevices
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: accept
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: batch
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: delete
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: start
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: stop
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: channels
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: schedule
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: cancel
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: claimDevice
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: inputs
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: inputSecurityGroups
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: multiplexes
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: programs
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: partners
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: tags
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: reservations
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: thumbnailData#accept
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: offerings
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: inputDeviceTransfers#transferType
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: purchase
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: reboot
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: reject
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: startInputDeviceMaintenanceWindow
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: transfer
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  - name: channelClass
+    api: Amazon MediaLive API
+    actions:
+    - list
+    - get
+    - create
+    - update
+    - delete
+  actions:
+  - name: list
+    httpMethod: GET
+    pattern: read
+  - name: get
+    httpMethod: GET
+    pattern: read
+  - name: create
+    httpMethod: POST
+    pattern: write
+  - name: update
+    httpMethod: PUT
+    pattern: write
+  - name: delete
+    httpMethod: DELETE
+    pattern: write
+  schemas:
+    core:
+    - AcceptInputDeviceTransferResponse
+    - BatchDeleteResponse
+    - BatchStartResponse
+    - BatchStopResponse
+    - BatchUpdateScheduleResponse
+  parameters:
+    pagination:
+    - name: nextToken
+      description: Pagination token
+    - name: maxResults
+      description: Max results per page
+  authentication:
+    schemes:
+    - type: awsSigV4
+      description: AWS Signature Version 4
+capability:
+  workflows:
+  - name: Amazon MediaLive Workflow
+    file: capabilities/amazon-medialive-media-workflow.yaml
+    description: Amazon MediaLive media processing workflow
+    personas:
+    - Broadcast Engineer
+    - Media Developer
+    domains:
+    - Media Processing
+  personas:
+  - id: broadcast-engineer
+    name: Broadcast Engineer
+    description: Engineer managing broadcast media workflows
+    workflows:
+    - Amazon MediaLive Workflow
+  - id: media-developer
+    name: Media Developer
+    description: Developer building media processing applications
+    workflows:
+    - Amazon MediaLive Workflow
+  domains:
+  - name: Media Processing
+    description: AWS media processing and delivery
+  namespaces:
+  - name: medialive
+    type: consumed
+  - name: medialive-workflow-api
+    type: rest
+    port: 8080
+  - name: medialive-workflow-mcp
+    type: mcp
+    port: 9090
+  binds:
+  - name: AWS_ACCESS_KEY_ID
+  - name: AWS_SECRET_ACCESS_KEY
+crossReference:
+- resource: prod
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: inputDevices
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: accept
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: batch
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: delete
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: start
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: stop
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: channels
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: schedule
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: cancel
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: claimDevice
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: inputs
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: inputSecurityGroups
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: multiplexes
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: programs
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: partners
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: tags
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: reservations
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: thumbnailData#accept
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: offerings
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: inputDeviceTransfers#transferType
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: purchase
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: reboot
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: reject
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: startInputDeviceMaintenanceWindow
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: transfer
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer
+- resource: channelClass
+  api: Amazon MediaLive API
+  workflows:
+  - Amazon MediaLive Workflow
+  personas:
+  - Broadcast Engineer

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-media-package-group-settings-structure.json",
+  "name": "MediaPackageGroupSettings",
+  "type": "object",
+  "description": "Media Package Group Settings",
+  "properties": {
+    "Destination": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OutputLocationRef"
+        },
+        {
+          "xml": {
+            "name": "destination"
+          },
+          "description": "MediaPackage channel destination."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Destination"
+  ]
+}

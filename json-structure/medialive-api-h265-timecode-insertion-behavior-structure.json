@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-h265-timecode-insertion-behavior-structure.json",
+  "name": "H265TimecodeInsertionBehavior",
+  "type": "string",
+  "description": "H265 Timecode Insertion Behavior",
+  "enum": [
+    "DISABLED",
+    "PIC_TIMING_SEI"
+  ]
+}

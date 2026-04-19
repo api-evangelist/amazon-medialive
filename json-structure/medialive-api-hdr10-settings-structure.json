@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-hdr10-settings-structure.json",
+  "name": "Hdr10Settings",
+  "type": "object",
+  "description": "Hdr10 Settings",
+  "properties": {
+    "MaxCll": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max32768"
+        },
+        {
+          "xml": {
+            "name": "maxCll"
+          },
+          "description": "Maximum Content Light Level\nAn integer metadata value defining the maximum light level, in nits,\nof any single pixel within an encoded HDR video stream or file."
+        }
+      ]
+    },
+    "MaxFall": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max32768"
+        },
+        {
+          "xml": {
+            "name": "maxFall"
+          },
+          "description": "Maximum Frame Average Light Level\nAn integer metadata value defining the maximum average light level, in nits,\nfor any single frame within an encoded HDR video stream or file."
+        }
+      ]
+    }
+  }
+}

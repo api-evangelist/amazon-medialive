@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-create-partner-input-request-structure.json",
+  "name": "CreatePartnerInputRequest",
+  "type": "object",
+  "description": "A request to create a partner input",
+  "properties": {
+    "RequestId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "requestId"
+          },
+          "description": "Unique identifier of the request to ensure the request is handled\nexactly once in case of retries.\n"
+        }
+      ]
+    },
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Tags"
+        },
+        {
+          "xml": {
+            "name": "tags"
+          },
+          "description": "A collection of key-value pairs."
+        }
+      ]
+    }
+  }
+}

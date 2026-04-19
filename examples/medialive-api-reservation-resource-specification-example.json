@@ -1,0 +1,10 @@
+{
+  "ChannelClass": "example-value",
+  "Codec": "example-value",
+  "MaximumBitrate": "example-value",
+  "MaximumFramerate": "example-value",
+  "Resolution": "example-value",
+  "ResourceType": "STANDARD",
+  "SpecialFeature": "example-value",
+  "VideoQuality": "id-abc123"
+}

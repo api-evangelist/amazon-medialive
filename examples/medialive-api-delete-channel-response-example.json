@@ -1,0 +1,20 @@
+{
+  "Arn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "CdiInputSpecification": "example-value",
+  "ChannelClass": "example-value",
+  "Destinations": "example-value",
+  "EgressEndpoints": "example-value",
+  "EncoderSettings": "example-value",
+  "Id": "id-abc123",
+  "InputAttachments": "example-value",
+  "InputSpecification": "example-value",
+  "LogLevel": "example-value",
+  "Maintenance": "example-value",
+  "Name": "example-resource",
+  "PipelineDetails": "example-value",
+  "PipelinesRunningCount": "example-value",
+  "RoleArn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "State": "example-value",
+  "Tags": "example-value",
+  "Vpc": "example-value"
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-device-state-structure.json",
+  "name": "InputDeviceState",
+  "type": "string",
+  "description": "The state of the input device.",
+  "enum": [
+    "IDLE",
+    "STREAMING"
+  ]
+}

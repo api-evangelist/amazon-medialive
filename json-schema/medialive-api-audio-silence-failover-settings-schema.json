@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-audio-silence-failover-settings-schema.json",
+  "title": "AudioSilenceFailoverSettings",
+  "description": "Placeholder documentation for AudioSilenceFailoverSettings",
+  "type": "object",
+  "properties": {
+    "AudioSelectorName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "audioSelectorName"
+          },
+          "description": "The name of the audio selector in the input that MediaLive should monitor to detect silence. Select your most important rendition. If you didn't create an audio selector in this input, leave blank."
+        }
+      ]
+    },
+    "AudioSilenceThresholdMsec": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin1000"
+        },
+        {
+          "xml": {
+            "name": "audioSilenceThresholdMsec"
+          },
+          "description": "The amount of time (in milliseconds) that the active input must be silent before automatic input failover occurs. Silence is defined as audio loss or audio quieter than -50 dBFS."
+        }
+      ]
+    }
+  },
+  "required": [
+    "AudioSelectorName"
+  ]
+}

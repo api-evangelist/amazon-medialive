@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-follow-point-schema.json",
+  "title": "FollowPoint",
+  "description": "Follow reference point.",
+  "type": "string",
+  "enum": [
+    "END",
+    "START"
+  ]
+}

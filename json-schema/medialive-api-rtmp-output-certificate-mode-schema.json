@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-rtmp-output-certificate-mode-schema.json",
+  "title": "RtmpOutputCertificateMode",
+  "description": "Rtmp Output Certificate Mode",
+  "type": "string",
+  "enum": [
+    "SELF_SIGNED",
+    "VERIFY_AUTHENTICITY"
+  ]
+}

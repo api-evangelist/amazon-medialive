@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-blackout-slate-structure.json",
+  "name": "BlackoutSlate",
+  "type": "object",
+  "description": "Blackout Slate",
+  "properties": {
+    "BlackoutSlateImage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputLocation"
+        },
+        {
+          "xml": {
+            "name": "blackoutSlateImage"
+          },
+          "description": "Blackout slate image to be used. Leave empty for solid black. Only bmp and png images are supported."
+        }
+      ]
+    },
+    "NetworkEndBlackout": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BlackoutSlateNetworkEndBlackout"
+        },
+        {
+          "xml": {
+            "name": "networkEndBlackout"
+          },
+          "description": "Setting to enabled causes the encoder to blackout the video, audio, and captions, and raise the \"Network Blackout Image\" slate when an SCTE104/35 Network End Segmentation Descriptor is encountered. The blackout will be lifted when the Network Start Segmentation Descriptor is encountered. The Network End and Network Start descriptors must contain a network ID that matches the value entered in \"Network ID\"."
+        }
+      ]
+    },
+    "NetworkEndBlackoutImage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputLocation"
+        },
+        {
+          "xml": {
+            "name": "networkEndBlackoutImage"
+          },
+          "description": "Path to local file to use as Network End Blackout image. Image will be scaled to fill the entire output raster."
+        }
+      ]
+    },
+    "NetworkId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMin34Max34"
+        },
+        {
+          "xml": {
+            "name": "networkId"
+          },
+          "description": "Provides Network ID that matches EIDR ID format (e.g., \"10.XXXX/XXXX-XXXX-XXXX-XXXX-XXXX-C\")."
+        }
+      ]
+    },
+    "State": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BlackoutSlateState"
+        },
+        {
+          "xml": {
+            "name": "state"
+          },
+          "description": "When set to enabled, causes video, audio and captions to be blanked when indicated by program metadata."
+        }
+      ]
+    }
+  }
+}

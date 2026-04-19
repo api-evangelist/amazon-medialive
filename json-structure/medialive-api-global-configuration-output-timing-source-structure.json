@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-global-configuration-output-timing-source-structure.json",
+  "name": "GlobalConfigurationOutputTimingSource",
+  "type": "string",
+  "description": "Global Configuration Output Timing Source",
+  "enum": [
+    "INPUT_CLOCK",
+    "SYSTEM_CLOCK"
+  ]
+}

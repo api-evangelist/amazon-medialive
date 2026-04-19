@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-type-structure.json",
+  "name": "InputType",
+  "type": "string",
+  "description": "The different types of inputs that AWS Elemental MediaLive supports.",
+  "enum": [
+    "UDP_PUSH",
+    "RTP_PUSH",
+    "RTMP_PUSH",
+    "RTMP_PULL",
+    "URL_PULL",
+    "MP4_FILE",
+    "MEDIACONNECT",
+    "INPUT_DEVICE",
+    "AWS_CDI",
+    "TS_FILE"
+  ]
+}

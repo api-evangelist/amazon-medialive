@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-h264-color-space-settings-structure.json",
+  "name": "H264ColorSpaceSettings",
+  "type": "object",
+  "description": "H264 Color Space Settings",
+  "properties": {
+    "ColorSpacePassthroughSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ColorSpacePassthroughSettings"
+        },
+        {
+          "xml": {
+            "name": "colorSpacePassthroughSettings"
+          }
+        }
+      ]
+    },
+    "Rec601Settings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Rec601Settings"
+        },
+        {
+          "xml": {
+            "name": "rec601Settings"
+          }
+        }
+      ]
+    },
+    "Rec709Settings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Rec709Settings"
+        },
+        {
+          "xml": {
+            "name": "rec709Settings"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-multiplex-program-settings-schema.json",
+  "title": "MultiplexProgramSettings",
+  "description": "Multiplex Program settings configuration.",
+  "type": "object",
+  "properties": {
+    "PreferredChannelPipeline": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PreferredChannelPipeline"
+        },
+        {
+          "xml": {
+            "name": "preferredChannelPipeline"
+          },
+          "description": "Indicates which pipeline is preferred by the multiplex for program ingest."
+        }
+      ]
+    },
+    "ProgramNumber": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max65535"
+        },
+        {
+          "xml": {
+            "name": "programNumber"
+          },
+          "description": "Unique program number."
+        }
+      ]
+    },
+    "ServiceDescriptor": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MultiplexProgramServiceDescriptor"
+        },
+        {
+          "xml": {
+            "name": "serviceDescriptor"
+          },
+          "description": "Transport stream service descriptor configuration for the Multiplex program."
+        }
+      ]
+    },
+    "VideoSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MultiplexVideoSettings"
+        },
+        {
+          "xml": {
+            "name": "videoSettings"
+          },
+          "description": "Program video settings configuration."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ProgramNumber"
+  ]
+}

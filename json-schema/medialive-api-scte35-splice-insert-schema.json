@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-scte35-splice-insert-schema.json",
+  "title": "Scte35SpliceInsert",
+  "description": "Typical configuration that applies breaks on splice inserts in addition to time signal placement opportunities, breaks, and advertisements.",
+  "type": "object",
+  "properties": {
+    "AdAvailOffset": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMinNegative1000Max1000"
+        },
+        {
+          "xml": {
+            "name": "adAvailOffset"
+          },
+          "description": "When specified, this offset (in milliseconds) is added to the input Ad Avail PTS time. This only applies to embedded SCTE 104/35 messages and does not apply to OOB messages."
+        }
+      ]
+    },
+    "NoRegionalBlackoutFlag": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte35SpliceInsertNoRegionalBlackoutBehavior"
+        },
+        {
+          "xml": {
+            "name": "noRegionalBlackoutFlag"
+          },
+          "description": "When set to ignore, Segment Descriptors with noRegionalBlackoutFlag set to 0 will no longer trigger blackouts or Ad Avail slates"
+        }
+      ]
+    },
+    "WebDeliveryAllowedFlag": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte35SpliceInsertWebDeliveryAllowedBehavior"
+        },
+        {
+          "xml": {
+            "name": "webDeliveryAllowedFlag"
+          },
+          "description": "When set to ignore, Segment Descriptors with webDeliveryAllowedFlag set to 0 will no longer trigger blackouts or Ad Avail slates"
+        }
+      ]
+    }
+  }
+}

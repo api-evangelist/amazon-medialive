@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-nielsen-configuration-structure.json",
+  "name": "NielsenConfiguration",
+  "type": "object",
+  "description": "Nielsen Configuration",
+  "properties": {
+    "DistributorId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "distributorId"
+          },
+          "description": "Enter the Distributor ID assigned to your organization by Nielsen."
+        }
+      ]
+    },
+    "NielsenPcmToId3Tagging": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NielsenPcmToId3TaggingState"
+        },
+        {
+          "xml": {
+            "name": "nielsenPcmToId3Tagging"
+          },
+          "description": "Enables Nielsen PCM to ID3 tagging"
+        }
+      ]
+    }
+  }
+}

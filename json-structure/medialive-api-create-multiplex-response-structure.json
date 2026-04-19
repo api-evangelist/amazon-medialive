@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-create-multiplex-response-structure.json",
+  "name": "CreateMultiplexResponse",
+  "type": "object",
+  "description": "Placeholder documentation for CreateMultiplexResponse",
+  "properties": {
+    "Multiplex": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Multiplex"
+        },
+        {
+          "xml": {
+            "name": "multiplex"
+          },
+          "description": "The newly created multiplex."
+        }
+      ]
+    }
+  }
+}

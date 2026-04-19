@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-pipeline-id-schema.json",
+  "title": "PipelineId",
+  "description": "Pipeline ID",
+  "type": "string",
+  "enum": [
+    "PIPELINE_0",
+    "PIPELINE_1"
+  ]
+}

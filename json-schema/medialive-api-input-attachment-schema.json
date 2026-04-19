@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-input-attachment-schema.json",
+  "title": "InputAttachment",
+  "description": "Placeholder documentation for InputAttachment",
+  "type": "object",
+  "properties": {
+    "AutomaticInputFailoverSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AutomaticInputFailoverSettings"
+        },
+        {
+          "xml": {
+            "name": "automaticInputFailoverSettings"
+          },
+          "description": "User-specified settings for defining what the conditions are for declaring the input unhealthy and failing over to a different input."
+        }
+      ]
+    },
+    "InputAttachmentName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "inputAttachmentName"
+          },
+          "description": "User-specified name for the attachment. This is required if the user wants to use this input in an input switch action."
+        }
+      ]
+    },
+    "InputId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "inputId"
+          },
+          "description": "The ID of the input"
+        }
+      ]
+    },
+    "InputSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputSettings"
+        },
+        {
+          "xml": {
+            "name": "inputSettings"
+          },
+          "description": "Settings of an input (caption selector, etc.)"
+        }
+      ]
+    }
+  }
+}

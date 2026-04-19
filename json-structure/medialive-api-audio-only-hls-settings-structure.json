@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-audio-only-hls-settings-structure.json",
+  "name": "AudioOnlyHlsSettings",
+  "type": "object",
+  "description": "Audio Only Hls Settings",
+  "properties": {
+    "AudioGroupId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "audioGroupId"
+          },
+          "description": "Specifies the group to which the audio Rendition belongs."
+        }
+      ]
+    },
+    "AudioOnlyImage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputLocation"
+        },
+        {
+          "xml": {
+            "name": "audioOnlyImage"
+          },
+          "description": "Optional. Specifies the .jpg or .png image to use as the cover art for an audio-only output. We recommend a low bit-size file because the image increases the output audio bandwidth.\n\nThe image is attached to the audio as an ID3 tag, frame type APIC, picture type 0x10, as per the \"ID3 tag version 2.4.0 - Native Frames\" standard."
+        }
+      ]
+    },
+    "AudioTrackType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AudioOnlyHlsTrackType"
+        },
+        {
+          "xml": {
+            "name": "audioTrackType"
+          },
+          "description": "Four types of audio-only tracks are supported:\n\nAudio-Only Variant Stream\nThe client can play back this audio-only stream instead of video in low-bandwidth scenarios. Represented as an EXT-X-STREAM-INF in the HLS manifest.\n\nAlternate Audio, Auto Select, Default\nAlternate rendition that the client should try to play back by default. Represented as an EXT-X-MEDIA in the HLS manifest with DEFAULT=YES, AUTOSELECT=YES\n\nAlternate Audio, Auto Select, Not Default\nAlternate rendition that the client may try to play back by default. Represented as an EXT-X-MEDIA in the HLS manifest with DEFAULT=NO, AUTOSELECT=YES\n\nAlternate Audio, not Auto Select\nAlternate rendition that the client will not try to play back by default. Represented as an EXT-X-MEDIA in the HLS manifest with DEFAULT=NO, AUTOSELECT=NO"
+        }
+      ]
+    },
+    "SegmentType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AudioOnlyHlsSegmentType"
+        },
+        {
+          "xml": {
+            "name": "segmentType"
+          },
+          "description": "Specifies the segment type."
+        }
+      ]
+    }
+  }
+}

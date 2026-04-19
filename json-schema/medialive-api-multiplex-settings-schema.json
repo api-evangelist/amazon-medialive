@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-multiplex-settings-schema.json",
+  "title": "MultiplexSettings",
+  "description": "Contains configuration for a Multiplex event",
+  "type": "object",
+  "properties": {
+    "MaximumVideoBufferDelayMilliseconds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin800Max3000"
+        },
+        {
+          "xml": {
+            "name": "maximumVideoBufferDelayMilliseconds"
+          },
+          "description": "Maximum video buffer delay in milliseconds."
+        }
+      ]
+    },
+    "TransportStreamBitrate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin1000000Max100000000"
+        },
+        {
+          "xml": {
+            "name": "transportStreamBitrate"
+          },
+          "description": "Transport stream bit rate."
+        }
+      ]
+    },
+    "TransportStreamId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max65535"
+        },
+        {
+          "xml": {
+            "name": "transportStreamId"
+          },
+          "description": "Transport stream ID."
+        }
+      ]
+    },
+    "TransportStreamReservedBitrate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max100000000"
+        },
+        {
+          "xml": {
+            "name": "transportStreamReservedBitrate"
+          },
+          "description": "Transport stream reserved bit rate."
+        }
+      ]
+    }
+  },
+  "required": [
+    "TransportStreamBitrate",
+    "TransportStreamId"
+  ]
+}

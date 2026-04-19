@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-update-reservation-request-schema.json",
+  "title": "UpdateReservationRequest",
+  "description": "Request to update a reservation",
+  "type": "object",
+  "properties": {
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "name"
+          },
+          "description": "Name of the reservation"
+        }
+      ]
+    },
+    "RenewalSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RenewalSettings"
+        },
+        {
+          "xml": {
+            "name": "renewalSettings"
+          },
+          "description": "Renewal settings for the reservation"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-aac-coding-mode-schema.json",
+  "title": "AacCodingMode",
+  "description": "Aac Coding Mode",
+  "type": "string",
+  "enum": [
+    "AD_RECEIVER_MIX",
+    "CODING_MODE_1_0",
+    "CODING_MODE_1_1",
+    "CODING_MODE_2_0",
+    "CODING_MODE_5_1"
+  ]
+}

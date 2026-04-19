@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-scte20-convert608-to708-structure.json",
+  "name": "Scte20Convert608To708",
+  "type": "string",
+  "description": "Scte20 Convert608 To708",
+  "enum": [
+    "DISABLED",
+    "UPCONVERT"
+  ]
+}

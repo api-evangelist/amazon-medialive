@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-multiplex-output-settings-schema.json",
+  "title": "MultiplexOutputSettings",
+  "description": "Multiplex Output Settings",
+  "type": "object",
+  "properties": {
+    "Destination": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OutputLocationRef"
+        },
+        {
+          "xml": {
+            "name": "destination"
+          },
+          "description": "Destination is a Multiplex."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Destination"
+  ]
+}

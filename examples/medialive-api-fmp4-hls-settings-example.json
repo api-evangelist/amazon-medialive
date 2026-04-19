@@ -1,0 +1,5 @@
+{
+  "AudioRenditionSets": "example-value",
+  "NielsenId3Behavior": "id-abc123",
+  "TimedMetadataBehavior": "example-value"
+}

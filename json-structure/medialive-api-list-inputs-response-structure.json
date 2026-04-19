@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-list-inputs-response-structure.json",
+  "name": "ListInputsResponse",
+  "type": "object",
+  "description": "Placeholder documentation for ListInputsResponse",
+  "properties": {
+    "Inputs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfInput"
+        },
+        {
+          "xml": {
+            "name": "inputs"
+          }
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "nextToken"
+          }
+        }
+      ]
+    }
+  }
+}

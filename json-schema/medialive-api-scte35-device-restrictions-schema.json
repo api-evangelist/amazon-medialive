@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-scte35-device-restrictions-schema.json",
+  "title": "Scte35DeviceRestrictions",
+  "description": "Corresponds to the device_restrictions parameter in a segmentation_descriptor. If you include one of the \"restriction\" flags then you must include all four of them.",
+  "type": "string",
+  "enum": [
+    "NONE",
+    "RESTRICT_GROUP0",
+    "RESTRICT_GROUP1",
+    "RESTRICT_GROUP2"
+  ]
+}

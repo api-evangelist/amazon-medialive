@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-dvb-nit-settings-schema.json",
+  "title": "DvbNitSettings",
+  "description": "DVB Network Information Table (NIT)",
+  "type": "object",
+  "properties": {
+    "NetworkId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max65536"
+        },
+        {
+          "xml": {
+            "name": "networkId"
+          },
+          "description": "The numeric value placed in the Network Information Table (NIT)."
+        }
+      ]
+    },
+    "NetworkName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMin1Max256"
+        },
+        {
+          "xml": {
+            "name": "networkName"
+          },
+          "description": "The network name text placed in the networkNameDescriptor inside the Network Information Table. Maximum length is 256 characters."
+        }
+      ]
+    },
+    "RepInterval": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin25Max10000"
+        },
+        {
+          "xml": {
+            "name": "repInterval"
+          },
+          "description": "The number of milliseconds between instances of this table in the output transport stream."
+        }
+      ]
+    }
+  },
+  "required": [
+    "NetworkName",
+    "NetworkId"
+  ]
+}

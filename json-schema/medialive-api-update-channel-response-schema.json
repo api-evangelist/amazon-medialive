@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-update-channel-response-schema.json",
+  "title": "UpdateChannelResponse",
+  "description": "Placeholder documentation for UpdateChannelResponse",
+  "type": "object",
+  "properties": {
+    "Channel": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Channel"
+        },
+        {
+          "xml": {
+            "name": "channel"
+          }
+        }
+      ]
+    }
+  }
+}

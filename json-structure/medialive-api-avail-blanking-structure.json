@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-avail-blanking-structure.json",
+  "name": "AvailBlanking",
+  "type": "object",
+  "description": "Avail Blanking",
+  "properties": {
+    "AvailBlankingImage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputLocation"
+        },
+        {
+          "xml": {
+            "name": "availBlankingImage"
+          },
+          "description": "Blanking image to be used. Leave empty for solid black. Only bmp and png images are supported."
+        }
+      ]
+    },
+    "State": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AvailBlankingState"
+        },
+        {
+          "xml": {
+            "name": "state"
+          },
+          "description": "When set to enabled, causes video, audio and captions to be blanked when insertion metadata is added."
+        }
+      ]
+    }
+  }
+}

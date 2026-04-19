@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-network-input-server-validation-structure.json",
+  "name": "NetworkInputServerValidation",
+  "type": "string",
+  "description": "Network Input Server Validation",
+  "enum": [
+    "CHECK_CRYPTOGRAPHY_AND_VALIDATE_NAME",
+    "CHECK_CRYPTOGRAPHY_ONLY"
+  ]
+}

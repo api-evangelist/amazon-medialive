@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-blackout-slate-state-structure.json",
+  "name": "BlackoutSlateState",
+  "type": "string",
+  "description": "Blackout Slate State",
+  "enum": [
+    "DISABLED",
+    "ENABLED"
+  ]
+}

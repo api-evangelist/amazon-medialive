@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-avail-settings-schema.json",
+  "title": "AvailSettings",
+  "description": "Avail Settings",
+  "type": "object",
+  "properties": {
+    "Esam": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Esam"
+        },
+        {
+          "xml": {
+            "name": "esam"
+          }
+        }
+      ]
+    },
+    "Scte35SpliceInsert": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte35SpliceInsert"
+        },
+        {
+          "xml": {
+            "name": "scte35SpliceInsert"
+          }
+        }
+      ]
+    },
+    "Scte35TimeSignalApos": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte35TimeSignalApos"
+        },
+        {
+          "xml": {
+            "name": "scte35TimeSignalApos"
+          }
+        }
+      ]
+    }
+  }
+}

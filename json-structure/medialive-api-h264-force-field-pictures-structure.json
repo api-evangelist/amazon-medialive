@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-h264-force-field-pictures-structure.json",
+  "name": "H264ForceFieldPictures",
+  "type": "string",
+  "description": "H264 Force Field Pictures",
+  "enum": [
+    "DISABLED",
+    "ENABLED"
+  ]
+}

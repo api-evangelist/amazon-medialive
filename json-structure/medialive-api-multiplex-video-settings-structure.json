@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-multiplex-video-settings-structure.json",
+  "name": "MultiplexVideoSettings",
+  "type": "object",
+  "description": "The video configuration for each program in a multiplex.",
+  "properties": {
+    "ConstantBitrate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin100000Max100000000"
+        },
+        {
+          "xml": {
+            "name": "constantBitrate"
+          },
+          "description": "The constant bitrate configuration for the video encode.\nWhen this field is defined, StatmuxSettings must be undefined."
+        }
+      ]
+    },
+    "StatmuxSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MultiplexStatmuxVideoSettings"
+        },
+        {
+          "xml": {
+            "name": "statmuxSettings"
+          },
+          "description": "Statmux rate control settings.\nWhen this field is defined, ConstantBitrate must be undefined."
+        }
+      ]
+    }
+  }
+}

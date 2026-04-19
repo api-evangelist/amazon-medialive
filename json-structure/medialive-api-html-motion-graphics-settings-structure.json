@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-html-motion-graphics-settings-structure.json",
+  "name": "HtmlMotionGraphicsSettings",
+  "type": "object",
+  "description": "Html Motion Graphics Settings",
+  "properties": {}
+}

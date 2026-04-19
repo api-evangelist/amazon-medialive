@@ -1,0 +1,15 @@
+{
+  "Arn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "ConnectionState": "example-value",
+  "DeviceSettingsSyncState": "example-value",
+  "DeviceUpdateStatus": "ACTIVE",
+  "HdDeviceSettings": "example-value",
+  "Id": "id-abc123",
+  "MacAddress": "example-value",
+  "Name": "example-resource",
+  "NetworkSettings": "example-value",
+  "SerialNumber": "example-value",
+  "Type": "STANDARD",
+  "UhdDeviceSettings": "example-value",
+  "Tags": "example-value"
+}

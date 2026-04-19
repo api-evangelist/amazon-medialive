@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-reservation-state-structure.json",
+  "name": "ReservationState",
+  "type": "string",
+  "description": "Current reservation state",
+  "enum": [
+    "ACTIVE",
+    "EXPIRED",
+    "CANCELED",
+    "DELETED"
+  ]
+}

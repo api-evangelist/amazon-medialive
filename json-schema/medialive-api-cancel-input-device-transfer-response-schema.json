@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-cancel-input-device-transfer-response-schema.json",
+  "title": "CancelInputDeviceTransferResponse",
+  "description": "Placeholder documentation for CancelInputDeviceTransferResponse",
+  "type": "object",
+  "properties": {}
+}

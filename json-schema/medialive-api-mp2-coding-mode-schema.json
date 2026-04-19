@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-mp2-coding-mode-schema.json",
+  "title": "Mp2CodingMode",
+  "description": "Mp2 Coding Mode",
+  "type": "string",
+  "enum": [
+    "CODING_MODE_1_0",
+    "CODING_MODE_2_0"
+  ]
+}

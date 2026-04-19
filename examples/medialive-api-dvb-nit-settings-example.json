@@ -1,0 +1,5 @@
+{
+  "NetworkId": "id-abc123",
+  "NetworkName": "example-resource",
+  "RepInterval": "example-value"
+}

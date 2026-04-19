@@ -1,0 +1,8 @@
+{
+  "AcquisitionPointId": "id-abc123",
+  "AdAvailOffset": "example-value",
+  "PasswordParam": "example-value",
+  "PoisEndpoint": "example-value",
+  "Username": "example-resource",
+  "ZoneIdentity": "id-abc123"
+}

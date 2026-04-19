@@ -1,0 +1,6 @@
+{
+  "Id": "id-abc123",
+  "Message": "example-value",
+  "TargetCustomerId": "id-abc123",
+  "TransferType": "STANDARD"
+}

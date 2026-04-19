@@ -1,0 +1,6 @@
+{
+  "H265PackagingType": "STANDARD",
+  "HlsSettings": "example-value",
+  "NameModifier": "example-resource",
+  "SegmentModifier": "example-value"
+}

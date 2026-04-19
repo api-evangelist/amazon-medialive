@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-video-selector-schema.json",
+  "title": "VideoSelector",
+  "description": "Specifies a particular video stream within an input source. An input may have only a single video selector.",
+  "type": "object",
+  "properties": {
+    "ColorSpace": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VideoSelectorColorSpace"
+        },
+        {
+          "xml": {
+            "name": "colorSpace"
+          },
+          "description": "Specifies the color space of an input. This setting works in tandem with colorSpaceUsage and a video description's colorSpaceSettingsChoice to determine if any conversion will be performed."
+        }
+      ]
+    },
+    "ColorSpaceSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VideoSelectorColorSpaceSettings"
+        },
+        {
+          "xml": {
+            "name": "colorSpaceSettings"
+          },
+          "description": "Color space settings"
+        }
+      ]
+    },
+    "ColorSpaceUsage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VideoSelectorColorSpaceUsage"
+        },
+        {
+          "xml": {
+            "name": "colorSpaceUsage"
+          },
+          "description": "Applies only if colorSpace is a value other than follow. This field controls how the value in the colorSpace field will be used. fallback means that when the input does include color space data, that data will be used, but when the input has no color space data, the value in colorSpace will be used. Choose fallback if your input is sometimes missing color space data, but when it does have color space data, that data is correct. force means to always use the value in colorSpace. Choose force if your input usually has no color space data or might have unreliable color space data."
+        }
+      ]
+    },
+    "SelectorSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VideoSelectorSettings"
+        },
+        {
+          "xml": {
+            "name": "selectorSettings"
+          },
+          "description": "The video selector settings."
+        }
+      ]
+    }
+  }
+}

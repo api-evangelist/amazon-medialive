@@ -1,0 +1,3331 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "pan": "https://pan.dev/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "RejectInputDeviceTransferRequest": "pan:RejectInputDeviceTransferRequest",
+    "VideoSelectorSettings": "pan:VideoSelectorSettings",
+    "H264FilterSettings": "pan:H264FilterSettings",
+    "TtmlDestinationSettings": "pan:TtmlDestinationSettings",
+    "BatchUpdateScheduleResponse": "pan:BatchUpdateScheduleResponse",
+    "StartMultiplexResponse": "pan:StartMultiplexResponse",
+    "NielsenNaesIiNw": "pan:NielsenNaesIiNw",
+    "AcceptInputDeviceTransferRequest": "pan:AcceptInputDeviceTransferRequest",
+    "HlsId3SegmentTaggingState": "pan:HlsId3SegmentTaggingState",
+    "DescribeMultiplexRequest": "pan:DescribeMultiplexRequest",
+    "MediaConnectFlow": "pan:MediaConnectFlow",
+    "InputLossImageType": "pan:InputLossImageType",
+    "InputSource": "pan:InputSource",
+    "DeleteTagsRequest": "pan:DeleteTagsRequest",
+    "RtmpOutputCertificateMode": "pan:RtmpOutputCertificateMode",
+    "M2tsEbifControl": "pan:M2tsEbifControl",
+    "HlsIvInManifest": "pan:HlsIvInManifest",
+    "Scte35InputScheduleActionSettings": "pan:Scte35InputScheduleActionSettings",
+    "HlsCodecSpecification": "pan:HlsCodecSpecification",
+    "InputLossActionForMsSmoothOut": "pan:InputLossActionForMsSmoothOut",
+    "H265GopSizeUnits": "pan:H265GopSizeUnits",
+    "UdpOutputSettings": "pan:UdpOutputSettings",
+    "UpdateInputResponse": "pan:UpdateInputResponse",
+    "ListTagsForResourceRequest": "pan:ListTagsForResourceRequest",
+    "UpdateMultiplexProgramResponse": "pan:UpdateMultiplexProgramResponse",
+    "TimecodeBurninPosition": "pan:TimecodeBurninPosition",
+    "KeyProviderSettings": "pan:KeyProviderSettings",
+    "Scte20PlusEmbeddedDestinationSettings": "pan:Scte20PlusEmbeddedDestinationSettings",
+    "StaticKeySettings": "pan:StaticKeySettings",
+    "MediaPackageOutputSettings": "pan:MediaPackageOutputSettings",
+    "DescribeChannelRequest": "pan:DescribeChannelRequest",
+    "CreateMultiplexProgramRequest": "pan:CreateMultiplexProgramRequest",
+    "BlackoutSlate": "pan:BlackoutSlate",
+    "CreateInputSecurityGroupResponse": "pan:CreateInputSecurityGroupResponse",
+    "Scte35TimeSignalScheduleActionSettings": "pan:Scte35TimeSignalScheduleActionSettings",
+    "ChannelState": "pan:ChannelState",
+    "BatchDeleteRequest": "pan:BatchDeleteRequest",
+    "Eac3StereoDownmix": "pan:Eac3StereoDownmix",
+    "BatchScheduleActionDeleteResult": "pan:BatchScheduleActionDeleteResult",
+    "BatchScheduleActionCreateRequest": "pan:BatchScheduleActionCreateRequest",
+    "FrameCaptureSettings": "pan:FrameCaptureSettings",
+    "ReservationMaximumFramerate": "pan:ReservationMaximumFramerate",
+    "InputDeviceTransferType": "pan:InputDeviceTransferType",
+    "InputDeviceActiveInput": "pan:InputDeviceActiveInput",
+    "ScheduleActionSettings": "pan:ScheduleActionSettings",
+    "TransferringInputDeviceSummary": "pan:TransferringInputDeviceSummary",
+    "BatchScheduleActionCreateResult": "pan:BatchScheduleActionCreateResult",
+    "DeleteMultiplexResponse": "pan:DeleteMultiplexResponse",
+    "M2tsEsRateInPes": "pan:M2tsEsRateInPes",
+    "PauseStateScheduleActionSettings": "pan:PauseStateScheduleActionSettings",
+    "HlsIvSource": "pan:HlsIvSource",
+    "ListInputsResponse": "pan:ListInputsResponse",
+    "StaticImageDeactivateScheduleActionSettings": "pan:StaticImageDeactivateScheduleActionSettings",
+    "H265ColorMetadata": "pan:H265ColorMetadata",
+    "ListInputDevicesRequest": "pan:ListInputDevicesRequest",
+    "UpdateChannelClassRequest": "pan:UpdateChannelClassRequest",
+    "Mpeg2AdaptiveQuantization": "pan:Mpeg2AdaptiveQuantization",
+    "AacCodingMode": "pan:AacCodingMode",
+    "Eac3LfeFilter": "pan:Eac3LfeFilter",
+    "InputLossBehavior": "pan:InputLossBehavior",
+    "ColorSpacePassthroughSettings": "pan:ColorSpacePassthroughSettings",
+    "M2tsScte35Control": "pan:M2tsScte35Control",
+    "H264ScanType": "pan:H264ScanType",
+    "H265Tier": "pan:H265Tier",
+    "Scte35SegmentationCancelIndicator": "pan:Scte35SegmentationCancelIndicator",
+    "AncillarySourceSettings": "pan:AncillarySourceSettings",
+    "HlsSegmentationMode": "pan:HlsSegmentationMode",
+    "CreatePartnerInputRequest": "pan:CreatePartnerInputRequest",
+    "SmpteTtDestinationSettings": "pan:SmpteTtDestinationSettings",
+    "VideoSelectorProgramId": "pan:VideoSelectorProgramId",
+    "VideoSelectorPid": "pan:VideoSelectorPid",
+    "UdpTimedMetadataId3Frame": "pan:UdpTimedMetadataId3Frame",
+    "SmoothGroupAudioOnlyTimecodeControl": "pan:SmoothGroupAudioOnlyTimecodeControl",
+    "MotionGraphicsSettings": "pan:MotionGraphicsSettings",
+    "Rec709Settings": "pan:Rec709Settings",
+    "VideoDescriptionScalingBehavior": "pan:VideoDescriptionScalingBehavior",
+    "Mp2CodingMode": "pan:Mp2CodingMode",
+    "AudioDescriptionAudioTypeControl": "pan:AudioDescriptionAudioTypeControl",
+    "InputLocation": "pan:InputLocation",
+    "Channel": "pan:Channel",
+    "MotionGraphicsActivateScheduleActionSettings": "pan:MotionGraphicsActivateScheduleActionSettings",
+    "InputDestination": "pan:InputDestination",
+    "Mpeg2ScanType": "pan:Mpeg2ScanType",
+    "DescribeInputSecurityGroupRequest": "pan:DescribeInputSecurityGroupRequest",
+    "Output": "pan:Output",
+    "M2tsAudioStreamType": "pan:M2tsAudioStreamType",
+    "DvbSubDestinationOutlineColor": "pan:DvbSubDestinationOutlineColor",
+    "VideoDescriptionRespondToAfd": "pan:VideoDescriptionRespondToAfd",
+    "Mpeg2FilterSettings": "pan:Mpeg2FilterSettings",
+    "DescribeInputRequest": "pan:DescribeInputRequest",
+    "AuthenticationScheme": "pan:AuthenticationScheme",
+    "DeleteMultiplexProgramResponse": "pan:DeleteMultiplexProgramResponse",
+    "BatchStartRequest": "pan:BatchStartRequest",
+    "CaptionLanguageMapping": "pan:CaptionLanguageMapping",
+    "WebvttDestinationSettings": "pan:WebvttDestinationSettings",
+    "Ac3MetadataControl": "pan:Ac3MetadataControl",
+    "MultiplexOutputDestination": "pan:MultiplexOutputDestination",
+    "HlsManifestCompression": "pan:HlsManifestCompression",
+    "NielsenCBET": "pan:NielsenCBET",
+    "DeleteScheduleResponse": "pan:DeleteScheduleResponse",
+    "HlsDirectoryStructure": "pan:HlsDirectoryStructure",
+    "LastFrameClippingBehavior": "pan:LastFrameClippingBehavior",
+    "BurnInBackgroundColor": "pan:BurnInBackgroundColor",
+    "Mpeg2TimecodeInsertionBehavior": "pan:Mpeg2TimecodeInsertionBehavior",
+    "AudioCodecSettings": "pan:AudioCodecSettings",
+    "HlsMediaStoreSettings": "pan:HlsMediaStoreSettings",
+    "AccessibilityType": "pan:AccessibilityType",
+    "Hdr10Settings": "pan:Hdr10Settings",
+    "ContentType": "pan:ContentType",
+    "MultiplexProgramServiceDescriptor": "pan:MultiplexProgramServiceDescriptor",
+    "Eac3SurroundExMode": "pan:Eac3SurroundExMode",
+    "PurchaseOfferingRequest": "pan:PurchaseOfferingRequest",
+    "Scte35SpliceInsertNoRegionalBlackoutBehavior": "pan:Scte35SpliceInsertNoRegionalBlackoutBehavior",
+    "InputAttachment": "pan:InputAttachment",
+    "CreateTagsRequest": "pan:CreateTagsRequest",
+    "Scte27SourceSettings": "pan:Scte27SourceSettings",
+    "FeatureActivationsInputPrepareScheduleActions": "pan:FeatureActivationsInputPrepareScheduleActions",
+    "BatchScheduleActionDeleteRequest": "pan:BatchScheduleActionDeleteRequest",
+    "PipelineId": "pan:PipelineId",
+    "MsSmoothGroupSettings": "pan:MsSmoothGroupSettings",
+    "InputClippingSettings": "pan:InputClippingSettings",
+    "InputSourceType": "pan:InputSourceType",
+    "HlsTimedMetadataId3Frame": "pan:HlsTimedMetadataId3Frame",
+    "DeleteInputSecurityGroupRequest": "pan:DeleteInputSecurityGroupRequest",
+    "RtmpCaptionData": "pan:RtmpCaptionData",
+    "ArchiveOutputSettings": "pan:ArchiveOutputSettings",
+    "Ac3BitstreamMode": "pan:Ac3BitstreamMode",
+    "ListTagsForResourceResponse": "pan:ListTagsForResourceResponse",
+    "CdiInputSpecification": "pan:CdiInputSpecification",
+    "EbuTtDFillLineGapControl": "pan:EbuTtDFillLineGapControl",
+    "EmbeddedConvert608To708": "pan:EmbeddedConvert608To708",
+    "SmoothGroupCertificateMode": "pan:SmoothGroupCertificateMode",
+    "SmoothGroupTimestampOffsetMode": "pan:SmoothGroupTimestampOffsetMode",
+    "ListInputDeviceTransfersResponse": "pan:ListInputDeviceTransfersResponse",
+    "ReservationState": "pan:ReservationState",
+    "GatewayTimeoutException": "pan:GatewayTimeoutException",
+    "Mpeg2GopSizeUnits": "pan:Mpeg2GopSizeUnits",
+    "TimecodeConfig": "pan:TimecodeConfig",
+    "HlsAkamaiHttpTransferMode": "pan:HlsAkamaiHttpTransferMode",
+    "StandardHlsSettings": "pan:StandardHlsSettings",
+    "FeatureActivations": "pan:FeatureActivations",
+    "MaintenanceCreateSettings": "pan:MaintenanceCreateSettings",
+    "SmoothGroupSparseTrackType": "pan:SmoothGroupSparseTrackType",
+    "StartTimecode": "pan:StartTimecode",
+    "DeleteInputSecurityGroupResponse": "pan:DeleteInputSecurityGroupResponse",
+    "Eac3DcFilter": "pan:Eac3DcFilter",
+    "Mp2Settings": "pan:Mp2Settings",
+    "AudioDescription": "pan:AudioDescription",
+    "InputDeviceScanType": "pan:InputDeviceScanType",
+    "DvbSubDestinationBackgroundColor": "pan:DvbSubDestinationBackgroundColor",
+    "MaintenanceUpdateSettings": "pan:MaintenanceUpdateSettings",
+    "AacVbrQuality": "pan:AacVbrQuality",
+    "Scte27DestinationSettings": "pan:Scte27DestinationSettings",
+    "BadGatewayException": "pan:BadGatewayException",
+    "DeleteScheduleRequest": "pan:DeleteScheduleRequest",
+    "RtmpCacheFullBehavior": "pan:RtmpCacheFullBehavior",
+    "DescribeInputDeviceResponse": "pan:DescribeInputDeviceResponse",
+    "FixedAfd": "pan:FixedAfd",
+    "DescribeInputDeviceThumbnailRequest": "pan:DescribeInputDeviceThumbnailRequest",
+    "RenewalSettings": "pan:RenewalSettings",
+    "MultiplexProgramSettings": "pan:MultiplexProgramSettings",
+    "DeleteReservationRequest": "pan:DeleteReservationRequest",
+    "TimecodeConfigSource": "pan:TimecodeConfigSource",
+    "StaticImageActivateScheduleActionSettings": "pan:StaticImageActivateScheduleActionSettings",
+    "HlsTimedMetadataScheduleActionSettings": "pan:HlsTimedMetadataScheduleActionSettings",
+    "MultiplexProgramChannelDestinationSettings": "pan:MultiplexProgramChannelDestinationSettings",
+    "TtmlDestinationStyleControl": "pan:TtmlDestinationStyleControl",
+    "InputVpcRequest": "pan:InputVpcRequest",
+    "HlsS3Settings": "pan:HlsS3Settings",
+    "H265FilterSettings": "pan:H265FilterSettings",
+    "Mpeg2ColorMetadata": "pan:Mpeg2ColorMetadata",
+    "VpcOutputSettingsDescription": "pan:VpcOutputSettingsDescription",
+    "StartInputDeviceMaintenanceWindowResponse": "pan:StartInputDeviceMaintenanceWindowResponse",
+    "ChannelSummary": "pan:ChannelSummary",
+    "DvbSdtOutputSdt": "pan:DvbSdtOutputSdt",
+    "RebootInputDeviceForce": "pan:RebootInputDeviceForce",
+    "DvbSubDestinationSettings": "pan:DvbSubDestinationSettings",
+    "CreateInputSecurityGroupRequest": "pan:CreateInputSecurityGroupRequest",
+    "ChannelClass": "pan:ChannelClass",
+    "InputMaximumBitrate": "pan:InputMaximumBitrate",
+    "HlsTsFileMode": "pan:HlsTsFileMode",
+    "ArchiveCdnSettings": "pan:ArchiveCdnSettings",
+    "SmoothGroupEventStopBehavior": "pan:SmoothGroupEventStopBehavior",
+    "CreateMultiplexResponse": "pan:CreateMultiplexResponse",
+    "AacRawFormat": "pan:AacRawFormat",
+    "Ac3Settings": "pan:Ac3Settings",
+    "AcceptInputDeviceTransferResponse": "pan:AcceptInputDeviceTransferResponse",
+    "ReservationCodec": "pan:ReservationCodec",
+    "H264SubGopLength": "pan:H264SubGopLength",
+    "AacRateControlMode": "pan:AacRateControlMode",
+    "InputType": "pan:InputType",
+    "Tags": "pan:Tags",
+    "UpdateInputSecurityGroupResponse": "pan:UpdateInputSecurityGroupResponse",
+    "AvailBlankingState": "pan:AvailBlankingState",
+    "RebootInputDeviceResponse": "pan:RebootInputDeviceResponse",
+    "AudioNormalizationSettings": "pan:AudioNormalizationSettings",
+    "ReservationResourceType": "pan:ReservationResourceType",
+    "HlsId3SegmentTaggingScheduleActionSettings": "pan:HlsId3SegmentTaggingScheduleActionSettings",
+    "CreatePartnerInputResponse": "pan:CreatePartnerInputResponse",
+    "Scte35AposNoRegionalBlackoutBehavior": "pan:Scte35AposNoRegionalBlackoutBehavior",
+    "InputPrepareScheduleActionSettings": "pan:InputPrepareScheduleActionSettings",
+    "AacInputType": "pan:AacInputType",
+    "DescribeInputDeviceThumbnailResponse": "pan:DescribeInputDeviceThumbnailResponse",
+    "MaintenanceStatus": "pan:MaintenanceStatus",
+    "MaxResults": "pan:MaxResults",
+    "StartChannelResponse": "pan:StartChannelResponse",
+    "DescribeMultiplexResponse": "pan:DescribeMultiplexResponse",
+    "AvailBlanking": "pan:AvailBlanking",
+    "Scte20Convert608To708": "pan:Scte20Convert608To708",
+    "DeleteChannelResponse": "pan:DeleteChannelResponse",
+    "DescribeReservationRequest": "pan:DescribeReservationRequest",
+    "M3u8TimedMetadataBehavior": "pan:M3u8TimedMetadataBehavior",
+    "InputDeblockFilter": "pan:InputDeblockFilter",
+    "FrameCaptureCdnSettings": "pan:FrameCaptureCdnSettings",
+    "ArchiveS3Settings": "pan:ArchiveS3Settings",
+    "VideoDescription": "pan:VideoDescription",
+    "Scte35SpliceInsertScheduleActionSettings": "pan:Scte35SpliceInsertScheduleActionSettings",
+    "UpdateChannelClassResponse": "pan:UpdateChannelClassResponse",
+    "BurnInAlignment": "pan:BurnInAlignment",
+    "InputLossActionForUdpOut": "pan:InputLossActionForUdpOut",
+    "Fmp4HlsSettings": "pan:Fmp4HlsSettings",
+    "EmbeddedSourceSettings": "pan:EmbeddedSourceSettings",
+    "AudioOnlyHlsTrackType": "pan:AudioOnlyHlsTrackType",
+    "Scte35DeviceRestrictions": "pan:Scte35DeviceRestrictions",
+    "FrameCaptureOutputSettings": "pan:FrameCaptureOutputSettings",
+    "InputLossActionForHlsOut": "pan:InputLossActionForHlsOut",
+    "M2tsAribCaptionsPidControl": "pan:M2tsAribCaptionsPidControl",
+    "OutputGroup": "pan:OutputGroup",
+    "InputSpecification": "pan:InputSpecification",
+    "H264LookAheadRateControl": "pan:H264LookAheadRateControl",
+    "H264GopSizeUnits": "pan:H264GopSizeUnits",
+    "PurchaseOfferingResponse": "pan:PurchaseOfferingResponse",
+    "InputWhitelistRule": "pan:InputWhitelistRule",
+    "UpdateChannelResponse": "pan:UpdateChannelResponse",
+    "InputSwitchScheduleActionSettings": "pan:InputSwitchScheduleActionSettings",
+    "VideoSelectorColorSpaceSettings": "pan:VideoSelectorColorSpaceSettings",
+    "NielsenPcmToId3TaggingState": "pan:NielsenPcmToId3TaggingState",
+    "Eac3PassthroughControl": "pan:Eac3PassthroughControl",
+    "UpdateMultiplexProgramRequest": "pan:UpdateMultiplexProgramRequest",
+    "EmbeddedScte20Detection": "pan:EmbeddedScte20Detection",
+    "Mpeg2Settings": "pan:Mpeg2Settings",
+    "H264TimecodeInsertionBehavior": "pan:H264TimecodeInsertionBehavior",
+    "M3u8NielsenId3Behavior": "pan:M3u8NielsenId3Behavior",
+    "DeviceSettingsSyncState": "pan:DeviceSettingsSyncState",
+    "NielsenWatermarksDistributionTypes": "pan:NielsenWatermarksDistributionTypes",
+    "TemporalFilterPostFilterSharpening": "pan:TemporalFilterPostFilterSharpening",
+    "MotionGraphicsInsertion": "pan:MotionGraphicsInsertion",
+    "PreferredChannelPipeline": "pan:PreferredChannelPipeline",
+    "OutputLocationRef": "pan:OutputLocationRef",
+    "HlsBasicPutSettings": "pan:HlsBasicPutSettings",
+    "StopMultiplexResponse": "pan:StopMultiplexResponse",
+    "UpdateMultiplexResponse": "pan:UpdateMultiplexResponse",
+    "H265SceneChangeDetect": "pan:H265SceneChangeDetect",
+    "Mpeg2SubGopLength": "pan:Mpeg2SubGopLength",
+    "PassThroughSettings": "pan:PassThroughSettings",
+    "M3u8Settings": "pan:M3u8Settings",
+    "AribSourceSettings": "pan:AribSourceSettings",
+    "H265TimecodeInsertionBehavior": "pan:H265TimecodeInsertionBehavior",
+    "HlsWebdavHttpTransferMode": "pan:HlsWebdavHttpTransferMode",
+    "HlsMode": "pan:HlsMode",
+    "VideoSelectorColorSpace": "pan:VideoSelectorColorSpace",
+    "Eac3AttenuationControl": "pan:Eac3AttenuationControl",
+    "Multiplex": "pan:Multiplex",
+    "DvbSubDestinationFontColor": "pan:DvbSubDestinationFontColor",
+    "DeleteChannelRequest": "pan:DeleteChannelRequest",
+    "RejectInputDeviceTransferResponse": "pan:RejectInputDeviceTransferResponse",
+    "Esam": "pan:Esam",
+    "DescribeMultiplexProgramResponse": "pan:DescribeMultiplexProgramResponse",
+    "Reservation": "pan:Reservation",
+    "WavCodingMode": "pan:WavCodingMode",
+    "VideoSelectorColorSpaceUsage": "pan:VideoSelectorColorSpaceUsage",
+    "InputDenoiseFilter": "pan:InputDenoiseFilter",
+    "HlsAkamaiSettings": "pan:HlsAkamaiSettings",
+    "BurnInTeletextGridControl": "pan:BurnInTeletextGridControl",
+    "InputDeviceNetworkSettings": "pan:InputDeviceNetworkSettings",
+    "Ac3LfeFilter": "pan:Ac3LfeFilter",
+    "TeletextDestinationSettings": "pan:TeletextDestinationSettings",
+    "H264ColorMetadata": "pan:H264ColorMetadata",
+    "CreateMultiplexRequest": "pan:CreateMultiplexRequest",
+    "HlsGroupSettings": "pan:HlsGroupSettings",
+    "AudioPidSelection": "pan:AudioPidSelection",
+    "TeletextSourceSettings": "pan:TeletextSourceSettings",
+    "ReservationResolution": "pan:ReservationResolution",
+    "NielsenWatermarkTimezones": "pan:NielsenWatermarkTimezones",
+    "DolbyEProgramSelection": "pan:DolbyEProgramSelection",
+    "AacSettings": "pan:AacSettings",
+    "CaptionSelectorSettings": "pan:CaptionSelectorSettings",
+    "M2tsSegmentationStyle": "pan:M2tsSegmentationStyle",
+    "H265ColorSpaceSettings": "pan:H265ColorSpaceSettings",
+    "H264SpatialAq": "pan:H264SpatialAq",
+    "GlobalConfiguration": "pan:GlobalConfiguration",
+    "BatchStartResponse": "pan:BatchStartResponse",
+    "H265RateControlMode": "pan:H265RateControlMode",
+    "InputDeviceRequest": "pan:InputDeviceRequest",
+    "InputSettings": "pan:InputSettings",
+    "UpdateReservationRequest": "pan:UpdateReservationRequest",
+    "BlackoutSlateState": "pan:BlackoutSlateState",
+    "CancelInputDeviceTransferResponse": "pan:CancelInputDeviceTransferResponse",
+    "Scte20SourceSettings": "pan:Scte20SourceSettings",
+    "UdpContainerSettings": "pan:UdpContainerSettings",
+    "InputWhitelistRuleCidr": "pan:InputWhitelistRuleCidr",
+    "AudioNormalizationAlgorithm": "pan:AudioNormalizationAlgorithm",
+    "OfferingDurationUnits": "pan:OfferingDurationUnits",
+    "InputSourceRequest": "pan:InputSourceRequest",
+    "AudioTrackSelection": "pan:AudioTrackSelection",
+    "ListInputSecurityGroupsResponse": "pan:ListInputSecurityGroupsResponse",
+    "StopChannelResponse": "pan:StopChannelResponse",
+    "H264EntropyEncoding": "pan:H264EntropyEncoding",
+    "DvbTdtSettings": "pan:DvbTdtSettings",
+    "ClaimDeviceResponse": "pan:ClaimDeviceResponse",
+    "LogLevel": "pan:LogLevel",
+    "Scte35NoRegionalBlackoutFlag": "pan:Scte35NoRegionalBlackoutFlag",
+    "InputChannelLevel": "pan:InputChannelLevel",
+    "Eac3Settings": "pan:Eac3Settings",
+    "CreateMultiplexProgramResponse": "pan:CreateMultiplexProgramResponse",
+    "AvailConfiguration": "pan:AvailConfiguration",
+    "M2tsCcDescriptor": "pan:M2tsCcDescriptor",
+    "Eac3CodingMode": "pan:Eac3CodingMode",
+    "InputDeviceState": "pan:InputDeviceState",
+    "HlsDiscontinuityTags": "pan:HlsDiscontinuityTags",
+    "AacProfile": "pan:AacProfile",
+    "DescribeOfferingResponse": "pan:DescribeOfferingResponse",
+    "FecOutputSettings": "pan:FecOutputSettings",
+    "AudioSilenceFailoverSettings": "pan:AudioSilenceFailoverSettings",
+    "ListReservationsRequest": "pan:ListReservationsRequest",
+    "OutputDestinationSettings": "pan:OutputDestinationSettings",
+    "RtmpOutputSettings": "pan:RtmpOutputSettings",
+    "VideoCodecSettings": "pan:VideoCodecSettings",
+    "Ac3CodingMode": "pan:Ac3CodingMode",
+    "InputSourceEndBehavior": "pan:InputSourceEndBehavior",
+    "NetworkInputServerValidation": "pan:NetworkInputServerValidation",
+    "Ac3DrcProfile": "pan:Ac3DrcProfile",
+    "TransferInputDeviceResponse": "pan:TransferInputDeviceResponse",
+    "Scte35ReturnToNetworkScheduleActionSettings": "pan:Scte35ReturnToNetworkScheduleActionSettings",
+    "M2tsNielsenId3Behavior": "pan:M2tsNielsenId3Behavior",
+    "MotionGraphicsConfiguration": "pan:MotionGraphicsConfiguration",
+    "RemixSettings": "pan:RemixSettings",
+    "RebootInputDeviceRequest": "pan:RebootInputDeviceRequest",
+    "H264TemporalAq": "pan:H264TemporalAq",
+    "InputDeviceSettings": "pan:InputDeviceSettings",
+    "MultiplexVideoSettings": "pan:MultiplexVideoSettings",
+    "TransferInputDeviceRequest": "pan:TransferInputDeviceRequest",
+    "OutputGroupSettings": "pan:OutputGroupSettings",
+    "UpdateReservationResponse": "pan:UpdateReservationResponse",
+    "ListInputsRequest": "pan:ListInputsRequest",
+    "HlsProgramDateTimeClock": "pan:HlsProgramDateTimeClock",
+    "AudioNormalizationAlgorithmControl": "pan:AudioNormalizationAlgorithmControl",
+    "RtmpAdMarkers": "pan:RtmpAdMarkers",
+    "MultiplexStatmuxVideoSettings": "pan:MultiplexStatmuxVideoSettings",
+    "DvbSdtSettings": "pan:DvbSdtSettings",
+    "HlsIncompleteSegmentBehavior": "pan:HlsIncompleteSegmentBehavior",
+    "H264FramerateControl": "pan:H264FramerateControl",
+    "StopChannelRequest": "pan:StopChannelRequest",
+    "OutputSettings": "pan:OutputSettings",
+    "H264Level": "pan:H264Level",
+    "AudioWatermarkSettings": "pan:AudioWatermarkSettings",
+    "H264QualityLevel": "pan:H264QualityLevel",
+    "SmoothGroupStreamManifestBehavior": "pan:SmoothGroupStreamManifestBehavior",
+    "CreateInputRequest": "pan:CreateInputRequest",
+    "DeviceUpdateStatus": "pan:DeviceUpdateStatus",
+    "HlsOutputSelection": "pan:HlsOutputSelection",
+    "GlobalConfigurationLowFramerateInputs": "pan:GlobalConfigurationLowFramerateInputs",
+    "Scte35TimeSignalApos": "pan:Scte35TimeSignalApos",
+    "ListChannelsResponse": "pan:ListChannelsResponse",
+    "M3u8Scte35Behavior": "pan:M3u8Scte35Behavior",
+    "AvailSettings": "pan:AvailSettings",
+    "Scte35InputMode": "pan:Scte35InputMode",
+    "HlsProgramDateTime": "pan:HlsProgramDateTime",
+    "RtmpGroupSettings": "pan:RtmpGroupSettings",
+    "BatchStopResponse": "pan:BatchStopResponse",
+    "MaintenanceDay": "pan:MaintenanceDay",
+    "InputClass": "pan:InputClass",
+    "MultiplexProgramSummary": "pan:MultiplexProgramSummary",
+    "ListReservationsResponse": "pan:ListReservationsResponse",
+    "H265AdaptiveQuantization": "pan:H265AdaptiveQuantization",
+    "AudioDescriptionLanguageCodeControl": "pan:AudioDescriptionLanguageCodeControl",
+    "ListInputSecurityGroupsRequest": "pan:ListInputSecurityGroupsRequest",
+    "OutputDestination": "pan:OutputDestination",
+    "InputLossActionForRtmpOut": "pan:InputLossActionForRtmpOut",
+    "AacSpec": "pan:AacSpec",
+    "M2tsAudioInterval": "pan:M2tsAudioInterval",
+    "M2tsArib": "pan:M2tsArib",
+    "UpdateChannelRequest": "pan:UpdateChannelRequest",
+    "M2tsBufferModel": "pan:M2tsBufferModel",
+    "MsSmoothOutputSettings": "pan:MsSmoothOutputSettings",
+    "Eac3AtmosDrcRf": "pan:Eac3AtmosDrcRf",
+    "DvbSubDestinationShadowColor": "pan:DvbSubDestinationShadowColor",
+    "BurnInOutlineColor": "pan:BurnInOutlineColor",
+    "HlsMediaStoreStorageClass": "pan:HlsMediaStoreStorageClass",
+    "MultiplexSummary": "pan:MultiplexSummary",
+    "BurnInDestinationSettings": "pan:BurnInDestinationSettings",
+    "M2tsSettings": "pan:M2tsSettings",
+    "M2tsKlv": "pan:M2tsKlv",
+    "Scte27OcrLanguage": "pan:Scte27OcrLanguage",
+    "ListMultiplexesRequest": "pan:ListMultiplexesRequest",
+    "ClaimDeviceRequest": "pan:ClaimDeviceRequest",
+    "WebvttDestinationStyleControl": "pan:WebvttDestinationStyleControl",
+    "DvbSubDestinationTeletextGridControl": "pan:DvbSubDestinationTeletextGridControl",
+    "InputDeviceIpScheme": "pan:InputDeviceIpScheme",
+    "FollowPoint": "pan:FollowPoint",
+    "DescribeReservationResponse": "pan:DescribeReservationResponse",
+    "M2tsSegmentationMarkers": "pan:M2tsSegmentationMarkers",
+    "Mpeg2DisplayRatio": "pan:Mpeg2DisplayRatio",
+    "RtmpCaptionInfoDestinationSettings": "pan:RtmpCaptionInfoDestinationSettings",
+    "ListMultiplexesResponse": "pan:ListMultiplexesResponse",
+    "InputDeviceConnectionState": "pan:InputDeviceConnectionState",
+    "DeleteMultiplexProgramRequest": "pan:DeleteMultiplexProgramRequest",
+    "H264SceneChangeDetect": "pan:H264SceneChangeDetect",
+    "MultiplexOutputSettings": "pan:MultiplexOutputSettings",
+    "HlsRedundantManifest": "pan:HlsRedundantManifest",
+    "HlsH265PackagingType": "pan:HlsH265PackagingType",
+    "ListMultiplexProgramsResponse": "pan:ListMultiplexProgramsResponse",
+    "InputDeviceType": "pan:InputDeviceType",
+    "InputResolution": "pan:InputResolution",
+    "M3u8PcrControl": "pan:M3u8PcrControl",
+    "BatchUpdateScheduleRequest": "pan:BatchUpdateScheduleRequest",
+    "ScheduleAction": "pan:ScheduleAction",
+    "Eac3AtmosDrcLine": "pan:Eac3AtmosDrcLine",
+    "EmbeddedPlusScte20DestinationSettings": "pan:EmbeddedPlusScte20DestinationSettings",
+    "ReservationResourceSpecification": "pan:ReservationResourceSpecification",
+    "GlobalConfigurationOutputLockingMode": "pan:GlobalConfigurationOutputLockingMode",
+    "GlobalConfigurationInputEndAction": "pan:GlobalConfigurationInputEndAction",
+    "BlackoutSlateNetworkEndBlackout": "pan:BlackoutSlateNetworkEndBlackout",
+    "FixedModeScheduleActionStartSettings": "pan:FixedModeScheduleActionStartSettings",
+    "InputPreference": "pan:InputPreference",
+    "NielsenWatermarksSettings": "pan:NielsenWatermarksSettings",
+    "NielsenWatermarksCbetStepaside": "pan:NielsenWatermarksCbetStepaside",
+    "MultiplexProgramPacketIdentifiersMap": "pan:MultiplexProgramPacketIdentifiersMap",
+    "Eac3DrcRf": "pan:Eac3DrcRf",
+    "DvbSubSourceSettings": "pan:DvbSubSourceSettings",
+    "Scte35SpliceInsertWebDeliveryAllowedBehavior": "pan:Scte35SpliceInsertWebDeliveryAllowedBehavior",
+    "M2tsAudioBufferModel": "pan:M2tsAudioBufferModel",
+    "UdpGroupSettings": "pan:UdpGroupSettings",
+    "H265ScanType": "pan:H265ScanType",
+    "StartMultiplexRequest": "pan:StartMultiplexRequest",
+    "H265Level": "pan:H265Level",
+    "FrameCaptureIntervalUnit": "pan:FrameCaptureIntervalUnit",
+    "CreateChannelResponse": "pan:CreateChannelResponse",
+    "MediaPackageGroupSettings": "pan:MediaPackageGroupSettings",
+    "DvbSubDestinationAlignment": "pan:DvbSubDestinationAlignment",
+    "PipelinePauseStateSettings": "pan:PipelinePauseStateSettings",
+    "MotionGraphicsDeactivateScheduleActionSettings": "pan:MotionGraphicsDeactivateScheduleActionSettings",
+    "H264FlickerAq": "pan:H264FlickerAq",
+    "DeleteReservationResponse": "pan:DeleteReservationResponse",
+    "MultiplexSettings": "pan:MultiplexSettings",
+    "StopMultiplexRequest": "pan:StopMultiplexRequest",
+    "CaptionSelector": "pan:CaptionSelector",
+    "H264Settings": "pan:H264Settings",
+    "NetworkInputSettings": "pan:NetworkInputSettings",
+    "ReservationAutomaticRenewal": "pan:ReservationAutomaticRenewal",
+    "CaptionDestinationSettings": "pan:CaptionDestinationSettings",
+    "InputDestinationRequest": "pan:InputDestinationRequest",
+    "MsSmoothH265PackagingType": "pan:MsSmoothH265PackagingType",
+    "DescribeInputDeviceRequest": "pan:DescribeInputDeviceRequest",
+    "Scte35DescriptorSettings": "pan:Scte35DescriptorSettings",
+    "AudioLanguageSelectionPolicy": "pan:AudioLanguageSelectionPolicy",
+    "M2tsPcrControl": "pan:M2tsPcrControl",
+    "InputDeviceThumbnail": "pan:InputDeviceThumbnail",
+    "AudioTrack": "pan:AudioTrack",
+    "HlsStreamInfResolution": "pan:HlsStreamInfResolution",
+    "NielsenConfiguration": "pan:NielsenConfiguration",
+    "AudioOnlyHlsSegmentType": "pan:AudioOnlyHlsSegmentType",
+    "ListOfferingsResponse": "pan:ListOfferingsResponse",
+    "AribDestinationSettings": "pan:AribDestinationSettings",
+    "MediaPackageOutputDestinationSettings": "pan:MediaPackageOutputDestinationSettings",
+    "VideoBlackFailoverSettings": "pan:VideoBlackFailoverSettings",
+    "Eac3LfeControl": "pan:Eac3LfeControl",
+    "GlobalConfigurationOutputTimingSource": "pan:GlobalConfigurationOutputTimingSource",
+    "S3CannedAcl": "pan:S3CannedAcl",
+    "ReservationVideoQuality": "pan:ReservationVideoQuality",
+    "EbuTtDDestinationSettings": "pan:EbuTtDDestinationSettings",
+    "InputCodec": "pan:InputCodec",
+    "HtmlMotionGraphicsSettings": "pan:HtmlMotionGraphicsSettings",
+    "BatchDeleteResponse": "pan:BatchDeleteResponse",
+    "MultiplexSettingsSummary": "pan:MultiplexSettingsSummary",
+    "M2tsRateMode": "pan:M2tsRateMode",
+    "CaptionDescription": "pan:CaptionDescription",
+    "DescribeInputResponse": "pan:DescribeInputResponse",
+    "H265FlickerAq": "pan:H265FlickerAq",
+    "InputDeviceConfiguredInput": "pan:InputDeviceConfiguredInput",
+    "AudioOnlyHlsSettings": "pan:AudioOnlyHlsSettings",
+    "Eac3AtmosCodingMode": "pan:Eac3AtmosCodingMode",
+    "MultiplexProgram": "pan:MultiplexProgram",
+    "DvbNitSettings": "pan:DvbNitSettings",
+    "M2tsAbsentInputAudioBehavior": "pan:M2tsAbsentInputAudioBehavior",
+    "EmbeddedDestinationSettings": "pan:EmbeddedDestinationSettings",
+    "H264ColorSpaceSettings": "pan:H264ColorSpaceSettings",
+    "HlsCdnSettings": "pan:HlsCdnSettings",
+    "MediaConnectFlowRequest": "pan:MediaConnectFlowRequest",
+    "EncoderSettings": "pan:EncoderSettings",
+    "Scte35DeliveryRestrictions": "pan:Scte35DeliveryRestrictions",
+    "CancelInputDeviceTransferRequest": "pan:CancelInputDeviceTransferRequest",
+    "InputDeviceSummary": "pan:InputDeviceSummary",
+    "ImmediateModeScheduleActionStartSettings": "pan:ImmediateModeScheduleActionStartSettings",
+    "Scte35SpliceInsert": "pan:Scte35SpliceInsert",
+    "FrameCaptureHlsSettings": "pan:FrameCaptureHlsSettings",
+    "MultiplexState": "pan:MultiplexState",
+    "MultiplexMediaConnectOutputDestinationSettings": "pan:MultiplexMediaConnectOutputDestinationSettings",
+    "InputFilter": "pan:InputFilter",
+    "Eac3SurroundMode": "pan:Eac3SurroundMode",
+    "DescribeScheduleRequest": "pan:DescribeScheduleRequest",
+    "BurnInShadowColor": "pan:BurnInShadowColor",
+    "AudioHlsRenditionSelection": "pan:AudioHlsRenditionSelection",
+    "ChannelEgressEndpoint": "pan:ChannelEgressEndpoint",
+    "StopTimecode": "pan:StopTimecode",
+    "TimecodeBurninSettings": "pan:TimecodeBurninSettings",
+    "Scte35Descriptor": "pan:Scte35Descriptor",
+    "PipelineDetail": "pan:PipelineDetail",
+    "UpdateInputRequest": "pan:UpdateInputRequest",
+    "Eac3BitstreamMode": "pan:Eac3BitstreamMode",
+    "H264Syntax": "pan:H264Syntax",
+    "ArchiveContainerSettings": "pan:ArchiveContainerSettings",
+    "H265AlternativeTransferFunction": "pan:H265AlternativeTransferFunction",
+    "AfdSignaling": "pan:AfdSignaling",
+    "TimecodeBurninFontSize": "pan:TimecodeBurninFontSize",
+    "CdiInputResolution": "pan:CdiInputResolution",
+    "InputDeviceUhdSettings": "pan:InputDeviceUhdSettings",
+    "TemporalFilterSettings": "pan:TemporalFilterSettings",
+    "EbuTtDDestinationStyleControl": "pan:EbuTtDDestinationStyleControl",
+    "Scte35SegmentationDescriptor": "pan:Scte35SegmentationDescriptor",
+    "HlsClientCache": "pan:HlsClientCache",
+    "VpcOutputSettings": "pan:VpcOutputSettings",
+    "HlsScte35SourceType": "pan:HlsScte35SourceType",
+    "DescribeOfferingRequest": "pan:DescribeOfferingRequest",
+    "Eac3DrcLine": "pan:Eac3DrcLine",
+    "DeleteMultiplexRequest": "pan:DeleteMultiplexRequest",
+    "Scte35ArchiveAllowedFlag": "pan:Scte35ArchiveAllowedFlag",
+    "MultiplexGroupSettings": "pan:MultiplexGroupSettings",
+    "Smpte2038DataPreference": "pan:Smpte2038DataPreference",
+    "AudioSelectorSettings": "pan:AudioSelectorSettings",
+    "ListInputDevicesResponse": "pan:ListInputDevicesResponse",
+    "AudioLanguageSelection": "pan:AudioLanguageSelection",
+    "OfferingType": "pan:OfferingType",
+    "ListChannelsRequest": "pan:ListChannelsRequest",
+    "UpdateInputSecurityGroupRequest": "pan:UpdateInputSecurityGroupRequest",
+    "Eac3MetadataControl": "pan:Eac3MetadataControl",
+    "ListInputDeviceTransfersRequest": "pan:ListInputDeviceTransfersRequest",
+    "InputDestinationVpc": "pan:InputDestinationVpc",
+    "H264RateControlMode": "pan:H264RateControlMode",
+    "ListMultiplexProgramsRequest": "pan:ListMultiplexProgramsRequest",
+    "H264ForceFieldPictures": "pan:H264ForceFieldPictures",
+    "BurnInFontColor": "pan:BurnInFontColor",
+    "Scte35AposWebDeliveryAllowedBehavior": "pan:Scte35AposWebDeliveryAllowedBehavior",
+    "DeleteInputResponse": "pan:DeleteInputResponse",
+    "InputState": "pan:InputState",
+    "DolbyVision81Settings": "pan:DolbyVision81Settings",
+    "InputSecurityGroupState": "pan:InputSecurityGroupState",
+    "HlsManifestDurationFormat": "pan:HlsManifestDurationFormat",
+    "InputDeviceConfigurableSettings": "pan:InputDeviceConfigurableSettings",
+    "DvbSubOcrLanguage": "pan:DvbSubOcrLanguage",
+    "FrameCaptureS3Settings": "pan:FrameCaptureS3Settings",
+    "InputTimecodeSource": "pan:InputTimecodeSource",
+    "ArchiveGroupSettings": "pan:ArchiveGroupSettings",
+    "BatchFailedResultModel": "pan:BatchFailedResultModel",
+    "M2tsTimedMetadataBehavior": "pan:M2tsTimedMetadataBehavior",
+    "InputSecurityGroup": "pan:InputSecurityGroup",
+    "HlsAdMarkers": "pan:HlsAdMarkers",
+    "ScheduleActionStartSettings": "pan:ScheduleActionStartSettings",
+    "AcceptHeader": "pan:AcceptHeader",
+    "Rec601Settings": "pan:Rec601Settings",
+    "UpdateInputDeviceResponse": "pan:UpdateInputDeviceResponse",
+    "SmoothGroupSegmentationMode": "pan:SmoothGroupSegmentationMode",
+    "Eac3PhaseControl": "pan:Eac3PhaseControl",
+    "InputLossFailoverSettings": "pan:InputLossFailoverSettings",
+    "AudioChannelMapping": "pan:AudioChannelMapping",
+    "H265LookAheadRateControl": "pan:H265LookAheadRateControl",
+    "BatchSuccessfulResultModel": "pan:BatchSuccessfulResultModel",
+    "H264AdaptiveQuantization": "pan:H264AdaptiveQuantization",
+    "H265Profile": "pan:H265Profile",
+    "DeleteInputRequest": "pan:DeleteInputRequest",
+    "AudioDolbyEDecode": "pan:AudioDolbyEDecode",
+    "H265Settings": "pan:H265Settings",
+    "InputDeviceHdSettings": "pan:InputDeviceHdSettings",
+    "Fmp4TimedMetadataBehavior": "pan:Fmp4TimedMetadataBehavior",
+    "DescribeScheduleResponse": "pan:DescribeScheduleResponse",
+    "M2tsEbpPlacement": "pan:M2tsEbpPlacement",
+    "MultiplexProgramPipelineDetail": "pan:MultiplexProgramPipelineDetail",
+    "StartInputDeviceMaintenanceWindowRequest": "pan:StartInputDeviceMaintenanceWindowRequest",
+    "H264Profile": "pan:H264Profile",
+    "H264ParControl": "pan:H264ParControl",
+    "DescribeMultiplexProgramRequest": "pan:DescribeMultiplexProgramRequest",
+    "BatchStopRequest": "pan:BatchStopRequest",
+    "HlsSettings": "pan:HlsSettings",
+    "HlsOutputSettings": "pan:HlsOutputSettings",
+    "CreateChannelRequest": "pan:CreateChannelRequest",
+    "DescribeInputSecurityGroupResponse": "pan:DescribeInputSecurityGroupResponse",
+    "StartChannelRequest": "pan:StartChannelRequest",
+    "IFrameOnlyPlaylistType": "pan:IFrameOnlyPlaylistType",
+    "AudioSelector": "pan:AudioSelector",
+    "HlsEncryptionType": "pan:HlsEncryptionType",
+    "H264GopBReference": "pan:H264GopBReference",
+    "Scte35WebDeliveryAllowedFlag": "pan:Scte35WebDeliveryAllowedFlag",
+    "FecOutputIncludeFec": "pan:FecOutputIncludeFec",
+    "WavSettings": "pan:WavSettings",
+    "FollowModeScheduleActionStartSettings": "pan:FollowModeScheduleActionStartSettings",
+    "HlsWebdavSettings": "pan:HlsWebdavSettings",
+    "AutomaticInputFailoverSettings": "pan:AutomaticInputFailoverSettings",
+    "HlsInputSettings": "pan:HlsInputSettings",
+    "ReservationMaximumBitrate": "pan:ReservationMaximumBitrate",
+    "CaptionRectangle": "pan:CaptionRectangle",
+    "FailoverCondition": "pan:FailoverCondition",
+    "FailoverConditionSettings": "pan:FailoverConditionSettings",
+    "Fmp4NielsenId3Behavior": "pan:Fmp4NielsenId3Behavior",
+    "DescribeChannelResponse": "pan:DescribeChannelResponse",
+    "AudioType": "pan:AudioType",
+    "Offering": "pan:Offering",
+    "Mpeg2ColorSpace": "pan:Mpeg2ColorSpace",
+    "VideoSelector": "pan:VideoSelector",
+    "CreateInputResponse": "pan:CreateInputResponse",
+    "HlsCaptionLanguageSetting": "pan:HlsCaptionLanguageSetting",
+    "FrameCaptureGroupSettings": "pan:FrameCaptureGroupSettings",
+    "ListOfferingsRequest": "pan:ListOfferingsRequest",
+    "Input": "pan:Input",
+    "UpdateMultiplexRequest": "pan:UpdateMultiplexRequest",
+    "RawSettings": "pan:RawSettings",
+    "ReservationSpecialFeature": "pan:ReservationSpecialFeature",
+    "SmoothGroupEventIdMode": "pan:SmoothGroupEventIdMode",
+    "TemporalFilterStrength": "pan:TemporalFilterStrength",
+    "Eac3AtmosSettings": "pan:Eac3AtmosSettings",
+    "UpdateInputDeviceRequest": "pan:UpdateInputDeviceRequest",
+    "videoSelectorPid": {
+      "@id": "pan:video_selector_pid",
+      "@type": "xsd:string"
+    },
+    "videoSelectorProgramId": {
+      "@id": "pan:video_selector_program_id",
+      "@type": "xsd:string"
+    },
+    "temporalFilterSettings": {
+      "@id": "pan:temporal_filter_settings",
+      "@type": "xsd:string"
+    },
+    "styleControl": {
+      "@id": "pan:style_control",
+      "@type": "xsd:string"
+    },
+    "creates": {
+      "@id": "pan:creates",
+      "@type": "xsd:string"
+    },
+    "deletes": {
+      "@id": "pan:deletes",
+      "@type": "xsd:string"
+    },
+    "arn": {
+      "@id": "pan:arn",
+      "@type": "xsd:string"
+    },
+    "availabilityZones": {
+      "@id": "pan:availability_zones",
+      "@type": "xsd:string"
+    },
+    "destinations": {
+      "@id": "pan:destinations",
+      "@type": "xsd:string"
+    },
+    "id": {
+      "@id": "pan:id",
+      "@type": "xsd:string"
+    },
+    "multiplexSettings": {
+      "@id": "pan:multiplex_settings",
+      "@type": "xsd:string"
+    },
+    "name": "schema:name",
+    "pipelinesRunningCount": {
+      "@id": "pan:pipelines_running_count",
+      "@type": "xsd:string"
+    },
+    "programCount": {
+      "@id": "pan:program_count",
+      "@type": "xsd:string"
+    },
+    "state": {
+      "@id": "pan:state",
+      "@type": "xsd:string"
+    },
+    "tags": {
+      "@id": "pan:tags",
+      "@type": "xsd:string"
+    },
+    "checkDigitString": {
+      "@id": "pan:check_digit_string",
+      "@type": "xsd:string"
+    },
+    "sid": {
+      "@id": "pan:sid",
+      "@type": "xsd:string"
+    },
+    "timezone": {
+      "@id": "pan:timezone",
+      "@type": "xsd:string"
+    },
+    "flowArn": {
+      "@id": "pan:flow_arn",
+      "@type": "xsd:string"
+    },
+    "passwordParam": {
+      "@id": "pan:password_param",
+      "@type": "xsd:string"
+    },
+    "url": "schema:url",
+    "username": {
+      "@id": "pan:username",
+      "@type": "xsd:string"
+    },
+    "inputAttachmentNameReference": {
+      "@id": "pan:input_attachment_name_reference",
+      "@type": "xsd:string"
+    },
+    "mode": {
+      "@id": "pan:mode",
+      "@type": "xsd:string"
+    },
+    "bufferMsec": {
+      "@id": "pan:buffer_msec",
+      "@type": "xsd:string"
+    },
+    "containerSettings": {
+      "@id": "pan:container_settings",
+      "@type": "xsd:string"
+    },
+    "destination": {
+      "@id": "pan:destination",
+      "@type": "xsd:string"
+    },
+    "fecOutputSettings": {
+      "@id": "pan:fec_output_settings",
+      "@type": "xsd:string"
+    },
+    "input": {
+      "@id": "pan:input",
+      "@type": "xsd:string"
+    },
+    "multiplexProgram": {
+      "@id": "pan:multiplex_program",
+      "@type": "xsd:string"
+    },
+    "staticKeySettings": {
+      "@id": "pan:static_key_settings",
+      "@type": "xsd:string"
+    },
+    "keyProviderServer": {
+      "@id": "pan:key_provider_server",
+      "@type": "xsd:string"
+    },
+    "staticKeyValue": {
+      "@id": "pan:static_key_value",
+      "@type": "xsd:string"
+    },
+    "multiplexProgramSettings": {
+      "@id": "pan:multiplex_program_settings",
+      "@type": "xsd:string"
+    },
+    "programName": {
+      "@id": "pan:program_name",
+      "@type": "xsd:string"
+    },
+    "requestId": {
+      "@id": "pan:request_id",
+      "@type": "xsd:string"
+    },
+    "blackoutSlateImage": {
+      "@id": "pan:blackout_slate_image",
+      "@type": "xsd:string"
+    },
+    "networkEndBlackout": {
+      "@id": "pan:network_end_blackout",
+      "@type": "xsd:string"
+    },
+    "networkEndBlackoutImage": {
+      "@id": "pan:network_end_blackout_image",
+      "@type": "xsd:string"
+    },
+    "networkId": {
+      "@id": "pan:network_id",
+      "@type": "xsd:string"
+    },
+    "securityGroup": {
+      "@id": "pan:security_group",
+      "@type": "xsd:string"
+    },
+    "scte35Descriptors": {
+      "@id": "pan:scte35_descriptors",
+      "@type": "xsd:string"
+    },
+    "channelIds": {
+      "@id": "pan:channel_ids",
+      "@type": "xsd:string"
+    },
+    "inputIds": {
+      "@id": "pan:input_ids",
+      "@type": "xsd:string"
+    },
+    "inputSecurityGroupIds": {
+      "@id": "pan:input_security_group_ids",
+      "@type": "xsd:string"
+    },
+    "multiplexIds": {
+      "@id": "pan:multiplex_ids",
+      "@type": "xsd:string"
+    },
+    "scheduleActions": {
+      "@id": "pan:schedule_actions",
+      "@type": "xsd:string"
+    },
+    "captureInterval": {
+      "@id": "pan:capture_interval",
+      "@type": "xsd:string"
+    },
+    "captureIntervalUnits": {
+      "@id": "pan:capture_interval_units",
+      "@type": "xsd:string"
+    },
+    "timecodeBurninSettings": {
+      "@id": "pan:timecode_burnin_settings",
+      "@type": "xsd:string"
+    },
+    "hlsId3SegmentTaggingSettings": {
+      "@id": "pan:hls_id3_segment_tagging_settings",
+      "@type": "xsd:string"
+    },
+    "hlsTimedMetadataSettings": {
+      "@id": "pan:hls_timed_metadata_settings",
+      "@type": "xsd:string"
+    },
+    "inputPrepareSettings": {
+      "@id": "pan:input_prepare_settings",
+      "@type": "xsd:string"
+    },
+    "inputSwitchSettings": {
+      "@id": "pan:input_switch_settings",
+      "@type": "xsd:string"
+    },
+    "motionGraphicsImageActivateSettings": {
+      "@id": "pan:motion_graphics_image_activate_settings",
+      "@type": "xsd:string"
+    },
+    "motionGraphicsImageDeactivateSettings": {
+      "@id": "pan:motion_graphics_image_deactivate_settings",
+      "@type": "xsd:string"
+    },
+    "pauseStateSettings": {
+      "@id": "pan:pause_state_settings",
+      "@type": "xsd:string"
+    },
+    "scte35InputSettings": {
+      "@id": "pan:scte35_input_settings",
+      "@type": "xsd:string"
+    },
+    "scte35ReturnToNetworkSettings": {
+      "@id": "pan:scte35_return_to_network_settings",
+      "@type": "xsd:string"
+    },
+    "scte35SpliceInsertSettings": {
+      "@id": "pan:scte35_splice_insert_settings",
+      "@type": "xsd:string"
+    },
+    "scte35TimeSignalSettings": {
+      "@id": "pan:scte35_time_signal_settings",
+      "@type": "xsd:string"
+    },
+    "staticImageActivateSettings": {
+      "@id": "pan:static_image_activate_settings",
+      "@type": "xsd:string"
+    },
+    "staticImageDeactivateSettings": {
+      "@id": "pan:static_image_deactivate_settings",
+      "@type": "xsd:string"
+    },
+    "message": {
+      "@id": "pan:message",
+      "@type": "xsd:string"
+    },
+    "targetCustomerId": {
+      "@id": "pan:target_customer_id",
+      "@type": "xsd:string"
+    },
+    "transferType": {
+      "@id": "pan:transfer_type",
+      "@type": "xsd:string"
+    },
+    "pipelines": {
+      "@id": "pan:pipelines",
+      "@type": "xsd:string"
+    },
+    "inputs": {
+      "@id": "pan:inputs",
+      "@type": "xsd:string"
+    },
+    "nextToken": {
+      "@id": "pan:next_token",
+      "@type": "xsd:string"
+    },
+    "fadeOut": {
+      "@id": "pan:fade_out",
+      "@type": "xsd:string"
+    },
+    "layer": {
+      "@id": "pan:layer",
+      "@type": "xsd:string"
+    },
+    "channelClass": {
+      "@id": "pan:channel_class",
+      "@type": "xsd:string"
+    },
+    "blackFrameMsec": {
+      "@id": "pan:black_frame_msec",
+      "@type": "xsd:string"
+    },
+    "inputLossImageColor": {
+      "@id": "pan:input_loss_image_color",
+      "@type": "xsd:string"
+    },
+    "inputLossImageSlate": {
+      "@id": "pan:input_loss_image_slate",
+      "@type": "xsd:string"
+    },
+    "inputLossImageType": {
+      "@id": "pan:input_loss_image_type",
+      "@type": "xsd:string"
+    },
+    "repeatFrameMsec": {
+      "@id": "pan:repeat_frame_msec",
+      "@type": "xsd:string"
+    },
+    "sourceAncillaryChannelNumber": {
+      "@id": "pan:source_ancillary_channel_number",
+      "@type": "xsd:string"
+    },
+    "programId": {
+      "@id": "pan:program_id",
+      "@type": "xsd:string"
+    },
+    "pid": {
+      "@id": "pan:pid",
+      "@type": "xsd:string"
+    },
+    "htmlMotionGraphicsSettings": {
+      "@id": "pan:html_motion_graphics_settings",
+      "@type": "xsd:string"
+    },
+    "uri": {
+      "@id": "pan:uri",
+      "@type": "xsd:string"
+    },
+    "cdiInputSpecification": {
+      "@id": "pan:cdi_input_specification",
+      "@type": "xsd:string"
+    },
+    "egressEndpoints": {
+      "@id": "pan:egress_endpoints",
+      "@type": "xsd:string"
+    },
+    "encoderSettings": {
+      "@id": "pan:encoder_settings",
+      "@type": "xsd:string"
+    },
+    "inputAttachments": {
+      "@id": "pan:input_attachments",
+      "@type": "xsd:string"
+    },
+    "inputSpecification": {
+      "@id": "pan:input_specification",
+      "@type": "xsd:string"
+    },
+    "logLevel": {
+      "@id": "pan:log_level",
+      "@type": "xsd:string"
+    },
+    "maintenance": {
+      "@id": "pan:maintenance",
+      "@type": "xsd:string"
+    },
+    "pipelineDetails": {
+      "@id": "pan:pipeline_details",
+      "@type": "xsd:string"
+    },
+    "roleArn": {
+      "@id": "pan:role_arn",
+      "@type": "xsd:string"
+    },
+    "vpc": {
+      "@id": "pan:vpc",
+      "@type": "xsd:string"
+    },
+    "duration": {
+      "@id": "pan:duration",
+      "@type": "xsd:string"
+    },
+    "ip": {
+      "@id": "pan:ip",
+      "@type": "xsd:string"
+    },
+    "port": {
+      "@id": "pan:port",
+      "@type": "xsd:string"
+    },
+    "audioDescriptionNames": {
+      "@id": "pan:audio_description_names",
+      "@type": "xsd:string"
+    },
+    "captionDescriptionNames": {
+      "@id": "pan:caption_description_names",
+      "@type": "xsd:string"
+    },
+    "outputName": {
+      "@id": "pan:output_name",
+      "@type": "xsd:string"
+    },
+    "outputSettings": {
+      "@id": "pan:output_settings",
+      "@type": "xsd:string"
+    },
+    "videoDescriptionName": {
+      "@id": "pan:video_description_name",
+      "@type": "xsd:string"
+    },
+    "channelId": {
+      "@id": "pan:channel_id",
+      "@type": "xsd:string"
+    },
+    "packetIdentifiersMap": {
+      "@id": "pan:packet_identifiers_map",
+      "@type": "xsd:string"
+    },
+    "captionChannel": {
+      "@id": "pan:caption_channel",
+      "@type": "xsd:string"
+    },
+    "languageCode": {
+      "@id": "pan:language_code",
+      "@type": "xsd:string"
+    },
+    "languageDescription": {
+      "@id": "pan:language_description",
+      "@type": "xsd:string"
+    },
+    "mediaConnectSettings": {
+      "@id": "pan:media_connect_settings",
+      "@type": "xsd:string"
+    },
+    "cbetCheckDigitString": {
+      "@id": "pan:cbet_check_digit_string",
+      "@type": "xsd:string"
+    },
+    "cbetStepaside": {
+      "@id": "pan:cbet_stepaside",
+      "@type": "xsd:string"
+    },
+    "csid": {
+      "@id": "pan:csid",
+      "@type": "xsd:string"
+    },
+    "aacSettings": {
+      "@id": "pan:aac_settings",
+      "@type": "xsd:string"
+    },
+    "ac3Settings": {
+      "@id": "pan:ac3_settings",
+      "@type": "xsd:string"
+    },
+    "eac3AtmosSettings": {
+      "@id": "pan:eac3_atmos_settings",
+      "@type": "xsd:string"
+    },
+    "eac3Settings": {
+      "@id": "pan:eac3_settings",
+      "@type": "xsd:string"
+    },
+    "mp2Settings": {
+      "@id": "pan:mp2_settings",
+      "@type": "xsd:string"
+    },
+    "passThroughSettings": {
+      "@id": "pan:pass_through_settings",
+      "@type": "xsd:string"
+    },
+    "wavSettings": {
+      "@id": "pan:wav_settings",
+      "@type": "xsd:string"
+    },
+    "connectionRetryInterval": {
+      "@id": "pan:connection_retry_interval",
+      "@type": "xsd:string"
+    },
+    "filecacheDuration": {
+      "@id": "pan:filecache_duration",
+      "@type": "xsd:string"
+    },
+    "mediaStoreStorageClass": {
+      "@id": "pan:media_store_storage_class",
+      "@type": "xsd:string"
+    },
+    "numRetries": {
+      "@id": "pan:num_retries",
+      "@type": "xsd:string"
+    },
+    "restartDelay": {
+      "@id": "pan:restart_delay",
+      "@type": "xsd:string"
+    },
+    "maxCll": {
+      "@id": "pan:max_cll",
+      "@type": "xsd:string"
+    },
+    "maxFall": {
+      "@id": "pan:max_fall",
+      "@type": "xsd:string"
+    },
+    "providerName": {
+      "@id": "pan:provider_name",
+      "@type": "xsd:string"
+    },
+    "serviceName": {
+      "@id": "pan:service_name",
+      "@type": "xsd:string"
+    },
+    "count": {
+      "@id": "pan:count",
+      "@type": "xsd:string"
+    },
+    "renewalSettings": {
+      "@id": "pan:renewal_settings",
+      "@type": "xsd:string"
+    },
+    "start": {
+      "@id": "pan:start",
+      "@type": "xsd:string"
+    },
+    "automaticInputFailoverSettings": {
+      "@id": "pan:automatic_input_failover_settings",
+      "@type": "xsd:string"
+    },
+    "inputAttachmentName": {
+      "@id": "pan:input_attachment_name",
+      "@type": "xsd:string"
+    },
+    "inputId": {
+      "@id": "pan:input_id",
+      "@type": "xsd:string"
+    },
+    "inputSettings": {
+      "@id": "pan:input_settings",
+      "@type": "xsd:string"
+    },
+    "ocrLanguage": {
+      "@id": "pan:ocr_language",
+      "@type": "xsd:string"
+    },
+    "actionNames": {
+      "@id": "pan:action_names",
+      "@type": "xsd:string"
+    },
+    "acquisitionPointId": {
+      "@id": "pan:acquisition_point_id",
+      "@type": "xsd:string"
+    },
+    "audioOnlyTimecodeControl": {
+      "@id": "pan:audio_only_timecode_control",
+      "@type": "xsd:string"
+    },
+    "certificateMode": {
+      "@id": "pan:certificate_mode",
+      "@type": "xsd:string"
+    },
+    "eventId": {
+      "@id": "pan:event_id",
+      "@type": "xsd:string"
+    },
+    "eventIdMode": {
+      "@id": "pan:event_id_mode",
+      "@type": "xsd:string"
+    },
+    "eventStopBehavior": {
+      "@id": "pan:event_stop_behavior",
+      "@type": "xsd:string"
+    },
+    "fragmentLength": {
+      "@id": "pan:fragment_length",
+      "@type": "xsd:string"
+    },
+    "inputLossAction": {
+      "@id": "pan:input_loss_action",
+      "@type": "xsd:string"
+    },
+    "segmentationMode": {
+      "@id": "pan:segmentation_mode",
+      "@type": "xsd:string"
+    },
+    "sendDelayMs": {
+      "@id": "pan:send_delay_ms",
+      "@type": "xsd:string"
+    },
+    "sparseTrackType": {
+      "@id": "pan:sparse_track_type",
+      "@type": "xsd:string"
+    },
+    "streamManifestBehavior": {
+      "@id": "pan:stream_manifest_behavior",
+      "@type": "xsd:string"
+    },
+    "timestampOffset": {
+      "@id": "pan:timestamp_offset",
+      "@type": "xsd:string"
+    },
+    "timestampOffsetMode": {
+      "@id": "pan:timestamp_offset_mode",
+      "@type": "xsd:string"
+    },
+    "inputTimecodeSource": {
+      "@id": "pan:input_timecode_source",
+      "@type": "xsd:string"
+    },
+    "startTimecode": {
+      "@id": "pan:start_timecode",
+      "@type": "xsd:string"
+    },
+    "stopTimecode": {
+      "@id": "pan:stop_timecode",
+      "@type": "xsd:string"
+    },
+    "extension": {
+      "@id": "pan:extension",
+      "@type": "xsd:string"
+    },
+    "nameModifier": {
+      "@id": "pan:name_modifier",
+      "@type": "xsd:string"
+    },
+    "resolution": {
+      "@id": "pan:resolution",
+      "@type": "xsd:string"
+    },
+    "inputDeviceTransfers": {
+      "@id": "pan:input_device_transfers",
+      "@type": "xsd:string"
+    },
+    "source": {
+      "@id": "pan:source",
+      "@type": "xsd:string"
+    },
+    "syncThreshold": {
+      "@id": "pan:sync_threshold",
+      "@type": "xsd:string"
+    },
+    "audioRenditionSets": {
+      "@id": "pan:audio_rendition_sets",
+      "@type": "xsd:string"
+    },
+    "m3u8Settings": {
+      "@id": "pan:m3u8_settings",
+      "@type": "xsd:string"
+    },
+    "inputPrepareScheduleActions": {
+      "@id": "pan:input_prepare_schedule_actions",
+      "@type": "xsd:string"
+    },
+    "maintenanceDay": {
+      "@id": "pan:maintenance_day",
+      "@type": "xsd:string"
+    },
+    "maintenanceStartTime": {
+      "@id": "pan:maintenance_start_time",
+      "@type": "xsd:string"
+    },
+    "timecode": {
+      "@id": "pan:timecode",
+      "@type": "xsd:string"
+    },
+    "bitrate": {
+      "@id": "pan:bitrate",
+      "@type": "xsd:string"
+    },
+    "codingMode": {
+      "@id": "pan:coding_mode",
+      "@type": "xsd:string"
+    },
+    "sampleRate": {
+      "@id": "pan:sample_rate",
+      "@type": "xsd:string"
+    },
+    "audioNormalizationSettings": {
+      "@id": "pan:audio_normalization_settings",
+      "@type": "xsd:string"
+    },
+    "audioSelectorName": {
+      "@id": "pan:audio_selector_name",
+      "@type": "xsd:string"
+    },
+    "audioType": {
+      "@id": "pan:audio_type",
+      "@type": "xsd:string"
+    },
+    "audioTypeControl": {
+      "@id": "pan:audio_type_control",
+      "@type": "xsd:string"
+    },
+    "audioWatermarkingSettings": {
+      "@id": "pan:audio_watermarking_settings",
+      "@type": "xsd:string"
+    },
+    "codecSettings": {
+      "@id": "pan:codec_settings",
+      "@type": "xsd:string"
+    },
+    "languageCodeControl": {
+      "@id": "pan:language_code_control",
+      "@type": "xsd:string"
+    },
+    "remixSettings": {
+      "@id": "pan:remix_settings",
+      "@type": "xsd:string"
+    },
+    "streamName": {
+      "@id": "pan:stream_name",
+      "@type": "xsd:string"
+    },
+    "maintenanceScheduledDate": {
+      "@id": "pan:maintenance_scheduled_date",
+      "@type": "xsd:string"
+    },
+    "connectionState": {
+      "@id": "pan:connection_state",
+      "@type": "xsd:string"
+    },
+    "deviceSettingsSyncState": {
+      "@id": "pan:device_settings_sync_state",
+      "@type": "xsd:string"
+    },
+    "deviceUpdateStatus": {
+      "@id": "pan:device_update_status",
+      "@type": "xsd:string"
+    },
+    "hdDeviceSettings": {
+      "@id": "pan:hd_device_settings",
+      "@type": "xsd:string"
+    },
+    "macAddress": {
+      "@id": "pan:mac_address",
+      "@type": "xsd:string"
+    },
+    "networkSettings": {
+      "@id": "pan:network_settings",
+      "@type": "xsd:string"
+    },
+    "serialNumber": {
+      "@id": "pan:serial_number",
+      "@type": "xsd:string"
+    },
+    "type": {
+      "@id": "pan:type",
+      "@type": "xsd:string"
+    },
+    "uhdDeviceSettings": {
+      "@id": "pan:uhd_device_settings",
+      "@type": "xsd:string"
+    },
+    "automaticRenewal": {
+      "@id": "pan:automatic_renewal",
+      "@type": "xsd:string"
+    },
+    "renewalCount": {
+      "@id": "pan:renewal_count",
+      "@type": "xsd:string"
+    },
+    "preferredChannelPipeline": {
+      "@id": "pan:preferred_channel_pipeline",
+      "@type": "xsd:string"
+    },
+    "programNumber": {
+      "@id": "pan:program_number",
+      "@type": "xsd:string"
+    },
+    "serviceDescriptor": {
+      "@id": "pan:service_descriptor",
+      "@type": "xsd:string"
+    },
+    "videoSettings": {
+      "@id": "pan:video_settings",
+      "@type": "xsd:string"
+    },
+    "fadeIn": {
+      "@id": "pan:fade_in",
+      "@type": "xsd:string"
+    },
+    "height": {
+      "@id": "pan:height",
+      "@type": "xsd:string"
+    },
+    "image": {
+      "@id": "pan:image",
+      "@type": "xsd:string"
+    },
+    "imageX": {
+      "@id": "pan:image_x",
+      "@type": "xsd:string"
+    },
+    "imageY": {
+      "@id": "pan:image_y",
+      "@type": "xsd:string"
+    },
+    "opacity": {
+      "@id": "pan:opacity",
+      "@type": "xsd:string"
+    },
+    "width": {
+      "@id": "pan:width",
+      "@type": "xsd:string"
+    },
+    "id3": {
+      "@id": "pan:id3",
+      "@type": "xsd:string"
+    },
+    "multiplexId": {
+      "@id": "pan:multiplex_id",
+      "@type": "xsd:string"
+    },
+    "securityGroupIds": {
+      "@id": "pan:security_group_ids",
+      "@type": "xsd:string"
+    },
+    "subnetIds": {
+      "@id": "pan:subnet_ids",
+      "@type": "xsd:string"
+    },
+    "cannedAcl": {
+      "@id": "pan:canned_acl",
+      "@type": "xsd:string"
+    },
+    "networkInterfaceIds": {
+      "@id": "pan:network_interface_ids",
+      "@type": "xsd:string"
+    },
+    "alignment": {
+      "@id": "pan:alignment",
+      "@type": "xsd:string"
+    },
+    "backgroundColor": {
+      "@id": "pan:background_color",
+      "@type": "xsd:string"
+    },
+    "backgroundOpacity": {
+      "@id": "pan:background_opacity",
+      "@type": "xsd:string"
+    },
+    "font": {
+      "@id": "pan:font",
+      "@type": "xsd:string"
+    },
+    "fontColor": {
+      "@id": "pan:font_color",
+      "@type": "xsd:string"
+    },
+    "fontOpacity": {
+      "@id": "pan:font_opacity",
+      "@type": "xsd:string"
+    },
+    "fontResolution": {
+      "@id": "pan:font_resolution",
+      "@type": "xsd:string"
+    },
+    "fontSize": {
+      "@id": "pan:font_size",
+      "@type": "xsd:string"
+    },
+    "outlineColor": {
+      "@id": "pan:outline_color",
+      "@type": "xsd:string"
+    },
+    "outlineSize": {
+      "@id": "pan:outline_size",
+      "@type": "xsd:string"
+    },
+    "shadowColor": {
+      "@id": "pan:shadow_color",
+      "@type": "xsd:string"
+    },
+    "shadowOpacity": {
+      "@id": "pan:shadow_opacity",
+      "@type": "xsd:string"
+    },
+    "shadowXOffset": {
+      "@id": "pan:shadow_x_offset",
+      "@type": "xsd:string"
+    },
+    "shadowYOffset": {
+      "@id": "pan:shadow_y_offset",
+      "@type": "xsd:string"
+    },
+    "teletextGridControl": {
+      "@id": "pan:teletext_grid_control",
+      "@type": "xsd:string"
+    },
+    "xPosition": {
+      "@id": "pan:x_position",
+      "@type": "xsd:string"
+    },
+    "yPosition": {
+      "@id": "pan:y_position",
+      "@type": "xsd:string"
+    },
+    "whitelistRules": {
+      "@id": "pan:whitelist_rules",
+      "@type": "xsd:string"
+    },
+    "archiveS3Settings": {
+      "@id": "pan:archive_s3_settings",
+      "@type": "xsd:string"
+    },
+    "multiplex": {
+      "@id": "pan:multiplex",
+      "@type": "xsd:string"
+    },
+    "bitstreamMode": {
+      "@id": "pan:bitstream_mode",
+      "@type": "xsd:string"
+    },
+    "dialnorm": {
+      "@id": "pan:dialnorm",
+      "@type": "xsd:string"
+    },
+    "drcProfile": {
+      "@id": "pan:drc_profile",
+      "@type": "xsd:string"
+    },
+    "lfeFilter": {
+      "@id": "pan:lfe_filter",
+      "@type": "xsd:string"
+    },
+    "metadataControl": {
+      "@id": "pan:metadata_control",
+      "@type": "xsd:string"
+    },
+    "algorithm": {
+      "@id": "pan:algorithm",
+      "@type": "xsd:string"
+    },
+    "algorithmControl": {
+      "@id": "pan:algorithm_control",
+      "@type": "xsd:string"
+    },
+    "targetLkfs": {
+      "@id": "pan:target_lkfs",
+      "@type": "xsd:string"
+    },
+    "tag": {
+      "@id": "pan:tag",
+      "@type": "xsd:string"
+    },
+    "inputClippingSettings": {
+      "@id": "pan:input_clipping_settings",
+      "@type": "xsd:string"
+    },
+    "urlPath": {
+      "@id": "pan:url_path",
+      "@type": "xsd:string"
+    },
+    "body": {
+      "@id": "pan:body",
+      "@type": "xsd:string"
+    },
+    "maintenanceDeadline": {
+      "@id": "pan:maintenance_deadline",
+      "@type": "xsd:string"
+    },
+    "availBlankingImage": {
+      "@id": "pan:avail_blanking_image",
+      "@type": "xsd:string"
+    },
+    "frameCaptureS3Settings": {
+      "@id": "pan:frame_capture_s3_settings",
+      "@type": "xsd:string"
+    },
+    "respondToAfd": {
+      "@id": "pan:respond_to_afd",
+      "@type": "xsd:string"
+    },
+    "scalingBehavior": {
+      "@id": "pan:scaling_behavior",
+      "@type": "xsd:string"
+    },
+    "sharpness": {
+      "@id": "pan:sharpness",
+      "@type": "xsd:string"
+    },
+    "spliceEventId": {
+      "@id": "pan:splice_event_id",
+      "@type": "xsd:string"
+    },
+    "channel": {
+      "@id": "pan:channel",
+      "@type": "xsd:string"
+    },
+    "nielsenId3Behavior": {
+      "@id": "pan:nielsen_id3_behavior",
+      "@type": "xsd:string"
+    },
+    "timedMetadataBehavior": {
+      "@id": "pan:timed_metadata_behavior",
+      "@type": "xsd:string"
+    },
+    "convert608To708": {
+      "@id": "pan:convert608_to708",
+      "@type": "xsd:string"
+    },
+    "scte20Detection": {
+      "@id": "pan:scte20_detection",
+      "@type": "xsd:string"
+    },
+    "source608ChannelNumber": {
+      "@id": "pan:source608_channel_number",
+      "@type": "xsd:string"
+    },
+    "source608TrackNumber": {
+      "@id": "pan:source608_track_number",
+      "@type": "xsd:string"
+    },
+    "outputGroupSettings": {
+      "@id": "pan:output_group_settings",
+      "@type": "xsd:string"
+    },
+    "outputs": {
+      "@id": "pan:outputs",
+      "@type": "xsd:string"
+    },
+    "codec": {
+      "@id": "pan:codec",
+      "@type": "xsd:string"
+    },
+    "maximumBitrate": {
+      "@id": "pan:maximum_bitrate",
+      "@type": "xsd:string"
+    },
+    "reservation": {
+      "@id": "pan:reservation",
+      "@type": "xsd:string"
+    },
+    "cidr": {
+      "@id": "pan:cidr",
+      "@type": "xsd:string"
+    },
+    "hdr10Settings": {
+      "@id": "pan:hdr10_settings",
+      "@type": "xsd:string"
+    },
+    "adaptiveQuantization": {
+      "@id": "pan:adaptive_quantization",
+      "@type": "xsd:string"
+    },
+    "afdSignaling": {
+      "@id": "pan:afd_signaling",
+      "@type": "xsd:string"
+    },
+    "colorMetadata": {
+      "@id": "pan:color_metadata",
+      "@type": "xsd:string"
+    },
+    "colorSpace": {
+      "@id": "pan:color_space",
+      "@type": "xsd:string"
+    },
+    "displayAspectRatio": {
+      "@id": "pan:display_aspect_ratio",
+      "@type": "xsd:string"
+    },
+    "filterSettings": {
+      "@id": "pan:filter_settings",
+      "@type": "xsd:string"
+    },
+    "fixedAfd": {
+      "@id": "pan:fixed_afd",
+      "@type": "xsd:string"
+    },
+    "framerateDenominator": {
+      "@id": "pan:framerate_denominator",
+      "@type": "xsd:string"
+    },
+    "framerateNumerator": {
+      "@id": "pan:framerate_numerator",
+      "@type": "xsd:string"
+    },
+    "gopClosedCadence": {
+      "@id": "pan:gop_closed_cadence",
+      "@type": "xsd:string"
+    },
+    "gopNumBFrames": {
+      "@id": "pan:gop_num_b_frames",
+      "@type": "xsd:string"
+    },
+    "gopSize": {
+      "@id": "pan:gop_size",
+      "@type": "xsd:string"
+    },
+    "gopSizeUnits": {
+      "@id": "pan:gop_size_units",
+      "@type": "xsd:string"
+    },
+    "scanType": {
+      "@id": "pan:scan_type",
+      "@type": "xsd:string"
+    },
+    "subgopLength": {
+      "@id": "pan:subgop_length",
+      "@type": "xsd:string"
+    },
+    "timecodeInsertion": {
+      "@id": "pan:timecode_insertion",
+      "@type": "xsd:string"
+    },
+    "destinationRefId": {
+      "@id": "pan:destination_ref_id",
+      "@type": "xsd:string"
+    },
+    "audioFramesPerPes": {
+      "@id": "pan:audio_frames_per_pes",
+      "@type": "xsd:string"
+    },
+    "audioPids": {
+      "@id": "pan:audio_pids",
+      "@type": "xsd:string"
+    },
+    "ecmPid": {
+      "@id": "pan:ecm_pid",
+      "@type": "xsd:string"
+    },
+    "patInterval": {
+      "@id": "pan:pat_interval",
+      "@type": "xsd:string"
+    },
+    "pcrControl": {
+      "@id": "pan:pcr_control",
+      "@type": "xsd:string"
+    },
+    "pcrPeriod": {
+      "@id": "pan:pcr_period",
+      "@type": "xsd:string"
+    },
+    "pcrPid": {
+      "@id": "pan:pcr_pid",
+      "@type": "xsd:string"
+    },
+    "pmtInterval": {
+      "@id": "pan:pmt_interval",
+      "@type": "xsd:string"
+    },
+    "pmtPid": {
+      "@id": "pan:pmt_pid",
+      "@type": "xsd:string"
+    },
+    "programNum": {
+      "@id": "pan:program_num",
+      "@type": "xsd:string"
+    },
+    "scte35Behavior": {
+      "@id": "pan:scte35_behavior",
+      "@type": "xsd:string"
+    },
+    "scte35Pid": {
+      "@id": "pan:scte35_pid",
+      "@type": "xsd:string"
+    },
+    "timedMetadataPid": {
+      "@id": "pan:timed_metadata_pid",
+      "@type": "xsd:string"
+    },
+    "transportStreamId": {
+      "@id": "pan:transport_stream_id",
+      "@type": "xsd:string"
+    },
+    "videoPid": {
+      "@id": "pan:video_pid",
+      "@type": "xsd:string"
+    },
+    "adAvailOffset": {
+      "@id": "pan:ad_avail_offset",
+      "@type": "xsd:string"
+    },
+    "poisEndpoint": {
+      "@id": "pan:pois_endpoint",
+      "@type": "xsd:string"
+    },
+    "zoneIdentity": {
+      "@id": "pan:zone_identity",
+      "@type": "xsd:string"
+    },
+    "currencyCode": {
+      "@id": "pan:currency_code",
+      "@type": "xsd:string"
+    },
+    "durationUnits": {
+      "@id": "pan:duration_units",
+      "@type": "xsd:string"
+    },
+    "end": {
+      "@id": "pan:end",
+      "@type": "xsd:string"
+    },
+    "fixedPrice": {
+      "@id": "pan:fixed_price",
+      "@type": "xsd:string"
+    },
+    "offeringDescription": {
+      "@id": "pan:offering_description",
+      "@type": "xsd:string"
+    },
+    "offeringId": {
+      "@id": "pan:offering_id",
+      "@type": "xsd:string"
+    },
+    "offeringType": {
+      "@id": "pan:offering_type",
+      "@type": "xsd:string"
+    },
+    "region": {
+      "@id": "pan:region",
+      "@type": "xsd:string"
+    },
+    "reservationId": {
+      "@id": "pan:reservation_id",
+      "@type": "xsd:string"
+    },
+    "resourceSpecification": {
+      "@id": "pan:resource_specification",
+      "@type": "xsd:string"
+    },
+    "usagePrice": {
+      "@id": "pan:usage_price",
+      "@type": "xsd:string"
+    },
+    "httpTransferMode": {
+      "@id": "pan:http_transfer_mode",
+      "@type": "xsd:string"
+    },
+    "salt": {
+      "@id": "pan:salt",
+      "@type": "xsd:string"
+    },
+    "token": {
+      "@id": "pan:token",
+      "@type": "xsd:string"
+    },
+    "dnsAddresses": {
+      "@id": "pan:dns_addresses",
+      "@type": "xsd:string"
+    },
+    "gateway": {
+      "@id": "pan:gateway",
+      "@type": "xsd:string"
+    },
+    "ipAddress": {
+      "@id": "pan:ip_address",
+      "@type": "xsd:string"
+    },
+    "ipScheme": {
+      "@id": "pan:ip_scheme",
+      "@type": "xsd:string"
+    },
+    "subnetMask": {
+      "@id": "pan:subnet_mask",
+      "@type": "xsd:string"
+    },
+    "adMarkers": {
+      "@id": "pan:ad_markers",
+      "@type": "xsd:string"
+    },
+    "baseUrlContent": {
+      "@id": "pan:base_url_content",
+      "@type": "xsd:string"
+    },
+    "baseUrlContent1": {
+      "@id": "pan:base_url_content1",
+      "@type": "xsd:string"
+    },
+    "baseUrlManifest": {
+      "@id": "pan:base_url_manifest",
+      "@type": "xsd:string"
+    },
+    "baseUrlManifest1": {
+      "@id": "pan:base_url_manifest1",
+      "@type": "xsd:string"
+    },
+    "captionLanguageMappings": {
+      "@id": "pan:caption_language_mappings",
+      "@type": "xsd:string"
+    },
+    "captionLanguageSetting": {
+      "@id": "pan:caption_language_setting",
+      "@type": "xsd:string"
+    },
+    "clientCache": {
+      "@id": "pan:client_cache",
+      "@type": "xsd:string"
+    },
+    "codecSpecification": {
+      "@id": "pan:codec_specification",
+      "@type": "xsd:string"
+    },
+    "constantIv": {
+      "@id": "pan:constant_iv",
+      "@type": "xsd:string"
+    },
+    "directoryStructure": {
+      "@id": "pan:directory_structure",
+      "@type": "xsd:string"
+    },
+    "discontinuityTags": {
+      "@id": "pan:discontinuity_tags",
+      "@type": "xsd:string"
+    },
+    "encryptionType": {
+      "@id": "pan:encryption_type",
+      "@type": "xsd:string"
+    },
+    "hlsCdnSettings": {
+      "@id": "pan:hls_cdn_settings",
+      "@type": "xsd:string"
+    },
+    "hlsId3SegmentTagging": {
+      "@id": "pan:hls_id3_segment_tagging",
+      "@type": "xsd:string"
+    },
+    "iFrameOnlyPlaylists": {
+      "@id": "pan:i_frame_only_playlists",
+      "@type": "xsd:string"
+    },
+    "incompleteSegmentBehavior": {
+      "@id": "pan:incomplete_segment_behavior",
+      "@type": "xsd:string"
+    },
+    "indexNSegments": {
+      "@id": "pan:index_n_segments",
+      "@type": "xsd:string"
+    },
+    "ivInManifest": {
+      "@id": "pan:iv_in_manifest",
+      "@type": "xsd:string"
+    },
+    "ivSource": {
+      "@id": "pan:iv_source",
+      "@type": "xsd:string"
+    },
+    "keepSegments": {
+      "@id": "pan:keep_segments",
+      "@type": "xsd:string"
+    },
+    "keyFormat": {
+      "@id": "pan:key_format",
+      "@type": "xsd:string"
+    },
+    "keyFormatVersions": {
+      "@id": "pan:key_format_versions",
+      "@type": "xsd:string"
+    },
+    "keyProviderSettings": {
+      "@id": "pan:key_provider_settings",
+      "@type": "xsd:string"
+    },
+    "manifestCompression": {
+      "@id": "pan:manifest_compression",
+      "@type": "xsd:string"
+    },
+    "manifestDurationFormat": {
+      "@id": "pan:manifest_duration_format",
+      "@type": "xsd:string"
+    },
+    "minSegmentLength": {
+      "@id": "pan:min_segment_length",
+      "@type": "xsd:string"
+    },
+    "outputSelection": {
+      "@id": "pan:output_selection",
+      "@type": "xsd:string"
+    },
+    "programDateTime": {
+      "@id": "pan:program_date_time",
+      "@type": "xsd:string"
+    },
+    "programDateTimeClock": {
+      "@id": "pan:program_date_time_clock",
+      "@type": "xsd:string"
+    },
+    "programDateTimePeriod": {
+      "@id": "pan:program_date_time_period",
+      "@type": "xsd:string"
+    },
+    "redundantManifest": {
+      "@id": "pan:redundant_manifest",
+      "@type": "xsd:string"
+    },
+    "segmentLength": {
+      "@id": "pan:segment_length",
+      "@type": "xsd:string"
+    },
+    "segmentsPerSubdirectory": {
+      "@id": "pan:segments_per_subdirectory",
+      "@type": "xsd:string"
+    },
+    "streamInfResolution": {
+      "@id": "pan:stream_inf_resolution",
+      "@type": "xsd:string"
+    },
+    "timedMetadataId3Frame": {
+      "@id": "pan:timed_metadata_id3_frame",
+      "@type": "xsd:string"
+    },
+    "timedMetadataId3Period": {
+      "@id": "pan:timed_metadata_id3_period",
+      "@type": "xsd:string"
+    },
+    "timestampDeltaMilliseconds": {
+      "@id": "pan:timestamp_delta_milliseconds",
+      "@type": "xsd:string"
+    },
+    "tsFileMode": {
+      "@id": "pan:ts_file_mode",
+      "@type": "xsd:string"
+    },
+    "outputRectangle": {
+      "@id": "pan:output_rectangle",
+      "@type": "xsd:string"
+    },
+    "pageNumber": {
+      "@id": "pan:page_number",
+      "@type": "xsd:string"
+    },
+    "inputType": {
+      "@id": "pan:input_type",
+      "@type": "xsd:string"
+    },
+    "profile": {
+      "@id": "pan:profile",
+      "@type": "xsd:string"
+    },
+    "rateControlMode": {
+      "@id": "pan:rate_control_mode",
+      "@type": "xsd:string"
+    },
+    "rawFormat": {
+      "@id": "pan:raw_format",
+      "@type": "xsd:string"
+    },
+    "spec": {
+      "@id": "pan:spec",
+      "@type": "xsd:string"
+    },
+    "vbrQuality": {
+      "@id": "pan:vbr_quality",
+      "@type": "xsd:string"
+    },
+    "ancillarySourceSettings": {
+      "@id": "pan:ancillary_source_settings",
+      "@type": "xsd:string"
+    },
+    "aribSourceSettings": {
+      "@id": "pan:arib_source_settings",
+      "@type": "xsd:string"
+    },
+    "dvbSubSourceSettings": {
+      "@id": "pan:dvb_sub_source_settings",
+      "@type": "xsd:string"
+    },
+    "embeddedSourceSettings": {
+      "@id": "pan:embedded_source_settings",
+      "@type": "xsd:string"
+    },
+    "scte20SourceSettings": {
+      "@id": "pan:scte20_source_settings",
+      "@type": "xsd:string"
+    },
+    "scte27SourceSettings": {
+      "@id": "pan:scte27_source_settings",
+      "@type": "xsd:string"
+    },
+    "teletextSourceSettings": {
+      "@id": "pan:teletext_source_settings",
+      "@type": "xsd:string"
+    },
+    "colorSpacePassthroughSettings": {
+      "@id": "pan:color_space_passthrough_settings",
+      "@type": "xsd:string"
+    },
+    "dolbyVision81Settings": {
+      "@id": "pan:dolby_vision81_settings",
+      "@type": "xsd:string"
+    },
+    "rec601Settings": {
+      "@id": "pan:rec601_settings",
+      "@type": "xsd:string"
+    },
+    "rec709Settings": {
+      "@id": "pan:rec709_settings",
+      "@type": "xsd:string"
+    },
+    "initialAudioGain": {
+      "@id": "pan:initial_audio_gain",
+      "@type": "xsd:string"
+    },
+    "inputEndAction": {
+      "@id": "pan:input_end_action",
+      "@type": "xsd:string"
+    },
+    "inputLossBehavior": {
+      "@id": "pan:input_loss_behavior",
+      "@type": "xsd:string"
+    },
+    "outputLockingMode": {
+      "@id": "pan:output_locking_mode",
+      "@type": "xsd:string"
+    },
+    "outputTimingSource": {
+      "@id": "pan:output_timing_source",
+      "@type": "xsd:string"
+    },
+    "supportLowFramerateInputs": {
+      "@id": "pan:support_low_framerate_inputs",
+      "@type": "xsd:string"
+    },
+    "failed": {
+      "@id": "pan:failed",
+      "@type": "xsd:string"
+    },
+    "successful": {
+      "@id": "pan:successful",
+      "@type": "xsd:string"
+    },
+    "audioSelectors": {
+      "@id": "pan:audio_selectors",
+      "@type": "xsd:string"
+    },
+    "captionSelectors": {
+      "@id": "pan:caption_selectors",
+      "@type": "xsd:string"
+    },
+    "deblockFilter": {
+      "@id": "pan:deblock_filter",
+      "@type": "xsd:string"
+    },
+    "denoiseFilter": {
+      "@id": "pan:denoise_filter",
+      "@type": "xsd:string"
+    },
+    "filterStrength": {
+      "@id": "pan:filter_strength",
+      "@type": "xsd:string"
+    },
+    "inputFilter": {
+      "@id": "pan:input_filter",
+      "@type": "xsd:string"
+    },
+    "networkInputSettings": {
+      "@id": "pan:network_input_settings",
+      "@type": "xsd:string"
+    },
+    "smpte2038DataPreference": {
+      "@id": "pan:smpte2038_data_preference",
+      "@type": "xsd:string"
+    },
+    "sourceEndBehavior": {
+      "@id": "pan:source_end_behavior",
+      "@type": "xsd:string"
+    },
+    "videoSelector": {
+      "@id": "pan:video_selector",
+      "@type": "xsd:string"
+    },
+    "m2tsSettings": {
+      "@id": "pan:m2ts_settings",
+      "@type": "xsd:string"
+    },
+    "tracks": {
+      "@id": "pan:tracks",
+      "@type": "xsd:string"
+    },
+    "dolbyEDecode": {
+      "@id": "pan:dolby_e_decode",
+      "@type": "xsd:string"
+    },
+    "inputSecurityGroups": {
+      "@id": "pan:input_security_groups",
+      "@type": "xsd:string"
+    },
+    "repInterval": {
+      "@id": "pan:rep_interval",
+      "@type": "xsd:string"
+    },
+    "gain": {
+      "@id": "pan:gain",
+      "@type": "xsd:string"
+    },
+    "inputChannel": {
+      "@id": "pan:input_channel",
+      "@type": "xsd:string"
+    },
+    "attenuationControl": {
+      "@id": "pan:attenuation_control",
+      "@type": "xsd:string"
+    },
+    "dcFilter": {
+      "@id": "pan:dc_filter",
+      "@type": "xsd:string"
+    },
+    "drcLine": {
+      "@id": "pan:drc_line",
+      "@type": "xsd:string"
+    },
+    "drcRf": {
+      "@id": "pan:drc_rf",
+      "@type": "xsd:string"
+    },
+    "lfeControl": {
+      "@id": "pan:lfe_control",
+      "@type": "xsd:string"
+    },
+    "loRoCenterMixLevel": {
+      "@id": "pan:lo_ro_center_mix_level",
+      "@type": "xsd:string"
+    },
+    "loRoSurroundMixLevel": {
+      "@id": "pan:lo_ro_surround_mix_level",
+      "@type": "xsd:string"
+    },
+    "ltRtCenterMixLevel": {
+      "@id": "pan:lt_rt_center_mix_level",
+      "@type": "xsd:string"
+    },
+    "ltRtSurroundMixLevel": {
+      "@id": "pan:lt_rt_surround_mix_level",
+      "@type": "xsd:string"
+    },
+    "passthroughControl": {
+      "@id": "pan:passthrough_control",
+      "@type": "xsd:string"
+    },
+    "phaseControl": {
+      "@id": "pan:phase_control",
+      "@type": "xsd:string"
+    },
+    "stereoDownmix": {
+      "@id": "pan:stereo_downmix",
+      "@type": "xsd:string"
+    },
+    "surroundExMode": {
+      "@id": "pan:surround_ex_mode",
+      "@type": "xsd:string"
+    },
+    "surroundMode": {
+      "@id": "pan:surround_mode",
+      "@type": "xsd:string"
+    },
+    "availSettings": {
+      "@id": "pan:avail_settings",
+      "@type": "xsd:string"
+    },
+    "columnDepth": {
+      "@id": "pan:column_depth",
+      "@type": "xsd:string"
+    },
+    "includeFec": {
+      "@id": "pan:include_fec",
+      "@type": "xsd:string"
+    },
+    "rowLength": {
+      "@id": "pan:row_length",
+      "@type": "xsd:string"
+    },
+    "audioSilenceThresholdMsec": {
+      "@id": "pan:audio_silence_threshold_msec",
+      "@type": "xsd:string"
+    },
+    "frameCaptureSettings": {
+      "@id": "pan:frame_capture_settings",
+      "@type": "xsd:string"
+    },
+    "h264Settings": {
+      "@id": "pan:h264_settings",
+      "@type": "xsd:string"
+    },
+    "h265Settings": {
+      "@id": "pan:h265_settings",
+      "@type": "xsd:string"
+    },
+    "mpeg2Settings": {
+      "@id": "pan:mpeg2_settings",
+      "@type": "xsd:string"
+    },
+    "motionGraphicsInsertion": {
+      "@id": "pan:motion_graphics_insertion",
+      "@type": "xsd:string"
+    },
+    "motionGraphicsSettings": {
+      "@id": "pan:motion_graphics_settings",
+      "@type": "xsd:string"
+    },
+    "channelMappings": {
+      "@id": "pan:channel_mappings",
+      "@type": "xsd:string"
+    },
+    "channelsIn": {
+      "@id": "pan:channels_in",
+      "@type": "xsd:string"
+    },
+    "channelsOut": {
+      "@id": "pan:channels_out",
+      "@type": "xsd:string"
+    },
+    "force": {
+      "@id": "pan:force",
+      "@type": "xsd:string"
+    },
+    "constantBitrate": {
+      "@id": "pan:constant_bitrate",
+      "@type": "xsd:string"
+    },
+    "statmuxSettings": {
+      "@id": "pan:statmux_settings",
+      "@type": "xsd:string"
+    },
+    "targetRegion": {
+      "@id": "pan:target_region",
+      "@type": "xsd:string"
+    },
+    "transferMessage": {
+      "@id": "pan:transfer_message",
+      "@type": "xsd:string"
+    },
+    "archiveGroupSettings": {
+      "@id": "pan:archive_group_settings",
+      "@type": "xsd:string"
+    },
+    "frameCaptureGroupSettings": {
+      "@id": "pan:frame_capture_group_settings",
+      "@type": "xsd:string"
+    },
+    "hlsGroupSettings": {
+      "@id": "pan:hls_group_settings",
+      "@type": "xsd:string"
+    },
+    "mediaPackageGroupSettings": {
+      "@id": "pan:media_package_group_settings",
+      "@type": "xsd:string"
+    },
+    "msSmoothGroupSettings": {
+      "@id": "pan:ms_smooth_group_settings",
+      "@type": "xsd:string"
+    },
+    "multiplexGroupSettings": {
+      "@id": "pan:multiplex_group_settings",
+      "@type": "xsd:string"
+    },
+    "rtmpGroupSettings": {
+      "@id": "pan:rtmp_group_settings",
+      "@type": "xsd:string"
+    },
+    "udpGroupSettings": {
+      "@id": "pan:udp_group_settings",
+      "@type": "xsd:string"
+    },
+    "minimumBitrate": {
+      "@id": "pan:minimum_bitrate",
+      "@type": "xsd:string"
+    },
+    "priority": {
+      "@id": "pan:priority",
+      "@type": "xsd:string"
+    },
+    "outputSdt": {
+      "@id": "pan:output_sdt",
+      "@type": "xsd:string"
+    },
+    "serviceProviderName": {
+      "@id": "pan:service_provider_name",
+      "@type": "xsd:string"
+    },
+    "archiveOutputSettings": {
+      "@id": "pan:archive_output_settings",
+      "@type": "xsd:string"
+    },
+    "frameCaptureOutputSettings": {
+      "@id": "pan:frame_capture_output_settings",
+      "@type": "xsd:string"
+    },
+    "hlsOutputSettings": {
+      "@id": "pan:hls_output_settings",
+      "@type": "xsd:string"
+    },
+    "mediaPackageOutputSettings": {
+      "@id": "pan:media_package_output_settings",
+      "@type": "xsd:string"
+    },
+    "msSmoothOutputSettings": {
+      "@id": "pan:ms_smooth_output_settings",
+      "@type": "xsd:string"
+    },
+    "multiplexOutputSettings": {
+      "@id": "pan:multiplex_output_settings",
+      "@type": "xsd:string"
+    },
+    "rtmpOutputSettings": {
+      "@id": "pan:rtmp_output_settings",
+      "@type": "xsd:string"
+    },
+    "udpOutputSettings": {
+      "@id": "pan:udp_output_settings",
+      "@type": "xsd:string"
+    },
+    "nielsenWatermarksSettings": {
+      "@id": "pan:nielsen_watermarks_settings",
+      "@type": "xsd:string"
+    },
+    "inputDevices": {
+      "@id": "pan:input_devices",
+      "@type": "xsd:string"
+    },
+    "mediaConnectFlows": {
+      "@id": "pan:media_connect_flows",
+      "@type": "xsd:string"
+    },
+    "sources": {
+      "@id": "pan:sources",
+      "@type": "xsd:string"
+    },
+    "noRegionalBlackoutFlag": {
+      "@id": "pan:no_regional_blackout_flag",
+      "@type": "xsd:string"
+    },
+    "webDeliveryAllowedFlag": {
+      "@id": "pan:web_delivery_allowed_flag",
+      "@type": "xsd:string"
+    },
+    "channels": {
+      "@id": "pan:channels",
+      "@type": "xsd:string"
+    },
+    "esam": {
+      "@id": "pan:esam",
+      "@type": "xsd:string"
+    },
+    "scte35SpliceInsert": {
+      "@id": "pan:scte35_splice_insert",
+      "@type": "xsd:string"
+    },
+    "scte35TimeSignalApos": {
+      "@id": "pan:scte35_time_signal_apos",
+      "@type": "xsd:string"
+    },
+    "authenticationScheme": {
+      "@id": "pan:authentication_scheme",
+      "@type": "xsd:string"
+    },
+    "cacheFullBehavior": {
+      "@id": "pan:cache_full_behavior",
+      "@type": "xsd:string"
+    },
+    "cacheLength": {
+      "@id": "pan:cache_length",
+      "@type": "xsd:string"
+    },
+    "captionData": {
+      "@id": "pan:caption_data",
+      "@type": "xsd:string"
+    },
+    "reservations": {
+      "@id": "pan:reservations",
+      "@type": "xsd:string"
+    },
+    "mediaPackageSettings": {
+      "@id": "pan:media_package_settings",
+      "@type": "xsd:string"
+    },
+    "settings": {
+      "@id": "pan:settings",
+      "@type": "xsd:string"
+    },
+    "h265PackagingType": {
+      "@id": "pan:h265_packaging_type",
+      "@type": "xsd:string"
+    },
+    "absentInputAudioBehavior": {
+      "@id": "pan:absent_input_audio_behavior",
+      "@type": "xsd:string"
+    },
+    "arib": {
+      "@id": "pan:arib",
+      "@type": "xsd:string"
+    },
+    "aribCaptionsPid": {
+      "@id": "pan:arib_captions_pid",
+      "@type": "xsd:string"
+    },
+    "aribCaptionsPidControl": {
+      "@id": "pan:arib_captions_pid_control",
+      "@type": "xsd:string"
+    },
+    "audioBufferModel": {
+      "@id": "pan:audio_buffer_model",
+      "@type": "xsd:string"
+    },
+    "audioStreamType": {
+      "@id": "pan:audio_stream_type",
+      "@type": "xsd:string"
+    },
+    "bufferModel": {
+      "@id": "pan:buffer_model",
+      "@type": "xsd:string"
+    },
+    "ccDescriptor": {
+      "@id": "pan:cc_descriptor",
+      "@type": "xsd:string"
+    },
+    "dvbNitSettings": {
+      "@id": "pan:dvb_nit_settings",
+      "@type": "xsd:string"
+    },
+    "dvbSdtSettings": {
+      "@id": "pan:dvb_sdt_settings",
+      "@type": "xsd:string"
+    },
+    "dvbSubPids": {
+      "@id": "pan:dvb_sub_pids",
+      "@type": "xsd:string"
+    },
+    "dvbTdtSettings": {
+      "@id": "pan:dvb_tdt_settings",
+      "@type": "xsd:string"
+    },
+    "dvbTeletextPid": {
+      "@id": "pan:dvb_teletext_pid",
+      "@type": "xsd:string"
+    },
+    "ebif": {
+      "@id": "pan:ebif",
+      "@type": "xsd:string"
+    },
+    "ebpAudioInterval": {
+      "@id": "pan:ebp_audio_interval",
+      "@type": "xsd:string"
+    },
+    "ebpLookaheadMs": {
+      "@id": "pan:ebp_lookahead_ms",
+      "@type": "xsd:string"
+    },
+    "ebpPlacement": {
+      "@id": "pan:ebp_placement",
+      "@type": "xsd:string"
+    },
+    "esRateInPes": {
+      "@id": "pan:es_rate_in_pes",
+      "@type": "xsd:string"
+    },
+    "etvPlatformPid": {
+      "@id": "pan:etv_platform_pid",
+      "@type": "xsd:string"
+    },
+    "etvSignalPid": {
+      "@id": "pan:etv_signal_pid",
+      "@type": "xsd:string"
+    },
+    "fragmentTime": {
+      "@id": "pan:fragment_time",
+      "@type": "xsd:string"
+    },
+    "klv": {
+      "@id": "pan:klv",
+      "@type": "xsd:string"
+    },
+    "klvDataPids": {
+      "@id": "pan:klv_data_pids",
+      "@type": "xsd:string"
+    },
+    "nullPacketBitrate": {
+      "@id": "pan:null_packet_bitrate",
+      "@type": "xsd:string"
+    },
+    "rateMode": {
+      "@id": "pan:rate_mode",
+      "@type": "xsd:string"
+    },
+    "scte27Pids": {
+      "@id": "pan:scte27_pids",
+      "@type": "xsd:string"
+    },
+    "scte35Control": {
+      "@id": "pan:scte35_control",
+      "@type": "xsd:string"
+    },
+    "segmentationMarkers": {
+      "@id": "pan:segmentation_markers",
+      "@type": "xsd:string"
+    },
+    "segmentationStyle": {
+      "@id": "pan:segmentation_style",
+      "@type": "xsd:string"
+    },
+    "segmentationTime": {
+      "@id": "pan:segmentation_time",
+      "@type": "xsd:string"
+    },
+    "scte35PrerollPullupMilliseconds": {
+      "@id": "pan:scte35_preroll_pullup_milliseconds",
+      "@type": "xsd:string"
+    },
+    "multiplexes": {
+      "@id": "pan:multiplexes",
+      "@type": "xsd:string"
+    },
+    "multiplexPrograms": {
+      "@id": "pan:multiplex_programs",
+      "@type": "xsd:string"
+    },
+    "actionName": {
+      "@id": "pan:action_name",
+      "@type": "xsd:string"
+    },
+    "scheduleActionSettings": {
+      "@id": "pan:schedule_action_settings",
+      "@type": "xsd:string"
+    },
+    "scheduleActionStartSettings": {
+      "@id": "pan:schedule_action_start_settings",
+      "@type": "xsd:string"
+    },
+    "maximumFramerate": {
+      "@id": "pan:maximum_framerate",
+      "@type": "xsd:string"
+    },
+    "resourceType": {
+      "@id": "pan:resource_type",
+      "@type": "xsd:string"
+    },
+    "specialFeature": {
+      "@id": "pan:special_feature",
+      "@type": "xsd:string"
+    },
+    "videoQuality": {
+      "@id": "pan:video_quality",
+      "@type": "xsd:string"
+    },
+    "time": {
+      "@id": "pan:time",
+      "@type": "xsd:string"
+    },
+    "nielsenCbetSettings": {
+      "@id": "pan:nielsen_cbet_settings",
+      "@type": "xsd:string"
+    },
+    "nielsenDistributionType": {
+      "@id": "pan:nielsen_distribution_type",
+      "@type": "xsd:string"
+    },
+    "nielsenNaesIiNwSettings": {
+      "@id": "pan:nielsen_naes_ii_nw_settings",
+      "@type": "xsd:string"
+    },
+    "privateMetadataPid": {
+      "@id": "pan:private_metadata_pid",
+      "@type": "xsd:string"
+    },
+    "pipelineId": {
+      "@id": "pan:pipeline_id",
+      "@type": "xsd:string"
+    },
+    "maximumVideoBufferDelayMilliseconds": {
+      "@id": "pan:maximum_video_buffer_delay_milliseconds",
+      "@type": "xsd:string"
+    },
+    "transportStreamBitrate": {
+      "@id": "pan:transport_stream_bitrate",
+      "@type": "xsd:string"
+    },
+    "transportStreamReservedBitrate": {
+      "@id": "pan:transport_stream_reserved_bitrate",
+      "@type": "xsd:string"
+    },
+    "selectorSettings": {
+      "@id": "pan:selector_settings",
+      "@type": "xsd:string"
+    },
+    "bufFillPct": {
+      "@id": "pan:buf_fill_pct",
+      "@type": "xsd:string"
+    },
+    "bufSize": {
+      "@id": "pan:buf_size",
+      "@type": "xsd:string"
+    },
+    "colorSpaceSettings": {
+      "@id": "pan:color_space_settings",
+      "@type": "xsd:string"
+    },
+    "entropyEncoding": {
+      "@id": "pan:entropy_encoding",
+      "@type": "xsd:string"
+    },
+    "flickerAq": {
+      "@id": "pan:flicker_aq",
+      "@type": "xsd:string"
+    },
+    "forceFieldPictures": {
+      "@id": "pan:force_field_pictures",
+      "@type": "xsd:string"
+    },
+    "framerateControl": {
+      "@id": "pan:framerate_control",
+      "@type": "xsd:string"
+    },
+    "gopBReference": {
+      "@id": "pan:gop_b_reference",
+      "@type": "xsd:string"
+    },
+    "level": {
+      "@id": "pan:level",
+      "@type": "xsd:string"
+    },
+    "lookAheadRateControl": {
+      "@id": "pan:look_ahead_rate_control",
+      "@type": "xsd:string"
+    },
+    "maxBitrate": {
+      "@id": "pan:max_bitrate",
+      "@type": "xsd:string"
+    },
+    "minIInterval": {
+      "@id": "pan:min_i_interval",
+      "@type": "xsd:string"
+    },
+    "numRefFrames": {
+      "@id": "pan:num_ref_frames",
+      "@type": "xsd:string"
+    },
+    "parControl": {
+      "@id": "pan:par_control",
+      "@type": "xsd:string"
+    },
+    "parDenominator": {
+      "@id": "pan:par_denominator",
+      "@type": "xsd:string"
+    },
+    "parNumerator": {
+      "@id": "pan:par_numerator",
+      "@type": "xsd:string"
+    },
+    "qualityLevel": {
+      "@id": "pan:quality_level",
+      "@type": "xsd:string"
+    },
+    "qvbrQualityLevel": {
+      "@id": "pan:qvbr_quality_level",
+      "@type": "xsd:string"
+    },
+    "sceneChangeDetect": {
+      "@id": "pan:scene_change_detect",
+      "@type": "xsd:string"
+    },
+    "slices": {
+      "@id": "pan:slices",
+      "@type": "xsd:string"
+    },
+    "softness": {
+      "@id": "pan:softness",
+      "@type": "xsd:string"
+    },
+    "spatialAq": {
+      "@id": "pan:spatial_aq",
+      "@type": "xsd:string"
+    },
+    "syntax": {
+      "@id": "pan:syntax",
+      "@type": "xsd:string"
+    },
+    "temporalAq": {
+      "@id": "pan:temporal_aq",
+      "@type": "xsd:string"
+    },
+    "hlsInputSettings": {
+      "@id": "pan:hls_input_settings",
+      "@type": "xsd:string"
+    },
+    "serverValidation": {
+      "@id": "pan:server_validation",
+      "@type": "xsd:string"
+    },
+    "aribDestinationSettings": {
+      "@id": "pan:arib_destination_settings",
+      "@type": "xsd:string"
+    },
+    "burnInDestinationSettings": {
+      "@id": "pan:burn_in_destination_settings",
+      "@type": "xsd:string"
+    },
+    "dvbSubDestinationSettings": {
+      "@id": "pan:dvb_sub_destination_settings",
+      "@type": "xsd:string"
+    },
+    "ebuTtDDestinationSettings": {
+      "@id": "pan:ebu_tt_d_destination_settings",
+      "@type": "xsd:string"
+    },
+    "embeddedDestinationSettings": {
+      "@id": "pan:embedded_destination_settings",
+      "@type": "xsd:string"
+    },
+    "embeddedPlusScte20DestinationSettings": {
+      "@id": "pan:embedded_plus_scte20_destination_settings",
+      "@type": "xsd:string"
+    },
+    "rtmpCaptionInfoDestinationSettings": {
+      "@id": "pan:rtmp_caption_info_destination_settings",
+      "@type": "xsd:string"
+    },
+    "scte20PlusEmbeddedDestinationSettings": {
+      "@id": "pan:scte20_plus_embedded_destination_settings",
+      "@type": "xsd:string"
+    },
+    "scte27DestinationSettings": {
+      "@id": "pan:scte27_destination_settings",
+      "@type": "xsd:string"
+    },
+    "smpteTtDestinationSettings": {
+      "@id": "pan:smpte_tt_destination_settings",
+      "@type": "xsd:string"
+    },
+    "teletextDestinationSettings": {
+      "@id": "pan:teletext_destination_settings",
+      "@type": "xsd:string"
+    },
+    "ttmlDestinationSettings": {
+      "@id": "pan:ttml_destination_settings",
+      "@type": "xsd:string"
+    },
+    "webvttDestinationSettings": {
+      "@id": "pan:webvtt_destination_settings",
+      "@type": "xsd:string"
+    },
+    "segmentationDescriptorScte35DescriptorSettings": {
+      "@id": "pan:segmentation_descriptor_scte35_descriptor_settings",
+      "@type": "xsd:string"
+    },
+    "track": {
+      "@id": "pan:track",
+      "@type": "xsd:string"
+    },
+    "distributorId": {
+      "@id": "pan:distributor_id",
+      "@type": "xsd:string"
+    },
+    "nielsenPcmToId3Tagging": {
+      "@id": "pan:nielsen_pcm_to_id3_tagging",
+      "@type": "xsd:string"
+    },
+    "offerings": {
+      "@id": "pan:offerings",
+      "@type": "xsd:string"
+    },
+    "blackDetectThreshold": {
+      "@id": "pan:black_detect_threshold",
+      "@type": "xsd:string"
+    },
+    "videoBlackThresholdMsec": {
+      "@id": "pan:video_black_threshold_msec",
+      "@type": "xsd:string"
+    },
+    "copyrightHolder": {
+      "@id": "pan:copyright_holder",
+      "@type": "xsd:string"
+    },
+    "fillLineGap": {
+      "@id": "pan:fill_line_gap",
+      "@type": "xsd:string"
+    },
+    "fontFamily": {
+      "@id": "pan:font_family",
+      "@type": "xsd:string"
+    },
+    "accessibility": {
+      "@id": "pan:accessibility",
+      "@type": "xsd:string"
+    },
+    "captionSelectorName": {
+      "@id": "pan:caption_selector_name",
+      "@type": "xsd:string"
+    },
+    "destinationSettings": {
+      "@id": "pan:destination_settings",
+      "@type": "xsd:string"
+    },
+    "attachedChannels": {
+      "@id": "pan:attached_channels",
+      "@type": "xsd:string"
+    },
+    "inputClass": {
+      "@id": "pan:input_class",
+      "@type": "xsd:string"
+    },
+    "inputPartnerIds": {
+      "@id": "pan:input_partner_ids",
+      "@type": "xsd:string"
+    },
+    "inputSourceType": {
+      "@id": "pan:input_source_type",
+      "@type": "xsd:string"
+    },
+    "securityGroups": {
+      "@id": "pan:security_groups",
+      "@type": "xsd:string"
+    },
+    "audioGroupId": {
+      "@id": "pan:audio_group_id",
+      "@type": "xsd:string"
+    },
+    "audioOnlyImage": {
+      "@id": "pan:audio_only_image",
+      "@type": "xsd:string"
+    },
+    "audioTrackType": {
+      "@id": "pan:audio_track_type",
+      "@type": "xsd:string"
+    },
+    "segmentType": {
+      "@id": "pan:segment_type",
+      "@type": "xsd:string"
+    },
+    "networkName": {
+      "@id": "pan:network_name",
+      "@type": "xsd:string"
+    },
+    "hlsAkamaiSettings": {
+      "@id": "pan:hls_akamai_settings",
+      "@type": "xsd:string"
+    },
+    "hlsBasicPutSettings": {
+      "@id": "pan:hls_basic_put_settings",
+      "@type": "xsd:string"
+    },
+    "hlsMediaStoreSettings": {
+      "@id": "pan:hls_media_store_settings",
+      "@type": "xsd:string"
+    },
+    "hlsS3Settings": {
+      "@id": "pan:hls_s3_settings",
+      "@type": "xsd:string"
+    },
+    "hlsWebdavSettings": {
+      "@id": "pan:hls_webdav_settings",
+      "@type": "xsd:string"
+    },
+    "audioDescriptions": {
+      "@id": "pan:audio_descriptions",
+      "@type": "xsd:string"
+    },
+    "availBlanking": {
+      "@id": "pan:avail_blanking",
+      "@type": "xsd:string"
+    },
+    "availConfiguration": {
+      "@id": "pan:avail_configuration",
+      "@type": "xsd:string"
+    },
+    "blackoutSlate": {
+      "@id": "pan:blackout_slate",
+      "@type": "xsd:string"
+    },
+    "captionDescriptions": {
+      "@id": "pan:caption_descriptions",
+      "@type": "xsd:string"
+    },
+    "featureActivations": {
+      "@id": "pan:feature_activations",
+      "@type": "xsd:string"
+    },
+    "globalConfiguration": {
+      "@id": "pan:global_configuration",
+      "@type": "xsd:string"
+    },
+    "motionGraphicsConfiguration": {
+      "@id": "pan:motion_graphics_configuration",
+      "@type": "xsd:string"
+    },
+    "nielsenConfiguration": {
+      "@id": "pan:nielsen_configuration",
+      "@type": "xsd:string"
+    },
+    "outputGroups": {
+      "@id": "pan:output_groups",
+      "@type": "xsd:string"
+    },
+    "timecodeConfig": {
+      "@id": "pan:timecode_config",
+      "@type": "xsd:string"
+    },
+    "videoDescriptions": {
+      "@id": "pan:video_descriptions",
+      "@type": "xsd:string"
+    },
+    "archiveAllowedFlag": {
+      "@id": "pan:archive_allowed_flag",
+      "@type": "xsd:string"
+    },
+    "deviceRestrictions": {
+      "@id": "pan:device_restrictions",
+      "@type": "xsd:string"
+    },
+    "entitlementArn": {
+      "@id": "pan:entitlement_arn",
+      "@type": "xsd:string"
+    },
+    "groupId": {
+      "@id": "pan:group_id",
+      "@type": "xsd:string"
+    },
+    "sourceIp": {
+      "@id": "pan:source_ip",
+      "@type": "xsd:string"
+    },
+    "lastFrameClippingBehavior": {
+      "@id": "pan:last_frame_clipping_behavior",
+      "@type": "xsd:string"
+    },
+    "position": {
+      "@id": "pan:position",
+      "@type": "xsd:string"
+    },
+    "prefix": {
+      "@id": "pan:prefix",
+      "@type": "xsd:string"
+    },
+    "scte35DescriptorSettings": {
+      "@id": "pan:scte35_descriptor_settings",
+      "@type": "xsd:string"
+    },
+    "activeInputAttachmentName": {
+      "@id": "pan:active_input_attachment_name",
+      "@type": "xsd:string"
+    },
+    "activeInputSwitchActionName": {
+      "@id": "pan:active_input_switch_action_name",
+      "@type": "xsd:string"
+    },
+    "activeMotionGraphicsActionName": {
+      "@id": "pan:active_motion_graphics_action_name",
+      "@type": "xsd:string"
+    },
+    "activeMotionGraphicsUri": {
+      "@id": "pan:active_motion_graphics_uri",
+      "@type": "xsd:string"
+    },
+    "rawSettings": {
+      "@id": "pan:raw_settings",
+      "@type": "xsd:string"
+    },
+    "activeInput": {
+      "@id": "pan:active_input",
+      "@type": "xsd:string"
+    },
+    "configuredInput": {
+      "@id": "pan:configured_input",
+      "@type": "xsd:string"
+    },
+    "deviceState": {
+      "@id": "pan:device_state",
+      "@type": "xsd:string"
+    },
+    "framerate": {
+      "@id": "pan:framerate",
+      "@type": "xsd:string"
+    },
+    "latencyMs": {
+      "@id": "pan:latency_ms",
+      "@type": "xsd:string"
+    },
+    "postFilterSharpening": {
+      "@id": "pan:post_filter_sharpening",
+      "@type": "xsd:string"
+    },
+    "strength": {
+      "@id": "pan:strength",
+      "@type": "xsd:string"
+    },
+    "deliveryRestrictions": {
+      "@id": "pan:delivery_restrictions",
+      "@type": "xsd:string"
+    },
+    "segmentNum": {
+      "@id": "pan:segment_num",
+      "@type": "xsd:string"
+    },
+    "segmentationCancelIndicator": {
+      "@id": "pan:segmentation_cancel_indicator",
+      "@type": "xsd:string"
+    },
+    "segmentationDuration": {
+      "@id": "pan:segmentation_duration",
+      "@type": "xsd:string"
+    },
+    "segmentationEventId": {
+      "@id": "pan:segmentation_event_id",
+      "@type": "xsd:string"
+    },
+    "segmentationTypeId": {
+      "@id": "pan:segmentation_type_id",
+      "@type": "xsd:string"
+    },
+    "segmentationUpid": {
+      "@id": "pan:segmentation_upid",
+      "@type": "xsd:string"
+    },
+    "segmentationUpidType": {
+      "@id": "pan:segmentation_upid_type",
+      "@type": "xsd:string"
+    },
+    "segmentsExpected": {
+      "@id": "pan:segments_expected",
+      "@type": "xsd:string"
+    },
+    "subSegmentNum": {
+      "@id": "pan:sub_segment_num",
+      "@type": "xsd:string"
+    },
+    "subSegmentsExpected": {
+      "@id": "pan:sub_segments_expected",
+      "@type": "xsd:string"
+    },
+    "publicAddressAllocationIds": {
+      "@id": "pan:public_address_allocation_ids",
+      "@type": "xsd:string"
+    },
+    "audioHlsRenditionSelection": {
+      "@id": "pan:audio_hls_rendition_selection",
+      "@type": "xsd:string"
+    },
+    "audioLanguageSelection": {
+      "@id": "pan:audio_language_selection",
+      "@type": "xsd:string"
+    },
+    "audioPidSelection": {
+      "@id": "pan:audio_pid_selection",
+      "@type": "xsd:string"
+    },
+    "audioTrackSelection": {
+      "@id": "pan:audio_track_selection",
+      "@type": "xsd:string"
+    },
+    "languageSelectionPolicy": {
+      "@id": "pan:language_selection_policy",
+      "@type": "xsd:string"
+    },
+    "availabilityZone": {
+      "@id": "pan:availability_zone",
+      "@type": "xsd:string"
+    },
+    "networkInterfaceId": {
+      "@id": "pan:network_interface_id",
+      "@type": "xsd:string"
+    },
+    "archiveCdnSettings": {
+      "@id": "pan:archive_cdn_settings",
+      "@type": "xsd:string"
+    },
+    "rolloverInterval": {
+      "@id": "pan:rollover_interval",
+      "@type": "xsd:string"
+    },
+    "code": {
+      "@id": "pan:code",
+      "@type": "xsd:string"
+    },
+    "fixedModeScheduleActionStartSettings": {
+      "@id": "pan:fixed_mode_schedule_action_start_settings",
+      "@type": "xsd:string"
+    },
+    "followModeScheduleActionStartSettings": {
+      "@id": "pan:follow_mode_schedule_action_start_settings",
+      "@type": "xsd:string"
+    },
+    "immediateModeScheduleActionStartSettings": {
+      "@id": "pan:immediate_mode_schedule_action_start_settings",
+      "@type": "xsd:string"
+    },
+    "inputLossThresholdMsec": {
+      "@id": "pan:input_loss_threshold_msec",
+      "@type": "xsd:string"
+    },
+    "inputChannelLevels": {
+      "@id": "pan:input_channel_levels",
+      "@type": "xsd:string"
+    },
+    "outputChannel": {
+      "@id": "pan:output_channel",
+      "@type": "xsd:string"
+    },
+    "programSelection": {
+      "@id": "pan:program_selection",
+      "@type": "xsd:string"
+    },
+    "alternativeTransferFunction": {
+      "@id": "pan:alternative_transfer_function",
+      "@type": "xsd:string"
+    },
+    "tier": {
+      "@id": "pan:tier",
+      "@type": "xsd:string"
+    },
+    "activeChannelPipeline": {
+      "@id": "pan:active_channel_pipeline",
+      "@type": "xsd:string"
+    },
+    "audioOnlyHlsSettings": {
+      "@id": "pan:audio_only_hls_settings",
+      "@type": "xsd:string"
+    },
+    "fmp4HlsSettings": {
+      "@id": "pan:fmp4_hls_settings",
+      "@type": "xsd:string"
+    },
+    "frameCaptureHlsSettings": {
+      "@id": "pan:frame_capture_hls_settings",
+      "@type": "xsd:string"
+    },
+    "standardHlsSettings": {
+      "@id": "pan:standard_hls_settings",
+      "@type": "xsd:string"
+    },
+    "hlsSettings": {
+      "@id": "pan:hls_settings",
+      "@type": "xsd:string"
+    },
+    "segmentModifier": {
+      "@id": "pan:segment_modifier",
+      "@type": "xsd:string"
+    },
+    "reserved": {
+      "@id": "pan:reserved",
+      "@type": "xsd:string"
+    },
+    "bitDepth": {
+      "@id": "pan:bit_depth",
+      "@type": "xsd:string"
+    },
+    "followPoint": {
+      "@id": "pan:follow_point",
+      "@type": "xsd:string"
+    },
+    "referenceActionName": {
+      "@id": "pan:reference_action_name",
+      "@type": "xsd:string"
+    },
+    "errorClearTimeMsec": {
+      "@id": "pan:error_clear_time_msec",
+      "@type": "xsd:string"
+    },
+    "failoverConditions": {
+      "@id": "pan:failover_conditions",
+      "@type": "xsd:string"
+    },
+    "inputPreference": {
+      "@id": "pan:input_preference",
+      "@type": "xsd:string"
+    },
+    "secondaryInputId": {
+      "@id": "pan:secondary_input_id",
+      "@type": "xsd:string"
+    },
+    "bandwidth": {
+      "@id": "pan:bandwidth",
+      "@type": "xsd:string"
+    },
+    "bufferSegments": {
+      "@id": "pan:buffer_segments",
+      "@type": "xsd:string"
+    },
+    "retries": {
+      "@id": "pan:retries",
+      "@type": "xsd:string"
+    },
+    "retryInterval": {
+      "@id": "pan:retry_interval",
+      "@type": "xsd:string"
+    },
+    "scte35Source": {
+      "@id": "pan:scte35_source",
+      "@type": "xsd:string"
+    },
+    "leftOffset": {
+      "@id": "pan:left_offset",
+      "@type": "xsd:string"
+    },
+    "topOffset": {
+      "@id": "pan:top_offset",
+      "@type": "xsd:string"
+    },
+    "failoverConditionSettings": {
+      "@id": "pan:failover_condition_settings",
+      "@type": "xsd:string"
+    },
+    "audioSilenceSettings": {
+      "@id": "pan:audio_silence_settings",
+      "@type": "xsd:string"
+    },
+    "inputLossSettings": {
+      "@id": "pan:input_loss_settings",
+      "@type": "xsd:string"
+    },
+    "videoBlackSettings": {
+      "@id": "pan:video_black_settings",
+      "@type": "xsd:string"
+    },
+    "colorSpaceUsage": {
+      "@id": "pan:color_space_usage",
+      "@type": "xsd:string"
+    },
+    "frameCaptureCdnSettings": {
+      "@id": "pan:frame_capture_cdn_settings",
+      "@type": "xsd:string"
+    },
+    "heightTrim": {
+      "@id": "pan:height_trim",
+      "@type": "xsd:string"
+    },
+    "surroundTrim": {
+      "@id": "pan:surround_trim",
+      "@type": "xsd:string"
+    }
+  }
+}

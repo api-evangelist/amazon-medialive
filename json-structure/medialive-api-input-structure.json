@@ -1,0 +1,215 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-structure.json",
+  "name": "Input",
+  "type": "object",
+  "description": "Placeholder documentation for Input",
+  "properties": {
+    "Arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "arn"
+          },
+          "description": "The Unique ARN of the input (generated, immutable)."
+        }
+      ]
+    },
+    "AttachedChannels": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOf__string"
+        },
+        {
+          "xml": {
+            "name": "attachedChannels"
+          },
+          "description": "A list of channel IDs that that input is attached to (currently an input can only be attached to one channel)."
+        }
+      ]
+    },
+    "Destinations": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfInputDestination"
+        },
+        {
+          "xml": {
+            "name": "destinations"
+          },
+          "description": "A list of the destinations of the input (PUSH-type)."
+        }
+      ]
+    },
+    "Id": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "id"
+          },
+          "description": "The generated ID of the input (unique for user account, immutable)."
+        }
+      ]
+    },
+    "InputClass": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputClass"
+        },
+        {
+          "xml": {
+            "name": "inputClass"
+          },
+          "description": "STANDARD - MediaLive expects two sources to be connected to this input. If the channel is also STANDARD, both sources will be ingested. If the channel is SINGLE_PIPELINE, only the first source will be ingested; the second source will always be ignored, even if the first source fails.\nSINGLE_PIPELINE - You can connect only one source to this input. If the ChannelClass is also  SINGLE_PIPELINE, this value is valid. If the ChannelClass is STANDARD, this value is not valid because the channel requires two sources in the input.\n"
+        }
+      ]
+    },
+    "InputDevices": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfInputDeviceSettings"
+        },
+        {
+          "xml": {
+            "name": "inputDevices"
+          },
+          "description": "Settings for the input devices."
+        }
+      ]
+    },
+    "InputPartnerIds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOf__string"
+        },
+        {
+          "xml": {
+            "name": "inputPartnerIds"
+          },
+          "description": "A list of IDs for all Inputs which are partners of this one."
+        }
+      ]
+    },
+    "InputSourceType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputSourceType"
+        },
+        {
+          "xml": {
+            "name": "inputSourceType"
+          },
+          "description": "Certain pull input sources can be dynamic, meaning that they can have their URL's dynamically changes\nduring input switch actions. Presently, this functionality only works with MP4_FILE and TS_FILE inputs.\n"
+        }
+      ]
+    },
+    "MediaConnectFlows": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfMediaConnectFlow"
+        },
+        {
+          "xml": {
+            "name": "mediaConnectFlows"
+          },
+          "description": "A list of MediaConnect Flows for this input."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "name"
+          },
+          "description": "The user-assigned name (This is a mutable value)."
+        }
+      ]
+    },
+    "RoleArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "roleArn"
+          },
+          "description": "The Amazon Resource Name (ARN) of the role this input assumes during and after creation."
+        }
+      ]
+    },
+    "SecurityGroups": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOf__string"
+        },
+        {
+          "xml": {
+            "name": "securityGroups"
+          },
+          "description": "A list of IDs for all the Input Security Groups attached to the input."
+        }
+      ]
+    },
+    "Sources": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfInputSource"
+        },
+        {
+          "xml": {
+            "name": "sources"
+          },
+          "description": "A list of the sources of the input (PULL-type)."
+        }
+      ]
+    },
+    "State": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputState"
+        },
+        {
+          "xml": {
+            "name": "state"
+          }
+        }
+      ]
+    },
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Tags"
+        },
+        {
+          "xml": {
+            "name": "tags"
+          },
+          "description": "A collection of key-value pairs."
+        }
+      ]
+    },
+    "Type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputType"
+        },
+        {
+          "xml": {
+            "name": "type"
+          }
+        }
+      ]
+    }
+  }
+}

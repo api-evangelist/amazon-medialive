@@ -1,0 +1,22 @@
+{
+  "AttenuationControl": "example-value",
+  "Bitrate": "example-value",
+  "BitstreamMode": "example-value",
+  "CodingMode": "example-value",
+  "DcFilter": "example-value",
+  "Dialnorm": "example-value",
+  "DrcLine": "example-value",
+  "DrcRf": "example-value",
+  "LfeControl": "example-value",
+  "LfeFilter": "example-value",
+  "LoRoCenterMixLevel": "example-value",
+  "LoRoSurroundMixLevel": "example-value",
+  "LtRtCenterMixLevel": "example-value",
+  "LtRtSurroundMixLevel": "example-value",
+  "MetadataControl": "example-value",
+  "PassthroughControl": "example-value",
+  "PhaseControl": "example-value",
+  "StereoDownmix": "example-value",
+  "SurroundExMode": "example-value",
+  "SurroundMode": "example-value"
+}

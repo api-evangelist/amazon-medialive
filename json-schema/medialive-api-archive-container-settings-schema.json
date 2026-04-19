@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-archive-container-settings-schema.json",
+  "title": "ArchiveContainerSettings",
+  "description": "Archive Container Settings",
+  "type": "object",
+  "properties": {
+    "M2tsSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/M2tsSettings"
+        },
+        {
+          "xml": {
+            "name": "m2tsSettings"
+          }
+        }
+      ]
+    },
+    "RawSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RawSettings"
+        },
+        {
+          "xml": {
+            "name": "rawSettings"
+          }
+        }
+      ]
+    }
+  }
+}

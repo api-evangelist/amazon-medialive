@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-cdi-input-specification-structure.json",
+  "name": "CdiInputSpecification",
+  "type": "object",
+  "description": "Placeholder documentation for CdiInputSpecification",
+  "properties": {
+    "Resolution": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CdiInputResolution"
+        },
+        {
+          "xml": {
+            "name": "resolution"
+          },
+          "description": "Maximum CDI input resolution"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-failover-condition-settings-schema.json",
+  "title": "FailoverConditionSettings",
+  "description": "Settings for one failover condition.",
+  "type": "object",
+  "properties": {
+    "AudioSilenceSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AudioSilenceFailoverSettings"
+        },
+        {
+          "xml": {
+            "name": "audioSilenceSettings"
+          },
+          "description": "MediaLive will perform a failover if the specified audio selector is silent for the specified period."
+        }
+      ]
+    },
+    "InputLossSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputLossFailoverSettings"
+        },
+        {
+          "xml": {
+            "name": "inputLossSettings"
+          },
+          "description": "MediaLive will perform a failover if content is not detected in this input for the specified period."
+        }
+      ]
+    },
+    "VideoBlackSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VideoBlackFailoverSettings"
+        },
+        {
+          "xml": {
+            "name": "videoBlackSettings"
+          },
+          "description": "MediaLive will perform a failover if content is considered black for the specified period."
+        }
+      ]
+    }
+  }
+}

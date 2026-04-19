@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-multiplex-program-service-descriptor-structure.json",
+  "name": "MultiplexProgramServiceDescriptor",
+  "type": "object",
+  "description": "Transport stream service descriptor configuration for the Multiplex program.",
+  "properties": {
+    "ProviderName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMax256"
+        },
+        {
+          "xml": {
+            "name": "providerName"
+          },
+          "description": "Name of the provider."
+        }
+      ]
+    },
+    "ServiceName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMax256"
+        },
+        {
+          "xml": {
+            "name": "serviceName"
+          },
+          "description": "Name of the service."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ProviderName",
+    "ServiceName"
+  ]
+}

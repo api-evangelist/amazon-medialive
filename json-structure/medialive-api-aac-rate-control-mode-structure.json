@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-aac-rate-control-mode-structure.json",
+  "name": "AacRateControlMode",
+  "type": "string",
+  "description": "Aac Rate Control Mode",
+  "enum": [
+    "CBR",
+    "VBR"
+  ]
+}

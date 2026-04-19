@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-claim-device-request-structure.json",
+  "name": "ClaimDeviceRequest",
+  "type": "object",
+  "description": "A request to claim an AWS Elemental device that you have purchased from a third-party vendor.",
+  "properties": {
+    "Id": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "id"
+          },
+          "description": "The id of the device you want to claim."
+        }
+      ]
+    }
+  }
+}

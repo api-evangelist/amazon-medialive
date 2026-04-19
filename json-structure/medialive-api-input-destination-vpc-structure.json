@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-destination-vpc-structure.json",
+  "name": "InputDestinationVpc",
+  "type": "object",
+  "description": "The properties for a VPC type input destination.",
+  "properties": {
+    "AvailabilityZone": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "availabilityZone"
+          },
+          "description": "The availability zone of the Input destination.\n"
+        }
+      ]
+    },
+    "NetworkInterfaceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "networkInterfaceId"
+          },
+          "description": "The network interface ID of the Input destination in the VPC.\n"
+        }
+      ]
+    }
+  }
+}

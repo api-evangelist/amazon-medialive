@@ -1,0 +1,5 @@
+{
+  "ActionName": "example-resource",
+  "ScheduleActionSettings": "example-value",
+  "ScheduleActionStartSettings": "example-value"
+}

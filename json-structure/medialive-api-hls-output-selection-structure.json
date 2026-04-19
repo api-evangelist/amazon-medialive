@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-hls-output-selection-structure.json",
+  "name": "HlsOutputSelection",
+  "type": "string",
+  "description": "Hls Output Selection",
+  "enum": [
+    "MANIFESTS_AND_SEGMENTS",
+    "SEGMENTS_ONLY",
+    "VARIANT_MANIFESTS_AND_SEGMENTS"
+  ]
+}

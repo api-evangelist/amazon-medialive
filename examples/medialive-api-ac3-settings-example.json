@@ -1,0 +1,9 @@
+{
+  "Bitrate": "example-value",
+  "BitstreamMode": "example-value",
+  "CodingMode": "example-value",
+  "Dialnorm": "example-value",
+  "DrcProfile": "example-value",
+  "LfeFilter": "example-value",
+  "MetadataControl": "example-value"
+}

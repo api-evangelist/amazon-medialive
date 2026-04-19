@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-video-selector-color-space-settings-schema.json",
+  "title": "VideoSelectorColorSpaceSettings",
+  "description": "Video Selector Color Space Settings",
+  "type": "object",
+  "properties": {
+    "Hdr10Settings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Hdr10Settings"
+        },
+        {
+          "xml": {
+            "name": "hdr10Settings"
+          }
+        }
+      ]
+    }
+  }
+}

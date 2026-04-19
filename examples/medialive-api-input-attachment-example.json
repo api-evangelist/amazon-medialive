@@ -1,0 +1,6 @@
+{
+  "AutomaticInputFailoverSettings": "example-value",
+  "InputAttachmentName": "example-resource",
+  "InputId": "id-abc123",
+  "InputSettings": "example-value"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-update-input-response-schema.json",
+  "title": "UpdateInputResponse",
+  "description": "Placeholder documentation for UpdateInputResponse",
+  "type": "object",
+  "properties": {
+    "Input": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Input"
+        },
+        {
+          "xml": {
+            "name": "input"
+          }
+        }
+      ]
+    }
+  }
+}

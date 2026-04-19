@@ -1,0 +1,21 @@
+{
+  "Arn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "Count": "example-value",
+  "CurrencyCode": "example-value",
+  "Duration": "example-value",
+  "DurationUnits": "example-value",
+  "End": "example-value",
+  "FixedPrice": "example-value",
+  "Name": "example-resource",
+  "OfferingDescription": "example-value",
+  "OfferingId": "id-abc123",
+  "OfferingType": "STANDARD",
+  "Region": "example-value",
+  "RenewalSettings": "example-value",
+  "ReservationId": "id-abc123",
+  "ResourceSpecification": "example-value",
+  "Start": "example-value",
+  "State": "example-value",
+  "Tags": "example-value",
+  "UsagePrice": "example-value"
+}

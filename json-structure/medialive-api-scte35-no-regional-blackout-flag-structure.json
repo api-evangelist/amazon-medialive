@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-scte35-no-regional-blackout-flag-structure.json",
+  "name": "Scte35NoRegionalBlackoutFlag",
+  "type": "string",
+  "description": "Corresponds to the no_regional_blackout_flag parameter. A value of REGIONAL_BLACKOUT corresponds to 0 (false) in the SCTE-35 specification. If you include one of the \"restriction\" flags then you must include all four of them.",
+  "enum": [
+    "REGIONAL_BLACKOUT",
+    "NO_REGIONAL_BLACKOUT"
+  ]
+}

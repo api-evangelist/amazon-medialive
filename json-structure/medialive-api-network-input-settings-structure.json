@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-network-input-settings-structure.json",
+  "name": "NetworkInputSettings",
+  "type": "object",
+  "description": "Network source to transcode. Must be accessible to the Elemental Live node that is running the live event through a network connection.",
+  "properties": {
+    "HlsInputSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/HlsInputSettings"
+        },
+        {
+          "xml": {
+            "name": "hlsInputSettings"
+          },
+          "description": "Specifies HLS input settings when the uri is for a HLS manifest."
+        }
+      ]
+    },
+    "ServerValidation": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NetworkInputServerValidation"
+        },
+        {
+          "xml": {
+            "name": "serverValidation"
+          },
+          "description": "Check HTTPS server certificates. When set to checkCryptographyOnly, cryptography in the certificate will be checked, but not the server's name. Certain subdomains (notably S3 buckets that use dots in the bucket name) do not strictly match the corresponding certificate's wildcard pattern and would otherwise cause the event to error. This setting is ignored for protocols that do not use https."
+        }
+      ]
+    }
+  }
+}

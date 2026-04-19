@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-scte35-time-signal-schedule-action-settings-structure.json",
+  "name": "Scte35TimeSignalScheduleActionSettings",
+  "type": "object",
+  "description": "Settings for a SCTE-35 time_signal.",
+  "properties": {
+    "Scte35Descriptors": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfScte35Descriptor"
+        },
+        {
+          "xml": {
+            "name": "scte35Descriptors"
+          },
+          "description": "The list of SCTE-35 descriptors accompanying the SCTE-35 time_signal."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Scte35Descriptors"
+  ]
+}

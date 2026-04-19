@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-reboot-input-device-force-structure.json",
+  "name": "RebootInputDeviceForce",
+  "type": "string",
+  "description": "Whether or not to force reboot the input device.",
+  "enum": [
+    false,
+    true
+  ]
+}

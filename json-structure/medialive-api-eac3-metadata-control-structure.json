@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-eac3-metadata-control-structure.json",
+  "name": "Eac3MetadataControl",
+  "type": "string",
+  "description": "Eac3 Metadata Control",
+  "enum": [
+    "FOLLOW_INPUT",
+    "USE_CONFIGURED"
+  ]
+}

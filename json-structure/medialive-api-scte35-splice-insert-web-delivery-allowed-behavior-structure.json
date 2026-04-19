@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-scte35-splice-insert-web-delivery-allowed-behavior-structure.json",
+  "name": "Scte35SpliceInsertWebDeliveryAllowedBehavior",
+  "type": "string",
+  "description": "Scte35 Splice Insert Web Delivery Allowed Behavior",
+  "enum": [
+    "FOLLOW",
+    "IGNORE"
+  ]
+}

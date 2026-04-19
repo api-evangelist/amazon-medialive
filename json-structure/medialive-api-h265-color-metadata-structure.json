@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-h265-color-metadata-structure.json",
+  "name": "H265ColorMetadata",
+  "type": "string",
+  "description": "H265 Color Metadata",
+  "enum": [
+    "IGNORE",
+    "INSERT"
+  ]
+}

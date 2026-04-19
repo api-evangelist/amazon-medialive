@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-batch-delete-request-structure.json",
+  "name": "BatchDeleteRequest",
+  "type": "object",
+  "description": "A request to delete resources",
+  "properties": {
+    "ChannelIds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOf__string"
+        },
+        {
+          "xml": {
+            "name": "channelIds"
+          },
+          "description": "List of channel IDs"
+        }
+      ]
+    },
+    "InputIds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOf__string"
+        },
+        {
+          "xml": {
+            "name": "inputIds"
+          },
+          "description": "List of input IDs"
+        }
+      ]
+    },
+    "InputSecurityGroupIds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOf__string"
+        },
+        {
+          "xml": {
+            "name": "inputSecurityGroupIds"
+          },
+          "description": "List of input security group IDs"
+        }
+      ]
+    },
+    "MultiplexIds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOf__string"
+        },
+        {
+          "xml": {
+            "name": "multiplexIds"
+          },
+          "description": "List of multiplex IDs"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-media-package-output-settings-structure.json",
+  "name": "MediaPackageOutputSettings",
+  "type": "object",
+  "description": "Media Package Output Settings",
+  "properties": {}
+}

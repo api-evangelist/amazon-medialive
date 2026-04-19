@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-rtmp-ad-markers-schema.json",
+  "title": "RtmpAdMarkers",
+  "description": "Rtmp Ad Markers",
+  "type": "string",
+  "enum": [
+    "ON_CUE_POINT_SCTE35"
+  ]
+}

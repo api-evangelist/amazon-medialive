@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-dvb-sub-destination-background-color-schema.json",
+  "title": "DvbSubDestinationBackgroundColor",
+  "description": "Dvb Sub Destination Background Color",
+  "type": "string",
+  "enum": [
+    "BLACK",
+    "NONE",
+    "WHITE"
+  ]
+}

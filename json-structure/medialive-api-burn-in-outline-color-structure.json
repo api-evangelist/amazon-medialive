@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-burn-in-outline-color-structure.json",
+  "name": "BurnInOutlineColor",
+  "type": "string",
+  "description": "Burn In Outline Color",
+  "enum": [
+    "BLACK",
+    "BLUE",
+    "GREEN",
+    "RED",
+    "WHITE",
+    "YELLOW"
+  ]
+}

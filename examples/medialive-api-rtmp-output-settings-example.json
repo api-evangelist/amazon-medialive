@@ -1,0 +1,6 @@
+{
+  "CertificateMode": "example-value",
+  "ConnectionRetryInterval": "example-value",
+  "Destination": "example-value",
+  "NumRetries": "example-value"
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-aac-profile-schema.json",
+  "title": "AacProfile",
+  "description": "Aac Profile",
+  "type": "string",
+  "enum": [
+    "HEV1",
+    "HEV2",
+    "LC"
+  ]
+}

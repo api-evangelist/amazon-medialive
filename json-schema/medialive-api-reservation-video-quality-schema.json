@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-reservation-video-quality-schema.json",
+  "title": "ReservationVideoQuality",
+  "description": "Video quality, e.g. 'STANDARD' (Outputs only)",
+  "type": "string",
+  "enum": [
+    "STANDARD",
+    "ENHANCED",
+    "PREMIUM"
+  ]
+}

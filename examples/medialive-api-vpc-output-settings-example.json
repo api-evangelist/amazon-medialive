@@ -1,0 +1,5 @@
+{
+  "PublicAddressAllocationIds": "id-abc123",
+  "SecurityGroupIds": "id-abc123",
+  "SubnetIds": "id-abc123"
+}

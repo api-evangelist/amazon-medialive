@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-audio-channel-mapping-structure.json",
+  "name": "AudioChannelMapping",
+  "type": "object",
+  "description": "Audio Channel Mapping",
+  "properties": {
+    "InputChannelLevels": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfInputChannelLevel"
+        },
+        {
+          "xml": {
+            "name": "inputChannelLevels"
+          },
+          "description": "Indices and gain values for each input channel that should be remixed into this output channel."
+        }
+      ]
+    },
+    "OutputChannel": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max7"
+        },
+        {
+          "xml": {
+            "name": "outputChannel"
+          },
+          "description": "The index of the output channel being produced."
+        }
+      ]
+    }
+  },
+  "required": [
+    "OutputChannel",
+    "InputChannelLevels"
+  ]
+}

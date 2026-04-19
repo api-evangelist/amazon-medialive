@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-batch-stop-request-structure.json",
+  "name": "BatchStopRequest",
+  "type": "object",
+  "description": "A request to stop resources",
+  "properties": {
+    "ChannelIds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOf__string"
+        },
+        {
+          "xml": {
+            "name": "channelIds"
+          },
+          "description": "List of channel IDs"
+        }
+      ]
+    },
+    "MultiplexIds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOf__string"
+        },
+        {
+          "xml": {
+            "name": "multiplexIds"
+          },
+          "description": "List of multiplex IDs"
+        }
+      ]
+    }
+  }
+}

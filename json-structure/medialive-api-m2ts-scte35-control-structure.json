@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-m2ts-scte35-control-structure.json",
+  "name": "M2tsScte35Control",
+  "type": "string",
+  "description": "M2ts Scte35 Control",
+  "enum": [
+    "NONE",
+    "PASSTHROUGH"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-timecode-burnin-position-structure.json",
+  "name": "TimecodeBurninPosition",
+  "type": "string",
+  "description": "Timecode Burnin Position",
+  "enum": [
+    "BOTTOM_CENTER",
+    "BOTTOM_LEFT",
+    "BOTTOM_RIGHT",
+    "MIDDLE_CENTER",
+    "MIDDLE_LEFT",
+    "MIDDLE_RIGHT",
+    "TOP_CENTER",
+    "TOP_LEFT",
+    "TOP_RIGHT"
+  ]
+}

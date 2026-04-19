@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-aac-input-type-structure.json",
+  "name": "AacInputType",
+  "type": "string",
+  "description": "Aac Input Type",
+  "enum": [
+    "BROADCASTER_MIXED_AD",
+    "NORMAL"
+  ]
+}

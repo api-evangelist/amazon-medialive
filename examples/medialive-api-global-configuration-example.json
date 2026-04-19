@@ -1,0 +1,8 @@
+{
+  "InitialAudioGain": "example-value",
+  "InputEndAction": "example-value",
+  "InputLossBehavior": "example-value",
+  "OutputLockingMode": "example-value",
+  "OutputTimingSource": "example-value",
+  "SupportLowFramerateInputs": "example-value"
+}

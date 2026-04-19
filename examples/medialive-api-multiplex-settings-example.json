@@ -1,0 +1,6 @@
+{
+  "MaximumVideoBufferDelayMilliseconds": "id-abc123",
+  "TransportStreamBitrate": "example-value",
+  "TransportStreamId": "id-abc123",
+  "TransportStreamReservedBitrate": "example-value"
+}

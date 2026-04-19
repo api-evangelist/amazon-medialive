@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-multiplex-output-destination-structure.json",
+  "name": "MultiplexOutputDestination",
+  "type": "object",
+  "description": "Multiplex output destination settings",
+  "properties": {
+    "MediaConnectSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MultiplexMediaConnectOutputDestinationSettings"
+        },
+        {
+          "xml": {
+            "name": "mediaConnectSettings"
+          },
+          "description": "Multiplex MediaConnect output destination settings."
+        }
+      ]
+    }
+  }
+}

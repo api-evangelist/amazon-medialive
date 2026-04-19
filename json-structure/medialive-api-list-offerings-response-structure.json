@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-list-offerings-response-structure.json",
+  "name": "ListOfferingsResponse",
+  "type": "object",
+  "description": "Placeholder documentation for ListOfferingsResponse",
+  "properties": {
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "nextToken"
+          },
+          "description": "Token to retrieve the next page of results"
+        }
+      ]
+    },
+    "Offerings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfOffering"
+        },
+        {
+          "xml": {
+            "name": "offerings"
+          },
+          "description": "List of offerings"
+        }
+      ]
+    }
+  }
+}

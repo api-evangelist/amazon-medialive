@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-archive-cdn-settings-schema.json",
+  "title": "ArchiveCdnSettings",
+  "description": "Archive Cdn Settings",
+  "type": "object",
+  "properties": {
+    "ArchiveS3Settings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArchiveS3Settings"
+        },
+        {
+          "xml": {
+            "name": "archiveS3Settings"
+          }
+        }
+      ]
+    }
+  }
+}

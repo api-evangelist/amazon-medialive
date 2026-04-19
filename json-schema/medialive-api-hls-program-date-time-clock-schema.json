@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-hls-program-date-time-clock-schema.json",
+  "title": "HlsProgramDateTimeClock",
+  "description": "Hls Program Date Time Clock",
+  "type": "string",
+  "enum": [
+    "INITIALIZE_FROM_OUTPUT_TIMECODE",
+    "SYSTEM_CLOCK"
+  ]
+}

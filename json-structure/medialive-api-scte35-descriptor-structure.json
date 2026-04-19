@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-scte35-descriptor-structure.json",
+  "name": "Scte35Descriptor",
+  "type": "object",
+  "description": "Holds one set of SCTE-35 Descriptor Settings.",
+  "properties": {
+    "Scte35DescriptorSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte35DescriptorSettings"
+        },
+        {
+          "xml": {
+            "name": "scte35DescriptorSettings"
+          },
+          "description": "SCTE-35 Descriptor Settings."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Scte35DescriptorSettings"
+  ]
+}

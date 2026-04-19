@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-m2ts-pcr-control-schema.json",
+  "title": "M2tsPcrControl",
+  "description": "M2ts Pcr Control",
+  "type": "string",
+  "enum": [
+    "CONFIGURED_PCR_PERIOD",
+    "PCR_EVERY_PES_PACKET"
+  ]
+}

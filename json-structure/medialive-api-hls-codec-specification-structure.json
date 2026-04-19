@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-hls-codec-specification-structure.json",
+  "name": "HlsCodecSpecification",
+  "type": "string",
+  "description": "Hls Codec Specification",
+  "enum": [
+    "RFC_4281",
+    "RFC_6381"
+  ]
+}

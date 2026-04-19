@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-hls-akamai-settings-schema.json",
+  "title": "HlsAkamaiSettings",
+  "description": "Hls Akamai Settings",
+  "type": "object",
+  "properties": {
+    "ConnectionRetryInterval": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0"
+        },
+        {
+          "xml": {
+            "name": "connectionRetryInterval"
+          },
+          "description": "Number of seconds to wait before retrying connection to the CDN if the connection is lost."
+        }
+      ]
+    },
+    "FilecacheDuration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max600"
+        },
+        {
+          "xml": {
+            "name": "filecacheDuration"
+          },
+          "description": "Size in seconds of file cache for streaming outputs."
+        }
+      ]
+    },
+    "HttpTransferMode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/HlsAkamaiHttpTransferMode"
+        },
+        {
+          "xml": {
+            "name": "httpTransferMode"
+          },
+          "description": "Specify whether or not to use chunked transfer encoding to Akamai. User should contact Akamai to enable this feature."
+        }
+      ]
+    },
+    "NumRetries": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0"
+        },
+        {
+          "xml": {
+            "name": "numRetries"
+          },
+          "description": "Number of retry attempts that will be made before the Live Event is put into an error state. Applies only if the CDN destination URI begins with \"s3\" or \"mediastore\". For other URIs, the value is always 3."
+        }
+      ]
+    },
+    "RestartDelay": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max15"
+        },
+        {
+          "xml": {
+            "name": "restartDelay"
+          },
+          "description": "If a streaming output fails, number of seconds to wait until a restart is initiated. A value of 0 means never restart."
+        }
+      ]
+    },
+    "Salt": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "salt"
+          },
+          "description": "Salt for authenticated Akamai."
+        }
+      ]
+    },
+    "Token": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "token"
+          },
+          "description": "Token parameter for authenticated akamai. If not specified, _gda_ is used."
+        }
+      ]
+    }
+  }
+}

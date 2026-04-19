@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-hls-segmentation-mode-schema.json",
+  "title": "HlsSegmentationMode",
+  "description": "Hls Segmentation Mode",
+  "type": "string",
+  "enum": [
+    "USE_INPUT_SEGMENTATION",
+    "USE_SEGMENT_DURATION"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-immediate-mode-schedule-action-start-settings-structure.json",
+  "name": "ImmediateModeScheduleActionStartSettings",
+  "type": "object",
+  "description": "Settings to configure an action so that it occurs as soon as possible.",
+  "properties": {}
+}

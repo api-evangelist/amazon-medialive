@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-update-channel-class-request-schema.json",
+  "title": "UpdateChannelClassRequest",
+  "description": "Channel class that the channel should be updated to.",
+  "type": "object",
+  "properties": {
+    "ChannelClass": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ChannelClass"
+        },
+        {
+          "xml": {
+            "name": "channelClass"
+          },
+          "description": "The channel class that you wish to update this channel to use."
+        }
+      ]
+    },
+    "Destinations": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfOutputDestination"
+        },
+        {
+          "xml": {
+            "name": "destinations"
+          },
+          "description": "A list of output destinations for this channel."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ChannelClass"
+  ]
+}

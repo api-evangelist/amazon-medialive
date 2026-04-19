@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-mpeg2-adaptive-quantization-schema.json",
+  "title": "Mpeg2AdaptiveQuantization",
+  "description": "Mpeg2 Adaptive Quantization",
+  "type": "string",
+  "enum": [
+    "AUTO",
+    "HIGH",
+    "LOW",
+    "MEDIUM",
+    false
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-dvb-sub-source-settings-structure.json",
+  "name": "DvbSubSourceSettings",
+  "type": "object",
+  "description": "Dvb Sub Source Settings",
+  "properties": {
+    "OcrLanguage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DvbSubOcrLanguage"
+        },
+        {
+          "xml": {
+            "name": "ocrLanguage"
+          },
+          "description": "If you will configure a WebVTT caption description that references this caption selector, use this field to\nprovide the language to consider when translating the image-based source to text."
+        }
+      ]
+    },
+    "Pid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin1"
+        },
+        {
+          "xml": {
+            "name": "pid"
+          },
+          "description": "When using DVB-Sub with Burn-In or SMPTE-TT, use this PID for the source content. Unused for DVB-Sub passthrough. All DVB-Sub content is passed through, regardless of selectors."
+        }
+      ]
+    }
+  }
+}

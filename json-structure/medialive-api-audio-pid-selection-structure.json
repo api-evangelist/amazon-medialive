@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-audio-pid-selection-structure.json",
+  "name": "AudioPidSelection",
+  "type": "object",
+  "description": "Audio Pid Selection",
+  "properties": {
+    "Pid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max8191"
+        },
+        {
+          "xml": {
+            "name": "pid"
+          },
+          "description": "Selects a specific PID from within a source."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Pid"
+  ]
+}

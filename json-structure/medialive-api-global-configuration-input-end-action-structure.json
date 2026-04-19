@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-global-configuration-input-end-action-structure.json",
+  "name": "GlobalConfigurationInputEndAction",
+  "type": "string",
+  "description": "Global Configuration Input End Action",
+  "enum": [
+    "NONE",
+    "SWITCH_AND_LOOP_INPUTS"
+  ]
+}

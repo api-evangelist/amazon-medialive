@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-audio-type-structure.json",
+  "name": "AudioType",
+  "type": "string",
+  "description": "Audio Type",
+  "enum": [
+    "CLEAN_EFFECTS",
+    "HEARING_IMPAIRED",
+    "UNDEFINED",
+    "VISUAL_IMPAIRED_COMMENTARY"
+  ]
+}

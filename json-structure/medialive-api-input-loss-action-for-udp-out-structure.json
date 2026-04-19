@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-loss-action-for-udp-out-structure.json",
+  "name": "InputLossActionForUdpOut",
+  "type": "string",
+  "description": "Input Loss Action For Udp Out",
+  "enum": [
+    "DROP_PROGRAM",
+    "DROP_TS",
+    "EMIT_PROGRAM"
+  ]
+}

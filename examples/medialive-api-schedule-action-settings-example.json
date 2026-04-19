@@ -1,0 +1,15 @@
+{
+  "HlsId3SegmentTaggingSettings": "id-abc123",
+  "HlsTimedMetadataSettings": "example-value",
+  "InputPrepareSettings": "example-value",
+  "InputSwitchSettings": "example-value",
+  "MotionGraphicsImageActivateSettings": "example-value",
+  "MotionGraphicsImageDeactivateSettings": "example-value",
+  "PauseStateSettings": "example-value",
+  "Scte35InputSettings": "example-value",
+  "Scte35ReturnToNetworkSettings": "example-value",
+  "Scte35SpliceInsertSettings": "example-value",
+  "Scte35TimeSignalSettings": "example-value",
+  "StaticImageActivateSettings": "example-value",
+  "StaticImageDeactivateSettings": "example-value"
+}

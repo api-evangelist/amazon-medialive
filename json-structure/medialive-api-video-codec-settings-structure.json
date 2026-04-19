@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-video-codec-settings-structure.json",
+  "name": "VideoCodecSettings",
+  "type": "object",
+  "description": "Video Codec Settings",
+  "properties": {
+    "FrameCaptureSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FrameCaptureSettings"
+        },
+        {
+          "xml": {
+            "name": "frameCaptureSettings"
+          }
+        }
+      ]
+    },
+    "H264Settings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/H264Settings"
+        },
+        {
+          "xml": {
+            "name": "h264Settings"
+          }
+        }
+      ]
+    },
+    "H265Settings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/H265Settings"
+        },
+        {
+          "xml": {
+            "name": "h265Settings"
+          }
+        }
+      ]
+    },
+    "Mpeg2Settings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Mpeg2Settings"
+        },
+        {
+          "xml": {
+            "name": "mpeg2Settings"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-scte35-delivery-restrictions-schema.json",
+  "title": "Scte35DeliveryRestrictions",
+  "description": "Corresponds to SCTE-35 delivery_not_restricted_flag parameter. To declare delivery restrictions, include this element and its four \"restriction\" flags. To declare that there are no restrictions, omit this element.",
+  "type": "object",
+  "properties": {
+    "ArchiveAllowedFlag": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte35ArchiveAllowedFlag"
+        },
+        {
+          "xml": {
+            "name": "archiveAllowedFlag"
+          },
+          "description": "Corresponds to SCTE-35 archive_allowed_flag."
+        }
+      ]
+    },
+    "DeviceRestrictions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte35DeviceRestrictions"
+        },
+        {
+          "xml": {
+            "name": "deviceRestrictions"
+          },
+          "description": "Corresponds to SCTE-35 device_restrictions parameter."
+        }
+      ]
+    },
+    "NoRegionalBlackoutFlag": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte35NoRegionalBlackoutFlag"
+        },
+        {
+          "xml": {
+            "name": "noRegionalBlackoutFlag"
+          },
+          "description": "Corresponds to SCTE-35 no_regional_blackout_flag parameter."
+        }
+      ]
+    },
+    "WebDeliveryAllowedFlag": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte35WebDeliveryAllowedFlag"
+        },
+        {
+          "xml": {
+            "name": "webDeliveryAllowedFlag"
+          },
+          "description": "Corresponds to SCTE-35 web_delivery_allowed_flag parameter."
+        }
+      ]
+    }
+  },
+  "required": [
+    "DeviceRestrictions",
+    "ArchiveAllowedFlag",
+    "WebDeliveryAllowedFlag",
+    "NoRegionalBlackoutFlag"
+  ]
+}

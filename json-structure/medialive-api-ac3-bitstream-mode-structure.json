@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-ac3-bitstream-mode-structure.json",
+  "name": "Ac3BitstreamMode",
+  "type": "string",
+  "description": "Ac3 Bitstream Mode",
+  "enum": [
+    "COMMENTARY",
+    "COMPLETE_MAIN",
+    "DIALOGUE",
+    "EMERGENCY",
+    "HEARING_IMPAIRED",
+    "MUSIC_AND_EFFECTS",
+    "VISUALLY_IMPAIRED",
+    "VOICE_OVER"
+  ]
+}

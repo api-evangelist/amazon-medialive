@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-describe-input-security-group-request-structure.json",
+  "name": "DescribeInputSecurityGroupRequest",
+  "type": "object",
+  "description": "Placeholder documentation for DescribeInputSecurityGroupRequest",
+  "properties": {}
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-multiplex-output-settings-structure.json",
+  "name": "MultiplexOutputSettings",
+  "type": "object",
+  "description": "Multiplex Output Settings",
+  "properties": {
+    "Destination": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OutputLocationRef"
+        },
+        {
+          "xml": {
+            "name": "destination"
+          },
+          "description": "Destination is a Multiplex."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Destination"
+  ]
+}

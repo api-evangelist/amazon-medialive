@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-eac3-atmos-drc-rf-schema.json",
+  "title": "Eac3AtmosDrcRf",
+  "description": "Eac3 Atmos Drc Rf",
+  "type": "string",
+  "enum": [
+    "FILM_LIGHT",
+    "FILM_STANDARD",
+    "MUSIC_LIGHT",
+    "MUSIC_STANDARD",
+    "NONE",
+    "SPEECH"
+  ]
+}

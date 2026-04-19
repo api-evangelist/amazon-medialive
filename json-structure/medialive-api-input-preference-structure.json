@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-preference-structure.json",
+  "name": "InputPreference",
+  "type": "string",
+  "description": "Input preference when deciding which input to make active when a previously failed input has recovered.\nIf \\\"EQUAL_INPUT_PREFERENCE\\\", then the active input will stay active as long as it is healthy.\nIf \\\"PRIMARY_INPUT_PREFERRED\\\", then always switch back to the primary input when it is healthy.\n",
+  "enum": [
+    "EQUAL_INPUT_PREFERENCE",
+    "PRIMARY_INPUT_PREFERRED"
+  ]
+}

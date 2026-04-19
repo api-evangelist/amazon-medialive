@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-scte35-apos-no-regional-blackout-behavior-structure.json",
+  "name": "Scte35AposNoRegionalBlackoutBehavior",
+  "type": "string",
+  "description": "Scte35 Apos No Regional Blackout Behavior",
+  "enum": [
+    "FOLLOW",
+    "IGNORE"
+  ]
+}

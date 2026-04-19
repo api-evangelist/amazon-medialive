@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-list-reservations-response-structure.json",
+  "name": "ListReservationsResponse",
+  "type": "object",
+  "description": "Placeholder documentation for ListReservationsResponse",
+  "properties": {
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "nextToken"
+          },
+          "description": "Token to retrieve the next page of results"
+        }
+      ]
+    },
+    "Reservations": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfReservation"
+        },
+        {
+          "xml": {
+            "name": "reservations"
+          },
+          "description": "List of reservations"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "AribDestinationSettings": "example-value",
+  "BurnInDestinationSettings": "example-value",
+  "DvbSubDestinationSettings": "example-value",
+  "EbuTtDDestinationSettings": "example-value",
+  "EmbeddedDestinationSettings": "example-value",
+  "EmbeddedPlusScte20DestinationSettings": "example-value",
+  "RtmpCaptionInfoDestinationSettings": "example-value",
+  "Scte20PlusEmbeddedDestinationSettings": "example-value",
+  "Scte27DestinationSettings": "example-value",
+  "SmpteTtDestinationSettings": "example-value",
+  "TeletextDestinationSettings": "example-value",
+  "TtmlDestinationSettings": "example-value",
+  "WebvttDestinationSettings": "example-value"
+}

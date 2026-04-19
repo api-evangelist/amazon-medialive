@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-static-key-settings-structure.json",
+  "name": "StaticKeySettings",
+  "type": "object",
+  "description": "Static Key Settings",
+  "properties": {
+    "KeyProviderServer": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputLocation"
+        },
+        {
+          "xml": {
+            "name": "keyProviderServer"
+          },
+          "description": "The URL of the license server used for protecting content."
+        }
+      ]
+    },
+    "StaticKeyValue": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMin32Max32"
+        },
+        {
+          "xml": {
+            "name": "staticKeyValue"
+          },
+          "description": "Static key value as a 32 character hexadecimal string."
+        }
+      ]
+    }
+  },
+  "required": [
+    "StaticKeyValue"
+  ]
+}

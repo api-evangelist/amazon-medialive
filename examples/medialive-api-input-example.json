@@ -1,0 +1,18 @@
+{
+  "Arn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "AttachedChannels": "example-value",
+  "Destinations": "example-value",
+  "Id": "id-abc123",
+  "InputClass": "example-value",
+  "InputDevices": "example-value",
+  "InputPartnerIds": "id-abc123",
+  "InputSourceType": "STANDARD",
+  "MediaConnectFlows": "example-value",
+  "Name": "example-resource",
+  "RoleArn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "SecurityGroups": "example-value",
+  "Sources": "example-value",
+  "State": "example-value",
+  "Tags": "example-value",
+  "Type": "STANDARD"
+}

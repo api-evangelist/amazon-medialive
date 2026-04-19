@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-loss-behavior-structure.json",
+  "name": "InputLossBehavior",
+  "type": "object",
+  "description": "Input Loss Behavior",
+  "properties": {
+    "BlackFrameMsec": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max1000000"
+        },
+        {
+          "xml": {
+            "name": "blackFrameMsec"
+          },
+          "description": "Documentation update needed"
+        }
+      ]
+    },
+    "InputLossImageColor": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMin6Max6"
+        },
+        {
+          "xml": {
+            "name": "inputLossImageColor"
+          },
+          "description": "When input loss image type is \"color\" this field specifies the color to use. Value: 6 hex characters representing the values of RGB."
+        }
+      ]
+    },
+    "InputLossImageSlate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputLocation"
+        },
+        {
+          "xml": {
+            "name": "inputLossImageSlate"
+          },
+          "description": "When input loss image type is \"slate\" these fields specify the parameters for accessing the slate."
+        }
+      ]
+    },
+    "InputLossImageType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputLossImageType"
+        },
+        {
+          "xml": {
+            "name": "inputLossImageType"
+          },
+          "description": "Indicates whether to substitute a solid color or a slate into the output after input loss exceeds blackFrameMsec."
+        }
+      ]
+    },
+    "RepeatFrameMsec": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max1000000"
+        },
+        {
+          "xml": {
+            "name": "repeatFrameMsec"
+          },
+          "description": "Documentation update needed"
+        }
+      ]
+    }
+  }
+}

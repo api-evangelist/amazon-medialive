@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-scte35-input-mode-schema.json",
+  "title": "Scte35InputMode",
+  "description": "Whether the SCTE-35 input should be the active input or a fixed input.",
+  "type": "string",
+  "enum": [
+    "FIXED",
+    "FOLLOW_ACTIVE"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-h264-par-control-structure.json",
+  "name": "H264ParControl",
+  "type": "string",
+  "description": "H264 Par Control",
+  "enum": [
+    "INITIALIZE_FROM_SOURCE",
+    "SPECIFIED"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-embedded-source-settings-schema.json",
+  "title": "EmbeddedSourceSettings",
+  "description": "Embedded Source Settings",
+  "type": "object",
+  "properties": {
+    "Convert608To708": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EmbeddedConvert608To708"
+        },
+        {
+          "xml": {
+            "name": "convert608To708"
+          },
+          "description": "If upconvert, 608 data is both passed through via the \"608 compatibility bytes\" fields of the 708 wrapper as well as translated into 708. 708 data present in the source content will be discarded."
+        }
+      ]
+    },
+    "Scte20Detection": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EmbeddedScte20Detection"
+        },
+        {
+          "xml": {
+            "name": "scte20Detection"
+          },
+          "description": "Set to \"auto\" to handle streams with intermittent and/or non-aligned SCTE-20 and Embedded captions."
+        }
+      ]
+    },
+    "Source608ChannelNumber": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin1Max4"
+        },
+        {
+          "xml": {
+            "name": "source608ChannelNumber"
+          },
+          "description": "Specifies the 608/708 channel number within the video track from which to extract captions. Unused for passthrough."
+        }
+      ]
+    },
+    "Source608TrackNumber": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin1Max5"
+        },
+        {
+          "xml": {
+            "name": "source608TrackNumber"
+          },
+          "description": "This field is unused and deprecated."
+        }
+      ]
+    }
+  }
+}

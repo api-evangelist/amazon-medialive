@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-update-input-device-request-schema.json",
+  "title": "UpdateInputDeviceRequest",
+  "description": "A request to update an input device.",
+  "type": "object",
+  "properties": {
+    "HdDeviceSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputDeviceConfigurableSettings"
+        },
+        {
+          "xml": {
+            "name": "hdDeviceSettings"
+          },
+          "description": "The settings that you want to apply to the HD input device."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "name"
+          },
+          "description": "The name that you assigned to this input device (not the unique ID)."
+        }
+      ]
+    },
+    "UhdDeviceSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputDeviceConfigurableSettings"
+        },
+        {
+          "xml": {
+            "name": "uhdDeviceSettings"
+          },
+          "description": "The settings that you want to apply to the UHD input device."
+        }
+      ]
+    }
+  }
+}

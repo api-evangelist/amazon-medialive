@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-audio-track-selection-schema.json",
+  "title": "AudioTrackSelection",
+  "description": "Audio Track Selection",
+  "type": "object",
+  "properties": {
+    "Tracks": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfAudioTrack"
+        },
+        {
+          "xml": {
+            "name": "tracks"
+          },
+          "description": "Selects one or more unique audio tracks from within a source."
+        }
+      ]
+    },
+    "DolbyEDecode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AudioDolbyEDecode"
+        },
+        {
+          "xml": {
+            "name": "dolbyEDecode"
+          },
+          "description": "Configure decoding options for Dolby E streams - these should be Dolby E frames carried in PCM streams tagged with SMPTE-337"
+        }
+      ]
+    }
+  },
+  "required": [
+    "Tracks"
+  ]
+}

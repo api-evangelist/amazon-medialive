@@ -1,0 +1,10 @@
+{
+  "ArchiveGroupSettings": "example-value",
+  "FrameCaptureGroupSettings": "example-value",
+  "HlsGroupSettings": "example-value",
+  "MediaPackageGroupSettings": "example-value",
+  "MsSmoothGroupSettings": "example-value",
+  "MultiplexGroupSettings": "example-value",
+  "RtmpGroupSettings": "example-value",
+  "UdpGroupSettings": "example-value"
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-mpeg2-sub-gop-length-schema.json",
+  "title": "Mpeg2SubGopLength",
+  "description": "Mpeg2 Sub Gop Length",
+  "type": "string",
+  "enum": [
+    "DYNAMIC",
+    "FIXED"
+  ]
+}

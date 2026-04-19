@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-scte35-device-restrictions-structure.json",
+  "name": "Scte35DeviceRestrictions",
+  "type": "string",
+  "description": "Corresponds to the device_restrictions parameter in a segmentation_descriptor. If you include one of the \"restriction\" flags then you must include all four of them.",
+  "enum": [
+    "NONE",
+    "RESTRICT_GROUP0",
+    "RESTRICT_GROUP1",
+    "RESTRICT_GROUP2"
+  ]
+}

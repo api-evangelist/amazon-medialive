@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-schedule-action-settings-schema.json",
+  "title": "ScheduleActionSettings",
+  "description": "Holds the settings for a single schedule action.",
+  "type": "object",
+  "properties": {
+    "HlsId3SegmentTaggingSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/HlsId3SegmentTaggingScheduleActionSettings"
+        },
+        {
+          "xml": {
+            "name": "hlsId3SegmentTaggingSettings"
+          },
+          "description": "Action to insert HLS ID3 segment tagging"
+        }
+      ]
+    },
+    "HlsTimedMetadataSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/HlsTimedMetadataScheduleActionSettings"
+        },
+        {
+          "xml": {
+            "name": "hlsTimedMetadataSettings"
+          },
+          "description": "Action to insert HLS metadata"
+        }
+      ]
+    },
+    "InputPrepareSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputPrepareScheduleActionSettings"
+        },
+        {
+          "xml": {
+            "name": "inputPrepareSettings"
+          },
+          "description": "Action to prepare an input for a future immediate input switch"
+        }
+      ]
+    },
+    "InputSwitchSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputSwitchScheduleActionSettings"
+        },
+        {
+          "xml": {
+            "name": "inputSwitchSettings"
+          },
+          "description": "Action to switch the input"
+        }
+      ]
+    },
+    "MotionGraphicsImageActivateSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MotionGraphicsActivateScheduleActionSettings"
+        },
+        {
+          "xml": {
+            "name": "motionGraphicsImageActivateSettings"
+          },
+          "description": "Action to activate a motion graphics image overlay"
+        }
+      ]
+    },
+    "MotionGraphicsImageDeactivateSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MotionGraphicsDeactivateScheduleActionSettings"
+        },
+        {
+          "xml": {
+            "name": "motionGraphicsImageDeactivateSettings"
+          },
+          "description": "Action to deactivate a motion graphics image overlay"
+        }
+      ]
+    },
+    "PauseStateSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PauseStateScheduleActionSettings"
+        },
+        {
+          "xml": {
+            "name": "pauseStateSettings"
+          },
+          "description": "Action to pause or unpause one or both channel pipelines"
+        }
+      ]
+    },
+    "Scte35InputSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte35InputScheduleActionSettings"
+        },
+        {
+          "xml": {
+            "name": "scte35InputSettings"
+          },
+          "description": "Action to specify scte35 input"
+        }
+      ]
+    },
+    "Scte35ReturnToNetworkSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte35ReturnToNetworkScheduleActionSettings"
+        },
+        {
+          "xml": {
+            "name": "scte35ReturnToNetworkSettings"
+          },
+          "description": "Action to insert SCTE-35 return_to_network message"
+        }
+      ]
+    },
+    "Scte35SpliceInsertSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte35SpliceInsertScheduleActionSettings"
+        },
+        {
+          "xml": {
+            "name": "scte35SpliceInsertSettings"
+          },
+          "description": "Action to insert SCTE-35 splice_insert message"
+        }
+      ]
+    },
+    "Scte35TimeSignalSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte35TimeSignalScheduleActionSettings"
+        },
+        {
+          "xml": {
+            "name": "scte35TimeSignalSettings"
+          },
+          "description": "Action to insert SCTE-35 time_signal message"
+        }
+      ]
+    },
+    "StaticImageActivateSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StaticImageActivateScheduleActionSettings"
+        },
+        {
+          "xml": {
+            "name": "staticImageActivateSettings"
+          },
+          "description": "Action to activate a static image overlay"
+        }
+      ]
+    },
+    "StaticImageDeactivateSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StaticImageDeactivateScheduleActionSettings"
+        },
+        {
+          "xml": {
+            "name": "staticImageDeactivateSettings"
+          },
+          "description": "Action to deactivate a static image overlay"
+        }
+      ]
+    }
+  }
+}

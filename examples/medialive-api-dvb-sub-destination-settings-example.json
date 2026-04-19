@@ -1,0 +1,19 @@
+{
+  "Alignment": "example-value",
+  "BackgroundColor": "example-value",
+  "BackgroundOpacity": "example-value",
+  "Font": "example-value",
+  "FontColor": "example-value",
+  "FontOpacity": "example-value",
+  "FontResolution": "example-value",
+  "FontSize": "example-value",
+  "OutlineColor": "example-value",
+  "OutlineSize": "example-value",
+  "ShadowColor": "example-value",
+  "ShadowOpacity": "example-value",
+  "ShadowXOffset": "example-value",
+  "ShadowYOffset": "example-value",
+  "TeletextGridControl": "id-abc123",
+  "XPosition": "example-value",
+  "YPosition": "example-value"
+}

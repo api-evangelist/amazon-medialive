@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-input-device-configurable-settings-schema.json",
+  "title": "InputDeviceConfigurableSettings",
+  "description": "Configurable settings for the input device.",
+  "type": "object",
+  "properties": {
+    "ConfiguredInput": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputDeviceConfiguredInput"
+        },
+        {
+          "xml": {
+            "name": "configuredInput"
+          },
+          "description": "The input source that you want to use. If the device has a source connected to only one of its input ports, or if you don't care which source the device sends, specify Auto. If the device has sources connected to both its input ports, and you want to use a specific source, specify the source."
+        }
+      ]
+    },
+    "MaxBitrate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integer"
+        },
+        {
+          "xml": {
+            "name": "maxBitrate"
+          },
+          "description": "The maximum bitrate in bits per second. Set a value here to throttle the bitrate of the source video."
+        }
+      ]
+    },
+    "LatencyMs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integer"
+        },
+        {
+          "xml": {
+            "name": "latencyMs"
+          },
+          "description": "The Link device's buffer size (latency) in milliseconds (ms)."
+        }
+      ]
+    }
+  }
+}

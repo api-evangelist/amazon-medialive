@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-channel-class-structure.json",
+  "name": "ChannelClass",
+  "type": "string",
+  "description": "A standard channel has two encoding pipelines and a single pipeline channel only has one.",
+  "enum": [
+    "STANDARD",
+    "SINGLE_PIPELINE"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-m2ts-audio-interval-structure.json",
+  "name": "M2tsAudioInterval",
+  "type": "string",
+  "description": "M2ts Audio Interval",
+  "enum": [
+    "VIDEO_AND_FIXED_INTERVALS",
+    "VIDEO_INTERVAL"
+  ]
+}

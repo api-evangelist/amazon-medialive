@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-video-description-respond-to-afd-schema.json",
+  "title": "VideoDescriptionRespondToAfd",
+  "description": "Video Description Respond To Afd",
+  "type": "string",
+  "enum": [
+    "NONE",
+    "PASSTHROUGH",
+    "RESPOND"
+  ]
+}

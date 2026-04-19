@@ -1,0 +1,21 @@
+{
+  "AcquisitionPointId": "id-abc123",
+  "AudioOnlyTimecodeControl": "example-value",
+  "CertificateMode": "example-value",
+  "ConnectionRetryInterval": "example-value",
+  "Destination": "example-value",
+  "EventId": "id-abc123",
+  "EventIdMode": "id-abc123",
+  "EventStopBehavior": "example-value",
+  "FilecacheDuration": "example-value",
+  "FragmentLength": "example-value",
+  "InputLossAction": "example-value",
+  "NumRetries": "example-value",
+  "RestartDelay": "example-value",
+  "SegmentationMode": "example-value",
+  "SendDelayMs": "example-value",
+  "SparseTrackType": "STANDARD",
+  "StreamManifestBehavior": "example-value",
+  "TimestampOffset": "example-value",
+  "TimestampOffsetMode": "example-value"
+}

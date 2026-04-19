@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-avail-blanking-state-structure.json",
+  "name": "AvailBlankingState",
+  "type": "string",
+  "description": "Avail Blanking State",
+  "enum": [
+    "DISABLED",
+    "ENABLED"
+  ]
+}

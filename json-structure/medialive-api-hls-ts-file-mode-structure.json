@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-hls-ts-file-mode-structure.json",
+  "name": "HlsTsFileMode",
+  "type": "string",
+  "description": "Hls Ts File Mode",
+  "enum": [
+    "SEGMENTED_FILES",
+    "SINGLE_FILE"
+  ]
+}

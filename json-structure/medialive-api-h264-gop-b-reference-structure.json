@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-h264-gop-b-reference-structure.json",
+  "name": "H264GopBReference",
+  "type": "string",
+  "description": "H264 Gop BReference",
+  "enum": [
+    "DISABLED",
+    "ENABLED"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-rec601-settings-structure.json",
+  "name": "Rec601Settings",
+  "type": "object",
+  "description": "Rec601 Settings",
+  "properties": {}
+}

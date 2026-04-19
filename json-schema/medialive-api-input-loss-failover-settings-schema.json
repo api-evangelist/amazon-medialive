@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-input-loss-failover-settings-schema.json",
+  "title": "InputLossFailoverSettings",
+  "description": "MediaLive will perform a failover if content is not detected in this input for the specified period.",
+  "type": "object",
+  "properties": {
+    "InputLossThresholdMsec": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin100"
+        },
+        {
+          "xml": {
+            "name": "inputLossThresholdMsec"
+          },
+          "description": "The amount of time (in milliseconds) that no input is detected. After that time, an input failover will occur."
+        }
+      ]
+    }
+  }
+}

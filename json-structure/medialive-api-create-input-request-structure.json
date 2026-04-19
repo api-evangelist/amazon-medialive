@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-create-input-request-structure.json",
+  "name": "CreateInputRequest",
+  "type": "object",
+  "description": "The name of the input",
+  "properties": {
+    "Destinations": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfInputDestinationRequest"
+        },
+        {
+          "xml": {
+            "name": "destinations"
+          },
+          "description": "Destination settings for PUSH type inputs."
+        }
+      ]
+    },
+    "InputDevices": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfInputDeviceSettings"
+        },
+        {
+          "xml": {
+            "name": "inputDevices"
+          },
+          "description": "Settings for the devices."
+        }
+      ]
+    },
+    "InputSecurityGroups": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOf__string"
+        },
+        {
+          "xml": {
+            "name": "inputSecurityGroups"
+          },
+          "description": "A list of security groups referenced by IDs to attach to the input."
+        }
+      ]
+    },
+    "MediaConnectFlows": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfMediaConnectFlowRequest"
+        },
+        {
+          "xml": {
+            "name": "mediaConnectFlows"
+          },
+          "description": "A list of the MediaConnect Flows that you want to use in this input. You can specify as few as one\nFlow and presently, as many as two. The only requirement is when you have more than one is that each Flow is in a\nseparate Availability Zone as this ensures your EML input is redundant to AZ issues.\n"
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "name"
+          },
+          "description": "Name of the input."
+        }
+      ]
+    },
+    "RequestId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "requestId"
+          },
+          "description": "Unique identifier of the request to ensure the request is handled\nexactly once in case of retries.\n"
+        }
+      ]
+    },
+    "RoleArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "roleArn"
+          },
+          "description": "The Amazon Resource Name (ARN) of the role this input assumes during and after creation."
+        }
+      ]
+    },
+    "Sources": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfInputSourceRequest"
+        },
+        {
+          "xml": {
+            "name": "sources"
+          },
+          "description": "The source URLs for a PULL-type input. Every PULL type input needs\nexactly two source URLs for redundancy.\nOnly specify sources for PULL type Inputs. Leave Destinations empty.\n"
+        }
+      ]
+    },
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Tags"
+        },
+        {
+          "xml": {
+            "name": "tags"
+          },
+          "description": "A collection of key-value pairs."
+        }
+      ]
+    },
+    "Type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputType"
+        },
+        {
+          "xml": {
+            "name": "type"
+          }
+        }
+      ]
+    },
+    "Vpc": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputVpcRequest"
+        },
+        {
+          "xml": {
+            "name": "vpc"
+          }
+        }
+      ]
+    }
+  }
+}

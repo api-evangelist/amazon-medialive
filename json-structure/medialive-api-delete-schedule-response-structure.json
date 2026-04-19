@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-delete-schedule-response-structure.json",
+  "name": "DeleteScheduleResponse",
+  "type": "object",
+  "description": "Placeholder documentation for DeleteScheduleResponse",
+  "properties": {}
+}

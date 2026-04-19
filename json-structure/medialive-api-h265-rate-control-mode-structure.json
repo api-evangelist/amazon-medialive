@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-h265-rate-control-mode-structure.json",
+  "name": "H265RateControlMode",
+  "type": "string",
+  "description": "H265 Rate Control Mode",
+  "enum": [
+    "CBR",
+    "MULTIPLEX",
+    "QVBR"
+  ]
+}

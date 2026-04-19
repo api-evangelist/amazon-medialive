@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-audio-only-hls-segment-type-schema.json",
+  "title": "AudioOnlyHlsSegmentType",
+  "description": "Audio Only Hls Segment Type",
+  "type": "string",
+  "enum": [
+    "AAC",
+    "FMP4"
+  ]
+}

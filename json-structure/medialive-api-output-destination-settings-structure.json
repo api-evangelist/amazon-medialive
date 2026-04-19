@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-output-destination-settings-structure.json",
+  "name": "OutputDestinationSettings",
+  "type": "object",
+  "description": "Placeholder documentation for OutputDestinationSettings",
+  "properties": {
+    "PasswordParam": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "passwordParam"
+          },
+          "description": "key used to extract the password from EC2 Parameter store"
+        }
+      ]
+    },
+    "StreamName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "streamName"
+          },
+          "description": "Stream name for RTMP destinations (URLs of type rtmp://)"
+        }
+      ]
+    },
+    "Url": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "url"
+          },
+          "description": "A URL specifying a destination"
+        }
+      ]
+    },
+    "Username": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "username"
+          },
+          "description": "username for destination"
+        }
+      ]
+    }
+  }
+}

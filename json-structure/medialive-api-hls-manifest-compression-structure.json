@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-hls-manifest-compression-structure.json",
+  "name": "HlsManifestCompression",
+  "type": "string",
+  "description": "Hls Manifest Compression",
+  "enum": [
+    "GZIP",
+    "NONE"
+  ]
+}

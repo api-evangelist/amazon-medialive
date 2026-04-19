@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-key-provider-settings-schema.json",
+  "title": "KeyProviderSettings",
+  "description": "Key Provider Settings",
+  "type": "object",
+  "properties": {
+    "StaticKeySettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StaticKeySettings"
+        },
+        {
+          "xml": {
+            "name": "staticKeySettings"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-output-structure.json",
+  "name": "Output",
+  "type": "object",
+  "description": "Output settings. There can be multiple outputs within a group.",
+  "properties": {
+    "AudioDescriptionNames": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOf__string"
+        },
+        {
+          "xml": {
+            "name": "audioDescriptionNames"
+          },
+          "description": "The names of the AudioDescriptions used as audio sources for this output."
+        }
+      ]
+    },
+    "CaptionDescriptionNames": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOf__string"
+        },
+        {
+          "xml": {
+            "name": "captionDescriptionNames"
+          },
+          "description": "The names of the CaptionDescriptions used as caption sources for this output."
+        }
+      ]
+    },
+    "OutputName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMin1Max255"
+        },
+        {
+          "xml": {
+            "name": "outputName"
+          },
+          "description": "The name used to identify an output."
+        }
+      ]
+    },
+    "OutputSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OutputSettings"
+        },
+        {
+          "xml": {
+            "name": "outputSettings"
+          },
+          "description": "Output type-specific settings."
+        }
+      ]
+    },
+    "VideoDescriptionName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "videoDescriptionName"
+          },
+          "description": "The name of the VideoDescription used as the source for this output."
+        }
+      ]
+    }
+  },
+  "required": [
+    "OutputSettings"
+  ]
+}

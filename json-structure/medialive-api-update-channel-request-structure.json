@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-update-channel-request-structure.json",
+  "name": "UpdateChannelRequest",
+  "type": "object",
+  "description": "A request to update a channel.",
+  "properties": {
+    "CdiInputSpecification": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CdiInputSpecification"
+        },
+        {
+          "xml": {
+            "name": "cdiInputSpecification"
+          },
+          "description": "Specification of CDI inputs for this channel"
+        }
+      ]
+    },
+    "Destinations": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfOutputDestination"
+        },
+        {
+          "xml": {
+            "name": "destinations"
+          },
+          "description": "A list of output destinations for this channel."
+        }
+      ]
+    },
+    "EncoderSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EncoderSettings"
+        },
+        {
+          "xml": {
+            "name": "encoderSettings"
+          },
+          "description": "The encoder settings for this channel."
+        }
+      ]
+    },
+    "InputAttachments": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfInputAttachment"
+        },
+        {
+          "xml": {
+            "name": "inputAttachments"
+          }
+        }
+      ]
+    },
+    "InputSpecification": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputSpecification"
+        },
+        {
+          "xml": {
+            "name": "inputSpecification"
+          },
+          "description": "Specification of network and file inputs for this channel"
+        }
+      ]
+    },
+    "LogLevel": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LogLevel"
+        },
+        {
+          "xml": {
+            "name": "logLevel"
+          },
+          "description": "The log level to write to CloudWatch Logs."
+        }
+      ]
+    },
+    "Maintenance": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MaintenanceUpdateSettings"
+        },
+        {
+          "xml": {
+            "name": "maintenance"
+          },
+          "description": "Maintenance settings for this channel."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "name"
+          },
+          "description": "The name of the channel."
+        }
+      ]
+    },
+    "RoleArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "roleArn"
+          },
+          "description": "An optional Amazon Resource Name (ARN) of the role to assume when running the Channel. If you do not specify this on an update call but the role was previously set that role will be removed."
+        }
+      ]
+    }
+  }
+}

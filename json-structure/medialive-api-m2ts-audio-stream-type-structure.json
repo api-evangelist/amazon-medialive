@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-m2ts-audio-stream-type-structure.json",
+  "name": "M2tsAudioStreamType",
+  "type": "string",
+  "description": "M2ts Audio Stream Type",
+  "enum": [
+    "ATSC",
+    "DVB"
+  ]
+}

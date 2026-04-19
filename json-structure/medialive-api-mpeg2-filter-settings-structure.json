@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-mpeg2-filter-settings-structure.json",
+  "name": "Mpeg2FilterSettings",
+  "type": "object",
+  "description": "Mpeg2 Filter Settings",
+  "properties": {
+    "TemporalFilterSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TemporalFilterSettings"
+        },
+        {
+          "xml": {
+            "name": "temporalFilterSettings"
+          }
+        }
+      ]
+    }
+  }
+}

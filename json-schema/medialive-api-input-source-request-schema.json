@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-input-source-request-schema.json",
+  "title": "InputSourceRequest",
+  "description": "Settings for for a PULL type input.",
+  "type": "object",
+  "properties": {
+    "PasswordParam": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "passwordParam"
+          },
+          "description": "The key used to extract the password from EC2 Parameter store."
+        }
+      ]
+    },
+    "Url": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "url"
+          },
+          "description": "This represents the customer's source URL where stream is\npulled from.\n"
+        }
+      ]
+    },
+    "Username": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "username"
+          },
+          "description": "The username for the input source."
+        }
+      ]
+    }
+  }
+}

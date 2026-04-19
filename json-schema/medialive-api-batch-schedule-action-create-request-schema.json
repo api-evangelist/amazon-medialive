@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-batch-schedule-action-create-request-schema.json",
+  "title": "BatchScheduleActionCreateRequest",
+  "description": "A list of schedule actions to create (in a request) or that have been created (in a response).",
+  "type": "object",
+  "properties": {
+    "ScheduleActions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfScheduleAction"
+        },
+        {
+          "xml": {
+            "name": "scheduleActions"
+          },
+          "description": "A list of schedule actions to create."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ScheduleActions"
+  ]
+}

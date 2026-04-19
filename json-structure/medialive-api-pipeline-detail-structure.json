@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-pipeline-detail-structure.json",
+  "name": "PipelineDetail",
+  "type": "object",
+  "description": "Runtime details of a pipeline when a channel is running.",
+  "properties": {
+    "ActiveInputAttachmentName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "activeInputAttachmentName"
+          },
+          "description": "The name of the active input attachment currently being ingested by this pipeline."
+        }
+      ]
+    },
+    "ActiveInputSwitchActionName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "activeInputSwitchActionName"
+          },
+          "description": "The name of the input switch schedule action that occurred most recently and that resulted in the switch to the current input attachment for this pipeline."
+        }
+      ]
+    },
+    "ActiveMotionGraphicsActionName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "activeMotionGraphicsActionName"
+          },
+          "description": "The name of the motion graphics activate action that occurred most recently and that resulted in the current graphics URI for this pipeline."
+        }
+      ]
+    },
+    "ActiveMotionGraphicsUri": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "activeMotionGraphicsUri"
+          },
+          "description": "The current URI being used for HTML5 motion graphics for this pipeline."
+        }
+      ]
+    },
+    "PipelineId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "pipelineId"
+          },
+          "description": "Pipeline ID"
+        }
+      ]
+    }
+  }
+}

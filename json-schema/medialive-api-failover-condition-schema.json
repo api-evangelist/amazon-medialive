@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-failover-condition-schema.json",
+  "title": "FailoverCondition",
+  "description": "Failover Condition settings. There can be multiple failover conditions inside AutomaticInputFailoverSettings.",
+  "type": "object",
+  "properties": {
+    "FailoverConditionSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FailoverConditionSettings"
+        },
+        {
+          "xml": {
+            "name": "failoverConditionSettings"
+          },
+          "description": "Failover condition type-specific settings."
+        }
+      ]
+    }
+  }
+}

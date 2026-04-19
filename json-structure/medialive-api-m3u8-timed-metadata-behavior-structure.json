@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-m3u8-timed-metadata-behavior-structure.json",
+  "name": "M3u8TimedMetadataBehavior",
+  "type": "string",
+  "description": "M3u8 Timed Metadata Behavior",
+  "enum": [
+    "NO_PASSTHROUGH",
+    "PASSTHROUGH"
+  ]
+}

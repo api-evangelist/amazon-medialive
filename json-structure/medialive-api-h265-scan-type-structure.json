@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-h265-scan-type-structure.json",
+  "name": "H265ScanType",
+  "type": "string",
+  "description": "H265 Scan Type",
+  "enum": [
+    "INTERLACED",
+    "PROGRESSIVE"
+  ]
+}

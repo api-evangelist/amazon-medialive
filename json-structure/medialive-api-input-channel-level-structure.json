@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-channel-level-structure.json",
+  "name": "InputChannelLevel",
+  "type": "object",
+  "description": "Input Channel Level",
+  "properties": {
+    "Gain": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMinNegative60Max6"
+        },
+        {
+          "xml": {
+            "name": "gain"
+          },
+          "description": "Remixing value. Units are in dB and acceptable values are within the range from -60 (mute) and 6 dB."
+        }
+      ]
+    },
+    "InputChannel": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max15"
+        },
+        {
+          "xml": {
+            "name": "inputChannel"
+          },
+          "description": "The index of the input channel used as a source."
+        }
+      ]
+    }
+  },
+  "required": [
+    "InputChannel",
+    "Gain"
+  ]
+}

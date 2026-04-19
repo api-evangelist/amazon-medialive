@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-input-device-summary-schema.json",
+  "title": "InputDeviceSummary",
+  "description": "Details of the input device.",
+  "type": "object",
+  "properties": {
+    "Arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "arn"
+          },
+          "description": "The unique ARN of the input device."
+        }
+      ]
+    },
+    "ConnectionState": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputDeviceConnectionState"
+        },
+        {
+          "xml": {
+            "name": "connectionState"
+          },
+          "description": "The state of the connection between the input device and AWS."
+        }
+      ]
+    },
+    "DeviceSettingsSyncState": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceSettingsSyncState"
+        },
+        {
+          "xml": {
+            "name": "deviceSettingsSyncState"
+          },
+          "description": "The status of the action to synchronize the device configuration. If you change the configuration of the input device (for example, the maximum bitrate), MediaLive sends the new data to the device. The device might not update itself immediately. SYNCED means the device has updated its configuration. SYNCING means that it has not updated its configuration."
+        }
+      ]
+    },
+    "DeviceUpdateStatus": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceUpdateStatus"
+        },
+        {
+          "xml": {
+            "name": "deviceUpdateStatus"
+          },
+          "description": "The status of software on the input device."
+        }
+      ]
+    },
+    "HdDeviceSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputDeviceHdSettings"
+        },
+        {
+          "xml": {
+            "name": "hdDeviceSettings"
+          },
+          "description": "Settings that describe an input device that is type HD."
+        }
+      ]
+    },
+    "Id": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "id"
+          },
+          "description": "The unique ID of the input device."
+        }
+      ]
+    },
+    "MacAddress": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "macAddress"
+          },
+          "description": "The network MAC address of the input device."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "name"
+          },
+          "description": "A name that you specify for the input device."
+        }
+      ]
+    },
+    "NetworkSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputDeviceNetworkSettings"
+        },
+        {
+          "xml": {
+            "name": "networkSettings"
+          },
+          "description": "Network settings for the input device."
+        }
+      ]
+    },
+    "SerialNumber": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "serialNumber"
+          },
+          "description": "The unique serial number of the input device."
+        }
+      ]
+    },
+    "Type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputDeviceType"
+        },
+        {
+          "xml": {
+            "name": "type"
+          },
+          "description": "The type of the input device."
+        }
+      ]
+    },
+    "UhdDeviceSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputDeviceUhdSettings"
+        },
+        {
+          "xml": {
+            "name": "uhdDeviceSettings"
+          },
+          "description": "Settings that describe an input device that is type UHD."
+        }
+      ]
+    },
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Tags"
+        },
+        {
+          "xml": {
+            "name": "tags"
+          },
+          "description": "A collection of key-value pairs."
+        }
+      ]
+    }
+  }
+}

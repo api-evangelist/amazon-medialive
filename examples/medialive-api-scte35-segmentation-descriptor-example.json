@@ -1,0 +1,13 @@
+{
+  "DeliveryRestrictions": "example-value",
+  "SegmentNum": "example-value",
+  "SegmentationCancelIndicator": "example-value",
+  "SegmentationDuration": "example-value",
+  "SegmentationEventId": "id-abc123",
+  "SegmentationTypeId": "id-abc123",
+  "SegmentationUpid": "id-abc123",
+  "SegmentationUpidType": "id-abc123",
+  "SegmentsExpected": "example-value",
+  "SubSegmentNum": "example-value",
+  "SubSegmentsExpected": "example-value"
+}

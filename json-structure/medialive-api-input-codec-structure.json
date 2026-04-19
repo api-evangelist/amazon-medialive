@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-codec-structure.json",
+  "name": "InputCodec",
+  "type": "string",
+  "description": "codec in increasing order of complexity",
+  "enum": [
+    "MPEG2",
+    "AVC",
+    "HEVC"
+  ]
+}

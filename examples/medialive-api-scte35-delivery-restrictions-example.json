@@ -1,0 +1,6 @@
+{
+  "ArchiveAllowedFlag": "example-value",
+  "DeviceRestrictions": "example-value",
+  "NoRegionalBlackoutFlag": "example-value",
+  "WebDeliveryAllowedFlag": "example-value"
+}

@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-audio-codec-settings-schema.json",
+  "title": "AudioCodecSettings",
+  "description": "Audio Codec Settings",
+  "type": "object",
+  "properties": {
+    "AacSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AacSettings"
+        },
+        {
+          "xml": {
+            "name": "aacSettings"
+          }
+        }
+      ]
+    },
+    "Ac3Settings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Ac3Settings"
+        },
+        {
+          "xml": {
+            "name": "ac3Settings"
+          }
+        }
+      ]
+    },
+    "Eac3AtmosSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Eac3AtmosSettings"
+        },
+        {
+          "xml": {
+            "name": "eac3AtmosSettings"
+          }
+        }
+      ]
+    },
+    "Eac3Settings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Eac3Settings"
+        },
+        {
+          "xml": {
+            "name": "eac3Settings"
+          }
+        }
+      ]
+    },
+    "Mp2Settings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Mp2Settings"
+        },
+        {
+          "xml": {
+            "name": "mp2Settings"
+          }
+        }
+      ]
+    },
+    "PassThroughSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PassThroughSettings"
+        },
+        {
+          "xml": {
+            "name": "passThroughSettings"
+          }
+        }
+      ]
+    },
+    "WavSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WavSettings"
+        },
+        {
+          "xml": {
+            "name": "wavSettings"
+          }
+        }
+      ]
+    }
+  }
+}

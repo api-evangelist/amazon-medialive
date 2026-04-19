@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-eac3-lfe-control-schema.json",
+  "title": "Eac3LfeControl",
+  "description": "Eac3 Lfe Control",
+  "type": "string",
+  "enum": [
+    "LFE",
+    "NO_LFE"
+  ]
+}

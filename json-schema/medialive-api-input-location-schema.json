@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-input-location-schema.json",
+  "title": "InputLocation",
+  "description": "Input Location",
+  "type": "object",
+  "properties": {
+    "PasswordParam": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "passwordParam"
+          },
+          "description": "key used to extract the password from EC2 Parameter store"
+        }
+      ]
+    },
+    "Uri": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMax2048"
+        },
+        {
+          "xml": {
+            "name": "uri"
+          },
+          "description": "Uniform Resource Identifier - This should be a path to a file accessible to the Live system (eg. a http:// URI) depending on the output type. For example, a RTMP destination should have a uri simliar to: \"rtmp://fmsserver/live\"."
+        }
+      ]
+    },
+    "Username": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "username"
+          },
+          "description": "Documentation update needed"
+        }
+      ]
+    }
+  },
+  "required": [
+    "Uri"
+  ]
+}

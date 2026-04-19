@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-dvb-sdt-output-sdt-structure.json",
+  "name": "DvbSdtOutputSdt",
+  "type": "string",
+  "description": "Dvb Sdt Output Sdt",
+  "enum": [
+    "SDT_FOLLOW",
+    "SDT_FOLLOW_IF_PRESENT",
+    "SDT_MANUAL",
+    "SDT_NONE"
+  ]
+}

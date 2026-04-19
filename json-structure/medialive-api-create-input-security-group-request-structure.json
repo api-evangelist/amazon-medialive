@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-create-input-security-group-request-structure.json",
+  "name": "CreateInputSecurityGroupRequest",
+  "type": "object",
+  "description": "The IPv4 CIDRs to whitelist for this Input Security Group",
+  "properties": {
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Tags"
+        },
+        {
+          "xml": {
+            "name": "tags"
+          },
+          "description": "A collection of key-value pairs."
+        }
+      ]
+    },
+    "WhitelistRules": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfInputWhitelistRuleCidr"
+        },
+        {
+          "xml": {
+            "name": "whitelistRules"
+          },
+          "description": "List of IPv4 CIDR addresses to whitelist"
+        }
+      ]
+    }
+  }
+}

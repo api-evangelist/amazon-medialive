@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-h264-profile-schema.json",
+  "title": "H264Profile",
+  "description": "H264 Profile",
+  "type": "string",
+  "enum": [
+    "BASELINE",
+    "HIGH",
+    "HIGH_10BIT",
+    "HIGH_422",
+    "HIGH_422_10BIT",
+    "MAIN"
+  ]
+}

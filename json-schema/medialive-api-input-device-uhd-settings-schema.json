@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-input-device-uhd-settings-schema.json",
+  "title": "InputDeviceUhdSettings",
+  "description": "Settings that describe the active source from the input device, and the video characteristics of that source.",
+  "type": "object",
+  "properties": {
+    "ActiveInput": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputDeviceActiveInput"
+        },
+        {
+          "xml": {
+            "name": "activeInput"
+          },
+          "description": "If you specified Auto as the configured input, specifies which of the sources is currently active (SDI or HDMI)."
+        }
+      ]
+    },
+    "ConfiguredInput": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputDeviceConfiguredInput"
+        },
+        {
+          "xml": {
+            "name": "configuredInput"
+          },
+          "description": "The source at the input device that is currently active. You can specify this source."
+        }
+      ]
+    },
+    "DeviceState": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputDeviceState"
+        },
+        {
+          "xml": {
+            "name": "deviceState"
+          },
+          "description": "The state of the input device."
+        }
+      ]
+    },
+    "Framerate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__double"
+        },
+        {
+          "xml": {
+            "name": "framerate"
+          },
+          "description": "The frame rate of the video source."
+        }
+      ]
+    },
+    "Height": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integer"
+        },
+        {
+          "xml": {
+            "name": "height"
+          },
+          "description": "The height of the video source, in pixels."
+        }
+      ]
+    },
+    "MaxBitrate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integer"
+        },
+        {
+          "xml": {
+            "name": "maxBitrate"
+          },
+          "description": "The current maximum bitrate for ingesting this source, in bits per second. You can specify this maximum."
+        }
+      ]
+    },
+    "ScanType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputDeviceScanType"
+        },
+        {
+          "xml": {
+            "name": "scanType"
+          },
+          "description": "The scan type of the video source."
+        }
+      ]
+    },
+    "Width": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integer"
+        },
+        {
+          "xml": {
+            "name": "width"
+          },
+          "description": "The width of the video source, in pixels."
+        }
+      ]
+    },
+    "LatencyMs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integer"
+        },
+        {
+          "xml": {
+            "name": "latencyMs"
+          },
+          "description": "The Link device's buffer size (latency) in milliseconds (ms). You can specify this value."
+        }
+      ]
+    }
+  }
+}

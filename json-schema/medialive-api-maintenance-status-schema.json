@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-maintenance-status-schema.json",
+  "title": "MaintenanceStatus",
+  "description": "Placeholder documentation for MaintenanceStatus",
+  "type": "object",
+  "properties": {
+    "MaintenanceDay": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MaintenanceDay"
+        },
+        {
+          "xml": {
+            "name": "maintenanceDay"
+          },
+          "description": "The currently selected maintenance day."
+        }
+      ]
+    },
+    "MaintenanceDeadline": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "maintenanceDeadline"
+          },
+          "description": "Maintenance is required by the displayed date and time. Date and time is in ISO."
+        }
+      ]
+    },
+    "MaintenanceScheduledDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "maintenanceScheduledDate"
+          },
+          "description": "The currently scheduled maintenance date and time. Date and time is in ISO."
+        }
+      ]
+    },
+    "MaintenanceStartTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "maintenanceStartTime"
+          },
+          "description": "The currently selected maintenance start time. Time is in UTC."
+        }
+      ]
+    }
+  }
+}

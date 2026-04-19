@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-device-network-settings-structure.json",
+  "name": "InputDeviceNetworkSettings",
+  "type": "object",
+  "description": "The network settings for the input device.",
+  "properties": {
+    "DnsAddresses": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOf__string"
+        },
+        {
+          "xml": {
+            "name": "dnsAddresses"
+          },
+          "description": "The DNS addresses of the input device."
+        }
+      ]
+    },
+    "Gateway": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "gateway"
+          },
+          "description": "The network gateway IP address."
+        }
+      ]
+    },
+    "IpAddress": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "ipAddress"
+          },
+          "description": "The IP address of the input device."
+        }
+      ]
+    },
+    "IpScheme": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputDeviceIpScheme"
+        },
+        {
+          "xml": {
+            "name": "ipScheme"
+          },
+          "description": "Specifies whether the input device has been configured (outside of MediaLive) to use a dynamic IP address assignment (DHCP) or a static IP address."
+        }
+      ]
+    },
+    "SubnetMask": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "subnetMask"
+          },
+          "description": "The subnet mask of the input device."
+        }
+      ]
+    }
+  }
+}

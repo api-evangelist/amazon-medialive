@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-h265-flicker-aq-structure.json",
+  "name": "H265FlickerAq",
+  "type": "string",
+  "description": "H265 Flicker Aq",
+  "enum": [
+    "DISABLED",
+    "ENABLED"
+  ]
+}

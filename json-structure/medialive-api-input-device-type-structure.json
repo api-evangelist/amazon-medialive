@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-device-type-structure.json",
+  "name": "InputDeviceType",
+  "type": "string",
+  "description": "The type of the input device. For an AWS Elemental Link device that outputs resolutions up to 1080, choose \"HD\".",
+  "enum": [
+    "HD",
+    "UHD"
+  ]
+}

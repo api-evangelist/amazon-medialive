@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-source-end-behavior-structure.json",
+  "name": "InputSourceEndBehavior",
+  "type": "string",
+  "description": "Input Source End Behavior",
+  "enum": [
+    "CONTINUE",
+    "LOOP"
+  ]
+}

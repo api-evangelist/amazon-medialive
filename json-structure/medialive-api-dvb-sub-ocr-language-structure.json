@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-dvb-sub-ocr-language-structure.json",
+  "name": "DvbSubOcrLanguage",
+  "type": "string",
+  "description": "Dvb Sub Ocr Language",
+  "enum": [
+    "DEU",
+    "ENG",
+    "FRA",
+    "NLD",
+    "POR",
+    "SPA"
+  ]
+}

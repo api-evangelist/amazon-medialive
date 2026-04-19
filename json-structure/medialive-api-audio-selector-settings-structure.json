@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-audio-selector-settings-structure.json",
+  "name": "AudioSelectorSettings",
+  "type": "object",
+  "description": "Audio Selector Settings",
+  "properties": {
+    "AudioHlsRenditionSelection": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AudioHlsRenditionSelection"
+        },
+        {
+          "xml": {
+            "name": "audioHlsRenditionSelection"
+          }
+        }
+      ]
+    },
+    "AudioLanguageSelection": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AudioLanguageSelection"
+        },
+        {
+          "xml": {
+            "name": "audioLanguageSelection"
+          }
+        }
+      ]
+    },
+    "AudioPidSelection": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AudioPidSelection"
+        },
+        {
+          "xml": {
+            "name": "audioPidSelection"
+          }
+        }
+      ]
+    },
+    "AudioTrackSelection": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AudioTrackSelection"
+        },
+        {
+          "xml": {
+            "name": "audioTrackSelection"
+          }
+        }
+      ]
+    }
+  }
+}

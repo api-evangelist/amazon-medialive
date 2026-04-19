@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-hls-h265-packaging-type-structure.json",
+  "name": "HlsH265PackagingType",
+  "type": "string",
+  "description": "Hls H265 Packaging Type",
+  "enum": [
+    "HEV1",
+    "HVC1"
+  ]
+}

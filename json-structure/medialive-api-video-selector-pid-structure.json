@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-video-selector-pid-structure.json",
+  "name": "VideoSelectorPid",
+  "type": "object",
+  "description": "Video Selector Pid",
+  "properties": {
+    "Pid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max8191"
+        },
+        {
+          "xml": {
+            "name": "pid"
+          },
+          "description": "Selects a specific PID from within a video source."
+        }
+      ]
+    }
+  }
+}

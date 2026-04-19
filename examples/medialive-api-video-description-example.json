@@ -1,0 +1,9 @@
+{
+  "CodecSettings": "example-value",
+  "Height": "example-value",
+  "Name": "example-resource",
+  "RespondToAfd": "example-value",
+  "ScalingBehavior": "example-value",
+  "Sharpness": "example-value",
+  "Width": "id-abc123"
+}

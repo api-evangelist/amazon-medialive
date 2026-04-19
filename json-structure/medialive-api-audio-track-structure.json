@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-audio-track-structure.json",
+  "name": "AudioTrack",
+  "type": "object",
+  "description": "Audio Track",
+  "properties": {
+    "Track": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin1"
+        },
+        {
+          "xml": {
+            "name": "track"
+          },
+          "description": "1-based integer value that maps to a specific audio track"
+        }
+      ]
+    }
+  },
+  "required": [
+    "Track"
+  ]
+}

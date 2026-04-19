@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-list-multiplexes-response-schema.json",
+  "title": "ListMultiplexesResponse",
+  "description": "Placeholder documentation for ListMultiplexesResponse",
+  "type": "object",
+  "properties": {
+    "Multiplexes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfMultiplexSummary"
+        },
+        {
+          "xml": {
+            "name": "multiplexes"
+          },
+          "description": "List of multiplexes."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "nextToken"
+          },
+          "description": "Token for the next ListMultiplexes request."
+        }
+      ]
+    }
+  }
+}

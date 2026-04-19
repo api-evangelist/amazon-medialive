@@ -1,0 +1,13 @@
+{
+  "Destinations": "example-value",
+  "InputDevices": "example-value",
+  "InputSecurityGroups": "example-value",
+  "MediaConnectFlows": "example-value",
+  "Name": "example-resource",
+  "RequestId": "id-abc123",
+  "RoleArn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "Sources": "example-value",
+  "Tags": "example-value",
+  "Type": "STANDARD",
+  "Vpc": "example-value"
+}

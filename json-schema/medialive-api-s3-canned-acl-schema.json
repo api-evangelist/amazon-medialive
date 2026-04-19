@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-s3-canned-acl-schema.json",
+  "title": "S3CannedAcl",
+  "description": "S3 Canned Acl",
+  "type": "string",
+  "enum": [
+    "AUTHENTICATED_READ",
+    "BUCKET_OWNER_FULL_CONTROL",
+    "BUCKET_OWNER_READ",
+    "PUBLIC_READ"
+  ]
+}

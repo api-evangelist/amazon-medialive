@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-list-multiplex-programs-response-schema.json",
+  "title": "ListMultiplexProgramsResponse",
+  "description": "Placeholder documentation for ListMultiplexProgramsResponse",
+  "type": "object",
+  "properties": {
+    "MultiplexPrograms": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfMultiplexProgramSummary"
+        },
+        {
+          "xml": {
+            "name": "multiplexPrograms"
+          },
+          "description": "List of multiplex programs."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "nextToken"
+          },
+          "description": "Token for the next ListMultiplexProgram request."
+        }
+      ]
+    }
+  }
+}

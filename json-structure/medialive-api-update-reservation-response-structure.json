@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-update-reservation-response-structure.json",
+  "name": "UpdateReservationResponse",
+  "type": "object",
+  "description": "Placeholder documentation for UpdateReservationResponse",
+  "properties": {
+    "Reservation": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Reservation"
+        },
+        {
+          "xml": {
+            "name": "reservation"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-output-group-settings-schema.json",
+  "title": "OutputGroupSettings",
+  "description": "Output Group Settings",
+  "type": "object",
+  "properties": {
+    "ArchiveGroupSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArchiveGroupSettings"
+        },
+        {
+          "xml": {
+            "name": "archiveGroupSettings"
+          }
+        }
+      ]
+    },
+    "FrameCaptureGroupSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FrameCaptureGroupSettings"
+        },
+        {
+          "xml": {
+            "name": "frameCaptureGroupSettings"
+          }
+        }
+      ]
+    },
+    "HlsGroupSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/HlsGroupSettings"
+        },
+        {
+          "xml": {
+            "name": "hlsGroupSettings"
+          }
+        }
+      ]
+    },
+    "MediaPackageGroupSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MediaPackageGroupSettings"
+        },
+        {
+          "xml": {
+            "name": "mediaPackageGroupSettings"
+          }
+        }
+      ]
+    },
+    "MsSmoothGroupSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MsSmoothGroupSettings"
+        },
+        {
+          "xml": {
+            "name": "msSmoothGroupSettings"
+          }
+        }
+      ]
+    },
+    "MultiplexGroupSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MultiplexGroupSettings"
+        },
+        {
+          "xml": {
+            "name": "multiplexGroupSettings"
+          }
+        }
+      ]
+    },
+    "RtmpGroupSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RtmpGroupSettings"
+        },
+        {
+          "xml": {
+            "name": "rtmpGroupSettings"
+          }
+        }
+      ]
+    },
+    "UdpGroupSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UdpGroupSettings"
+        },
+        {
+          "xml": {
+            "name": "udpGroupSettings"
+          }
+        }
+      ]
+    }
+  }
+}

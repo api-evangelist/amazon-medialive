@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-describe-input-device-thumbnail-response-schema.json",
+  "title": "DescribeInputDeviceThumbnailResponse",
+  "description": "Placeholder documentation for DescribeInputDeviceThumbnailResponse",
+  "type": "object",
+  "properties": {
+    "Body": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputDeviceThumbnail"
+        },
+        {
+          "xml": {
+            "name": "body"
+          },
+          "description": "The binary data for the thumbnail that the Link device has most recently sent to MediaLive."
+        }
+      ]
+    }
+  }
+}

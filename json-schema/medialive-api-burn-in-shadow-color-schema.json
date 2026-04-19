@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-burn-in-shadow-color-schema.json",
+  "title": "BurnInShadowColor",
+  "description": "Burn In Shadow Color",
+  "type": "string",
+  "enum": [
+    "BLACK",
+    "NONE",
+    "WHITE"
+  ]
+}

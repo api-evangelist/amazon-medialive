@@ -1,0 +1,11 @@
+{
+  "Arn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "AvailabilityZones": "example-value",
+  "Id": "id-abc123",
+  "MultiplexSettings": "example-value",
+  "Name": "example-resource",
+  "PipelinesRunningCount": "example-value",
+  "ProgramCount": "example-value",
+  "State": "example-value",
+  "Tags": "example-value"
+}

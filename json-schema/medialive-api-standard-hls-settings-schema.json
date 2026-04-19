@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-standard-hls-settings-schema.json",
+  "title": "StandardHlsSettings",
+  "description": "Standard Hls Settings",
+  "type": "object",
+  "properties": {
+    "AudioRenditionSets": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "audioRenditionSets"
+          },
+          "description": "List all the audio groups that are used with the video output stream. Input all the audio GROUP-IDs that are associated to the video, separate by ','."
+        }
+      ]
+    },
+    "M3u8Settings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/M3u8Settings"
+        },
+        {
+          "xml": {
+            "name": "m3u8Settings"
+          }
+        }
+      ]
+    }
+  },
+  "required": [
+    "M3u8Settings"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-eac3-phase-control-schema.json",
+  "title": "Eac3PhaseControl",
+  "description": "Eac3 Phase Control",
+  "type": "string",
+  "enum": [
+    "NO_SHIFT",
+    "SHIFT_90_DEGREES"
+  ]
+}

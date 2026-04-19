@@ -1,0 +1,6 @@
+{
+  "ErrorClearTimeMsec": "example-value",
+  "FailoverConditions": "example-value",
+  "InputPreference": "example-value",
+  "SecondaryInputId": "id-abc123"
+}

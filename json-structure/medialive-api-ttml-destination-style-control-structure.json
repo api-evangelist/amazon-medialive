@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-ttml-destination-style-control-structure.json",
+  "name": "TtmlDestinationStyleControl",
+  "type": "string",
+  "description": "Ttml Destination Style Control",
+  "enum": [
+    "PASSTHROUGH",
+    "USE_CONFIGURED"
+  ]
+}

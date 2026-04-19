@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-hls-iv-in-manifest-schema.json",
+  "title": "HlsIvInManifest",
+  "description": "Hls Iv In Manifest",
+  "type": "string",
+  "enum": [
+    "EXCLUDE",
+    "INCLUDE"
+  ]
+}

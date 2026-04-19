@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-create-channel-request-schema.json",
+  "title": "CreateChannelRequest",
+  "description": "A request to create a channel",
+  "type": "object",
+  "properties": {
+    "CdiInputSpecification": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CdiInputSpecification"
+        },
+        {
+          "xml": {
+            "name": "cdiInputSpecification"
+          },
+          "description": "Specification of CDI inputs for this channel"
+        }
+      ]
+    },
+    "ChannelClass": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ChannelClass"
+        },
+        {
+          "xml": {
+            "name": "channelClass"
+          },
+          "description": "The class for this channel. STANDARD for a channel with two pipelines or SINGLE_PIPELINE for a channel with one pipeline."
+        }
+      ]
+    },
+    "Destinations": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfOutputDestination"
+        },
+        {
+          "xml": {
+            "name": "destinations"
+          }
+        }
+      ]
+    },
+    "EncoderSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EncoderSettings"
+        },
+        {
+          "xml": {
+            "name": "encoderSettings"
+          }
+        }
+      ]
+    },
+    "InputAttachments": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfInputAttachment"
+        },
+        {
+          "xml": {
+            "name": "inputAttachments"
+          },
+          "description": "List of input attachments for channel."
+        }
+      ]
+    },
+    "InputSpecification": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputSpecification"
+        },
+        {
+          "xml": {
+            "name": "inputSpecification"
+          },
+          "description": "Specification of network and file inputs for this channel"
+        }
+      ]
+    },
+    "LogLevel": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LogLevel"
+        },
+        {
+          "xml": {
+            "name": "logLevel"
+          },
+          "description": "The log level to write to CloudWatch Logs."
+        }
+      ]
+    },
+    "Maintenance": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MaintenanceCreateSettings"
+        },
+        {
+          "xml": {
+            "name": "maintenance"
+          },
+          "description": "Maintenance settings for this channel."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "name"
+          },
+          "description": "Name of channel."
+        }
+      ]
+    },
+    "RequestId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "requestId"
+          },
+          "description": "Unique request ID to be specified. This is needed to prevent retries from\ncreating multiple resources.\n"
+        }
+      ]
+    },
+    "Reserved": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "deprecated": true,
+          "xml": {
+            "name": "reserved"
+          },
+          "description": "Deprecated field that's only usable by whitelisted customers."
+        }
+      ]
+    },
+    "RoleArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "roleArn"
+          },
+          "description": "An optional Amazon Resource Name (ARN) of the role to assume when running the Channel."
+        }
+      ]
+    },
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Tags"
+        },
+        {
+          "xml": {
+            "name": "tags"
+          },
+          "description": "A collection of key-value pairs."
+        }
+      ]
+    },
+    "Vpc": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VpcOutputSettings"
+        },
+        {
+          "xml": {
+            "name": "vpc"
+          },
+          "description": "Settings for the VPC outputs"
+        }
+      ]
+    }
+  }
+}

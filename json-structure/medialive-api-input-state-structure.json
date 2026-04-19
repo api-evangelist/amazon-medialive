@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-state-structure.json",
+  "name": "InputState",
+  "type": "string",
+  "description": "Placeholder documentation for InputState",
+  "enum": [
+    "CREATING",
+    "DETACHED",
+    "ATTACHED",
+    "DELETING",
+    "DELETED"
+  ]
+}

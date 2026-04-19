@@ -1,0 +1,7 @@
+{
+  "HlsAkamaiSettings": "example-value",
+  "HlsBasicPutSettings": "example-value",
+  "HlsMediaStoreSettings": "example-value",
+  "HlsS3Settings": "example-value",
+  "HlsWebdavSettings": "example-value"
+}

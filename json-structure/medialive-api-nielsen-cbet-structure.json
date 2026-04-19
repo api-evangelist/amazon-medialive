@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-nielsen-cbet-structure.json",
+  "name": "NielsenCBET",
+  "type": "object",
+  "description": "Nielsen CBET",
+  "properties": {
+    "CbetCheckDigitString": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMin2Max2"
+        },
+        {
+          "xml": {
+            "name": "cbetCheckDigitString"
+          },
+          "description": "Enter the CBET check digits to use in the watermark."
+        }
+      ]
+    },
+    "CbetStepaside": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NielsenWatermarksCbetStepaside"
+        },
+        {
+          "xml": {
+            "name": "cbetStepaside"
+          },
+          "description": "Determines the method of CBET insertion mode when prior encoding is detected on the same layer."
+        }
+      ]
+    },
+    "Csid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMin1Max7"
+        },
+        {
+          "xml": {
+            "name": "csid"
+          },
+          "description": "Enter the CBET Source ID (CSID) to use in the watermark"
+        }
+      ]
+    }
+  },
+  "required": [
+    "CbetCheckDigitString",
+    "CbetStepaside",
+    "Csid"
+  ]
+}

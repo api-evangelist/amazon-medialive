@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-input-device-configured-input-schema.json",
+  "title": "InputDeviceConfiguredInput",
+  "description": "The source to activate (use) from the input device.",
+  "type": "string",
+  "enum": [
+    "AUTO",
+    "HDMI",
+    "SDI"
+  ]
+}

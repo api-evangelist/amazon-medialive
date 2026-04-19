@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-batch-schedule-action-delete-result-structure.json",
+  "name": "BatchScheduleActionDeleteResult",
+  "type": "object",
+  "description": "List of actions that have been deleted from the schedule.",
+  "properties": {
+    "ScheduleActions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfScheduleAction"
+        },
+        {
+          "xml": {
+            "name": "scheduleActions"
+          },
+          "description": "List of actions that have been deleted from the schedule."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ScheduleActions"
+  ]
+}

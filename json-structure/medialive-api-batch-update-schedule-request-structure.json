@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-batch-update-schedule-request-structure.json",
+  "name": "BatchUpdateScheduleRequest",
+  "type": "object",
+  "description": "List of actions to create and list of actions to delete.",
+  "properties": {
+    "Creates": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BatchScheduleActionCreateRequest"
+        },
+        {
+          "xml": {
+            "name": "creates"
+          },
+          "description": "Schedule actions to create in the schedule."
+        }
+      ]
+    },
+    "Deletes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BatchScheduleActionDeleteRequest"
+        },
+        {
+          "xml": {
+            "name": "deletes"
+          },
+          "description": "Schedule actions to delete from the schedule."
+        }
+      ]
+    }
+  }
+}

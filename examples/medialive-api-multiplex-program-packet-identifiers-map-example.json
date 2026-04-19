@@ -1,0 +1,15 @@
+{
+  "AudioPids": "id-abc123",
+  "DvbSubPids": "id-abc123",
+  "DvbTeletextPid": "id-abc123",
+  "EtvPlatformPid": "id-abc123",
+  "EtvSignalPid": "id-abc123",
+  "KlvDataPids": "id-abc123",
+  "PcrPid": "id-abc123",
+  "PmtPid": "id-abc123",
+  "PrivateMetadataPid": "id-abc123",
+  "Scte27Pids": "id-abc123",
+  "Scte35Pid": "id-abc123",
+  "TimedMetadataPid": "id-abc123",
+  "VideoPid": "id-abc123"
+}

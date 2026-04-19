@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-start-timecode-structure.json",
+  "name": "StartTimecode",
+  "type": "object",
+  "description": "Settings to identify the start of the clip.",
+  "properties": {
+    "Timecode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "timecode"
+          },
+          "description": "The timecode for the frame where you want to start the clip. Optional; if not specified, the clip starts at first frame in the file. Enter the timecode as HH:MM:SS:FF or HH:MM:SS;FF."
+        }
+      ]
+    }
+  }
+}

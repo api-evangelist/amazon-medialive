@@ -1,0 +1,7 @@
+{
+  "DnsAddresses": "example-value",
+  "Gateway": "example-value",
+  "IpAddress": "example-value",
+  "IpScheme": "example-value",
+  "SubnetMask": "example-value"
+}

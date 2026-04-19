@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-audio-only-hls-track-type-schema.json",
+  "title": "AudioOnlyHlsTrackType",
+  "description": "Audio Only Hls Track Type",
+  "type": "string",
+  "enum": [
+    "ALTERNATE_AUDIO_AUTO_SELECT",
+    "ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT",
+    "ALTERNATE_AUDIO_NOT_AUTO_SELECT",
+    "AUDIO_ONLY_VARIANT_STREAM"
+  ]
+}

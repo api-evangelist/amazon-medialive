@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-deblock-filter-structure.json",
+  "name": "InputDeblockFilter",
+  "type": "string",
+  "description": "Input Deblock Filter",
+  "enum": [
+    "DISABLED",
+    "ENABLED"
+  ]
+}

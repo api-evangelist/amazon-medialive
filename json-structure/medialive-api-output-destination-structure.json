@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-output-destination-structure.json",
+  "name": "OutputDestination",
+  "type": "object",
+  "description": "Placeholder documentation for OutputDestination",
+  "properties": {
+    "Id": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "id"
+          },
+          "description": "User-specified id. This is used in an output group or an output."
+        }
+      ]
+    },
+    "MediaPackageSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfMediaPackageOutputDestinationSettings"
+        },
+        {
+          "xml": {
+            "name": "mediaPackageSettings"
+          },
+          "description": "Destination settings for a MediaPackage output; one destination for both encoders."
+        }
+      ]
+    },
+    "MultiplexSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MultiplexProgramChannelDestinationSettings"
+        },
+        {
+          "xml": {
+            "name": "multiplexSettings"
+          },
+          "description": "Destination settings for a Multiplex output; one destination for both encoders."
+        }
+      ]
+    },
+    "Settings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfOutputDestinationSettings"
+        },
+        {
+          "xml": {
+            "name": "settings"
+          },
+          "description": "Destination settings for a standard output; one destination for each redundant encoder."
+        }
+      ]
+    }
+  }
+}

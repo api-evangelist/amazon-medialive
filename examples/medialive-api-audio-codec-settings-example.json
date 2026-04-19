@@ -1,0 +1,9 @@
+{
+  "AacSettings": "example-value",
+  "Ac3Settings": "example-value",
+  "Eac3AtmosSettings": "example-value",
+  "Eac3Settings": "example-value",
+  "Mp2Settings": "example-value",
+  "PassThroughSettings": "example-value",
+  "WavSettings": "example-value"
+}

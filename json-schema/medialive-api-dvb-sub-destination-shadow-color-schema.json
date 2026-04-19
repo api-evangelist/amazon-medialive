@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-dvb-sub-destination-shadow-color-schema.json",
+  "title": "DvbSubDestinationShadowColor",
+  "description": "Dvb Sub Destination Shadow Color",
+  "type": "string",
+  "enum": [
+    "BLACK",
+    "NONE",
+    "WHITE"
+  ]
+}

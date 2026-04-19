@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-create-multiplex-request-schema.json",
+  "title": "CreateMultiplexRequest",
+  "description": "A request to create a multiplex.",
+  "type": "object",
+  "properties": {
+    "AvailabilityZones": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOf__string"
+        },
+        {
+          "xml": {
+            "name": "availabilityZones"
+          },
+          "description": "A list of availability zones for the multiplex. You must specify exactly two."
+        }
+      ]
+    },
+    "MultiplexSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MultiplexSettings"
+        },
+        {
+          "xml": {
+            "name": "multiplexSettings"
+          },
+          "description": "Configuration for a multiplex event."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "name"
+          },
+          "description": "Name of multiplex."
+        }
+      ]
+    },
+    "RequestId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "requestId"
+          },
+          "description": "Unique request ID. This prevents retries from creating multiple\nresources.\n"
+        }
+      ]
+    },
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Tags"
+        },
+        {
+          "xml": {
+            "name": "tags"
+          },
+          "description": "A collection of key-value pairs."
+        }
+      ]
+    }
+  },
+  "required": [
+    "RequestId",
+    "MultiplexSettings",
+    "AvailabilityZones",
+    "Name"
+  ]
+}

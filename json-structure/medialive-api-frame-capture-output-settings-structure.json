@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-frame-capture-output-settings-structure.json",
+  "name": "FrameCaptureOutputSettings",
+  "type": "object",
+  "description": "Frame Capture Output Settings",
+  "properties": {
+    "NameModifier": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "nameModifier"
+          },
+          "description": "Required if the output group contains more than one output. This modifier forms part of the output file name."
+        }
+      ]
+    }
+  }
+}

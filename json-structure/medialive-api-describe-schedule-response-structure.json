@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-describe-schedule-response-structure.json",
+  "name": "DescribeScheduleResponse",
+  "type": "object",
+  "description": "Placeholder documentation for DescribeScheduleResponse",
+  "properties": {
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "nextToken"
+          },
+          "description": "The next token; for use in pagination."
+        }
+      ]
+    },
+    "ScheduleActions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfScheduleAction"
+        },
+        {
+          "xml": {
+            "name": "scheduleActions"
+          },
+          "description": "The list of actions in the schedule."
+        }
+      ]
+    }
+  }
+}

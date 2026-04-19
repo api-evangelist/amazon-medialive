@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-hls-settings-schema.json",
+  "title": "HlsSettings",
+  "description": "Hls Settings",
+  "type": "object",
+  "properties": {
+    "AudioOnlyHlsSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AudioOnlyHlsSettings"
+        },
+        {
+          "xml": {
+            "name": "audioOnlyHlsSettings"
+          }
+        }
+      ]
+    },
+    "Fmp4HlsSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Fmp4HlsSettings"
+        },
+        {
+          "xml": {
+            "name": "fmp4HlsSettings"
+          }
+        }
+      ]
+    },
+    "FrameCaptureHlsSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FrameCaptureHlsSettings"
+        },
+        {
+          "xml": {
+            "name": "frameCaptureHlsSettings"
+          }
+        }
+      ]
+    },
+    "StandardHlsSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StandardHlsSettings"
+        },
+        {
+          "xml": {
+            "name": "standardHlsSettings"
+          }
+        }
+      ]
+    }
+  }
+}

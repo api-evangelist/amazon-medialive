@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-udp-timed-metadata-id3-frame-schema.json",
+  "title": "UdpTimedMetadataId3Frame",
+  "description": "Udp Timed Metadata Id3 Frame",
+  "type": "string",
+  "enum": [
+    "NONE",
+    "PRIV",
+    "TDRL"
+  ]
+}

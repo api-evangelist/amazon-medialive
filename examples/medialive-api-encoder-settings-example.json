@@ -1,0 +1,14 @@
+{
+  "AudioDescriptions": "example-value",
+  "AvailBlanking": "example-value",
+  "AvailConfiguration": "example-value",
+  "BlackoutSlate": "example-value",
+  "CaptionDescriptions": "example-value",
+  "FeatureActivations": "example-value",
+  "GlobalConfiguration": "example-value",
+  "MotionGraphicsConfiguration": "example-value",
+  "NielsenConfiguration": "example-value",
+  "OutputGroups": "example-value",
+  "TimecodeConfig": "example-value",
+  "VideoDescriptions": "id-abc123"
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-h264-sub-gop-length-structure.json",
+  "name": "H264SubGopLength",
+  "type": "string",
+  "description": "H264 Sub Gop Length",
+  "enum": [
+    "DYNAMIC",
+    "FIXED"
+  ]
+}

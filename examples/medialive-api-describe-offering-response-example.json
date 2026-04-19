@@ -1,0 +1,13 @@
+{
+  "Arn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "CurrencyCode": "example-value",
+  "Duration": "example-value",
+  "DurationUnits": "example-value",
+  "FixedPrice": "example-value",
+  "OfferingDescription": "example-value",
+  "OfferingId": "id-abc123",
+  "OfferingType": "STANDARD",
+  "Region": "example-value",
+  "ResourceSpecification": "example-value",
+  "UsagePrice": "example-value"
+}

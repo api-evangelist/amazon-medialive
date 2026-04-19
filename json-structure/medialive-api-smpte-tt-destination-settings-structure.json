@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-smpte-tt-destination-settings-structure.json",
+  "name": "SmpteTtDestinationSettings",
+  "type": "object",
+  "description": "Smpte Tt Destination Settings",
+  "properties": {}
+}

@@ -1,0 +1,19 @@
+{
+  "AdaptiveQuantization": "example-value",
+  "AfdSignaling": "example-value",
+  "ColorMetadata": "example-value",
+  "ColorSpace": "example-value",
+  "DisplayAspectRatio": "example-value",
+  "FilterSettings": "example-value",
+  "FixedAfd": "example-value",
+  "FramerateDenominator": "example-value",
+  "FramerateNumerator": "example-value",
+  "GopClosedCadence": "example-value",
+  "GopNumBFrames": "example-value",
+  "GopSize": "example-value",
+  "GopSizeUnits": "example-value",
+  "ScanType": "STANDARD",
+  "SubgopLength": "example-value",
+  "TimecodeInsertion": "example-value",
+  "TimecodeBurninSettings": "example-value"
+}

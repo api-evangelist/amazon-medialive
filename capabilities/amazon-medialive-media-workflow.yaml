@@ -1,0 +1,116 @@
+naftiko: 1.0.0-alpha1
+info:
+  label: Amazon MediaLive Workflow
+  description: Workflow capability for Amazon MediaLive media processing operations for broadcast engineers and media developers.
+  tags:
+  - AWS
+  - Media
+  - Broadcasting
+  - Workflow
+  created: '2026-04-19'
+  modified: '2026-04-19'
+binds:
+- namespace: env
+  keys:
+    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY
+    AWS_REGION: AWS_REGION
+capability:
+  consumes:
+  - import: medialive
+    location: ./shared/medialive.yaml
+  exposes:
+  - type: rest
+    port: 8080
+    namespace: medialive-workflow-api
+    description: Unified REST API for Amazon MediaLive workflow management.
+    resources:
+    - path: /v1/jobs
+      name: jobs
+      description: Manage media processing jobs
+      operations:
+      - method: GET
+        name: list-jobs
+        description: List jobs
+        call: medialive.list-jobs
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    port: 9090
+    namespace: medialive-workflow-mcp
+    transport: http
+    description: MCP server for AI-assisted Amazon MediaLive workflow management.
+    tools:
+    - name: accept-input-device-transfer
+      description: AcceptInputDeviceTransfer
+      hints:
+        readOnly: false
+        openWorld: true
+      call: medialive.accept-input-device-transfer
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: batch-delete
+      description: BatchDelete
+      hints:
+        readOnly: false
+        openWorld: true
+      call: medialive.batch-delete
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: batch-start
+      description: BatchStart
+      hints:
+        readOnly: false
+        openWorld: true
+      call: medialive.batch-start
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: batch-stop
+      description: BatchStop
+      hints:
+        readOnly: false
+        openWorld: true
+      call: medialive.batch-stop
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: describe-schedule
+      description: DescribeSchedule
+      hints:
+        readOnly: true
+        openWorld: true
+      call: medialive.describe-schedule
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: batch-update-schedule
+      description: BatchUpdateSchedule
+      hints:
+        readOnly: false
+        openWorld: true
+      call: medialive.batch-update-schedule
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: delete-schedule
+      description: DeleteSchedule
+      hints:
+        readOnly: false
+        openWorld: true
+      call: medialive.delete-schedule
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: cancel-input-device-transfer
+      description: CancelInputDeviceTransfer
+      hints:
+        readOnly: false
+        openWorld: true
+      call: medialive.cancel-input-device-transfer
+      outputParameters:
+      - type: object
+        mapping: $.

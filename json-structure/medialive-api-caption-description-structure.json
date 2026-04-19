@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-caption-description-structure.json",
+  "name": "CaptionDescription",
+  "type": "object",
+  "description": "Caption Description",
+  "properties": {
+    "Accessibility": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccessibilityType"
+        },
+        {
+          "xml": {
+            "name": "accessibility"
+          },
+          "description": "Indicates whether the caption track implements accessibility features such as written descriptions of spoken dialog, music, and sounds."
+        }
+      ]
+    },
+    "CaptionSelectorName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "captionSelectorName"
+          },
+          "description": "Specifies which input caption selector to use as a caption source when generating output captions. This field should match a captionSelector name."
+        }
+      ]
+    },
+    "DestinationSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CaptionDestinationSettings"
+        },
+        {
+          "xml": {
+            "name": "destinationSettings"
+          },
+          "description": "Additional settings for captions destination that depend on the destination type."
+        }
+      ]
+    },
+    "LanguageCode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "languageCode"
+          },
+          "description": "ISO 639-2 three-digit code: http://www.loc.gov/standards/iso639-2/"
+        }
+      ]
+    },
+    "LanguageDescription": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "languageDescription"
+          },
+          "description": "Human readable information to indicate captions available for players (eg. English, or Spanish)."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "name"
+          },
+          "description": "Name of the caption description.  Used to associate a caption description with an output.  Names must be unique within an event."
+        }
+      ]
+    }
+  },
+  "required": [
+    "CaptionSelectorName",
+    "Name"
+  ]
+}

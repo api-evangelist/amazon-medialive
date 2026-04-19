@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-purchase-offering-request-structure.json",
+  "name": "PurchaseOfferingRequest",
+  "type": "object",
+  "description": "Placeholder documentation for PurchaseOfferingRequest",
+  "properties": {
+    "Count": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin1"
+        },
+        {
+          "xml": {
+            "name": "count"
+          },
+          "description": "Number of resources"
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "name"
+          },
+          "description": "Name for the new reservation"
+        }
+      ]
+    },
+    "RenewalSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RenewalSettings"
+        },
+        {
+          "xml": {
+            "name": "renewalSettings"
+          },
+          "description": "Renewal settings for the reservation"
+        }
+      ]
+    },
+    "RequestId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "requestId"
+          },
+          "description": "Unique request ID to be specified. This is needed to prevent retries from creating multiple resources."
+        }
+      ]
+    },
+    "Start": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "start"
+          },
+          "description": "Requested reservation start time (UTC) in ISO-8601 format. The specified time must be between the first day of the current month and one year from now. If no value is given, the default is now."
+        }
+      ]
+    },
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Tags"
+        },
+        {
+          "xml": {
+            "name": "tags"
+          },
+          "description": "A collection of key-value pairs"
+        }
+      ]
+    }
+  },
+  "required": [
+    "Count"
+  ]
+}

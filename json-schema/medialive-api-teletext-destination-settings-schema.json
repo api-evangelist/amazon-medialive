@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-teletext-destination-settings-schema.json",
+  "title": "TeletextDestinationSettings",
+  "description": "Teletext Destination Settings",
+  "type": "object",
+  "properties": {}
+}

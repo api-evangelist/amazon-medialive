@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-wav-coding-mode-structure.json",
+  "name": "WavCodingMode",
+  "type": "string",
+  "description": "Wav Coding Mode",
+  "enum": [
+    "CODING_MODE_1_0",
+    "CODING_MODE_2_0",
+    "CODING_MODE_4_0",
+    "CODING_MODE_8_0"
+  ]
+}

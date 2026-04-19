@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-audio-normalization-algorithm-schema.json",
+  "title": "AudioNormalizationAlgorithm",
+  "description": "Audio Normalization Algorithm",
+  "type": "string",
+  "enum": [
+    "ITU_1770_1",
+    "ITU_1770_2"
+  ]
+}

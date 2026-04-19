@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-reservation-special-feature-structure.json",
+  "name": "ReservationSpecialFeature",
+  "type": "string",
+  "description": "Special features, 'ADVANCED_AUDIO' 'AUDIO_NORMALIZATION' 'MGHD' or 'MGUHD'",
+  "enum": [
+    "ADVANCED_AUDIO",
+    "AUDIO_NORMALIZATION",
+    "MGHD",
+    "MGUHD"
+  ]
+}

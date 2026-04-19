@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-rtmp-caption-data-structure.json",
+  "name": "RtmpCaptionData",
+  "type": "string",
+  "description": "Rtmp Caption Data",
+  "enum": [
+    "ALL",
+    "FIELD1_608",
+    "FIELD1_AND_FIELD2_608"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-input-class-schema.json",
+  "title": "InputClass",
+  "description": "A standard input has two sources and a single pipeline input only has one.",
+  "type": "string",
+  "enum": [
+    "STANDARD",
+    "SINGLE_PIPELINE"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-video-selector-program-id-structure.json",
+  "name": "VideoSelectorProgramId",
+  "type": "object",
+  "description": "Video Selector Program Id",
+  "properties": {
+    "ProgramId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max65536"
+        },
+        {
+          "xml": {
+            "name": "programId"
+          },
+          "description": "Selects a specific program from within a multi-program transport stream. If the program doesn't exist, the first program within the transport stream will be selected by default."
+        }
+      ]
+    }
+  }
+}

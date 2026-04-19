@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-whitelist-rule-cidr-structure.json",
+  "name": "InputWhitelistRuleCidr",
+  "type": "object",
+  "description": "An IPv4 CIDR to whitelist.",
+  "properties": {
+    "Cidr": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "cidr"
+          },
+          "description": "The IPv4 CIDR to whitelist."
+        }
+      ]
+    }
+  }
+}

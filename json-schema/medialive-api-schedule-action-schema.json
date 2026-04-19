@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-schedule-action-schema.json",
+  "title": "ScheduleAction",
+  "description": "Contains information on a single schedule action.",
+  "type": "object",
+  "properties": {
+    "ActionName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "actionName"
+          },
+          "description": "The name of the action, must be unique within the schedule. This name provides the main reference to an action once it is added to the schedule. A name is unique if it is no longer in the schedule. The schedule is automatically cleaned up to remove actions with a start time of more than 1 hour ago (approximately) so at that point a name can be reused."
+        }
+      ]
+    },
+    "ScheduleActionSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ScheduleActionSettings"
+        },
+        {
+          "xml": {
+            "name": "scheduleActionSettings"
+          },
+          "description": "Settings for this schedule action."
+        }
+      ]
+    },
+    "ScheduleActionStartSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ScheduleActionStartSettings"
+        },
+        {
+          "xml": {
+            "name": "scheduleActionStartSettings"
+          },
+          "description": "The time for the action to start in the channel."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ActionName",
+    "ScheduleActionStartSettings",
+    "ScheduleActionSettings"
+  ]
+}

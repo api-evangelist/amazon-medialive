@@ -1,0 +1,8 @@
+{
+  "Arn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "Id": "id-abc123",
+  "Inputs": "example-value",
+  "State": "example-value",
+  "Tags": "example-value",
+  "WhitelistRules": "example-value"
+}

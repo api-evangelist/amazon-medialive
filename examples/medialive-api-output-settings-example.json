@@ -1,0 +1,10 @@
+{
+  "ArchiveOutputSettings": "example-value",
+  "FrameCaptureOutputSettings": "example-value",
+  "HlsOutputSettings": "example-value",
+  "MediaPackageOutputSettings": "example-value",
+  "MsSmoothOutputSettings": "example-value",
+  "MultiplexOutputSettings": "example-value",
+  "RtmpOutputSettings": "example-value",
+  "UdpOutputSettings": "example-value"
+}

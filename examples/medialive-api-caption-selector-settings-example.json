@@ -1,0 +1,9 @@
+{
+  "AncillarySourceSettings": "example-value",
+  "AribSourceSettings": "example-value",
+  "DvbSubSourceSettings": "example-value",
+  "EmbeddedSourceSettings": "example-value",
+  "Scte20SourceSettings": "example-value",
+  "Scte27SourceSettings": "example-value",
+  "TeletextSourceSettings": "example-value"
+}

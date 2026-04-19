@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-global-configuration-output-locking-mode-structure.json",
+  "name": "GlobalConfigurationOutputLockingMode",
+  "type": "string",
+  "description": "Global Configuration Output Locking Mode",
+  "enum": [
+    "EPOCH_LOCKING",
+    "PIPELINE_LOCKING"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-mpeg2-timecode-insertion-behavior-structure.json",
+  "name": "Mpeg2TimecodeInsertionBehavior",
+  "type": "string",
+  "description": "Mpeg2 Timecode Insertion Behavior",
+  "enum": [
+    "DISABLED",
+    "GOP_TIMECODE"
+  ]
+}

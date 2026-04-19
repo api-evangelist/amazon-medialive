@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-multiplex-program-channel-destination-settings-schema.json",
+  "title": "MultiplexProgramChannelDestinationSettings",
+  "description": "Multiplex Program Input Destination Settings for outputting a Channel to a Multiplex",
+  "type": "object",
+  "properties": {
+    "MultiplexId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMin1"
+        },
+        {
+          "xml": {
+            "name": "multiplexId"
+          },
+          "description": "The ID of the Multiplex that the encoder is providing output to. You do not need to specify the individual inputs to the Multiplex; MediaLive will handle the connection of the two MediaLive pipelines to the two Multiplex instances.\nThe Multiplex must be in the same region as the Channel."
+        }
+      ]
+    },
+    "ProgramName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMin1"
+        },
+        {
+          "xml": {
+            "name": "programName"
+          },
+          "description": "The program name of the Multiplex program that the encoder is providing output to."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-device-active-input-structure.json",
+  "name": "InputDeviceActiveInput",
+  "type": "string",
+  "description": "The source at the input device that is currently active.",
+  "enum": [
+    "HDMI",
+    "SDI"
+  ]
+}

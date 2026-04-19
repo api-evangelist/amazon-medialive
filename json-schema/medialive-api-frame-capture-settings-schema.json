@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-frame-capture-settings-schema.json",
+  "title": "FrameCaptureSettings",
+  "description": "Frame Capture Settings",
+  "type": "object",
+  "properties": {
+    "CaptureInterval": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin1Max3600000"
+        },
+        {
+          "xml": {
+            "name": "captureInterval"
+          },
+          "description": "The frequency at which to capture frames for inclusion in the output. May be specified in either seconds or milliseconds, as specified by captureIntervalUnits."
+        }
+      ]
+    },
+    "CaptureIntervalUnits": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FrameCaptureIntervalUnit"
+        },
+        {
+          "xml": {
+            "name": "captureIntervalUnits"
+          },
+          "description": "Unit for the frame capture interval."
+        }
+      ]
+    },
+    "TimecodeBurninSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TimecodeBurninSettings"
+        },
+        {
+          "xml": {
+            "name": "timecodeBurninSettings"
+          },
+          "description": "Timecode burn-in settings"
+        }
+      ]
+    }
+  }
+}

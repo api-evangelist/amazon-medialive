@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-describe-input-device-request-structure.json",
+  "name": "DescribeInputDeviceRequest",
+  "type": "object",
+  "description": "Placeholder documentation for DescribeInputDeviceRequest",
+  "properties": {}
+}

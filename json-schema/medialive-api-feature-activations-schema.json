@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-feature-activations-schema.json",
+  "title": "FeatureActivations",
+  "description": "Feature Activations",
+  "type": "object",
+  "properties": {
+    "InputPrepareScheduleActions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FeatureActivationsInputPrepareScheduleActions"
+        },
+        {
+          "xml": {
+            "name": "inputPrepareScheduleActions"
+          },
+          "description": "Enables the Input Prepare feature. You can create Input Prepare actions in the schedule only if this feature is enabled.\nIf you disable the feature on an existing schedule, make sure that you first delete all input prepare actions from the schedule."
+        }
+      ]
+    }
+  }
+}

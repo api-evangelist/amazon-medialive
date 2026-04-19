@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-list-channels-response-structure.json",
+  "name": "ListChannelsResponse",
+  "type": "object",
+  "description": "Placeholder documentation for ListChannelsResponse",
+  "properties": {
+    "Channels": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfChannelSummary"
+        },
+        {
+          "xml": {
+            "name": "channels"
+          }
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "nextToken"
+          }
+        }
+      ]
+    }
+  }
+}

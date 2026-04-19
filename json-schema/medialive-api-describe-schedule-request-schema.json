@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-describe-schedule-request-schema.json",
+  "title": "DescribeScheduleRequest",
+  "description": "Placeholder documentation for DescribeScheduleRequest",
+  "type": "object",
+  "properties": {}
+}

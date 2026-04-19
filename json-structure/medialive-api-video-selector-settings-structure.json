@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-video-selector-settings-structure.json",
+  "name": "VideoSelectorSettings",
+  "type": "object",
+  "description": "Video Selector Settings",
+  "properties": {
+    "VideoSelectorPid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VideoSelectorPid"
+        },
+        {
+          "xml": {
+            "name": "videoSelectorPid"
+          }
+        }
+      ]
+    },
+    "VideoSelectorProgramId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VideoSelectorProgramId"
+        },
+        {
+          "xml": {
+            "name": "videoSelectorProgramId"
+          }
+        }
+      ]
+    }
+  }
+}

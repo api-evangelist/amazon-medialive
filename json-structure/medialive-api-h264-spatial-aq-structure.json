@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-h264-spatial-aq-structure.json",
+  "name": "H264SpatialAq",
+  "type": "string",
+  "description": "H264 Spatial Aq",
+  "enum": [
+    "DISABLED",
+    "ENABLED"
+  ]
+}

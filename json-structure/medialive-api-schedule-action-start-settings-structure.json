@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-schedule-action-start-settings-structure.json",
+  "name": "ScheduleActionStartSettings",
+  "type": "object",
+  "description": "Settings to specify when an action should occur. Only one of the options must be selected.",
+  "properties": {
+    "FixedModeScheduleActionStartSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FixedModeScheduleActionStartSettings"
+        },
+        {
+          "xml": {
+            "name": "fixedModeScheduleActionStartSettings"
+          },
+          "description": "Option for specifying the start time for an action."
+        }
+      ]
+    },
+    "FollowModeScheduleActionStartSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FollowModeScheduleActionStartSettings"
+        },
+        {
+          "xml": {
+            "name": "followModeScheduleActionStartSettings"
+          },
+          "description": "Option for specifying an action as relative to another action."
+        }
+      ]
+    },
+    "ImmediateModeScheduleActionStartSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImmediateModeScheduleActionStartSettings"
+        },
+        {
+          "xml": {
+            "name": "immediateModeScheduleActionStartSettings"
+          },
+          "description": "Option for specifying an action that should be applied immediately."
+        }
+      ]
+    }
+  }
+}

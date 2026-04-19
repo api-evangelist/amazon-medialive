@@ -1,0 +1,9 @@
+{
+  "Bitrate": "example-value",
+  "CodingMode": "example-value",
+  "Dialnorm": "example-value",
+  "DrcLine": "example-value",
+  "DrcRf": "example-value",
+  "HeightTrim": "example-value",
+  "SurroundTrim": "example-value"
+}

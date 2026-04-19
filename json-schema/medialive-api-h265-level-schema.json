@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-h265-level-schema.json",
+  "title": "H265Level",
+  "description": "H265 Level",
+  "type": "string",
+  "enum": [
+    "H265_LEVEL_1",
+    "H265_LEVEL_2",
+    "H265_LEVEL_2_1",
+    "H265_LEVEL_3",
+    "H265_LEVEL_3_1",
+    "H265_LEVEL_4",
+    "H265_LEVEL_4_1",
+    "H265_LEVEL_5",
+    "H265_LEVEL_5_1",
+    "H265_LEVEL_5_2",
+    "H265_LEVEL_6",
+    "H265_LEVEL_6_1",
+    "H265_LEVEL_6_2",
+    "H265_LEVEL_AUTO"
+  ]
+}

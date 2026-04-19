@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-eac3-stereo-downmix-structure.json",
+  "name": "Eac3StereoDownmix",
+  "type": "string",
+  "description": "Eac3 Stereo Downmix",
+  "enum": [
+    "DPL2",
+    "LO_RO",
+    "LT_RT",
+    "NOT_INDICATED"
+  ]
+}

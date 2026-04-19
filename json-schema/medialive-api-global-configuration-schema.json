@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-global-configuration-schema.json",
+  "title": "GlobalConfiguration",
+  "description": "Global Configuration",
+  "type": "object",
+  "properties": {
+    "InitialAudioGain": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMinNegative60Max60"
+        },
+        {
+          "xml": {
+            "name": "initialAudioGain"
+          },
+          "description": "Value to set the initial audio gain for the Live Event."
+        }
+      ]
+    },
+    "InputEndAction": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/GlobalConfigurationInputEndAction"
+        },
+        {
+          "xml": {
+            "name": "inputEndAction"
+          },
+          "description": "Indicates the action to take when the current input completes (e.g. end-of-file). When switchAndLoopInputs is configured the encoder will restart at the beginning of the first input.  When \"none\" is configured the encoder will transcode either black, a solid color, or a user specified slate images per the \"Input Loss Behavior\" configuration until the next input switch occurs (which is controlled through the Channel Schedule API)."
+        }
+      ]
+    },
+    "InputLossBehavior": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputLossBehavior"
+        },
+        {
+          "xml": {
+            "name": "inputLossBehavior"
+          },
+          "description": "Settings for system actions when input is lost."
+        }
+      ]
+    },
+    "OutputLockingMode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/GlobalConfigurationOutputLockingMode"
+        },
+        {
+          "xml": {
+            "name": "outputLockingMode"
+          },
+          "description": "Indicates how MediaLive pipelines are synchronized.\n\nPIPELINE_LOCKING - MediaLive will attempt to synchronize the output of each pipeline to the other.\nEPOCH_LOCKING - MediaLive will attempt to synchronize the output of each pipeline to the Unix epoch."
+        }
+      ]
+    },
+    "OutputTimingSource": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/GlobalConfigurationOutputTimingSource"
+        },
+        {
+          "xml": {
+            "name": "outputTimingSource"
+          },
+          "description": "Indicates whether the rate of frames emitted by the Live encoder should be paced by its system clock (which optionally may be locked to another source via NTP) or should be locked to the clock of the source that is providing the input stream."
+        }
+      ]
+    },
+    "SupportLowFramerateInputs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/GlobalConfigurationLowFramerateInputs"
+        },
+        {
+          "xml": {
+            "name": "supportLowFramerateInputs"
+          },
+          "description": "Adjusts video input buffer for streams with very low video framerates. This is commonly set to enabled for music channels with less than one video frame per second."
+        }
+      ]
+    }
+  }
+}

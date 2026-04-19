@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-m2ts-es-rate-in-pes-structure.json",
+  "name": "M2tsEsRateInPes",
+  "type": "string",
+  "description": "M2ts Es Rate In Pes",
+  "enum": [
+    "EXCLUDE",
+    "INCLUDE"
+  ]
+}

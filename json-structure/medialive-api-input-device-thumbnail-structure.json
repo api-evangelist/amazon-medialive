@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-device-thumbnail-structure.json",
+  "name": "InputDeviceThumbnail",
+  "type": "string",
+  "description": "The binary data for the thumbnail that the Link device has most recently sent to MediaLive."
+}

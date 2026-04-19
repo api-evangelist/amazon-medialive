@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-log-level-structure.json",
+  "name": "LogLevel",
+  "type": "string",
+  "description": "The log level the user wants for their channel.",
+  "enum": [
+    "ERROR",
+    "WARNING",
+    "INFO",
+    "DEBUG",
+    "DISABLED"
+  ]
+}

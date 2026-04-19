@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-ac3-drc-profile-structure.json",
+  "name": "Ac3DrcProfile",
+  "type": "string",
+  "description": "Ac3 Drc Profile",
+  "enum": [
+    "FILM_STANDARD",
+    "NONE"
+  ]
+}

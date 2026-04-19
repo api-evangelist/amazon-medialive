@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-multiplex-group-settings-structure.json",
+  "name": "MultiplexGroupSettings",
+  "type": "object",
+  "description": "Multiplex Group Settings",
+  "properties": {}
+}

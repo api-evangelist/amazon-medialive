@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-video-selector-color-space-schema.json",
+  "title": "VideoSelectorColorSpace",
+  "description": "Video Selector Color Space",
+  "type": "string",
+  "enum": [
+    "FOLLOW",
+    "HDR10",
+    "HLG_2020",
+    "REC_601",
+    "REC_709"
+  ]
+}

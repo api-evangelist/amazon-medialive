@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-reservation-codec-structure.json",
+  "name": "ReservationCodec",
+  "type": "string",
+  "description": "Codec, 'MPEG2', 'AVC', 'HEVC', or 'AUDIO'",
+  "enum": [
+    "MPEG2",
+    "AVC",
+    "HEVC",
+    "AUDIO",
+    "LINK"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "AudioOnlyHlsSettings": "example-value",
+  "Fmp4HlsSettings": "example-value",
+  "FrameCaptureHlsSettings": "example-value",
+  "StandardHlsSettings": "example-value"
+}

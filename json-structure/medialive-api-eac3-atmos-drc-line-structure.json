@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-eac3-atmos-drc-line-structure.json",
+  "name": "Eac3AtmosDrcLine",
+  "type": "string",
+  "description": "Eac3 Atmos Drc Line",
+  "enum": [
+    "FILM_LIGHT",
+    "FILM_STANDARD",
+    "MUSIC_LIGHT",
+    "MUSIC_STANDARD",
+    "NONE",
+    "SPEECH"
+  ]
+}

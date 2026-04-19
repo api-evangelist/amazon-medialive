@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-clipping-settings-structure.json",
+  "name": "InputClippingSettings",
+  "type": "object",
+  "description": "Settings to let you create a clip of the file input, in order to set up the input to ingest only a portion of the file.",
+  "properties": {
+    "InputTimecodeSource": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputTimecodeSource"
+        },
+        {
+          "xml": {
+            "name": "inputTimecodeSource"
+          },
+          "description": "The source of the timecodes in the source being clipped."
+        }
+      ]
+    },
+    "StartTimecode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StartTimecode"
+        },
+        {
+          "xml": {
+            "name": "startTimecode"
+          },
+          "description": "Settings to identify the start of the clip."
+        }
+      ]
+    },
+    "StopTimecode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StopTimecode"
+        },
+        {
+          "xml": {
+            "name": "stopTimecode"
+          },
+          "description": "Settings to identify the end of the clip."
+        }
+      ]
+    }
+  },
+  "required": [
+    "InputTimecodeSource"
+  ]
+}

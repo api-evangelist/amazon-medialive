@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-udp-container-settings-schema.json",
+  "title": "UdpContainerSettings",
+  "description": "Udp Container Settings",
+  "type": "object",
+  "properties": {
+    "M2tsSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/M2tsSettings"
+        },
+        {
+          "xml": {
+            "name": "m2tsSettings"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-caption-selector-settings-schema.json",
+  "title": "CaptionSelectorSettings",
+  "description": "Caption Selector Settings",
+  "type": "object",
+  "properties": {
+    "AncillarySourceSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AncillarySourceSettings"
+        },
+        {
+          "xml": {
+            "name": "ancillarySourceSettings"
+          }
+        }
+      ]
+    },
+    "AribSourceSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AribSourceSettings"
+        },
+        {
+          "xml": {
+            "name": "aribSourceSettings"
+          }
+        }
+      ]
+    },
+    "DvbSubSourceSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DvbSubSourceSettings"
+        },
+        {
+          "xml": {
+            "name": "dvbSubSourceSettings"
+          }
+        }
+      ]
+    },
+    "EmbeddedSourceSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EmbeddedSourceSettings"
+        },
+        {
+          "xml": {
+            "name": "embeddedSourceSettings"
+          }
+        }
+      ]
+    },
+    "Scte20SourceSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte20SourceSettings"
+        },
+        {
+          "xml": {
+            "name": "scte20SourceSettings"
+          }
+        }
+      ]
+    },
+    "Scte27SourceSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte27SourceSettings"
+        },
+        {
+          "xml": {
+            "name": "scte27SourceSettings"
+          }
+        }
+      ]
+    },
+    "TeletextSourceSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TeletextSourceSettings"
+        },
+        {
+          "xml": {
+            "name": "teletextSourceSettings"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-scte35-archive-allowed-flag-schema.json",
+  "title": "Scte35ArchiveAllowedFlag",
+  "description": "Corresponds to the archive_allowed parameter. A value of ARCHIVE_NOT_ALLOWED corresponds to 0 (false) in the SCTE-35 specification. If you include one of the \"restriction\" flags then you must include all four of them.",
+  "type": "string",
+  "enum": [
+    "ARCHIVE_NOT_ALLOWED",
+    "ARCHIVE_ALLOWED"
+  ]
+}

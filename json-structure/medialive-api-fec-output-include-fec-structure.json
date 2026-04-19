@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-fec-output-include-fec-structure.json",
+  "name": "FecOutputIncludeFec",
+  "type": "string",
+  "description": "Fec Output Include Fec",
+  "enum": [
+    "COLUMN",
+    "COLUMN_AND_ROW"
+  ]
+}

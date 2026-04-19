@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-smooth-group-certificate-mode-structure.json",
+  "name": "SmoothGroupCertificateMode",
+  "type": "string",
+  "description": "Smooth Group Certificate Mode",
+  "enum": [
+    "SELF_SIGNED",
+    "VERIFY_AUTHENTICITY"
+  ]
+}

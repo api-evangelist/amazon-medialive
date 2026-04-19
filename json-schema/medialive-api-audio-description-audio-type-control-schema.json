@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-audio-description-audio-type-control-schema.json",
+  "title": "AudioDescriptionAudioTypeControl",
+  "description": "Audio Description Audio Type Control",
+  "type": "string",
+  "enum": [
+    "FOLLOW_INPUT",
+    "USE_CONFIGURED"
+  ]
+}

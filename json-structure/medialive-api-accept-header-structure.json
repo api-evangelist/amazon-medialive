@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-accept-header-structure.json",
+  "name": "AcceptHeader",
+  "type": "string",
+  "description": "The HTTP Accept header. Indicates the requested type fothe thumbnail.",
+  "enum": [
+    "image/jpeg"
+  ]
+}

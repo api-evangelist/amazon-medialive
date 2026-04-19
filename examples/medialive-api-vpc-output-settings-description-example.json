@@ -1,0 +1,6 @@
+{
+  "AvailabilityZones": "example-value",
+  "NetworkInterfaceIds": "id-abc123",
+  "SecurityGroupIds": "id-abc123",
+  "SubnetIds": "id-abc123"
+}

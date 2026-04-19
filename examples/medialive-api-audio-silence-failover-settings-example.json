@@ -1,0 +1,4 @@
+{
+  "AudioSelectorName": "example-resource",
+  "AudioSilenceThresholdMsec": "example-value"
+}

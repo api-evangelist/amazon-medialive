@@ -1,0 +1,19 @@
+{
+  "AudioFramesPerPes": "example-value",
+  "AudioPids": "id-abc123",
+  "EcmPid": "id-abc123",
+  "NielsenId3Behavior": "id-abc123",
+  "PatInterval": "example-value",
+  "PcrControl": "example-value",
+  "PcrPeriod": "example-value",
+  "PcrPid": "id-abc123",
+  "PmtInterval": "example-value",
+  "PmtPid": "id-abc123",
+  "ProgramNum": "example-value",
+  "Scte35Behavior": "example-value",
+  "Scte35Pid": "id-abc123",
+  "TimedMetadataBehavior": "example-value",
+  "TimedMetadataPid": "id-abc123",
+  "TransportStreamId": "id-abc123",
+  "VideoPid": "id-abc123"
+}

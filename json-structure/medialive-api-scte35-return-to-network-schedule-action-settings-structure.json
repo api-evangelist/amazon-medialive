@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-scte35-return-to-network-schedule-action-settings-structure.json",
+  "name": "Scte35ReturnToNetworkScheduleActionSettings",
+  "type": "object",
+  "description": "Settings for a SCTE-35 return_to_network message.",
+  "properties": {
+    "SpliceEventId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__longMin0Max4294967295"
+        },
+        {
+          "xml": {
+            "name": "spliceEventId"
+          },
+          "description": "The splice_event_id for the SCTE-35 splice_insert, as defined in SCTE-35."
+        }
+      ]
+    }
+  },
+  "required": [
+    "SpliceEventId"
+  ]
+}

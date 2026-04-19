@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-multiplex-program-summary-structure.json",
+  "name": "MultiplexProgramSummary",
+  "type": "object",
+  "description": "Placeholder documentation for MultiplexProgramSummary",
+  "properties": {
+    "ChannelId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "channelId"
+          },
+          "description": "The MediaLive Channel associated with the program."
+        }
+      ]
+    },
+    "ProgramName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "programName"
+          },
+          "description": "The name of the multiplex program."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-hls-caption-language-setting-structure.json",
+  "name": "HlsCaptionLanguageSetting",
+  "type": "string",
+  "description": "Hls Caption Language Setting",
+  "enum": [
+    "INSERT",
+    "NONE",
+    "OMIT"
+  ]
+}

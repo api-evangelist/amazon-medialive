@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-temporal-filter-post-filter-sharpening-structure.json",
+  "name": "TemporalFilterPostFilterSharpening",
+  "type": "string",
+  "description": "Temporal Filter Post Filter Sharpening",
+  "enum": [
+    "AUTO",
+    "DISABLED",
+    "ENABLED"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-h265-gop-size-units-structure.json",
+  "name": "H265GopSizeUnits",
+  "type": "string",
+  "description": "H265 Gop Size Units",
+  "enum": [
+    "FRAMES",
+    "SECONDS"
+  ]
+}

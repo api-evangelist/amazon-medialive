@@ -1,0 +1,7 @@
+{
+  "Bandwidth": "id-abc123",
+  "BufferSegments": "example-value",
+  "Retries": "example-value",
+  "RetryInterval": "example-value",
+  "Scte35Source": "example-value"
+}

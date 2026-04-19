@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-create-input-response-schema.json",
+  "title": "CreateInputResponse",
+  "description": "Placeholder documentation for CreateInputResponse",
+  "type": "object",
+  "properties": {
+    "Input": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Input"
+        },
+        {
+          "xml": {
+            "name": "input"
+          }
+        }
+      ]
+    }
+  }
+}

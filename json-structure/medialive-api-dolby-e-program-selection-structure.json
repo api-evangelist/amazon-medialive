@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-dolby-e-program-selection-structure.json",
+  "name": "DolbyEProgramSelection",
+  "type": "string",
+  "description": "Dolby EProgram Selection",
+  "enum": [
+    "ALL_CHANNELS",
+    "PROGRAM_1",
+    "PROGRAM_2",
+    "PROGRAM_3",
+    "PROGRAM_4",
+    "PROGRAM_5",
+    "PROGRAM_6",
+    "PROGRAM_7",
+    "PROGRAM_8"
+  ]
+}

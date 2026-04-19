@@ -1,0 +1,6 @@
+{
+  "Arn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "Code": "example-value",
+  "Id": "id-abc123",
+  "Message": "example-value"
+}

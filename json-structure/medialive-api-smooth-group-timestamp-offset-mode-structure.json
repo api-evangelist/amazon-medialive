@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-smooth-group-timestamp-offset-mode-structure.json",
+  "name": "SmoothGroupTimestampOffsetMode",
+  "type": "string",
+  "description": "Smooth Group Timestamp Offset Mode",
+  "enum": [
+    "USE_CONFIGURED_OFFSET",
+    "USE_EVENT_START_DATE"
+  ]
+}

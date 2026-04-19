@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-hls-output-selection-schema.json",
+  "title": "HlsOutputSelection",
+  "description": "Hls Output Selection",
+  "type": "string",
+  "enum": [
+    "MANIFESTS_AND_SEGMENTS",
+    "SEGMENTS_ONLY",
+    "VARIANT_MANIFESTS_AND_SEGMENTS"
+  ]
+}

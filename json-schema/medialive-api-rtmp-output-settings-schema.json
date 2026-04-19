@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-rtmp-output-settings-schema.json",
+  "title": "RtmpOutputSettings",
+  "description": "Rtmp Output Settings",
+  "type": "object",
+  "properties": {
+    "CertificateMode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RtmpOutputCertificateMode"
+        },
+        {
+          "xml": {
+            "name": "certificateMode"
+          },
+          "description": "If set to verifyAuthenticity, verify the tls certificate chain to a trusted Certificate Authority (CA).  This will cause rtmps outputs with self-signed certificates to fail."
+        }
+      ]
+    },
+    "ConnectionRetryInterval": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin1"
+        },
+        {
+          "xml": {
+            "name": "connectionRetryInterval"
+          },
+          "description": "Number of seconds to wait before retrying a connection to the Flash Media server if the connection is lost."
+        }
+      ]
+    },
+    "Destination": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OutputLocationRef"
+        },
+        {
+          "xml": {
+            "name": "destination"
+          },
+          "description": "The RTMP endpoint excluding the stream name (eg. rtmp://host/appname). For connection to Akamai, a username and password must be supplied. URI fields accept format identifiers."
+        }
+      ]
+    },
+    "NumRetries": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0"
+        },
+        {
+          "xml": {
+            "name": "numRetries"
+          },
+          "description": "Number of retry attempts."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Destination"
+  ]
+}

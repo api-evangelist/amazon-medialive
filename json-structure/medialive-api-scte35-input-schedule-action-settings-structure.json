@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-scte35-input-schedule-action-settings-structure.json",
+  "name": "Scte35InputScheduleActionSettings",
+  "type": "object",
+  "description": "Scte35Input Schedule Action Settings",
+  "properties": {
+    "InputAttachmentNameReference": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "inputAttachmentNameReference"
+          },
+          "description": "In fixed mode, enter the name of the input attachment that you want to use as a SCTE-35 input. (Don't enter the ID of the input.)\""
+        }
+      ]
+    },
+    "Mode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte35InputMode"
+        },
+        {
+          "xml": {
+            "name": "mode"
+          },
+          "description": "Whether the SCTE-35 input should be the active input or a fixed input."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Mode"
+  ]
+}

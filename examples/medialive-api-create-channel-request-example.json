@@ -1,0 +1,16 @@
+{
+  "CdiInputSpecification": "example-value",
+  "ChannelClass": "example-value",
+  "Destinations": "example-value",
+  "EncoderSettings": "example-value",
+  "InputAttachments": "example-value",
+  "InputSpecification": "example-value",
+  "LogLevel": "example-value",
+  "Maintenance": "example-value",
+  "Name": "example-resource",
+  "RequestId": "id-abc123",
+  "Reserved": "example-value",
+  "RoleArn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "Tags": "example-value",
+  "Vpc": "example-value"
+}

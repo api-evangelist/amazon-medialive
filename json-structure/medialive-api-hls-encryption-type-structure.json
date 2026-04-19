@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-hls-encryption-type-structure.json",
+  "name": "HlsEncryptionType",
+  "type": "string",
+  "description": "Hls Encryption Type",
+  "enum": [
+    "AES128",
+    "SAMPLE_AES"
+  ]
+}

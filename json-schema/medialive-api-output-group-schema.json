@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-output-group-schema.json",
+  "title": "OutputGroup",
+  "description": "Output groups for this Live Event. Output groups contain information about where streams should be distributed.",
+  "type": "object",
+  "properties": {
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMax32"
+        },
+        {
+          "xml": {
+            "name": "name"
+          },
+          "description": "Custom output group name optionally defined by the user."
+        }
+      ]
+    },
+    "OutputGroupSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OutputGroupSettings"
+        },
+        {
+          "xml": {
+            "name": "outputGroupSettings"
+          },
+          "description": "Settings associated with the output group."
+        }
+      ]
+    },
+    "Outputs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfOutput"
+        },
+        {
+          "xml": {
+            "name": "outputs"
+          }
+        }
+      ]
+    }
+  },
+  "required": [
+    "Outputs",
+    "OutputGroupSettings"
+  ]
+}

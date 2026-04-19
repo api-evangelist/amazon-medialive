@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-scte35-web-delivery-allowed-flag-structure.json",
+  "name": "Scte35WebDeliveryAllowedFlag",
+  "type": "string",
+  "description": "Corresponds to the web_delivery_allowed_flag parameter. A value of WEB_DELIVERY_NOT_ALLOWED corresponds to 0 (false) in the SCTE-35 specification. If you include one of the \"restriction\" flags then you must include all four of them.",
+  "enum": [
+    "WEB_DELIVERY_NOT_ALLOWED",
+    "WEB_DELIVERY_ALLOWED"
+  ]
+}

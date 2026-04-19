@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-reservation-maximum-bitrate-structure.json",
+  "name": "ReservationMaximumBitrate",
+  "type": "string",
+  "description": "Maximum bitrate in megabits per second",
+  "enum": [
+    "MAX_10_MBPS",
+    "MAX_20_MBPS",
+    "MAX_50_MBPS"
+  ]
+}

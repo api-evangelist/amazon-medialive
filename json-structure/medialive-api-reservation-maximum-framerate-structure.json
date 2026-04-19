@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-reservation-maximum-framerate-structure.json",
+  "name": "ReservationMaximumFramerate",
+  "type": "string",
+  "description": "Maximum framerate in frames per second (Outputs only)",
+  "enum": [
+    "MAX_30_FPS",
+    "MAX_60_FPS"
+  ]
+}

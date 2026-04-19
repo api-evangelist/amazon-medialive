@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-ttml-destination-settings-structure.json",
+  "name": "TtmlDestinationSettings",
+  "type": "object",
+  "description": "Ttml Destination Settings",
+  "properties": {
+    "StyleControl": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TtmlDestinationStyleControl"
+        },
+        {
+          "xml": {
+            "name": "styleControl"
+          },
+          "description": "This field is not currently supported and will not affect the output styling. Leave the default value."
+        }
+      ]
+    }
+  }
+}

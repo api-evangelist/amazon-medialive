@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-smooth-group-event-id-mode-structure.json",
+  "name": "SmoothGroupEventIdMode",
+  "type": "string",
+  "description": "Smooth Group Event Id Mode",
+  "enum": [
+    "NO_EVENT_ID",
+    "USE_CONFIGURED",
+    "USE_TIMESTAMP"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-audio-watermark-settings-structure.json",
+  "name": "AudioWatermarkSettings",
+  "type": "object",
+  "description": "Audio Watermark Settings",
+  "properties": {
+    "NielsenWatermarksSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NielsenWatermarksSettings"
+        },
+        {
+          "xml": {
+            "name": "nielsenWatermarksSettings"
+          },
+          "description": "Settings to configure Nielsen Watermarks in the audio encode"
+        }
+      ]
+    }
+  }
+}

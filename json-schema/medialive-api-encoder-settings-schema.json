@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-encoder-settings-schema.json",
+  "title": "EncoderSettings",
+  "description": "Encoder Settings",
+  "type": "object",
+  "properties": {
+    "AudioDescriptions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfAudioDescription"
+        },
+        {
+          "xml": {
+            "name": "audioDescriptions"
+          }
+        }
+      ]
+    },
+    "AvailBlanking": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AvailBlanking"
+        },
+        {
+          "xml": {
+            "name": "availBlanking"
+          },
+          "description": "Settings for ad avail blanking."
+        }
+      ]
+    },
+    "AvailConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AvailConfiguration"
+        },
+        {
+          "xml": {
+            "name": "availConfiguration"
+          },
+          "description": "Event-wide configuration settings for ad avail insertion."
+        }
+      ]
+    },
+    "BlackoutSlate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BlackoutSlate"
+        },
+        {
+          "xml": {
+            "name": "blackoutSlate"
+          },
+          "description": "Settings for blackout slate."
+        }
+      ]
+    },
+    "CaptionDescriptions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfCaptionDescription"
+        },
+        {
+          "xml": {
+            "name": "captionDescriptions"
+          },
+          "description": "Settings for caption decriptions"
+        }
+      ]
+    },
+    "FeatureActivations": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FeatureActivations"
+        },
+        {
+          "xml": {
+            "name": "featureActivations"
+          },
+          "description": "Feature Activations"
+        }
+      ]
+    },
+    "GlobalConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/GlobalConfiguration"
+        },
+        {
+          "xml": {
+            "name": "globalConfiguration"
+          },
+          "description": "Configuration settings that apply to the event as a whole."
+        }
+      ]
+    },
+    "MotionGraphicsConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MotionGraphicsConfiguration"
+        },
+        {
+          "xml": {
+            "name": "motionGraphicsConfiguration"
+          },
+          "description": "Settings for motion graphics."
+        }
+      ]
+    },
+    "NielsenConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NielsenConfiguration"
+        },
+        {
+          "xml": {
+            "name": "nielsenConfiguration"
+          },
+          "description": "Nielsen configuration settings."
+        }
+      ]
+    },
+    "OutputGroups": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfOutputGroup"
+        },
+        {
+          "xml": {
+            "name": "outputGroups"
+          }
+        }
+      ]
+    },
+    "TimecodeConfig": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TimecodeConfig"
+        },
+        {
+          "xml": {
+            "name": "timecodeConfig"
+          },
+          "description": "Contains settings used to acquire and adjust timecode information from inputs."
+        }
+      ]
+    },
+    "VideoDescriptions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfVideoDescription"
+        },
+        {
+          "xml": {
+            "name": "videoDescriptions"
+          }
+        }
+      ]
+    }
+  },
+  "required": [
+    "VideoDescriptions",
+    "AudioDescriptions",
+    "OutputGroups",
+    "TimecodeConfig"
+  ]
+}

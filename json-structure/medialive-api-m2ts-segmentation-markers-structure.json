@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-m2ts-segmentation-markers-structure.json",
+  "name": "M2tsSegmentationMarkers",
+  "type": "string",
+  "description": "M2ts Segmentation Markers",
+  "enum": [
+    "EBP",
+    "EBP_LEGACY",
+    "NONE",
+    "PSI_SEGSTART",
+    "RAI_ADAPT",
+    "RAI_SEGSTART"
+  ]
+}

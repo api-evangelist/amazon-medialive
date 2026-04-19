@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-reservation-resource-specification-structure.json",
+  "name": "ReservationResourceSpecification",
+  "type": "object",
+  "description": "Resource configuration (codec, resolution, bitrate, ...)",
+  "properties": {
+    "ChannelClass": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ChannelClass"
+        },
+        {
+          "xml": {
+            "name": "channelClass"
+          },
+          "description": "Channel class, e.g. 'STANDARD'"
+        }
+      ]
+    },
+    "Codec": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ReservationCodec"
+        },
+        {
+          "xml": {
+            "name": "codec"
+          },
+          "description": "Codec, e.g. 'AVC'"
+        }
+      ]
+    },
+    "MaximumBitrate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ReservationMaximumBitrate"
+        },
+        {
+          "xml": {
+            "name": "maximumBitrate"
+          },
+          "description": "Maximum bitrate, e.g. 'MAX_20_MBPS'"
+        }
+      ]
+    },
+    "MaximumFramerate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ReservationMaximumFramerate"
+        },
+        {
+          "xml": {
+            "name": "maximumFramerate"
+          },
+          "description": "Maximum framerate, e.g. 'MAX_30_FPS' (Outputs only)"
+        }
+      ]
+    },
+    "Resolution": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ReservationResolution"
+        },
+        {
+          "xml": {
+            "name": "resolution"
+          },
+          "description": "Resolution, e.g. 'HD'"
+        }
+      ]
+    },
+    "ResourceType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ReservationResourceType"
+        },
+        {
+          "xml": {
+            "name": "resourceType"
+          },
+          "description": "Resource type, 'INPUT', 'OUTPUT', 'MULTIPLEX', or 'CHANNEL'"
+        }
+      ]
+    },
+    "SpecialFeature": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ReservationSpecialFeature"
+        },
+        {
+          "xml": {
+            "name": "specialFeature"
+          },
+          "description": "Special feature, e.g. 'AUDIO_NORMALIZATION' (Channels only)"
+        }
+      ]
+    },
+    "VideoQuality": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ReservationVideoQuality"
+        },
+        {
+          "xml": {
+            "name": "videoQuality"
+          },
+          "description": "Video quality, e.g. 'STANDARD' (Outputs only)"
+        }
+      ]
+    }
+  }
+}

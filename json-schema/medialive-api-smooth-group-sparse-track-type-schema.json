@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-smooth-group-sparse-track-type-schema.json",
+  "title": "SmoothGroupSparseTrackType",
+  "description": "Smooth Group Sparse Track Type",
+  "type": "string",
+  "enum": [
+    "NONE",
+    "SCTE_35",
+    "SCTE_35_WITHOUT_SEGMENTATION"
+  ]
+}

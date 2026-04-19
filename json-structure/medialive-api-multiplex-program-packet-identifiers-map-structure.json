@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-multiplex-program-packet-identifiers-map-structure.json",
+  "name": "MultiplexProgramPacketIdentifiersMap",
+  "type": "object",
+  "description": "Packet identifiers map for a given Multiplex program.",
+  "properties": {
+    "AudioPids": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOf__integer"
+        },
+        {
+          "xml": {
+            "name": "audioPids"
+          }
+        }
+      ]
+    },
+    "DvbSubPids": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOf__integer"
+        },
+        {
+          "xml": {
+            "name": "dvbSubPids"
+          }
+        }
+      ]
+    },
+    "DvbTeletextPid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integer"
+        },
+        {
+          "xml": {
+            "name": "dvbTeletextPid"
+          }
+        }
+      ]
+    },
+    "EtvPlatformPid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integer"
+        },
+        {
+          "xml": {
+            "name": "etvPlatformPid"
+          }
+        }
+      ]
+    },
+    "EtvSignalPid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integer"
+        },
+        {
+          "xml": {
+            "name": "etvSignalPid"
+          }
+        }
+      ]
+    },
+    "KlvDataPids": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOf__integer"
+        },
+        {
+          "xml": {
+            "name": "klvDataPids"
+          }
+        }
+      ]
+    },
+    "PcrPid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integer"
+        },
+        {
+          "xml": {
+            "name": "pcrPid"
+          }
+        }
+      ]
+    },
+    "PmtPid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integer"
+        },
+        {
+          "xml": {
+            "name": "pmtPid"
+          }
+        }
+      ]
+    },
+    "PrivateMetadataPid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integer"
+        },
+        {
+          "xml": {
+            "name": "privateMetadataPid"
+          }
+        }
+      ]
+    },
+    "Scte27Pids": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOf__integer"
+        },
+        {
+          "xml": {
+            "name": "scte27Pids"
+          }
+        }
+      ]
+    },
+    "Scte35Pid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integer"
+        },
+        {
+          "xml": {
+            "name": "scte35Pid"
+          }
+        }
+      ]
+    },
+    "TimedMetadataPid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integer"
+        },
+        {
+          "xml": {
+            "name": "timedMetadataPid"
+          }
+        }
+      ]
+    },
+    "VideoPid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integer"
+        },
+        {
+          "xml": {
+            "name": "videoPid"
+          }
+        }
+      ]
+    }
+  }
+}

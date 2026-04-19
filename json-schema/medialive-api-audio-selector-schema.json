@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-audio-selector-schema.json",
+  "title": "AudioSelector",
+  "description": "Audio Selector",
+  "type": "object",
+  "properties": {
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMin1"
+        },
+        {
+          "xml": {
+            "name": "name"
+          },
+          "description": "The name of this AudioSelector. AudioDescriptions will use this name to uniquely identify this Selector.  Selector names should be unique per input."
+        }
+      ]
+    },
+    "SelectorSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AudioSelectorSettings"
+        },
+        {
+          "xml": {
+            "name": "selectorSettings"
+          },
+          "description": "The audio selector settings."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Name"
+  ]
+}

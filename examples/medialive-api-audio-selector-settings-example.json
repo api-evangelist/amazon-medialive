@@ -1,0 +1,6 @@
+{
+  "AudioHlsRenditionSelection": "example-value",
+  "AudioLanguageSelection": "example-value",
+  "AudioPidSelection": "id-abc123",
+  "AudioTrackSelection": "example-value"
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-mpeg2-display-ratio-structure.json",
+  "name": "Mpeg2DisplayRatio",
+  "type": "string",
+  "description": "Mpeg2 Display Ratio",
+  "enum": [
+    "DISPLAYRATIO16X9",
+    "DISPLAYRATIO4X3"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-multiplex-program-pipeline-detail-schema.json",
+  "title": "MultiplexProgramPipelineDetail",
+  "description": "The current source for one of the pipelines in the multiplex.",
+  "type": "object",
+  "properties": {
+    "ActiveChannelPipeline": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "activeChannelPipeline"
+          },
+          "description": "Identifies the channel pipeline that is currently active for the pipeline (identified by PipelineId) in the multiplex."
+        }
+      ]
+    },
+    "PipelineId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "pipelineId"
+          },
+          "description": "Identifies a specific pipeline in the multiplex."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-create-multiplex-program-request-schema.json",
+  "title": "CreateMultiplexProgramRequest",
+  "description": "A request to create a program in a multiplex.",
+  "type": "object",
+  "properties": {
+    "MultiplexProgramSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MultiplexProgramSettings"
+        },
+        {
+          "xml": {
+            "name": "multiplexProgramSettings"
+          },
+          "description": "The settings for this multiplex program."
+        }
+      ]
+    },
+    "ProgramName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "programName"
+          },
+          "description": "Name of multiplex program."
+        }
+      ]
+    },
+    "RequestId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "requestId"
+          },
+          "description": "Unique request ID. This prevents retries from creating multiple\nresources.\n"
+        }
+      ]
+    }
+  },
+  "required": [
+    "RequestId",
+    "MultiplexProgramSettings",
+    "ProgramName"
+  ]
+}

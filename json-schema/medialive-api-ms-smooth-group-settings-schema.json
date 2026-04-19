@@ -1,0 +1,259 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-ms-smooth-group-settings-schema.json",
+  "title": "MsSmoothGroupSettings",
+  "description": "Ms Smooth Group Settings",
+  "type": "object",
+  "properties": {
+    "AcquisitionPointId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "acquisitionPointId"
+          },
+          "description": "The ID to include in each message in the sparse track. Ignored if sparseTrackType is NONE."
+        }
+      ]
+    },
+    "AudioOnlyTimecodeControl": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SmoothGroupAudioOnlyTimecodeControl"
+        },
+        {
+          "xml": {
+            "name": "audioOnlyTimecodeControl"
+          },
+          "description": "If set to passthrough for an audio-only MS Smooth output, the fragment absolute time will be set to the current timecode. This option does not write timecodes to the audio elementary stream."
+        }
+      ]
+    },
+    "CertificateMode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SmoothGroupCertificateMode"
+        },
+        {
+          "xml": {
+            "name": "certificateMode"
+          },
+          "description": "If set to verifyAuthenticity, verify the https certificate chain to a trusted Certificate Authority (CA).  This will cause https outputs to self-signed certificates to fail."
+        }
+      ]
+    },
+    "ConnectionRetryInterval": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0"
+        },
+        {
+          "xml": {
+            "name": "connectionRetryInterval"
+          },
+          "description": "Number of seconds to wait before retrying connection to the IIS server if the connection is lost. Content will be cached during this time and the cache will be be delivered to the IIS server once the connection is re-established."
+        }
+      ]
+    },
+    "Destination": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OutputLocationRef"
+        },
+        {
+          "xml": {
+            "name": "destination"
+          },
+          "description": "Smooth Streaming publish point on an IIS server. Elemental Live acts as a \"Push\" encoder to IIS."
+        }
+      ]
+    },
+    "EventId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "eventId"
+          },
+          "description": "MS Smooth event ID to be sent to the IIS server.\n\nShould only be specified if eventIdMode is set to useConfigured."
+        }
+      ]
+    },
+    "EventIdMode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SmoothGroupEventIdMode"
+        },
+        {
+          "xml": {
+            "name": "eventIdMode"
+          },
+          "description": "Specifies whether or not to send an event ID to the IIS server. If no event ID is sent and the same Live Event is used without changing the publishing point, clients might see cached video from the previous run.\n\nOptions:\n- \"useConfigured\" - use the value provided in eventId\n- \"useTimestamp\" - generate and send an event ID based on the current timestamp\n- \"noEventId\" - do not send an event ID to the IIS server."
+        }
+      ]
+    },
+    "EventStopBehavior": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SmoothGroupEventStopBehavior"
+        },
+        {
+          "xml": {
+            "name": "eventStopBehavior"
+          },
+          "description": "When set to sendEos, send EOS signal to IIS server when stopping the event"
+        }
+      ]
+    },
+    "FilecacheDuration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0"
+        },
+        {
+          "xml": {
+            "name": "filecacheDuration"
+          },
+          "description": "Size in seconds of file cache for streaming outputs."
+        }
+      ]
+    },
+    "FragmentLength": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin1"
+        },
+        {
+          "xml": {
+            "name": "fragmentLength"
+          },
+          "description": "Length of mp4 fragments to generate (in seconds). Fragment length must be compatible with GOP size and framerate."
+        }
+      ]
+    },
+    "InputLossAction": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputLossActionForMsSmoothOut"
+        },
+        {
+          "xml": {
+            "name": "inputLossAction"
+          },
+          "description": "Parameter that control output group behavior on input loss."
+        }
+      ]
+    },
+    "NumRetries": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0"
+        },
+        {
+          "xml": {
+            "name": "numRetries"
+          },
+          "description": "Number of retry attempts."
+        }
+      ]
+    },
+    "RestartDelay": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0"
+        },
+        {
+          "xml": {
+            "name": "restartDelay"
+          },
+          "description": "Number of seconds before initiating a restart due to output failure, due to exhausting the numRetries on one segment, or exceeding filecacheDuration."
+        }
+      ]
+    },
+    "SegmentationMode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SmoothGroupSegmentationMode"
+        },
+        {
+          "xml": {
+            "name": "segmentationMode"
+          },
+          "description": "useInputSegmentation has been deprecated. The configured segment size is always used."
+        }
+      ]
+    },
+    "SendDelayMs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max10000"
+        },
+        {
+          "xml": {
+            "name": "sendDelayMs"
+          },
+          "description": "Number of milliseconds to delay the output from the second pipeline."
+        }
+      ]
+    },
+    "SparseTrackType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SmoothGroupSparseTrackType"
+        },
+        {
+          "xml": {
+            "name": "sparseTrackType"
+          },
+          "description": "Identifies the type of data to place in the sparse track:\n- SCTE35: Insert SCTE-35 messages from the source content. With each message, insert an IDR frame to start a new segment.\n- SCTE35_WITHOUT_SEGMENTATION: Insert SCTE-35 messages from the source content. With each message, insert an IDR frame but don't start a new segment.\n- NONE: Don't generate a sparse track for any outputs in this output group."
+        }
+      ]
+    },
+    "StreamManifestBehavior": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SmoothGroupStreamManifestBehavior"
+        },
+        {
+          "xml": {
+            "name": "streamManifestBehavior"
+          },
+          "description": "When set to send, send stream manifest so publishing point doesn't start until all streams start."
+        }
+      ]
+    },
+    "TimestampOffset": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "timestampOffset"
+          },
+          "description": "Timestamp offset for the event.  Only used if timestampOffsetMode is set to useConfiguredOffset."
+        }
+      ]
+    },
+    "TimestampOffsetMode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SmoothGroupTimestampOffsetMode"
+        },
+        {
+          "xml": {
+            "name": "timestampOffsetMode"
+          },
+          "description": "Type of timestamp date offset to use.\n- useEventStartDate: Use the date the event was started as the offset\n- useConfiguredOffset: Use an explicitly configured date as the offset"
+        }
+      ]
+    }
+  },
+  "required": [
+    "Destination"
+  ]
+}

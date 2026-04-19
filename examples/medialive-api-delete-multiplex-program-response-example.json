@@ -1,0 +1,7 @@
+{
+  "ChannelId": "id-abc123",
+  "MultiplexProgramSettings": "example-value",
+  "PacketIdentifiersMap": "id-abc123",
+  "PipelineDetails": "example-value",
+  "ProgramName": "example-resource"
+}

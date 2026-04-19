@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-batch-update-schedule-response-structure.json",
+  "name": "BatchUpdateScheduleResponse",
+  "type": "object",
+  "description": "Placeholder documentation for BatchUpdateScheduleResponse",
+  "properties": {
+    "Creates": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BatchScheduleActionCreateResult"
+        },
+        {
+          "xml": {
+            "name": "creates"
+          },
+          "description": "Schedule actions created in the schedule."
+        }
+      ]
+    },
+    "Deletes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BatchScheduleActionDeleteResult"
+        },
+        {
+          "xml": {
+            "name": "deletes"
+          },
+          "description": "Schedule actions deleted from the schedule."
+        }
+      ]
+    }
+  }
+}

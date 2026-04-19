@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-scte35-time-signal-apos-structure.json",
+  "name": "Scte35TimeSignalApos",
+  "type": "object",
+  "description": "Atypical configuration that applies segment breaks only on SCTE-35 time signal placement opportunities and breaks.",
+  "properties": {
+    "AdAvailOffset": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMinNegative1000Max1000"
+        },
+        {
+          "xml": {
+            "name": "adAvailOffset"
+          },
+          "description": "When specified, this offset (in milliseconds) is added to the input Ad Avail PTS time. This only applies to embedded SCTE 104/35 messages and does not apply to OOB messages."
+        }
+      ]
+    },
+    "NoRegionalBlackoutFlag": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte35AposNoRegionalBlackoutBehavior"
+        },
+        {
+          "xml": {
+            "name": "noRegionalBlackoutFlag"
+          },
+          "description": "When set to ignore, Segment Descriptors with noRegionalBlackoutFlag set to 0 will no longer trigger blackouts or Ad Avail slates"
+        }
+      ]
+    },
+    "WebDeliveryAllowedFlag": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte35AposWebDeliveryAllowedBehavior"
+        },
+        {
+          "xml": {
+            "name": "webDeliveryAllowedFlag"
+          },
+          "description": "When set to ignore, Segment Descriptors with webDeliveryAllowedFlag set to 0 will no longer trigger blackouts or Ad Avail slates"
+        }
+      ]
+    }
+  }
+}

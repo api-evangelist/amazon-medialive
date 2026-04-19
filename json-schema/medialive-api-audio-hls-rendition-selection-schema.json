@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-audio-hls-rendition-selection-schema.json",
+  "title": "AudioHlsRenditionSelection",
+  "description": "Audio Hls Rendition Selection",
+  "type": "object",
+  "properties": {
+    "GroupId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMin1"
+        },
+        {
+          "xml": {
+            "name": "groupId"
+          },
+          "description": "Specifies the GROUP-ID in the #EXT-X-MEDIA tag of the target HLS audio rendition."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMin1"
+        },
+        {
+          "xml": {
+            "name": "name"
+          },
+          "description": "Specifies the NAME in the #EXT-X-MEDIA tag of the target HLS audio rendition."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Name",
+    "GroupId"
+  ]
+}

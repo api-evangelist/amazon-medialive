@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-media-connect-flow-request-structure.json",
+  "name": "MediaConnectFlowRequest",
+  "type": "object",
+  "description": "The settings for a MediaConnect Flow.",
+  "properties": {
+    "FlowArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "flowArn"
+          },
+          "description": "The ARN of the MediaConnect Flow that you want to use as a source."
+        }
+      ]
+    }
+  }
+}

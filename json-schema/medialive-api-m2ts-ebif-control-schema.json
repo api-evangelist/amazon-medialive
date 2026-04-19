@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-m2ts-ebif-control-schema.json",
+  "title": "M2tsEbifControl",
+  "description": "M2ts Ebif Control",
+  "type": "string",
+  "enum": [
+    "NONE",
+    "PASSTHROUGH"
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-input-settings-schema.json",
+  "title": "InputSettings",
+  "description": "Live Event input parameters. There can be multiple inputs in a single Live Event.",
+  "type": "object",
+  "properties": {
+    "AudioSelectors": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfAudioSelector"
+        },
+        {
+          "xml": {
+            "name": "audioSelectors"
+          },
+          "description": "Used to select the audio stream to decode for inputs that have multiple available."
+        }
+      ]
+    },
+    "CaptionSelectors": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfCaptionSelector"
+        },
+        {
+          "xml": {
+            "name": "captionSelectors"
+          },
+          "description": "Used to select the caption input to use for inputs that have multiple available."
+        }
+      ]
+    },
+    "DeblockFilter": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputDeblockFilter"
+        },
+        {
+          "xml": {
+            "name": "deblockFilter"
+          },
+          "description": "Enable or disable the deblock filter when filtering."
+        }
+      ]
+    },
+    "DenoiseFilter": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputDenoiseFilter"
+        },
+        {
+          "xml": {
+            "name": "denoiseFilter"
+          },
+          "description": "Enable or disable the denoise filter when filtering."
+        }
+      ]
+    },
+    "FilterStrength": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin1Max5"
+        },
+        {
+          "xml": {
+            "name": "filterStrength"
+          },
+          "description": "Adjusts the magnitude of filtering from 1 (minimal) to 5 (strongest)."
+        }
+      ]
+    },
+    "InputFilter": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputFilter"
+        },
+        {
+          "xml": {
+            "name": "inputFilter"
+          },
+          "description": "Turns on the filter for this input. MPEG-2 inputs have the deblocking filter enabled by default.\n1) auto - filtering will be applied depending on input type/quality\n2) disabled - no filtering will be applied to the input\n3) forced - filtering will be applied regardless of input type"
+        }
+      ]
+    },
+    "NetworkInputSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NetworkInputSettings"
+        },
+        {
+          "xml": {
+            "name": "networkInputSettings"
+          },
+          "description": "Input settings."
+        }
+      ]
+    },
+    "Scte35Pid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin32Max8191"
+        },
+        {
+          "xml": {
+            "name": "scte35Pid"
+          },
+          "description": "PID from which to read SCTE-35 messages. If left undefined, EML will select the first SCTE-35 PID found in the input."
+        }
+      ]
+    },
+    "Smpte2038DataPreference": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Smpte2038DataPreference"
+        },
+        {
+          "xml": {
+            "name": "smpte2038DataPreference"
+          },
+          "description": "Specifies whether to extract applicable ancillary data from a SMPTE-2038 source in this input. Applicable data types are captions, timecode, AFD, and SCTE-104 messages.\n- PREFER: Extract from SMPTE-2038 if present in this input, otherwise extract from another source (if any).\n- IGNORE: Never extract any ancillary data from SMPTE-2038."
+        }
+      ]
+    },
+    "SourceEndBehavior": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputSourceEndBehavior"
+        },
+        {
+          "xml": {
+            "name": "sourceEndBehavior"
+          },
+          "description": "Loop input if it is a file. This allows a file input to be streamed indefinitely."
+        }
+      ]
+    },
+    "VideoSelector": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VideoSelector"
+        },
+        {
+          "xml": {
+            "name": "videoSelector"
+          },
+          "description": "Informs which video elementary stream to decode for input types that have multiple available."
+        }
+      ]
+    }
+  }
+}

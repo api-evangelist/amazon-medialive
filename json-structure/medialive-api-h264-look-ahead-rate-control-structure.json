@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-h264-look-ahead-rate-control-structure.json",
+  "name": "H264LookAheadRateControl",
+  "type": "string",
+  "description": "H264 Look Ahead Rate Control",
+  "enum": [
+    "HIGH",
+    "LOW",
+    "MEDIUM"
+  ]
+}

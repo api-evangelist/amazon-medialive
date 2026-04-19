@@ -1,0 +1,13 @@
+{
+  "AudioSelectors": "example-value",
+  "CaptionSelectors": "example-value",
+  "DeblockFilter": "example-value",
+  "DenoiseFilter": "example-value",
+  "FilterStrength": "example-value",
+  "InputFilter": "example-value",
+  "NetworkInputSettings": "example-value",
+  "Scte35Pid": "id-abc123",
+  "Smpte2038DataPreference": "example-value",
+  "SourceEndBehavior": "example-value",
+  "VideoSelector": "id-abc123"
+}

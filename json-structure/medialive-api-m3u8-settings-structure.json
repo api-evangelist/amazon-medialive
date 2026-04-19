@@ -1,0 +1,230 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-m3u8-settings-structure.json",
+  "name": "M3u8Settings",
+  "type": "object",
+  "description": "Settings information for the .m3u8 container",
+  "properties": {
+    "AudioFramesPerPes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0"
+        },
+        {
+          "xml": {
+            "name": "audioFramesPerPes"
+          },
+          "description": "The number of audio frames to insert for each PES packet."
+        }
+      ]
+    },
+    "AudioPids": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "audioPids"
+          },
+          "description": "Packet Identifier (PID) of the elementary audio stream(s) in the transport stream. Multiple values are accepted, and can be entered in ranges and/or by comma separation. Can be entered as decimal or hexadecimal values."
+        }
+      ]
+    },
+    "EcmPid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "ecmPid"
+          },
+          "description": "This parameter is unused and deprecated."
+        }
+      ]
+    },
+    "NielsenId3Behavior": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/M3u8NielsenId3Behavior"
+        },
+        {
+          "xml": {
+            "name": "nielsenId3Behavior"
+          },
+          "description": "If set to passthrough, Nielsen inaudible tones for media tracking will be detected in the input audio and an equivalent ID3 tag will be inserted in the output."
+        }
+      ]
+    },
+    "PatInterval": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max1000"
+        },
+        {
+          "xml": {
+            "name": "patInterval"
+          },
+          "description": "The number of milliseconds between instances of this table in the output transport stream. A value of \\\"0\\\" writes out the PMT once per segment file."
+        }
+      ]
+    },
+    "PcrControl": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/M3u8PcrControl"
+        },
+        {
+          "xml": {
+            "name": "pcrControl"
+          },
+          "description": "When set to pcrEveryPesPacket, a Program Clock Reference value is inserted for every Packetized Elementary Stream (PES) header. This parameter is effective only when the PCR PID is the same as the video or audio elementary stream."
+        }
+      ]
+    },
+    "PcrPeriod": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max500"
+        },
+        {
+          "xml": {
+            "name": "pcrPeriod"
+          },
+          "description": "Maximum time in milliseconds between Program Clock References (PCRs) inserted into the transport stream."
+        }
+      ]
+    },
+    "PcrPid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "pcrPid"
+          },
+          "description": "Packet Identifier (PID) of the Program Clock Reference (PCR) in the transport stream. When no value is given, the encoder will assign the same value as the Video PID. Can be entered as a decimal or hexadecimal value."
+        }
+      ]
+    },
+    "PmtInterval": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max1000"
+        },
+        {
+          "xml": {
+            "name": "pmtInterval"
+          },
+          "description": "The number of milliseconds between instances of this table in the output transport stream. A value of \\\"0\\\" writes out the PMT once per segment file."
+        }
+      ]
+    },
+    "PmtPid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "pmtPid"
+          },
+          "description": "Packet Identifier (PID) for the Program Map Table (PMT) in the transport stream. Can be entered as a decimal or hexadecimal value."
+        }
+      ]
+    },
+    "ProgramNum": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max65535"
+        },
+        {
+          "xml": {
+            "name": "programNum"
+          },
+          "description": "The value of the program number field in the Program Map Table."
+        }
+      ]
+    },
+    "Scte35Behavior": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/M3u8Scte35Behavior"
+        },
+        {
+          "xml": {
+            "name": "scte35Behavior"
+          },
+          "description": "If set to passthrough, passes any SCTE-35 signals from the input source to this output."
+        }
+      ]
+    },
+    "Scte35Pid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "scte35Pid"
+          },
+          "description": "Packet Identifier (PID) of the SCTE-35 stream in the transport stream. Can be entered as a decimal or hexadecimal value."
+        }
+      ]
+    },
+    "TimedMetadataBehavior": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/M3u8TimedMetadataBehavior"
+        },
+        {
+          "xml": {
+            "name": "timedMetadataBehavior"
+          },
+          "description": "When set to passthrough, timed metadata is passed through from input to output."
+        }
+      ]
+    },
+    "TimedMetadataPid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "timedMetadataPid"
+          },
+          "description": "Packet Identifier (PID) of the timed metadata stream in the transport stream. Can be entered as a decimal or hexadecimal value.  Valid values are 32 (or 0x20)..8182 (or 0x1ff6)."
+        }
+      ]
+    },
+    "TransportStreamId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max65535"
+        },
+        {
+          "xml": {
+            "name": "transportStreamId"
+          },
+          "description": "The value of the transport stream ID field in the Program Map Table."
+        }
+      ]
+    },
+    "VideoPid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "videoPid"
+          },
+          "description": "Packet Identifier (PID) of the elementary video stream in the transport stream. Can be entered as a decimal or hexadecimal value."
+        }
+      ]
+    }
+  }
+}

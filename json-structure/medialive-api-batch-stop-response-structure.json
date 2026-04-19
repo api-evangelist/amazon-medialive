@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-batch-stop-response-structure.json",
+  "name": "BatchStopResponse",
+  "type": "object",
+  "description": "Placeholder documentation for BatchStopResponse",
+  "properties": {
+    "Failed": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfBatchFailedResultModel"
+        },
+        {
+          "xml": {
+            "name": "failed"
+          },
+          "description": "List of failed operations"
+        }
+      ]
+    },
+    "Successful": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfBatchSuccessfulResultModel"
+        },
+        {
+          "xml": {
+            "name": "successful"
+          },
+          "description": "List of successful operations"
+        }
+      ]
+    }
+  }
+}

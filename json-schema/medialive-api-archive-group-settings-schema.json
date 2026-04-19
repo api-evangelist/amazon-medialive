@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-archive-group-settings-schema.json",
+  "title": "ArchiveGroupSettings",
+  "description": "Archive Group Settings",
+  "type": "object",
+  "properties": {
+    "ArchiveCdnSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArchiveCdnSettings"
+        },
+        {
+          "xml": {
+            "name": "archiveCdnSettings"
+          },
+          "description": "Parameters that control interactions with the CDN."
+        }
+      ]
+    },
+    "Destination": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OutputLocationRef"
+        },
+        {
+          "xml": {
+            "name": "destination"
+          },
+          "description": "A directory and base filename where archive files should be written."
+        }
+      ]
+    },
+    "RolloverInterval": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin1"
+        },
+        {
+          "xml": {
+            "name": "rolloverInterval"
+          },
+          "description": "Number of seconds to write to archive file before closing and starting a new one."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Destination"
+  ]
+}

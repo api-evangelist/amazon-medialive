@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-multiplex-statmux-video-settings-schema.json",
+  "title": "MultiplexStatmuxVideoSettings",
+  "description": "Statmux rate control settings",
+  "type": "object",
+  "properties": {
+    "MaximumBitrate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin100000Max100000000"
+        },
+        {
+          "xml": {
+            "name": "maximumBitrate"
+          },
+          "description": "Maximum statmux bitrate."
+        }
+      ]
+    },
+    "MinimumBitrate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin100000Max100000000"
+        },
+        {
+          "xml": {
+            "name": "minimumBitrate"
+          },
+          "description": "Minimum statmux bitrate."
+        }
+      ]
+    },
+    "Priority": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMinNegative5Max5"
+        },
+        {
+          "xml": {
+            "name": "priority"
+          },
+          "description": "The purpose of the priority is to use a combination of the\\nmultiplex rate control algorithm and the QVBR capability of the\\nencoder to prioritize the video quality of some channels in a\\nmultiplex over others.  Channels that have a higher priority will\\nget higher video quality at the expense of the video quality of\\nother channels in the multiplex with lower priority."
+        }
+      ]
+    }
+  }
+}

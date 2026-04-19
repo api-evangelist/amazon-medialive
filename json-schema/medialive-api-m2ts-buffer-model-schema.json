@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-m2ts-buffer-model-schema.json",
+  "title": "M2tsBufferModel",
+  "description": "M2ts Buffer Model",
+  "type": "string",
+  "enum": [
+    "MULTIPLEX",
+    "NONE"
+  ]
+}

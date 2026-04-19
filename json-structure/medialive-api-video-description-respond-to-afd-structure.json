@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-video-description-respond-to-afd-structure.json",
+  "name": "VideoDescriptionRespondToAfd",
+  "type": "string",
+  "description": "Video Description Respond To Afd",
+  "enum": [
+    "NONE",
+    "PASSTHROUGH",
+    "RESPOND"
+  ]
+}

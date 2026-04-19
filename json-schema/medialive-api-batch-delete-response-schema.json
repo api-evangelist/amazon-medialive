@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-batch-delete-response-schema.json",
+  "title": "BatchDeleteResponse",
+  "description": "Placeholder documentation for BatchDeleteResponse",
+  "type": "object",
+  "properties": {
+    "Failed": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfBatchFailedResultModel"
+        },
+        {
+          "xml": {
+            "name": "failed"
+          },
+          "description": "List of failed operations"
+        }
+      ]
+    },
+    "Successful": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfBatchSuccessfulResultModel"
+        },
+        {
+          "xml": {
+            "name": "successful"
+          },
+          "description": "List of successful operations"
+        }
+      ]
+    }
+  }
+}

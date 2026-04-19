@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-scte35-segmentation-descriptor-schema.json",
+  "title": "Scte35SegmentationDescriptor",
+  "description": "Corresponds to SCTE-35 segmentation_descriptor.",
+  "type": "object",
+  "properties": {
+    "DeliveryRestrictions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte35DeliveryRestrictions"
+        },
+        {
+          "xml": {
+            "name": "deliveryRestrictions"
+          },
+          "description": "Holds the four SCTE-35 delivery restriction parameters."
+        }
+      ]
+    },
+    "SegmentNum": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max255"
+        },
+        {
+          "xml": {
+            "name": "segmentNum"
+          },
+          "description": "Corresponds to SCTE-35 segment_num. A value that is valid for the specified segmentation_type_id."
+        }
+      ]
+    },
+    "SegmentationCancelIndicator": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte35SegmentationCancelIndicator"
+        },
+        {
+          "xml": {
+            "name": "segmentationCancelIndicator"
+          },
+          "description": "Corresponds to SCTE-35 segmentation_event_cancel_indicator."
+        }
+      ]
+    },
+    "SegmentationDuration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__longMin0Max1099511627775"
+        },
+        {
+          "xml": {
+            "name": "segmentationDuration"
+          },
+          "description": "Corresponds to SCTE-35 segmentation_duration. Optional. The duration for the time_signal, in 90 KHz ticks. To convert seconds to ticks, multiple the seconds by 90,000. Enter time in 90 KHz clock ticks. If you do not enter a duration, the time_signal will continue until you insert a cancellation message."
+        }
+      ]
+    },
+    "SegmentationEventId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__longMin0Max4294967295"
+        },
+        {
+          "xml": {
+            "name": "segmentationEventId"
+          },
+          "description": "Corresponds to SCTE-35 segmentation_event_id. "
+        }
+      ]
+    },
+    "SegmentationTypeId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max255"
+        },
+        {
+          "xml": {
+            "name": "segmentationTypeId"
+          },
+          "description": "Corresponds to SCTE-35 segmentation_type_id. One of the segmentation_type_id values listed in the SCTE-35 specification. On the console, enter the ID in decimal (for example, \"52\"). In the CLI, API, or an SDK, enter the ID in hex (for example, \"0x34\") or decimal (for example, \"52\")."
+        }
+      ]
+    },
+    "SegmentationUpid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "segmentationUpid"
+          },
+          "description": "Corresponds to SCTE-35 segmentation_upid. Enter a string containing the hexadecimal representation of the characters that make up the SCTE-35 segmentation_upid value. Must contain an even number of hex characters. Do not include spaces between each hex pair. For example, the ASCII \"ADS Information\" becomes hex \"41445320496e666f726d6174696f6e."
+        }
+      ]
+    },
+    "SegmentationUpidType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max255"
+        },
+        {
+          "xml": {
+            "name": "segmentationUpidType"
+          },
+          "description": "Corresponds to SCTE-35 segmentation_upid_type. On the console, enter one of the types listed in the SCTE-35 specification, converted to a decimal. For example, \"0x0C\" hex from the specification is \"12\" in decimal. In the CLI, API, or an SDK, enter one of the types listed in the SCTE-35 specification, in either hex (for example, \"0x0C\" ) or in decimal (for example, \"12\")."
+        }
+      ]
+    },
+    "SegmentsExpected": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max255"
+        },
+        {
+          "xml": {
+            "name": "segmentsExpected"
+          },
+          "description": "Corresponds to SCTE-35 segments_expected. A value that is valid for the specified segmentation_type_id."
+        }
+      ]
+    },
+    "SubSegmentNum": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max255"
+        },
+        {
+          "xml": {
+            "name": "subSegmentNum"
+          },
+          "description": "Corresponds to SCTE-35 sub_segment_num. A value that is valid for the specified segmentation_type_id."
+        }
+      ]
+    },
+    "SubSegmentsExpected": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max255"
+        },
+        {
+          "xml": {
+            "name": "subSegmentsExpected"
+          },
+          "description": "Corresponds to SCTE-35 sub_segments_expected. A value that is valid for the specified segmentation_type_id."
+        }
+      ]
+    }
+  },
+  "required": [
+    "SegmentationEventId",
+    "SegmentationCancelIndicator"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-hls-incomplete-segment-behavior-schema.json",
+  "title": "HlsIncompleteSegmentBehavior",
+  "description": "Hls Incomplete Segment Behavior",
+  "type": "string",
+  "enum": [
+    "AUTO",
+    "SUPPRESS"
+  ]
+}

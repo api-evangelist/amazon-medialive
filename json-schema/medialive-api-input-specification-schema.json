@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-input-specification-schema.json",
+  "title": "InputSpecification",
+  "description": "Placeholder documentation for InputSpecification",
+  "type": "object",
+  "properties": {
+    "Codec": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputCodec"
+        },
+        {
+          "xml": {
+            "name": "codec"
+          },
+          "description": "Input codec"
+        }
+      ]
+    },
+    "MaximumBitrate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputMaximumBitrate"
+        },
+        {
+          "xml": {
+            "name": "maximumBitrate"
+          },
+          "description": "Maximum input bitrate, categorized coarsely"
+        }
+      ]
+    },
+    "Resolution": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputResolution"
+        },
+        {
+          "xml": {
+            "name": "resolution"
+          },
+          "description": "Input resolution, categorized coarsely"
+        }
+      ]
+    }
+  }
+}

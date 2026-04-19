@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-reservation-resource-type-structure.json",
+  "name": "ReservationResourceType",
+  "type": "string",
+  "description": "Resource type, 'INPUT', 'OUTPUT', 'MULTIPLEX', or 'CHANNEL'",
+  "enum": [
+    "INPUT",
+    "OUTPUT",
+    "MULTIPLEX",
+    "CHANNEL"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-archive-output-settings-schema.json",
+  "title": "ArchiveOutputSettings",
+  "description": "Archive Output Settings",
+  "type": "object",
+  "properties": {
+    "ContainerSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArchiveContainerSettings"
+        },
+        {
+          "xml": {
+            "name": "containerSettings"
+          },
+          "description": "Settings specific to the container type of the file."
+        }
+      ]
+    },
+    "Extension": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "extension"
+          },
+          "description": "Output file extension. If excluded, this will be auto-selected from the container type."
+        }
+      ]
+    },
+    "NameModifier": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "nameModifier"
+          },
+          "description": "String concatenated to the end of the destination filename.  Required for multiple outputs of the same type."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ContainerSettings"
+  ]
+}

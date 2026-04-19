@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-channel-egress-endpoint-structure.json",
+  "name": "ChannelEgressEndpoint",
+  "type": "object",
+  "description": "Placeholder documentation for ChannelEgressEndpoint",
+  "properties": {
+    "SourceIp": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "sourceIp"
+          },
+          "description": "Public IP of where a channel's output comes from"
+        }
+      ]
+    }
+  }
+}

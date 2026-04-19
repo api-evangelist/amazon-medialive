@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-webvtt-destination-style-control-schema.json",
+  "title": "WebvttDestinationStyleControl",
+  "description": "Webvtt Destination Style Control",
+  "type": "string",
+  "enum": [
+    "NO_STYLE_DATA",
+    "PASSTHROUGH"
+  ]
+}

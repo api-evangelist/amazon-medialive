@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-archive-s3-settings-schema.json",
+  "title": "ArchiveS3Settings",
+  "description": "Archive S3 Settings",
+  "type": "object",
+  "properties": {
+    "CannedAcl": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/S3CannedAcl"
+        },
+        {
+          "xml": {
+            "name": "cannedAcl"
+          },
+          "description": "Specify the canned ACL to apply to each S3 request. Defaults to none."
+        }
+      ]
+    }
+  }
+}

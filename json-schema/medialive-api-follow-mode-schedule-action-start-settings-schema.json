@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-follow-mode-schedule-action-start-settings-schema.json",
+  "title": "FollowModeScheduleActionStartSettings",
+  "description": "Settings to specify if an action follows another.",
+  "type": "object",
+  "properties": {
+    "FollowPoint": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FollowPoint"
+        },
+        {
+          "xml": {
+            "name": "followPoint"
+          },
+          "description": "Identifies whether this action starts relative to the start or relative to the end of the reference action."
+        }
+      ]
+    },
+    "ReferenceActionName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "referenceActionName"
+          },
+          "description": "The action name of another action that this one refers to."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ReferenceActionName",
+    "FollowPoint"
+  ]
+}

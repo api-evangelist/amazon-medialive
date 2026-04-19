@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-fmp4-hls-settings-structure.json",
+  "name": "Fmp4HlsSettings",
+  "type": "object",
+  "description": "Fmp4 Hls Settings",
+  "properties": {
+    "AudioRenditionSets": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "audioRenditionSets"
+          },
+          "description": "List all the audio groups that are used with the video output stream. Input all the audio GROUP-IDs that are associated to the video, separate by ','."
+        }
+      ]
+    },
+    "NielsenId3Behavior": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Fmp4NielsenId3Behavior"
+        },
+        {
+          "xml": {
+            "name": "nielsenId3Behavior"
+          },
+          "description": "If set to passthrough, Nielsen inaudible tones for media tracking will be detected in the input audio and an equivalent ID3 tag will be inserted in the output."
+        }
+      ]
+    },
+    "TimedMetadataBehavior": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Fmp4TimedMetadataBehavior"
+        },
+        {
+          "xml": {
+            "name": "timedMetadataBehavior"
+          },
+          "description": "When set to passthrough, timed metadata is passed through from input to output."
+        }
+      ]
+    }
+  }
+}

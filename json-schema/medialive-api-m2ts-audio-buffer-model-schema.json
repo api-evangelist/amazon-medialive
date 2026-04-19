@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-m2ts-audio-buffer-model-schema.json",
+  "title": "M2tsAudioBufferModel",
+  "description": "M2ts Audio Buffer Model",
+  "type": "string",
+  "enum": [
+    "ATSC",
+    "DVB"
+  ]
+}

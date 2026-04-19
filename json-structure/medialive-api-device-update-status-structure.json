@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-device-update-status-structure.json",
+  "name": "DeviceUpdateStatus",
+  "type": "string",
+  "description": "The status of software on the input device.",
+  "enum": [
+    "UP_TO_DATE",
+    "NOT_UP_TO_DATE",
+    "UPDATING"
+  ]
+}

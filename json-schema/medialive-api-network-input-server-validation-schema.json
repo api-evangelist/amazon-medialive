@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-network-input-server-validation-schema.json",
+  "title": "NetworkInputServerValidation",
+  "description": "Network Input Server Validation",
+  "type": "string",
+  "enum": [
+    "CHECK_CRYPTOGRAPHY_AND_VALIDATE_NAME",
+    "CHECK_CRYPTOGRAPHY_ONLY"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-caption-language-mapping-structure.json",
+  "name": "CaptionLanguageMapping",
+  "type": "object",
+  "description": "Maps a caption channel to an ISO 693-2 language code (http://www.loc.gov/standards/iso639-2), with an optional description.",
+  "properties": {
+    "CaptionChannel": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin1Max4"
+        },
+        {
+          "xml": {
+            "name": "captionChannel"
+          },
+          "description": "The closed caption channel being described by this CaptionLanguageMapping.  Each channel mapping must have a unique channel number (maximum of 4)"
+        }
+      ]
+    },
+    "LanguageCode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMin3Max3"
+        },
+        {
+          "xml": {
+            "name": "languageCode"
+          },
+          "description": "Three character ISO 639-2 language code (see http://www.loc.gov/standards/iso639-2)"
+        }
+      ]
+    },
+    "LanguageDescription": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMin1"
+        },
+        {
+          "xml": {
+            "name": "languageDescription"
+          },
+          "description": "Textual description of language"
+        }
+      ]
+    }
+  },
+  "required": [
+    "LanguageCode",
+    "LanguageDescription",
+    "CaptionChannel"
+  ]
+}

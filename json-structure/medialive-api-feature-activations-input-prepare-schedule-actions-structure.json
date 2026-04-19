@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-feature-activations-input-prepare-schedule-actions-structure.json",
+  "name": "FeatureActivationsInputPrepareScheduleActions",
+  "type": "string",
+  "description": "Feature Activations Input Prepare Schedule Actions",
+  "enum": [
+    "DISABLED",
+    "ENABLED"
+  ]
+}

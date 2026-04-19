@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-loss-action-for-rtmp-out-structure.json",
+  "name": "InputLossActionForRtmpOut",
+  "type": "string",
+  "description": "Input Loss Action For Rtmp Out",
+  "enum": [
+    "EMIT_OUTPUT",
+    "PAUSE_OUTPUT"
+  ]
+}

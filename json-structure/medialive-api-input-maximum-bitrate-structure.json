@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-maximum-bitrate-structure.json",
+  "name": "InputMaximumBitrate",
+  "type": "string",
+  "description": "Maximum input bitrate in megabits per second. Bitrates up to 50 Mbps are supported currently.",
+  "enum": [
+    "MAX_10_MBPS",
+    "MAX_20_MBPS",
+    "MAX_50_MBPS"
+  ]
+}

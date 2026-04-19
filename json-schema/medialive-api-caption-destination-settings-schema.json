@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-caption-destination-settings-schema.json",
+  "title": "CaptionDestinationSettings",
+  "description": "Caption Destination Settings",
+  "type": "object",
+  "properties": {
+    "AribDestinationSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AribDestinationSettings"
+        },
+        {
+          "xml": {
+            "name": "aribDestinationSettings"
+          }
+        }
+      ]
+    },
+    "BurnInDestinationSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BurnInDestinationSettings"
+        },
+        {
+          "xml": {
+            "name": "burnInDestinationSettings"
+          }
+        }
+      ]
+    },
+    "DvbSubDestinationSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DvbSubDestinationSettings"
+        },
+        {
+          "xml": {
+            "name": "dvbSubDestinationSettings"
+          }
+        }
+      ]
+    },
+    "EbuTtDDestinationSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EbuTtDDestinationSettings"
+        },
+        {
+          "xml": {
+            "name": "ebuTtDDestinationSettings"
+          }
+        }
+      ]
+    },
+    "EmbeddedDestinationSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EmbeddedDestinationSettings"
+        },
+        {
+          "xml": {
+            "name": "embeddedDestinationSettings"
+          }
+        }
+      ]
+    },
+    "EmbeddedPlusScte20DestinationSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EmbeddedPlusScte20DestinationSettings"
+        },
+        {
+          "xml": {
+            "name": "embeddedPlusScte20DestinationSettings"
+          }
+        }
+      ]
+    },
+    "RtmpCaptionInfoDestinationSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RtmpCaptionInfoDestinationSettings"
+        },
+        {
+          "xml": {
+            "name": "rtmpCaptionInfoDestinationSettings"
+          }
+        }
+      ]
+    },
+    "Scte20PlusEmbeddedDestinationSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte20PlusEmbeddedDestinationSettings"
+        },
+        {
+          "xml": {
+            "name": "scte20PlusEmbeddedDestinationSettings"
+          }
+        }
+      ]
+    },
+    "Scte27DestinationSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Scte27DestinationSettings"
+        },
+        {
+          "xml": {
+            "name": "scte27DestinationSettings"
+          }
+        }
+      ]
+    },
+    "SmpteTtDestinationSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SmpteTtDestinationSettings"
+        },
+        {
+          "xml": {
+            "name": "smpteTtDestinationSettings"
+          }
+        }
+      ]
+    },
+    "TeletextDestinationSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TeletextDestinationSettings"
+        },
+        {
+          "xml": {
+            "name": "teletextDestinationSettings"
+          }
+        }
+      ]
+    },
+    "TtmlDestinationSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TtmlDestinationSettings"
+        },
+        {
+          "xml": {
+            "name": "ttmlDestinationSettings"
+          }
+        }
+      ]
+    },
+    "WebvttDestinationSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WebvttDestinationSettings"
+        },
+        {
+          "xml": {
+            "name": "webvttDestinationSettings"
+          }
+        }
+      ]
+    }
+  }
+}

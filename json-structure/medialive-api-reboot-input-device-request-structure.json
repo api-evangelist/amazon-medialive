@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-reboot-input-device-request-structure.json",
+  "name": "RebootInputDeviceRequest",
+  "type": "object",
+  "description": "A request to reboot an AWS Elemental device.",
+  "properties": {
+    "Force": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RebootInputDeviceForce"
+        },
+        {
+          "xml": {
+            "name": "force"
+          },
+          "description": "Force a reboot of an input device. If the device is streaming, it will stop streaming and begin rebooting within a few seconds of sending the command. If the device was streaming prior to the reboot, the device will resume streaming when the reboot completes."
+        }
+      ]
+    }
+  }
+}

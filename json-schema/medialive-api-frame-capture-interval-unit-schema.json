@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-frame-capture-interval-unit-schema.json",
+  "title": "FrameCaptureIntervalUnit",
+  "description": "Frame Capture Interval Unit",
+  "type": "string",
+  "enum": [
+    "MILLISECONDS",
+    "SECONDS"
+  ]
+}

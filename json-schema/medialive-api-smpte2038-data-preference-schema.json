@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-smpte2038-data-preference-schema.json",
+  "title": "Smpte2038DataPreference",
+  "description": "Smpte2038 Data Preference",
+  "type": "string",
+  "enum": [
+    "IGNORE",
+    "PREFER"
+  ]
+}

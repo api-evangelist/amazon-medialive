@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-scte27-ocr-language-schema.json",
+  "title": "Scte27OcrLanguage",
+  "description": "Scte27 Ocr Language",
+  "type": "string",
+  "enum": [
+    "DEU",
+    "ENG",
+    "FRA",
+    "NLD",
+    "POR",
+    "SPA"
+  ]
+}

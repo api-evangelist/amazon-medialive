@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-describe-input-device-thumbnail-request-schema.json",
+  "title": "DescribeInputDeviceThumbnailRequest",
+  "description": "Placeholder documentation for DescribeInputDeviceThumbnailRequest",
+  "type": "object",
+  "properties": {}
+}

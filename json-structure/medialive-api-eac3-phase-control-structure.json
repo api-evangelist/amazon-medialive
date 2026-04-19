@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-eac3-phase-control-structure.json",
+  "name": "Eac3PhaseControl",
+  "type": "string",
+  "description": "Eac3 Phase Control",
+  "enum": [
+    "NO_SHIFT",
+    "SHIFT_90_DEGREES"
+  ]
+}

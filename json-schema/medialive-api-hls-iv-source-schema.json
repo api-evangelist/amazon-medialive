@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-hls-iv-source-schema.json",
+  "title": "HlsIvSource",
+  "description": "Hls Iv Source",
+  "type": "string",
+  "enum": [
+    "EXPLICIT",
+    "FOLLOWS_SEGMENT_NUMBER"
+  ]
+}

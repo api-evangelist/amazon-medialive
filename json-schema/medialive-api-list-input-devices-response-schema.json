@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-list-input-devices-response-schema.json",
+  "title": "ListInputDevicesResponse",
+  "description": "Placeholder documentation for ListInputDevicesResponse",
+  "type": "object",
+  "properties": {
+    "InputDevices": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfInputDeviceSummary"
+        },
+        {
+          "xml": {
+            "name": "inputDevices"
+          },
+          "description": "The list of input devices."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "nextToken"
+          },
+          "description": "A token to get additional list results."
+        }
+      ]
+    }
+  }
+}

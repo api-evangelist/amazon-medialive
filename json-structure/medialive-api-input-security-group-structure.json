@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-security-group-structure.json",
+  "name": "InputSecurityGroup",
+  "type": "object",
+  "description": "An Input Security Group",
+  "properties": {
+    "Arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "arn"
+          },
+          "description": "Unique ARN of Input Security Group"
+        }
+      ]
+    },
+    "Id": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "id"
+          },
+          "description": "The Id of the Input Security Group"
+        }
+      ]
+    },
+    "Inputs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOf__string"
+        },
+        {
+          "xml": {
+            "name": "inputs"
+          },
+          "description": "The list of inputs currently using this Input Security Group."
+        }
+      ]
+    },
+    "State": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputSecurityGroupState"
+        },
+        {
+          "xml": {
+            "name": "state"
+          },
+          "description": "The current state of the Input Security Group."
+        }
+      ]
+    },
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Tags"
+        },
+        {
+          "xml": {
+            "name": "tags"
+          },
+          "description": "A collection of key-value pairs."
+        }
+      ]
+    },
+    "WhitelistRules": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfInputWhitelistRule"
+        },
+        {
+          "xml": {
+            "name": "whitelistRules"
+          },
+          "description": "Whitelist rules and their sync status"
+        }
+      ]
+    }
+  }
+}

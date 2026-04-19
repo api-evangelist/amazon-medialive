@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-claim-device-response-schema.json",
+  "title": "ClaimDeviceResponse",
+  "description": "Placeholder documentation for ClaimDeviceResponse",
+  "type": "object",
+  "properties": {}
+}

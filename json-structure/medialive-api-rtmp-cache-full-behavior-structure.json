@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-rtmp-cache-full-behavior-structure.json",
+  "name": "RtmpCacheFullBehavior",
+  "type": "string",
+  "description": "Rtmp Cache Full Behavior",
+  "enum": [
+    "DISCONNECT_IMMEDIATELY",
+    "WAIT_FOR_SERVER"
+  ]
+}

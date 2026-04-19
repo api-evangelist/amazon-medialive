@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-create-input-security-group-response-structure.json",
+  "name": "CreateInputSecurityGroupResponse",
+  "type": "object",
+  "description": "Placeholder documentation for CreateInputSecurityGroupResponse",
+  "properties": {
+    "SecurityGroup": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputSecurityGroup"
+        },
+        {
+          "xml": {
+            "name": "securityGroup"
+          }
+        }
+      ]
+    }
+  }
+}

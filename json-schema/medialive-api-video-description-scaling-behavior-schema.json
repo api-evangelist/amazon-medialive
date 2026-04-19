@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-video-description-scaling-behavior-schema.json",
+  "title": "VideoDescriptionScalingBehavior",
+  "description": "Video Description Scaling Behavior",
+  "type": "string",
+  "enum": [
+    "DEFAULT",
+    "STRETCH_TO_OUTPUT"
+  ]
+}

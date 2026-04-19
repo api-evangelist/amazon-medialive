@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-webvtt-destination-settings-structure.json",
+  "name": "WebvttDestinationSettings",
+  "type": "object",
+  "description": "Webvtt Destination Settings",
+  "properties": {
+    "StyleControl": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WebvttDestinationStyleControl"
+        },
+        {
+          "xml": {
+            "name": "styleControl"
+          },
+          "description": "Controls whether the color and position of the source captions is passed through to the WebVTT output captions.  PASSTHROUGH - Valid only if the source captions are EMBEDDED or TELETEXT.  NO_STYLE_DATA - Don't pass through the style. The output captions will not contain any font styling information."
+        }
+      ]
+    }
+  }
+}

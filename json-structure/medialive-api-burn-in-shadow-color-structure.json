@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-burn-in-shadow-color-structure.json",
+  "name": "BurnInShadowColor",
+  "type": "string",
+  "description": "Burn In Shadow Color",
+  "enum": [
+    "BLACK",
+    "NONE",
+    "WHITE"
+  ]
+}

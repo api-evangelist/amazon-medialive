@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-aac-vbr-quality-structure.json",
+  "name": "AacVbrQuality",
+  "type": "string",
+  "description": "Aac Vbr Quality",
+  "enum": [
+    "HIGH",
+    "LOW",
+    "MEDIUM_HIGH",
+    "MEDIUM_LOW"
+  ]
+}

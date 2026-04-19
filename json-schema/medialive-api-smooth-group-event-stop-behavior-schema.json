@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-smooth-group-event-stop-behavior-schema.json",
+  "title": "SmoothGroupEventStopBehavior",
+  "description": "Smooth Group Event Stop Behavior",
+  "type": "string",
+  "enum": [
+    "NONE",
+    "SEND_EOS"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "ArchiveCdnSettings": "example-value",
+  "Destination": "example-value",
+  "RolloverInterval": "example-value"
+}

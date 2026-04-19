@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-timecode-burnin-settings-structure.json",
+  "name": "TimecodeBurninSettings",
+  "type": "object",
+  "description": "Timecode Burnin Settings",
+  "properties": {
+    "FontSize": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TimecodeBurninFontSize"
+        },
+        {
+          "xml": {
+            "name": "fontSize"
+          },
+          "description": "Choose a timecode burn-in font size"
+        }
+      ]
+    },
+    "Position": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TimecodeBurninPosition"
+        },
+        {
+          "xml": {
+            "name": "position"
+          },
+          "description": "Choose a timecode burn-in output position"
+        }
+      ]
+    },
+    "Prefix": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMax255"
+        },
+        {
+          "xml": {
+            "name": "prefix"
+          },
+          "description": "Create a timecode burn-in prefix (optional)"
+        }
+      ]
+    }
+  },
+  "required": [
+    "Position",
+    "FontSize"
+  ]
+}

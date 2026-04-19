@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-hls-redundant-manifest-structure.json",
+  "name": "HlsRedundantManifest",
+  "type": "string",
+  "description": "Hls Redundant Manifest",
+  "enum": [
+    "DISABLED",
+    "ENABLED"
+  ]
+}

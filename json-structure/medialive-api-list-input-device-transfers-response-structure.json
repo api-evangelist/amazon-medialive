@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-list-input-device-transfers-response-structure.json",
+  "name": "ListInputDeviceTransfersResponse",
+  "type": "object",
+  "description": "Placeholder documentation for ListInputDeviceTransfersResponse",
+  "properties": {
+    "InputDeviceTransfers": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfTransferringInputDeviceSummary"
+        },
+        {
+          "xml": {
+            "name": "inputDeviceTransfers"
+          },
+          "description": "The list of devices that you are transferring or are being transferred to you."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "nextToken"
+          },
+          "description": "A token to get additional list results."
+        }
+      ]
+    }
+  }
+}

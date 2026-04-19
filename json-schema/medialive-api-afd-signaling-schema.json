@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-afd-signaling-schema.json",
+  "title": "AfdSignaling",
+  "description": "Afd Signaling",
+  "type": "string",
+  "enum": [
+    "AUTO",
+    "FIXED",
+    "NONE"
+  ]
+}

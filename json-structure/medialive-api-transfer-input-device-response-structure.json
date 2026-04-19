@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-transfer-input-device-response-structure.json",
+  "name": "TransferInputDeviceResponse",
+  "type": "object",
+  "description": "Placeholder documentation for TransferInputDeviceResponse",
+  "properties": {}
+}

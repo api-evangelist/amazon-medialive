@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-nielsen-naes-ii-nw-schema.json",
+  "title": "NielsenNaesIiNw",
+  "description": "Nielsen Naes Ii Nw",
+  "type": "object",
+  "properties": {
+    "CheckDigitString": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMin2Max2"
+        },
+        {
+          "xml": {
+            "name": "checkDigitString"
+          },
+          "description": "Enter the check digit string for the watermark"
+        }
+      ]
+    },
+    "Sid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__doubleMin1Max65535"
+        },
+        {
+          "xml": {
+            "name": "sid"
+          },
+          "description": "Enter the Nielsen Source ID (SID) to include in the watermark"
+        }
+      ]
+    },
+    "Timezone": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NielsenWatermarkTimezones"
+        },
+        {
+          "xml": {
+            "name": "timezone"
+          },
+          "description": "Choose the timezone for the time stamps in the watermark. If not provided,\nthe timestamps will be in Coordinated Universal Time (UTC)"
+        }
+      ]
+    }
+  },
+  "required": [
+    "CheckDigitString",
+    "Sid"
+  ]
+}

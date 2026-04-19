@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-reservation-automatic-renewal-structure.json",
+  "name": "ReservationAutomaticRenewal",
+  "type": "string",
+  "description": "Automatic Renewal Status for Reservation",
+  "enum": [
+    "DISABLED",
+    "ENABLED",
+    "UNAVAILABLE"
+  ]
+}

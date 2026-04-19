@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-h265-alternative-transfer-function-schema.json",
+  "title": "H265AlternativeTransferFunction",
+  "description": "H265 Alternative Transfer Function",
+  "type": "string",
+  "enum": [
+    "INSERT",
+    "OMIT"
+  ]
+}

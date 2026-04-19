@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-timecode-config-source-structure.json",
+  "name": "TimecodeConfigSource",
+  "type": "string",
+  "description": "Timecode Config Source",
+  "enum": [
+    "EMBEDDED",
+    "SYSTEMCLOCK",
+    "ZEROBASED"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-frame-capture-cdn-settings-schema.json",
+  "title": "FrameCaptureCdnSettings",
+  "description": "Frame Capture Cdn Settings",
+  "type": "object",
+  "properties": {
+    "FrameCaptureS3Settings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FrameCaptureS3Settings"
+        },
+        {
+          "xml": {
+            "name": "frameCaptureS3Settings"
+          }
+        }
+      ]
+    }
+  }
+}

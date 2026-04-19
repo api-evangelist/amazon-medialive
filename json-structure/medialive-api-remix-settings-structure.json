@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-remix-settings-structure.json",
+  "name": "RemixSettings",
+  "type": "object",
+  "description": "Remix Settings",
+  "properties": {
+    "ChannelMappings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfAudioChannelMapping"
+        },
+        {
+          "xml": {
+            "name": "channelMappings"
+          },
+          "description": "Mapping of input channels to output channels, with appropriate gain adjustments."
+        }
+      ]
+    },
+    "ChannelsIn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin1Max16"
+        },
+        {
+          "xml": {
+            "name": "channelsIn"
+          },
+          "description": "Number of input channels to be used."
+        }
+      ]
+    },
+    "ChannelsOut": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin1Max8"
+        },
+        {
+          "xml": {
+            "name": "channelsOut"
+          },
+          "description": "Number of output channels to be produced.\nValid values: 1, 2, 4, 6, 8"
+        }
+      ]
+    }
+  },
+  "required": [
+    "ChannelMappings"
+  ]
+}

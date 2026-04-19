@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-hls-program-date-time-structure.json",
+  "name": "HlsProgramDateTime",
+  "type": "string",
+  "description": "Hls Program Date Time",
+  "enum": [
+    "EXCLUDE",
+    "INCLUDE"
+  ]
+}

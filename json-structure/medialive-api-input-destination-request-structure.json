@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-destination-request-structure.json",
+  "name": "InputDestinationRequest",
+  "type": "object",
+  "description": "Endpoint settings for a PUSH type input.",
+  "properties": {
+    "StreamName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "streamName"
+          },
+          "description": "A unique name for the location the RTMP stream is being pushed\nto.\n"
+        }
+      ]
+    }
+  }
+}

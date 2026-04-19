@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-hls-cdn-settings-structure.json",
+  "name": "HlsCdnSettings",
+  "type": "object",
+  "description": "Hls Cdn Settings",
+  "properties": {
+    "HlsAkamaiSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/HlsAkamaiSettings"
+        },
+        {
+          "xml": {
+            "name": "hlsAkamaiSettings"
+          }
+        }
+      ]
+    },
+    "HlsBasicPutSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/HlsBasicPutSettings"
+        },
+        {
+          "xml": {
+            "name": "hlsBasicPutSettings"
+          }
+        }
+      ]
+    },
+    "HlsMediaStoreSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/HlsMediaStoreSettings"
+        },
+        {
+          "xml": {
+            "name": "hlsMediaStoreSettings"
+          }
+        }
+      ]
+    },
+    "HlsS3Settings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/HlsS3Settings"
+        },
+        {
+          "xml": {
+            "name": "hlsS3Settings"
+          }
+        }
+      ]
+    },
+    "HlsWebdavSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/HlsWebdavSettings"
+        },
+        {
+          "xml": {
+            "name": "hlsWebdavSettings"
+          }
+        }
+      ]
+    }
+  }
+}

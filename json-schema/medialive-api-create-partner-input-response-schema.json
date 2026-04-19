@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-create-partner-input-response-schema.json",
+  "title": "CreatePartnerInputResponse",
+  "description": "Placeholder documentation for CreatePartnerInputResponse",
+  "type": "object",
+  "properties": {
+    "Input": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Input"
+        },
+        {
+          "xml": {
+            "name": "input"
+          }
+        }
+      ]
+    }
+  }
+}

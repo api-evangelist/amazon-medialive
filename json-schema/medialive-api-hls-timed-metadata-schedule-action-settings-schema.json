@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-hls-timed-metadata-schedule-action-settings-schema.json",
+  "title": "HlsTimedMetadataScheduleActionSettings",
+  "description": "Settings for the action to emit HLS metadata",
+  "type": "object",
+  "properties": {
+    "Id3": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "id3"
+          },
+          "description": "Base64 string formatted according to the ID3 specification: http://id3.org/id3v2.4.0-structure"
+        }
+      ]
+    }
+  },
+  "required": [
+    "Id3"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-h264-adaptive-quantization-structure.json",
+  "name": "H264AdaptiveQuantization",
+  "type": "string",
+  "description": "H264 Adaptive Quantization",
+  "enum": [
+    "AUTO",
+    "HIGH",
+    "HIGHER",
+    "LOW",
+    "MAX",
+    "MEDIUM",
+    false
+  ]
+}

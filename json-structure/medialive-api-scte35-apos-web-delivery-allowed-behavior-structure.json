@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-scte35-apos-web-delivery-allowed-behavior-structure.json",
+  "name": "Scte35AposWebDeliveryAllowedBehavior",
+  "type": "string",
+  "description": "Scte35 Apos Web Delivery Allowed Behavior",
+  "enum": [
+    "FOLLOW",
+    "IGNORE"
+  ]
+}

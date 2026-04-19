@@ -1,0 +1,9 @@
+{
+  "Destinations": "example-value",
+  "InputDevices": "example-value",
+  "InputSecurityGroups": "example-value",
+  "MediaConnectFlows": "example-value",
+  "Name": "example-resource",
+  "RoleArn": "arn:aws:service:us-east-1:123456789012:resource/example",
+  "Sources": "example-value"
+}

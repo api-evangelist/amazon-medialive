@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-audio-dolby-e-decode-structure.json",
+  "name": "AudioDolbyEDecode",
+  "type": "object",
+  "description": "Audio Dolby EDecode",
+  "properties": {
+    "ProgramSelection": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DolbyEProgramSelection"
+        },
+        {
+          "xml": {
+            "name": "programSelection"
+          },
+          "description": "Applies only to Dolby E. Enter the program ID (according to the metadata in the audio) of the Dolby E program to extract from the specified track. One program extracted per audio selector. To select multiple programs, create multiple selectors with the same Track and different Program numbers. \u201cAll channels\u201d means to ignore the program IDs and include all the channels in this selector; useful if metadata is known to be incorrect."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ProgramSelection"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "AudioSilenceSettings": "example-value",
+  "InputLossSettings": "example-value",
+  "VideoBlackSettings": "id-abc123"
+}

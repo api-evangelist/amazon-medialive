@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-motion-graphics-activate-schedule-action-settings-structure.json",
+  "name": "MotionGraphicsActivateScheduleActionSettings",
+  "type": "object",
+  "description": "Settings to specify the rendering of motion graphics into the video stream.",
+  "properties": {
+    "Duration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__longMin0Max86400000"
+        },
+        {
+          "xml": {
+            "name": "duration"
+          },
+          "description": "Duration (in milliseconds) that motion graphics should render on to the video stream. Leaving out this property or setting to 0 will result in rendering continuing until a deactivate action is processed."
+        }
+      ]
+    },
+    "PasswordParam": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "passwordParam"
+          },
+          "description": "Key used to extract the password from EC2 Parameter store"
+        }
+      ]
+    },
+    "Url": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "url"
+          },
+          "description": "URI of the HTML5 content to be rendered into the live stream."
+        }
+      ]
+    },
+    "Username": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "username"
+          },
+          "description": "Documentation update needed"
+        }
+      ]
+    }
+  }
+}

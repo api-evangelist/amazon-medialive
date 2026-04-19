@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-hls-webdav-http-transfer-mode-structure.json",
+  "name": "HlsWebdavHttpTransferMode",
+  "type": "string",
+  "description": "Hls Webdav Http Transfer Mode",
+  "enum": [
+    "CHUNKED",
+    "NON_CHUNKED"
+  ]
+}

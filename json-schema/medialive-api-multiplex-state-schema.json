@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-multiplex-state-schema.json",
+  "title": "MultiplexState",
+  "description": "The current state of the multiplex.",
+  "type": "string",
+  "enum": [
+    "CREATING",
+    "CREATE_FAILED",
+    "IDLE",
+    "STARTING",
+    "RUNNING",
+    "RECOVERING",
+    "STOPPING",
+    "DELETING",
+    "DELETED"
+  ]
+}

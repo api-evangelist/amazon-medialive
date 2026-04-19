@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-update-channel-response-structure.json",
+  "name": "UpdateChannelResponse",
+  "type": "object",
+  "description": "Placeholder documentation for UpdateChannelResponse",
+  "properties": {
+    "Channel": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Channel"
+        },
+        {
+          "xml": {
+            "name": "channel"
+          }
+        }
+      ]
+    }
+  }
+}

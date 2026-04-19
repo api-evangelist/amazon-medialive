@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-video-selector-color-space-usage-structure.json",
+  "name": "VideoSelectorColorSpaceUsage",
+  "type": "string",
+  "description": "Video Selector Color Space Usage",
+  "enum": [
+    "FALLBACK",
+    "FORCE"
+  ]
+}

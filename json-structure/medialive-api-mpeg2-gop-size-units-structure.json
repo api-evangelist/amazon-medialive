@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-mpeg2-gop-size-units-structure.json",
+  "name": "Mpeg2GopSizeUnits",
+  "type": "string",
+  "description": "Mpeg2 Gop Size Units",
+  "enum": [
+    "FRAMES",
+    "SECONDS"
+  ]
+}

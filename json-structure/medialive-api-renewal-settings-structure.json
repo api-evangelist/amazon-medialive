@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-renewal-settings-structure.json",
+  "name": "RenewalSettings",
+  "type": "object",
+  "description": "The Renewal settings for Reservations",
+  "properties": {
+    "AutomaticRenewal": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ReservationAutomaticRenewal"
+        },
+        {
+          "xml": {
+            "name": "automaticRenewal"
+          },
+          "description": "Automatic renewal status for the reservation"
+        }
+      ]
+    },
+    "RenewalCount": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin1"
+        },
+        {
+          "xml": {
+            "name": "renewalCount"
+          },
+          "description": "Count for the reservation renewal"
+        }
+      ]
+    }
+  }
+}

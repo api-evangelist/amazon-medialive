@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-fec-output-settings-structure.json",
+  "name": "FecOutputSettings",
+  "type": "object",
+  "description": "Fec Output Settings",
+  "properties": {
+    "ColumnDepth": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin4Max20"
+        },
+        {
+          "xml": {
+            "name": "columnDepth"
+          },
+          "description": "Parameter D from SMPTE 2022-1. The height of the FEC protection matrix.  The number of transport stream packets per column error correction packet. Must be between 4 and 20, inclusive."
+        }
+      ]
+    },
+    "IncludeFec": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FecOutputIncludeFec"
+        },
+        {
+          "xml": {
+            "name": "includeFec"
+          },
+          "description": "Enables column only or column and row based FEC"
+        }
+      ]
+    },
+    "RowLength": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin1Max20"
+        },
+        {
+          "xml": {
+            "name": "rowLength"
+          },
+          "description": "Parameter L from SMPTE 2022-1. The width of the FEC protection matrix.  Must be between 1 and 20, inclusive. If only Column FEC is used, then larger values increase robustness.  If Row FEC is used, then this is the number of transport stream packets per row error correction packet, and the value must be between 4 and 20, inclusive, if includeFec is columnAndRow. If includeFec is column, this value must be 1 to 20, inclusive."
+        }
+      ]
+    }
+  }
+}

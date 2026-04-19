@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-audio-pid-selection-schema.json",
+  "title": "AudioPidSelection",
+  "description": "Audio Pid Selection",
+  "type": "object",
+  "properties": {
+    "Pid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMin0Max8191"
+        },
+        {
+          "xml": {
+            "name": "pid"
+          },
+          "description": "Selects a specific PID from within a source."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Pid"
+  ]
+}

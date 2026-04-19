@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-timecode-burnin-font-size-structure.json",
+  "name": "TimecodeBurninFontSize",
+  "type": "string",
+  "description": "Timecode Burnin Font Size",
+  "enum": [
+    "EXTRA_SMALL_10",
+    "LARGE_48",
+    "MEDIUM_32",
+    "SMALL_16"
+  ]
+}

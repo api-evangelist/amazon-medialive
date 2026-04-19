@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-ms-smooth-h265-packaging-type-schema.json",
+  "title": "MsSmoothH265PackagingType",
+  "description": "Ms Smooth H265 Packaging Type",
+  "type": "string",
+  "enum": [
+    "HEV1",
+    "HVC1"
+  ]
+}

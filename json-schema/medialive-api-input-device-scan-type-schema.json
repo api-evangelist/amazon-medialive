@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-input-device-scan-type-schema.json",
+  "title": "InputDeviceScanType",
+  "description": "The scan type of the video source.",
+  "type": "string",
+  "enum": [
+    "INTERLACED",
+    "PROGRESSIVE"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-hls-ad-markers-structure.json",
+  "name": "HlsAdMarkers",
+  "type": "string",
+  "description": "Hls Ad Markers",
+  "enum": [
+    "ADOBE",
+    "ELEMENTAL",
+    "ELEMENTAL_SCTE35"
+  ]
+}

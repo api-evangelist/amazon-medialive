@@ -1,0 +1,11 @@
+{
+  "ActiveInput": "example-value",
+  "ConfiguredInput": "example-value",
+  "DeviceState": "example-value",
+  "Framerate": "example-value",
+  "Height": "example-value",
+  "MaxBitrate": "example-value",
+  "ScanType": "STANDARD",
+  "Width": "id-abc123",
+  "LatencyMs": "example-value"
+}

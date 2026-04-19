@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-multiplex-structure.json",
+  "name": "Multiplex",
+  "type": "object",
+  "description": "The multiplex object.",
+  "properties": {
+    "Arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "arn"
+          },
+          "description": "The unique arn of the multiplex."
+        }
+      ]
+    },
+    "AvailabilityZones": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOf__string"
+        },
+        {
+          "xml": {
+            "name": "availabilityZones"
+          },
+          "description": "A list of availability zones for the multiplex."
+        }
+      ]
+    },
+    "Destinations": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfMultiplexOutputDestination"
+        },
+        {
+          "xml": {
+            "name": "destinations"
+          },
+          "description": "A list of the multiplex output destinations."
+        }
+      ]
+    },
+    "Id": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "id"
+          },
+          "description": "The unique id of the multiplex."
+        }
+      ]
+    },
+    "MultiplexSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MultiplexSettings"
+        },
+        {
+          "xml": {
+            "name": "multiplexSettings"
+          },
+          "description": "Configuration for a multiplex event."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "name"
+          },
+          "description": "The name of the multiplex."
+        }
+      ]
+    },
+    "PipelinesRunningCount": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integer"
+        },
+        {
+          "xml": {
+            "name": "pipelinesRunningCount"
+          },
+          "description": "The number of currently healthy pipelines."
+        }
+      ]
+    },
+    "ProgramCount": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integer"
+        },
+        {
+          "xml": {
+            "name": "programCount"
+          },
+          "description": "The number of programs in the multiplex."
+        }
+      ]
+    },
+    "State": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MultiplexState"
+        },
+        {
+          "xml": {
+            "name": "state"
+          },
+          "description": "The current state of the multiplex."
+        }
+      ]
+    },
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Tags"
+        },
+        {
+          "xml": {
+            "name": "tags"
+          },
+          "description": "A collection of key-value pairs."
+        }
+      ]
+    }
+  }
+}

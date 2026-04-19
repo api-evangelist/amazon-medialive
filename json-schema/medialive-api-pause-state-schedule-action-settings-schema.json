@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-pause-state-schedule-action-settings-schema.json",
+  "title": "PauseStateScheduleActionSettings",
+  "description": "Settings for the action to set pause state of a channel.",
+  "type": "object",
+  "properties": {
+    "Pipelines": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfPipelinePauseStateSettings"
+        },
+        {
+          "xml": {
+            "name": "pipelines"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-global-configuration-low-framerate-inputs-structure.json",
+  "name": "GlobalConfigurationLowFramerateInputs",
+  "type": "string",
+  "description": "Global Configuration Low Framerate Inputs",
+  "enum": [
+    "DISABLED",
+    "ENABLED"
+  ]
+}

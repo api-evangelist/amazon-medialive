@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-media-package-output-destination-settings-structure.json",
+  "name": "MediaPackageOutputDestinationSettings",
+  "type": "object",
+  "description": "MediaPackage Output Destination Settings",
+  "properties": {
+    "ChannelId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMin1"
+        },
+        {
+          "xml": {
+            "name": "channelId"
+          },
+          "description": "ID of the channel in MediaPackage that is the destination for this output group. You do not need to specify the individual inputs in MediaPackage; MediaLive will handle the connection of the two MediaLive pipelines to the two MediaPackage inputs. The MediaPackage channel and MediaLive channel must be in the same region."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-avail-configuration-schema.json",
+  "title": "AvailConfiguration",
+  "description": "Avail Configuration",
+  "type": "object",
+  "properties": {
+    "AvailSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AvailSettings"
+        },
+        {
+          "xml": {
+            "name": "availSettings"
+          },
+          "description": "Controls how SCTE-35 messages create cues. Splice Insert mode treats all segmentation signals traditionally. With Time Signal APOS mode only Time Signal Placement Opportunity and Break messages create segment breaks. With ESAM mode, signals are forwarded to an ESAM server for possible update."
+        }
+      ]
+    }
+  }
+}

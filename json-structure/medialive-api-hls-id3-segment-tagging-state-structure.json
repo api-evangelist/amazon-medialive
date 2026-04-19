@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-hls-id3-segment-tagging-state-structure.json",
+  "name": "HlsId3SegmentTaggingState",
+  "type": "string",
+  "description": "State of HLS ID3 Segment Tagging",
+  "enum": [
+    "DISABLED",
+    "ENABLED"
+  ]
+}

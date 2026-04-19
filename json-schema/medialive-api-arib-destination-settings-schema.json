@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-arib-destination-settings-schema.json",
+  "title": "AribDestinationSettings",
+  "description": "Arib Destination Settings",
+  "type": "object",
+  "properties": {}
+}

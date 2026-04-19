@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-loss-action-for-hls-out-structure.json",
+  "name": "InputLossActionForHlsOut",
+  "type": "string",
+  "description": "Input Loss Action For Hls Out",
+  "enum": [
+    "EMIT_OUTPUT",
+    "PAUSE_OUTPUT"
+  ]
+}

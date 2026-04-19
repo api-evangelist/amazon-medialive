@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-create-multiplex-program-response-schema.json",
+  "title": "CreateMultiplexProgramResponse",
+  "description": "Placeholder documentation for CreateMultiplexProgramResponse",
+  "type": "object",
+  "properties": {
+    "MultiplexProgram": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MultiplexProgram"
+        },
+        {
+          "xml": {
+            "name": "multiplexProgram"
+          },
+          "description": "The newly created multiplex program."
+        }
+      ]
+    }
+  }
+}

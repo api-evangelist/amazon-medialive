@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-esam-schema.json",
+  "title": "Esam",
+  "description": "Esam",
+  "type": "object",
+  "properties": {
+    "AcquisitionPointId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMax256"
+        },
+        {
+          "xml": {
+            "name": "acquisitionPointId"
+          },
+          "description": "Sent as acquisitionPointIdentity to identify the MediaLive channel to the POIS."
+        }
+      ]
+    },
+    "AdAvailOffset": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__integerMinNegative1000Max1000"
+        },
+        {
+          "xml": {
+            "name": "adAvailOffset"
+          },
+          "description": "When specified, this offset (in milliseconds) is added to the input Ad Avail PTS time. This only applies to embedded SCTE 104/35 messages and does not apply to OOB messages."
+        }
+      ]
+    },
+    "PasswordParam": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "passwordParam"
+          },
+          "description": "Documentation update needed"
+        }
+      ]
+    },
+    "PoisEndpoint": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMax2048"
+        },
+        {
+          "xml": {
+            "name": "poisEndpoint"
+          },
+          "description": "The URL of the signal conditioner endpoint on the Placement Opportunity Information System (POIS). MediaLive sends SignalProcessingEvents here when SCTE-35 messages are read."
+        }
+      ]
+    },
+    "Username": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "username"
+          },
+          "description": "Documentation update needed"
+        }
+      ]
+    },
+    "ZoneIdentity": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__stringMax256"
+        },
+        {
+          "xml": {
+            "name": "zoneIdentity"
+          },
+          "description": "Optional data sent as zoneIdentity to identify the MediaLive channel to the POIS."
+        }
+      ]
+    }
+  },
+  "required": [
+    "AcquisitionPointId",
+    "PoisEndpoint"
+  ]
+}

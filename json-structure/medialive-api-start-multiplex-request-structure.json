@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-start-multiplex-request-structure.json",
+  "name": "StartMultiplexRequest",
+  "type": "object",
+  "description": "Placeholder documentation for StartMultiplexRequest",
+  "properties": {}
+}

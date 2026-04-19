@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-output-settings-structure.json",
+  "name": "OutputSettings",
+  "type": "object",
+  "description": "Output Settings",
+  "properties": {
+    "ArchiveOutputSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArchiveOutputSettings"
+        },
+        {
+          "xml": {
+            "name": "archiveOutputSettings"
+          }
+        }
+      ]
+    },
+    "FrameCaptureOutputSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FrameCaptureOutputSettings"
+        },
+        {
+          "xml": {
+            "name": "frameCaptureOutputSettings"
+          }
+        }
+      ]
+    },
+    "HlsOutputSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/HlsOutputSettings"
+        },
+        {
+          "xml": {
+            "name": "hlsOutputSettings"
+          }
+        }
+      ]
+    },
+    "MediaPackageOutputSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MediaPackageOutputSettings"
+        },
+        {
+          "xml": {
+            "name": "mediaPackageOutputSettings"
+          }
+        }
+      ]
+    },
+    "MsSmoothOutputSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MsSmoothOutputSettings"
+        },
+        {
+          "xml": {
+            "name": "msSmoothOutputSettings"
+          }
+        }
+      ]
+    },
+    "MultiplexOutputSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MultiplexOutputSettings"
+        },
+        {
+          "xml": {
+            "name": "multiplexOutputSettings"
+          }
+        }
+      ]
+    },
+    "RtmpOutputSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RtmpOutputSettings"
+        },
+        {
+          "xml": {
+            "name": "rtmpOutputSettings"
+          }
+        }
+      ]
+    },
+    "UdpOutputSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UdpOutputSettings"
+        },
+        {
+          "xml": {
+            "name": "udpOutputSettings"
+          }
+        }
+      ]
+    }
+  }
+}

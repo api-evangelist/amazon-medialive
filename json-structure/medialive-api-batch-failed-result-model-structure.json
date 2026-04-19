@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-batch-failed-result-model-structure.json",
+  "name": "BatchFailedResultModel",
+  "type": "object",
+  "description": "Details from a failed operation",
+  "properties": {
+    "Arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "arn"
+          },
+          "description": "ARN of the resource"
+        }
+      ]
+    },
+    "Code": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "code"
+          },
+          "description": "Error code for the failed operation"
+        }
+      ]
+    },
+    "Id": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "id"
+          },
+          "description": "ID of the resource"
+        }
+      ]
+    },
+    "Message": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "message"
+          },
+          "description": "Error message for the failed operation"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-temporal-filter-settings-schema.json",
+  "title": "TemporalFilterSettings",
+  "description": "Temporal Filter Settings",
+  "type": "object",
+  "properties": {
+    "PostFilterSharpening": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TemporalFilterPostFilterSharpening"
+        },
+        {
+          "xml": {
+            "name": "postFilterSharpening"
+          },
+          "description": "If you enable this filter, the results are the following:\n- If the source content is noisy (it contains excessive digital artifacts), the filter cleans up the source.\n- If the source content is already clean, the filter tends to decrease the bitrate, especially when the rate control mode is QVBR."
+        }
+      ]
+    },
+    "Strength": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TemporalFilterStrength"
+        },
+        {
+          "xml": {
+            "name": "strength"
+          },
+          "description": "Choose a filter strength. We recommend a strength of 1 or 2. A higher strength might take out good information, resulting in an image that is overly soft."
+        }
+      ]
+    }
+  }
+}

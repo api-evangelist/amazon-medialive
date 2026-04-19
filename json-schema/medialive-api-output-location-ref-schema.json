@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-output-location-ref-schema.json",
+  "title": "OutputLocationRef",
+  "description": "Reference to an OutputDestination ID defined in the channel",
+  "type": "object",
+  "properties": {
+    "DestinationRefId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "destinationRefId"
+          }
+        }
+      ]
+    }
+  }
+}

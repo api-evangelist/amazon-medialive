@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-wav-settings-structure.json",
+  "name": "WavSettings",
+  "type": "object",
+  "description": "Wav Settings",
+  "properties": {
+    "BitDepth": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__double"
+        },
+        {
+          "xml": {
+            "name": "bitDepth"
+          },
+          "description": "Bits per sample."
+        }
+      ]
+    },
+    "CodingMode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/WavCodingMode"
+        },
+        {
+          "xml": {
+            "name": "codingMode"
+          },
+          "description": "The audio coding mode for the WAV audio. The mode determines the number of channels in the audio."
+        }
+      ]
+    },
+    "SampleRate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__double"
+        },
+        {
+          "xml": {
+            "name": "sampleRate"
+          },
+          "description": "Sample rate in Hz."
+        }
+      ]
+    }
+  }
+}

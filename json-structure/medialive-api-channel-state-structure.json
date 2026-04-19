@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-channel-state-structure.json",
+  "name": "ChannelState",
+  "type": "string",
+  "description": "Placeholder documentation for ChannelState",
+  "enum": [
+    "CREATING",
+    "CREATE_FAILED",
+    "IDLE",
+    "STARTING",
+    "RUNNING",
+    "RECOVERING",
+    "STOPPING",
+    "DELETING",
+    "DELETED",
+    "UPDATING",
+    "UPDATE_FAILED"
+  ]
+}

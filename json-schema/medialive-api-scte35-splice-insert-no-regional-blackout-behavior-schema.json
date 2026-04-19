@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-scte35-splice-insert-no-regional-blackout-behavior-schema.json",
+  "title": "Scte35SpliceInsertNoRegionalBlackoutBehavior",
+  "description": "Scte35 Splice Insert No Regional Blackout Behavior",
+  "type": "string",
+  "enum": [
+    "FOLLOW",
+    "IGNORE"
+  ]
+}

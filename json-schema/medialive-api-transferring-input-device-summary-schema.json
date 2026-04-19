@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-transferring-input-device-summary-schema.json",
+  "title": "TransferringInputDeviceSummary",
+  "description": "Details about the input device that is being transferred.",
+  "type": "object",
+  "properties": {
+    "Id": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "id"
+          },
+          "description": "The unique ID of the input device."
+        }
+      ]
+    },
+    "Message": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "message"
+          },
+          "description": "The optional message that the sender has attached to the transfer."
+        }
+      ]
+    },
+    "TargetCustomerId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "targetCustomerId"
+          },
+          "description": "The AWS account ID for the recipient of the input device transfer."
+        }
+      ]
+    },
+    "TransferType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputDeviceTransferType"
+        },
+        {
+          "xml": {
+            "name": "transferType"
+          },
+          "description": "The type (direction) of the input device transfer."
+        }
+      ]
+    }
+  }
+}

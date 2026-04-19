@@ -1,0 +1,11 @@
+{
+  "Bitrate": "example-value",
+  "CodingMode": "example-value",
+  "InputType": "STANDARD",
+  "Profile": "example-value",
+  "RateControlMode": "example-value",
+  "RawFormat": "example-value",
+  "SampleRate": "example-value",
+  "Spec": "example-value",
+  "VbrQuality": "example-value"
+}

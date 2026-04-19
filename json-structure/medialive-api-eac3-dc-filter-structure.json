@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-eac3-dc-filter-structure.json",
+  "name": "Eac3DcFilter",
+  "type": "string",
+  "description": "Eac3 Dc Filter",
+  "enum": [
+    "DISABLED",
+    "ENABLED"
+  ]
+}

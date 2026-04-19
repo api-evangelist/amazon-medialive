@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-aac-spec-structure.json",
+  "name": "AacSpec",
+  "type": "string",
+  "description": "Aac Spec",
+  "enum": [
+    "MPEG2",
+    "MPEG4"
+  ]
+}

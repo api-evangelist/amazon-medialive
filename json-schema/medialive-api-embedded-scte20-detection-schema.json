@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-embedded-scte20-detection-schema.json",
+  "title": "EmbeddedScte20Detection",
+  "description": "Embedded Scte20 Detection",
+  "type": "string",
+  "enum": [
+    "AUTO",
+    false
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-dvb-sub-destination-font-color-structure.json",
+  "name": "DvbSubDestinationFontColor",
+  "type": "string",
+  "description": "Dvb Sub Destination Font Color",
+  "enum": [
+    "BLACK",
+    "BLUE",
+    "GREEN",
+    "RED",
+    "WHITE",
+    "YELLOW"
+  ]
+}

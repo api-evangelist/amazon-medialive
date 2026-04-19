@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-m2ts-nielsen-id3-behavior-schema.json",
+  "title": "M2tsNielsenId3Behavior",
+  "description": "M2ts Nielsen Id3 Behavior",
+  "type": "string",
+  "enum": [
+    "NO_PASSTHROUGH",
+    "PASSTHROUGH"
+  ]
+}

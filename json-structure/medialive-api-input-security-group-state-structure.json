@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-security-group-state-structure.json",
+  "name": "InputSecurityGroupState",
+  "type": "string",
+  "description": "Placeholder documentation for InputSecurityGroupState",
+  "enum": [
+    "IDLE",
+    "IN_USE",
+    "UPDATING",
+    "DELETED"
+  ]
+}

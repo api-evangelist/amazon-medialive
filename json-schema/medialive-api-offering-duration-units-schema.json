@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-offering-duration-units-schema.json",
+  "title": "OfferingDurationUnits",
+  "description": "Units for duration, e.g. 'MONTHS'",
+  "type": "string",
+  "enum": [
+    "MONTHS"
+  ]
+}

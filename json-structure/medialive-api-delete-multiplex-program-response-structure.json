@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-delete-multiplex-program-response-structure.json",
+  "name": "DeleteMultiplexProgramResponse",
+  "type": "object",
+  "description": "Placeholder documentation for DeleteMultiplexProgramResponse",
+  "properties": {
+    "ChannelId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "channelId"
+          },
+          "description": "The MediaLive channel associated with the program."
+        }
+      ]
+    },
+    "MultiplexProgramSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MultiplexProgramSettings"
+        },
+        {
+          "xml": {
+            "name": "multiplexProgramSettings"
+          },
+          "description": "The settings for this multiplex program."
+        }
+      ]
+    },
+    "PacketIdentifiersMap": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MultiplexProgramPacketIdentifiersMap"
+        },
+        {
+          "xml": {
+            "name": "packetIdentifiersMap"
+          },
+          "description": "The packet identifier map for this multiplex program."
+        }
+      ]
+    },
+    "PipelineDetails": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__listOfMultiplexProgramPipelineDetail"
+        },
+        {
+          "xml": {
+            "name": "pipelineDetails"
+          },
+          "description": "Contains information about the current sources for the specified program in the specified multiplex. Keep in mind that each multiplex pipeline connects to both pipelines in a given source channel (the channel identified by the program). But only one of those channel pipelines is ever active at one time."
+        }
+      ]
+    },
+    "ProgramName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "programName"
+          },
+          "description": "The name of the multiplex program."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-hls-scte35-source-type-schema.json",
+  "title": "HlsScte35SourceType",
+  "description": "Hls Scte35 Source Type",
+  "type": "string",
+  "enum": [
+    "MANIFEST",
+    "SEGMENTS"
+  ]
+}

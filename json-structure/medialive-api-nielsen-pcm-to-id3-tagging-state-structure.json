@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-nielsen-pcm-to-id3-tagging-state-structure.json",
+  "name": "NielsenPcmToId3TaggingState",
+  "type": "string",
+  "description": "State of Nielsen PCM to ID3 tagging",
+  "enum": [
+    "DISABLED",
+    "ENABLED"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-scte27-ocr-language-structure.json",
+  "name": "Scte27OcrLanguage",
+  "type": "string",
+  "description": "Scte27 Ocr Language",
+  "enum": [
+    "DEU",
+    "ENG",
+    "FRA",
+    "NLD",
+    "POR",
+    "SPA"
+  ]
+}

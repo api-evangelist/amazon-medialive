@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-aac-settings-structure.json",
+  "name": "AacSettings",
+  "type": "object",
+  "description": "Aac Settings",
+  "properties": {
+    "Bitrate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__double"
+        },
+        {
+          "xml": {
+            "name": "bitrate"
+          },
+          "description": "Average bitrate in bits/second. Valid values depend on rate control mode and profile."
+        }
+      ]
+    },
+    "CodingMode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AacCodingMode"
+        },
+        {
+          "xml": {
+            "name": "codingMode"
+          },
+          "description": "Mono, Stereo, or 5.1 channel layout. Valid values depend on rate control mode and profile. The adReceiverMix setting receives a stereo description plus control track and emits a mono AAC encode of the description track, with control data emitted in the PES header as per ETSI TS 101 154 Annex E."
+        }
+      ]
+    },
+    "InputType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AacInputType"
+        },
+        {
+          "xml": {
+            "name": "inputType"
+          },
+          "description": "Set to \"broadcasterMixedAd\" when input contains pre-mixed main audio + AD (narration) as a stereo pair.  The Audio Type field (audioType) will be set to 3, which signals to downstream systems that this stream contains \"broadcaster mixed AD\". Note that the input received by the encoder must contain pre-mixed audio; the encoder does not perform the mixing. The values in audioTypeControl and audioType (in AudioDescription) are ignored when set to broadcasterMixedAd.\n\nLeave set to \"normal\" when input does not contain pre-mixed audio + AD."
+        }
+      ]
+    },
+    "Profile": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AacProfile"
+        },
+        {
+          "xml": {
+            "name": "profile"
+          },
+          "description": "AAC Profile."
+        }
+      ]
+    },
+    "RateControlMode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AacRateControlMode"
+        },
+        {
+          "xml": {
+            "name": "rateControlMode"
+          },
+          "description": "Rate Control Mode."
+        }
+      ]
+    },
+    "RawFormat": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AacRawFormat"
+        },
+        {
+          "xml": {
+            "name": "rawFormat"
+          },
+          "description": "Sets LATM / LOAS AAC output for raw containers."
+        }
+      ]
+    },
+    "SampleRate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__double"
+        },
+        {
+          "xml": {
+            "name": "sampleRate"
+          },
+          "description": "Sample rate in Hz. Valid values depend on rate control mode and profile."
+        }
+      ]
+    },
+    "Spec": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AacSpec"
+        },
+        {
+          "xml": {
+            "name": "spec"
+          },
+          "description": "Use MPEG-2 AAC audio instead of MPEG-4 AAC audio for raw or MPEG-2 Transport Stream containers."
+        }
+      ]
+    },
+    "VbrQuality": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AacVbrQuality"
+        },
+        {
+          "xml": {
+            "name": "vbrQuality"
+          },
+          "description": "VBR Quality Level - Only used if rateControlMode is VBR."
+        }
+      ]
+    }
+  }
+}

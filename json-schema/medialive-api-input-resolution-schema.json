@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-input-resolution-schema.json",
+  "title": "InputResolution",
+  "description": "Input resolution based on lines of vertical resolution in the input; SD is less than 720 lines, HD is 720 to 1080 lines, UHD is greater than 1080 lines\n",
+  "type": "string",
+  "enum": [
+    "SD",
+    "HD",
+    "UHD"
+  ]
+}

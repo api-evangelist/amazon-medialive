@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-schema/medialive-api-h264-filter-settings-schema.json",
+  "title": "H264FilterSettings",
+  "description": "H264 Filter Settings",
+  "type": "object",
+  "properties": {
+    "TemporalFilterSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TemporalFilterSettings"
+        },
+        {
+          "xml": {
+            "name": "temporalFilterSettings"
+          }
+        }
+      ]
+    }
+  }
+}

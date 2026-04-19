@@ -1,0 +1,7 @@
+{
+  "AvailabilityZones": "example-value",
+  "MultiplexSettings": "example-value",
+  "Name": "example-resource",
+  "RequestId": "id-abc123",
+  "Tags": "example-value"
+}

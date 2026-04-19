@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-update-multiplex-program-request-structure.json",
+  "name": "UpdateMultiplexProgramRequest",
+  "type": "object",
+  "description": "A request to update a program in a multiplex.",
+  "properties": {
+    "MultiplexProgramSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MultiplexProgramSettings"
+        },
+        {
+          "xml": {
+            "name": "multiplexProgramSettings"
+          },
+          "description": "The new settings for a multiplex program."
+        }
+      ]
+    }
+  }
+}

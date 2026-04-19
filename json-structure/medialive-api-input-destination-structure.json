@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/json-structure/medialive-api-input-destination-structure.json",
+  "name": "InputDestination",
+  "type": "object",
+  "description": "The settings for a PUSH type input.",
+  "properties": {
+    "Ip": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "ip"
+          },
+          "description": "The system-generated static IP address of endpoint.\nIt remains fixed for the lifetime of the input.\n"
+        }
+      ]
+    },
+    "Port": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "port"
+          },
+          "description": "The port number for the input."
+        }
+      ]
+    },
+    "Url": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/__string"
+        },
+        {
+          "xml": {
+            "name": "url"
+          },
+          "description": "This represents the endpoint that the customer stream will be\npushed to.\n"
+        }
+      ]
+    },
+    "Vpc": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputDestinationVpc"
+        },
+        {
+          "xml": {
+            "name": "vpc"
+          }
+        }
+      ]
+    }
+  }
+}
