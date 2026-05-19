@@ -1,7 +1,7 @@
 aid: amazon-medialive
 name: Amazon MediaLive
-description: AWS Elemental MediaLive is a broadcast-grade live video processing service that creates high-quality video streams for delivery to broadcast televisions and internet-connected multiscreen
-  devices.
+description: AWS Elemental MediaLive is a broadcast-grade live video processing service that creates high-quality video streams
+  for delivery to broadcast televisions and internet-connected multiscreen devices.
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
@@ -11,13 +11,13 @@ tags:
 - Media
 url: https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/apis.yml
 created: '2026-03-16'
-modified: '2026-04-19'
+modified: '2026-05-19'
 specificationVersion: '0.19'
 apis:
 - aid: amazon-medialive:medialive-api
   name: Amazon MediaLive API
-  description: AWS Elemental MediaLive is a broadcast-grade live video processing service that creates high-quality video streams for delivery to broadcast televisions and internet-connected 
-    multiscreen devices.
+  description: AWS Elemental MediaLive is a broadcast-grade live video processing service that creates high-quality video
+    streams for delivery to broadcast televisions and internet-connected multiscreen devices.
   humanURL: https://aws.amazon.com/medialive/
   baseURL: http://medialive.{region}.amazonaws.com
   tags:
@@ -35,6 +35,8 @@ apis:
     url: https://aws.amazon.com/medialive/pricing/
   - type: FAQ
     url: https://aws.amazon.com/medialive/faqs/
+  - type: NaftikoCapability
+    url: capabilities/amazon-medialive.yaml
 common:
 - type: Portal
   url: https://aws.amazon.com/medialive/
@@ -62,8 +64,6 @@ common:
   url: rules/amazon-medialive-spectral-rules.yml
 - type: Vocabulary
   url: vocabulary/amazon-medialive-vocabulary.yaml
-- type: NaftikoCapability
-  url: capabilities/amazon-medialive-media-workflow.yaml
 - type: Features
   data:
   - name: Live Video Encoding
@@ -103,15 +103,15 @@ common:
 - type: Integrations
   url: https://aws.amazon.com/marketplace
 integrations:
-  - name: Sign in
-  - name: Agent Mode
-  - name: 'Why AWS Marketplace?'
-  - name: Get started in AWS Marketplace
-  - name: Industry
-  - name: Resources
-  - name: Become a Channel Partner
-  - name: Sell in AWS Marketplace
-  - name: Manage Your Account
+- name: Sign in
+- name: Agent Mode
+- name: Why AWS Marketplace?
+- name: Get started in AWS Marketplace
+- name: Industry
+- name: Resources
+- name: Become a Channel Partner
+- name: Sell in AWS Marketplace
+- name: Manage Your Account
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
