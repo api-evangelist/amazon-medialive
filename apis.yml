@@ -35,7 +35,7 @@ apis:
     url: https://aws.amazon.com/medialive/pricing/
   - type: FAQ
     url: https://aws.amazon.com/medialive/faqs/
-  - type: NaftikoCapability
+  - type: X-NaftikoCapability
     url: capabilities/amazon-medialive.yaml
 common:
 - type: Portal
@@ -54,7 +54,7 @@ common:
   url: https://github.com/aws
 - type: Console
   url: https://console.aws.amazon.com/medialive/
-- type: SignUp
+- type: Signup
   url: https://portal.aws.amazon.com/billing/signup
 - type: StatusPage
   url: https://health.aws.amazon.com/health/status
