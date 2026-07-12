@@ -38,6 +38,14 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/amazon-medialive.yaml
 common:
+- type: TrustCenter
+  url: security/amazon-medialive-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/amazon-medialive-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/amazon-medialive-domain-security.yml
+- type: Authentication
+  url: authentication/amazon-medialive-authentication.yml
 - type: Portal
   url: https://aws.amazon.com/medialive/
 - type: Documentation
