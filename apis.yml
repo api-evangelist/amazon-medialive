@@ -3,7 +3,20 @@ name: Amazon MediaLive
 description: AWS Elemental MediaLive is a broadcast-grade live video processing service that creates high-quality video streams
   for delivery to broadcast televisions and internet-connected multiscreen devices.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-medialive.png
 tags:
 - AWS
 - Broadcasting
@@ -14,21 +27,18 @@ created: '2026-03-16'
 modified: '2026-05-19'
 specificationVersion: '0.19'
 apis:
-- aid: amazon-medialive:medialive-api
-  name: Amazon MediaLive API
-  description: AWS Elemental MediaLive is a broadcast-grade live video processing service that creates high-quality video
-    streams for delivery to broadcast televisions and internet-connected multiscreen devices.
+- aid: amazon-medialive:amazon-medialive-prod-api
+  name: Amazon MediaLive Prod API
+  description: The Prod API from Amazon MediaLive — 38 operation(s) for prod.
   humanURL: https://aws.amazon.com/medialive/
   baseURL: http://medialive.{region}.amazonaws.com
   tags:
-  - Broadcasting
-  - Media Processing
-  - Media
+  - Prod
   properties:
+  - type: OpenAPI
+    url: openapi/amazon-medialive-prod-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/medialive/
-  - type: OpenAPI
-    url: openapi/amazon-medialive-openapi-original.yml
   - type: GettingStarted
     url: https://aws.amazon.com/medialive/getting-started/
   - type: Pricing
@@ -38,6 +48,8 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/amazon-medialive.yaml
 common:
+- type: PostmanWorkspace
+  url: https://www.postman.com/kinlaneapi/amazon-medialive/overview
 - type: AgenticAccess
   url: agentic-access/amazon-medialive-agentic-access.yml
 - type: TrustCenter
