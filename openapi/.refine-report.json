@@ -1,0 +1,14 @@
+{
+  "provider": "amazon-medialive",
+  "sources": [
+    "amazon-medialive-prod-api-openapi.yml"
+  ],
+  "outputs": [
+    "amazon-medialive-prod-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
