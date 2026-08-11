@@ -45,8 +45,6 @@ apis:
     url: https://aws.amazon.com/medialive/pricing/
   - type: FAQ
     url: https://aws.amazon.com/medialive/faqs/
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-medialive.yaml
 common:
 - type: PostmanWorkspace
   url: https://www.postman.com/kinlaneapi/amazon-medialive/overview
