@@ -1,0 +1,3259 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "AWS Elemental MediaLive Prod API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Prod",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Amazon MediaLive Accept Input Device Transfer",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputDevices/:inputDeviceId/accept",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "inputDeviceId",
+                "value": "",
+                "type": "path",
+                "description": "The unique ID of the input device to accept. For example, hd-123456789abcdef."
+              }
+            ]
+          },
+          "docs": "Accept an incoming input device transfer. The ownership of the device will transfer to your AWS account."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Batch Delete",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/batch/delete",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Starts delete of resources."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Batch Start",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/batch/start",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Starts existing resources"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Batch Stop",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/batch/stop",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Stops running resources"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Describe Schedule",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://medialive.{region}.amazonaws.com/prod/channels/:channelId/schedule",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "channelId",
+                "value": "",
+                "type": "path",
+                "description": "Id of the channel whose schedule is being updated."
+              },
+              {
+                "name": "maxResults",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "nextToken",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "MaxResults",
+                "value": "",
+                "type": "query",
+                "description": "Pagination limit"
+              },
+              {
+                "name": "NextToken",
+                "value": "",
+                "type": "query",
+                "description": "Pagination token"
+              }
+            ]
+          },
+          "docs": "Get a channel schedule"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Batch Update Schedule",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "http://medialive.{region}.amazonaws.com/prod/channels/:channelId/schedule",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "channelId",
+                "value": "",
+                "type": "path",
+                "description": "Id of the channel whose schedule is being updated."
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update a channel schedule"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Delete Schedule",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "http://medialive.{region}.amazonaws.com/prod/channels/:channelId/schedule",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "channelId",
+                "value": "",
+                "type": "path",
+                "description": "Id of the channel whose schedule is being deleted."
+              }
+            ]
+          },
+          "docs": "Delete all schedule actions on a channel."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Cancel Input Device Transfer",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputDevices/:inputDeviceId/cancel",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "inputDeviceId",
+                "value": "",
+                "type": "path",
+                "description": "The unique ID of the input device to cancel. For example, hd-123456789abcdef."
+              }
+            ]
+          },
+          "docs": "Cancel an input device transfer that you have requested."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Claim Device",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/claimDevice",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Send a request to claim an AWS Elemental device that you have purchased from a third-party vendor. After the request succeeds, you will own the device."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive List Channels",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://medialive.{region}.amazonaws.com/prod/channels",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "maxResults",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "nextToken",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "MaxResults",
+                "value": "",
+                "type": "query",
+                "description": "Pagination limit"
+              },
+              {
+                "name": "NextToken",
+                "value": "",
+                "type": "query",
+                "description": "Pagination token"
+              }
+            ]
+          },
+          "docs": "Produces list of channels that have been created"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Create Channel",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/channels",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Creates a new channel"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive List Inputs",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputs",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "maxResults",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "nextToken",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "MaxResults",
+                "value": "",
+                "type": "query",
+                "description": "Pagination limit"
+              },
+              {
+                "name": "NextToken",
+                "value": "",
+                "type": "query",
+                "description": "Pagination token"
+              }
+            ]
+          },
+          "docs": "Produces list of inputs that have been created"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Create Input",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputs",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create an input"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive List Input Security Groups",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputSecurityGroups",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "maxResults",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "nextToken",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "MaxResults",
+                "value": "",
+                "type": "query",
+                "description": "Pagination limit"
+              },
+              {
+                "name": "NextToken",
+                "value": "",
+                "type": "query",
+                "description": "Pagination token"
+              }
+            ]
+          },
+          "docs": "Produces a list of Input Security Groups for an account"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Create Input Security Group",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputSecurityGroups",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Creates a Input Security Group"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive List Multiplexes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://medialive.{region}.amazonaws.com/prod/multiplexes",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "maxResults",
+                "value": "",
+                "type": "query",
+                "description": "The maximum number of items to return."
+              },
+              {
+                "name": "nextToken",
+                "value": "",
+                "type": "query",
+                "description": "The token to retrieve the next page of results."
+              },
+              {
+                "name": "MaxResults",
+                "value": "",
+                "type": "query",
+                "description": "Pagination limit"
+              },
+              {
+                "name": "NextToken",
+                "value": "",
+                "type": "query",
+                "description": "Pagination token"
+              }
+            ]
+          },
+          "docs": "Retrieve a list of the existing multiplexes."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Create Multiplex",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/multiplexes",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a new multiplex."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive List Multiplex Programs",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://medialive.{region}.amazonaws.com/prod/multiplexes/:multiplexId/programs",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "maxResults",
+                "value": "",
+                "type": "query",
+                "description": "The maximum number of items to return."
+              },
+              {
+                "name": "multiplexId",
+                "value": "",
+                "type": "path",
+                "description": "The ID of the multiplex that the programs belong to."
+              },
+              {
+                "name": "nextToken",
+                "value": "",
+                "type": "query",
+                "description": "The token to retrieve the next page of results."
+              },
+              {
+                "name": "MaxResults",
+                "value": "",
+                "type": "query",
+                "description": "Pagination limit"
+              },
+              {
+                "name": "NextToken",
+                "value": "",
+                "type": "query",
+                "description": "Pagination token"
+              }
+            ]
+          },
+          "docs": "List the programs that currently exist for a specific multiplex."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Create Multiplex Program",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/multiplexes/:multiplexId/programs",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "multiplexId",
+                "value": "",
+                "type": "path",
+                "description": "ID of the multiplex where the program is to be created."
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a new program in the multiplex."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Create Partner Input",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputs/:inputId/partners",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "inputId",
+                "value": "",
+                "type": "path",
+                "description": "Unique ID of the input."
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a partner input"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive List Tags for Resource",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://medialive.{region}.amazonaws.com/prod/tags/:resource-arn",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "resource-arn",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Produces list of tags that have been created for a resource"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Create Tags",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/tags/:resource-arn",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "resource-arn",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create tags for a resource"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Describe Channel",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://medialive.{region}.amazonaws.com/prod/channels/:channelId",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "channelId",
+                "value": "",
+                "type": "path",
+                "description": "channel ID"
+              }
+            ]
+          },
+          "docs": "Gets details about a channel"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Update Channel",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "http://medialive.{region}.amazonaws.com/prod/channels/:channelId",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "channelId",
+                "value": "",
+                "type": "path",
+                "description": "channel ID"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Updates a channel."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Delete Channel",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "http://medialive.{region}.amazonaws.com/prod/channels/:channelId",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "channelId",
+                "value": "",
+                "type": "path",
+                "description": "Unique ID of the channel."
+              }
+            ]
+          },
+          "docs": "Starts deletion of channel. The associated outputs are also deleted."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Describe Input",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputs/:inputId",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "inputId",
+                "value": "",
+                "type": "path",
+                "description": "Unique ID of the input"
+              }
+            ]
+          },
+          "docs": "Produces details about an input"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Update Input",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputs/:inputId",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "inputId",
+                "value": "",
+                "type": "path",
+                "description": "Unique ID of the input."
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Updates an input."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Delete Input",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputs/:inputId",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "inputId",
+                "value": "",
+                "type": "path",
+                "description": "Unique ID of the input"
+              }
+            ]
+          },
+          "docs": "Deletes the input end point"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Describe Input Security Group",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputSecurityGroups/:inputSecurityGroupId",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "inputSecurityGroupId",
+                "value": "",
+                "type": "path",
+                "description": "The id of the Input Security Group to describe"
+              }
+            ]
+          },
+          "docs": "Produces a summary of an Input Security Group"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Update Input Security Group",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputSecurityGroups/:inputSecurityGroupId",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "inputSecurityGroupId",
+                "value": "",
+                "type": "path",
+                "description": "The id of the Input Security Group to update."
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update an Input Security Group's Whilelists."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Delete Input Security Group",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputSecurityGroups/:inputSecurityGroupId",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "inputSecurityGroupId",
+                "value": "",
+                "type": "path",
+                "description": "The Input Security Group to delete"
+              }
+            ]
+          },
+          "docs": "Deletes an Input Security Group"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Describe Multiplex",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://medialive.{region}.amazonaws.com/prod/multiplexes/:multiplexId",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "multiplexId",
+                "value": "",
+                "type": "path",
+                "description": "The ID of the multiplex."
+              }
+            ]
+          },
+          "docs": "Gets details about a multiplex."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Update Multiplex",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "http://medialive.{region}.amazonaws.com/prod/multiplexes/:multiplexId",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "multiplexId",
+                "value": "",
+                "type": "path",
+                "description": "ID of the multiplex to update."
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Updates a multiplex."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Delete Multiplex",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "http://medialive.{region}.amazonaws.com/prod/multiplexes/:multiplexId",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "multiplexId",
+                "value": "",
+                "type": "path",
+                "description": "The ID of the multiplex."
+              }
+            ]
+          },
+          "docs": "Delete a multiplex. The multiplex must be idle."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Describe Multiplex Program",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://medialive.{region}.amazonaws.com/prod/multiplexes/:multiplexId/programs/:programName",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "multiplexId",
+                "value": "",
+                "type": "path",
+                "description": "The ID of the multiplex that the program belongs to."
+              },
+              {
+                "name": "programName",
+                "value": "",
+                "type": "path",
+                "description": "The name of the program."
+              }
+            ]
+          },
+          "docs": "Get the details for a program in a multiplex."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Update Multiplex Program",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "http://medialive.{region}.amazonaws.com/prod/multiplexes/:multiplexId/programs/:programName",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "multiplexId",
+                "value": "",
+                "type": "path",
+                "description": "The ID of the multiplex of the program to update."
+              },
+              {
+                "name": "programName",
+                "value": "",
+                "type": "path",
+                "description": "The name of the program to update."
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update a program in a multiplex."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Delete Multiplex Program",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "http://medialive.{region}.amazonaws.com/prod/multiplexes/:multiplexId/programs/:programName",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "multiplexId",
+                "value": "",
+                "type": "path",
+                "description": "The ID of the multiplex that the program belongs to."
+              },
+              {
+                "name": "programName",
+                "value": "",
+                "type": "path",
+                "description": "The multiplex program name."
+              }
+            ]
+          },
+          "docs": "Delete a program from a multiplex."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Describe Reservation",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://medialive.{region}.amazonaws.com/prod/reservations/:reservationId",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "reservationId",
+                "value": "",
+                "type": "path",
+                "description": "Unique reservation ID, e.g. '1234567'"
+              }
+            ]
+          },
+          "docs": "Get details for a reservation."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Update Reservation",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "http://medialive.{region}.amazonaws.com/prod/reservations/:reservationId",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "reservationId",
+                "value": "",
+                "type": "path",
+                "description": "Unique reservation ID, e.g. '1234567'"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update reservation."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Delete Reservation",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "http://medialive.{region}.amazonaws.com/prod/reservations/:reservationId",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "reservationId",
+                "value": "",
+                "type": "path",
+                "description": "Unique reservation ID, e.g. '1234567'"
+              }
+            ]
+          },
+          "docs": "Delete an expired reservation."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Delete Tags",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "http://medialive.{region}.amazonaws.com/prod/tags/:resource-arn#tagKeys",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "resource-arn",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "tagKeys",
+                "value": "",
+                "type": "query",
+                "description": "An array of tag keys to delete"
+              }
+            ]
+          },
+          "docs": "Removes tags for a resource"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Describe Input Device",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputDevices/:inputDeviceId",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "inputDeviceId",
+                "value": "",
+                "type": "path",
+                "description": "The unique ID of this input device. For example, hd-123456789abcdef."
+              }
+            ]
+          },
+          "docs": "Gets the details for the input device"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Update Input Device",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputDevices/:inputDeviceId",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "inputDeviceId",
+                "value": "",
+                "type": "path",
+                "description": "The unique ID of the input device. For example, hd-123456789abcdef."
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Updates the parameters for the input device."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Describe Input Device Thumbnail",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputDevices/:inputDeviceId/thumbnailData#accept",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              },
+              {
+                "name": "accept",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "inputDeviceId",
+                "value": "",
+                "type": "path",
+                "description": "The unique ID of this input device. For example, hd-123456789abcdef."
+              }
+            ]
+          },
+          "docs": "Get the latest thumbnail data for the input device."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Describe Offering",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://medialive.{region}.amazonaws.com/prod/offerings/:offeringId",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "offeringId",
+                "value": "",
+                "type": "path",
+                "description": "Unique offering ID, e.g. '87654321'"
+              }
+            ]
+          },
+          "docs": "Get details for an offering."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive List Input Device Transfers",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputDeviceTransfers#transferType",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "maxResults",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "nextToken",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "transferType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "MaxResults",
+                "value": "",
+                "type": "query",
+                "description": "Pagination limit"
+              },
+              {
+                "name": "NextToken",
+                "value": "",
+                "type": "query",
+                "description": "Pagination token"
+              }
+            ]
+          },
+          "docs": "List input devices that are currently being transferred. List input devices that you are transferring from your AWS account or input devices that another AWS account is transferring to you."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive List Input Devices",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputDevices",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "maxResults",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "nextToken",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "MaxResults",
+                "value": "",
+                "type": "query",
+                "description": "Pagination limit"
+              },
+              {
+                "name": "NextToken",
+                "value": "",
+                "type": "query",
+                "description": "Pagination token"
+              }
+            ]
+          },
+          "docs": "List input devices"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive List Offerings",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://medialive.{region}.amazonaws.com/prod/offerings",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "channelClass",
+                "value": "",
+                "type": "query",
+                "description": "Filter by channel class, 'STANDARD' or 'SINGLE_PIPELINE'\n"
+              },
+              {
+                "name": "channelConfiguration",
+                "value": "",
+                "type": "query",
+                "description": "Filter to offerings that match the configuration of an existing channel, e.g. '2345678' (a channel ID)\n"
+              },
+              {
+                "name": "codec",
+                "value": "",
+                "type": "query",
+                "description": "Filter by codec, 'AVC', 'HEVC', 'MPEG2', 'AUDIO', or 'LINK'"
+              },
+              {
+                "name": "duration",
+                "value": "",
+                "type": "query",
+                "description": "Filter by offering duration, e.g. '12'"
+              },
+              {
+                "name": "maxResults",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "maximumBitrate",
+                "value": "",
+                "type": "query",
+                "description": "Filter by bitrate, 'MAX_10_MBPS', 'MAX_20_MBPS', or 'MAX_50_MBPS'\n"
+              },
+              {
+                "name": "maximumFramerate",
+                "value": "",
+                "type": "query",
+                "description": "Filter by framerate, 'MAX_30_FPS' or 'MAX_60_FPS'"
+              },
+              {
+                "name": "nextToken",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "resolution",
+                "value": "",
+                "type": "query",
+                "description": "Filter by resolution, 'SD', 'HD', 'FHD', or 'UHD'"
+              },
+              {
+                "name": "resourceType",
+                "value": "",
+                "type": "query",
+                "description": "Filter by resource type, 'INPUT', 'OUTPUT', 'MULTIPLEX', or 'CHANNEL'"
+              },
+              {
+                "name": "specialFeature",
+                "value": "",
+                "type": "query",
+                "description": "Filter by special feature, 'ADVANCED_AUDIO' or 'AUDIO_NORMALIZATION'\n"
+              },
+              {
+                "name": "videoQuality",
+                "value": "",
+                "type": "query",
+                "description": "Filter by video quality, 'STANDARD', 'ENHANCED', or 'PREMIUM'\n"
+              },
+              {
+                "name": "MaxResults",
+                "value": "",
+                "type": "query",
+                "description": "Pagination limit"
+              },
+              {
+                "name": "NextToken",
+                "value": "",
+                "type": "query",
+                "description": "Pagination token"
+              }
+            ]
+          },
+          "docs": "List offerings available for purchase."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive List Reservations",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://medialive.{region}.amazonaws.com/prod/reservations",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "channelClass",
+                "value": "",
+                "type": "query",
+                "description": "Filter by channel class, 'STANDARD' or 'SINGLE_PIPELINE'\n"
+              },
+              {
+                "name": "codec",
+                "value": "",
+                "type": "query",
+                "description": "Filter by codec, 'AVC', 'HEVC', 'MPEG2', 'AUDIO', or 'LINK'"
+              },
+              {
+                "name": "maxResults",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "maximumBitrate",
+                "value": "",
+                "type": "query",
+                "description": "Filter by bitrate, 'MAX_10_MBPS', 'MAX_20_MBPS', or 'MAX_50_MBPS'\n"
+              },
+              {
+                "name": "maximumFramerate",
+                "value": "",
+                "type": "query",
+                "description": "Filter by framerate, 'MAX_30_FPS' or 'MAX_60_FPS'"
+              },
+              {
+                "name": "nextToken",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "resolution",
+                "value": "",
+                "type": "query",
+                "description": "Filter by resolution, 'SD', 'HD', 'FHD', or 'UHD'"
+              },
+              {
+                "name": "resourceType",
+                "value": "",
+                "type": "query",
+                "description": "Filter by resource type, 'INPUT', 'OUTPUT', 'MULTIPLEX', or 'CHANNEL'"
+              },
+              {
+                "name": "specialFeature",
+                "value": "",
+                "type": "query",
+                "description": "Filter by special feature, 'ADVANCED_AUDIO' or 'AUDIO_NORMALIZATION'\n"
+              },
+              {
+                "name": "videoQuality",
+                "value": "",
+                "type": "query",
+                "description": "Filter by video quality, 'STANDARD', 'ENHANCED', or 'PREMIUM'\n"
+              },
+              {
+                "name": "MaxResults",
+                "value": "",
+                "type": "query",
+                "description": "Pagination limit"
+              },
+              {
+                "name": "NextToken",
+                "value": "",
+                "type": "query",
+                "description": "Pagination token"
+              }
+            ]
+          },
+          "docs": "List purchased reservations."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Purchase Offering",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/offerings/:offeringId/purchase",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "offeringId",
+                "value": "",
+                "type": "path",
+                "description": "Offering to purchase, e.g. '87654321'"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Purchase an offering and create a reservation."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Reboot Input Device",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputDevices/:inputDeviceId/reboot",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "inputDeviceId",
+                "value": "",
+                "type": "path",
+                "description": "The unique ID of the input device to reboot. For example, hd-123456789abcdef."
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Send a reboot command to the specified input device. The device will begin rebooting within a few seconds of sending the command. When the reboot is complete, the device’s connection status will change to connected."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Reject Input Device Transfer",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputDevices/:inputDeviceId/reject",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "inputDeviceId",
+                "value": "",
+                "type": "path",
+                "description": "The unique ID of the input device to reject. For example, hd-123456789abcdef."
+              }
+            ]
+          },
+          "docs": "Reject the transfer of the specified input device to your AWS account."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Start Channel",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/channels/:channelId/start",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "channelId",
+                "value": "",
+                "type": "path",
+                "description": "A request to start a channel"
+              }
+            ]
+          },
+          "docs": "Starts an existing channel"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Start Input Device Maintenance Window",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputDevices/:inputDeviceId/startInputDeviceMaintenanceWindow",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "inputDeviceId",
+                "value": "",
+                "type": "path",
+                "description": "The unique ID of the input device to start a maintenance window for. For example, hd-123456789abcdef."
+              }
+            ]
+          },
+          "docs": "Start a maintenance window for the specified input device. Starting a maintenance window will give the device up to two hours to install software. If the device was streaming prior to the maintenance, it will resume streaming when the software is fully installed. Devices automatically install updates while they are powered on and their MediaLive channels are stopped. A maintenance window allows you to update a device without having to stop MediaLive channels that use the device. The device must "
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Start Multiplex",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/multiplexes/:multiplexId/start",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "multiplexId",
+                "value": "",
+                "type": "path",
+                "description": "The ID of the multiplex."
+              }
+            ]
+          },
+          "docs": "Start (run) the multiplex. Starting the multiplex does not start the channels. You must explicitly start each channel."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Stop Channel",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/channels/:channelId/stop",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "channelId",
+                "value": "",
+                "type": "path",
+                "description": "A request to stop a running channel"
+              }
+            ]
+          },
+          "docs": "Stops a running channel"
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Stop Multiplex",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/multiplexes/:multiplexId/stop",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "multiplexId",
+                "value": "",
+                "type": "path",
+                "description": "The ID of the multiplex."
+              }
+            ]
+          },
+          "docs": "Stops a running multiplex. If the multiplex isn't running, this action has no effect."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Transfer Input Device",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://medialive.{region}.amazonaws.com/prod/inputDevices/:inputDeviceId/transfer",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "inputDeviceId",
+                "value": "",
+                "type": "path",
+                "description": "The unique ID of this input device. For example, hd-123456789abcdef."
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Start an input device transfer to another AWS account. After you make the request, the other account must accept or reject the transfer."
+        },
+        {
+          "info": {
+            "name": "Amazon MediaLive Update Channel Class",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "http://medialive.{region}.amazonaws.com/prod/channels/:channelId/channelClass",
+            "headers": [
+              {
+                "name": "X-Amz-Content-Sha256",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Date",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Algorithm",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Credential",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Security-Token",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-Signature",
+                "value": ""
+              },
+              {
+                "name": "X-Amz-SignedHeaders",
+                "value": ""
+              }
+            ],
+            "params": [
+              {
+                "name": "channelId",
+                "value": "",
+                "type": "path",
+                "description": "Channel Id of the channel whose class should be updated."
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Changes the class of the channel."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
