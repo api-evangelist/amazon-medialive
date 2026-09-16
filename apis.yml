@@ -1,7 +1,7 @@
 aid: amazon-medialive
 name: Amazon MediaLive
-description: AWS Elemental MediaLive is a broadcast-grade live video processing service that creates high-quality video streams
-  for delivery to broadcast televisions and internet-connected multiscreen devices.
+description: AWS Elemental MediaLive is a broadcast-grade live video processing service that creates high-quality
+  video streams for delivery to broadcast televisions and internet-connected multiscreen devices.
 type: Index
 deliveryModel:
   model: saas
@@ -37,7 +37,7 @@ tags:
 - Media
 url: https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/apis.yml
 created: '2026-03-16'
-modified: '2026-05-19'
+modified: '2026-09-16'
 specificationVersion: '0.23'
 apis:
 - aid: amazon-medialive:amazon-medialive-prod-api
@@ -59,6 +59,8 @@ apis:
   - type: FAQ
     url: https://aws.amazon.com/medialive/faqs/
 common:
+- type: Website
+  url: https://amazon.com
 - type: PostmanWorkspace
   url: https://www.postman.com/kinlaneapi/amazon-medialive/overview
 - type: AgenticAccess
@@ -108,7 +110,8 @@ common:
   - name: Dynamic Ad Insertion Markers
     description: Insert SCTE-35 markers for downstream ad replacement in live streams.
   - name: Multiple Output Groups
-    description: Deliver to HLS, DASH, RTMP, archive, UDP, MediaPackage, and other output destinations simultaneously.
+    description: Deliver to HLS, DASH, RTMP, archive, UDP, MediaPackage, and other output destinations
+      simultaneously.
   - name: Input Switching
     description: Dynamically switch between input sources during a live event without interruption.
 - type: UseCases
