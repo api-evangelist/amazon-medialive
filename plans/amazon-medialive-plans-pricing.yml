@@ -1,0 +1,122 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-28'
+method: searched
+source: https://aws.amazon.com/medialive/pricing/
+sources:
+- https://aws.amazon.com/medialive/pricing/
+provenance:
+  tool: engine/economics/harvest_pricing.py
+  run: 20261028T161713
+  grounding: every price_text was found verbatim in the fetched page text
+audience: developer-api
+pricing_basis: usage-other
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-28'
+published: true
+note: Hourly rate tables for inputs, outputs, add-ons, idle resources and data transfer render as unresolved
+  {priceOf!...} tokens in the captured text, so no per-unit rates could be transcribed. Only the worked
+  pricing examples contain numeric prices; those are recorded as plans. Page also offers reserved 12-month
+  pricing (save up to 75%) and 3/5-year discounted pricing via 'contact us'.
+plan_count: 6
+currency: USD
+plans:
+- name: 'Example one: On-demand, standard channel (2 HD inputs, 5 outputs, advanced audio, US East N.
+    Virginia)'
+  price_text: $3.942 per hour
+  price: 3.942
+  currency: USD
+  period: per-use
+  unit: hour
+  included_quota: Inputs, outputs and add-on features summed per channel
+- name: 'Example two: Reserved, standard channel (12-month commitment)'
+  price_text: $0.78 per hour
+  price: 0.78
+  currency: USD
+  period: per-use
+  unit: hour
+  included_quota: $564.12 per 30-day month vs $2,414.88 on-demand
+- name: 'Example three: On-demand, single-pipeline channel'
+  price_text: $2.3652 per hour
+  price: 2.3652
+  currency: USD
+  period: per-use
+  unit: hour
+- name: 'Example four: Reserved, single-pipeline channel (12-month commitment)'
+  price_text: $0.5566 per hour
+  price: 0.5566
+  currency: USD
+  period: per-use
+  unit: hour
+  included_quota: $400.75 for a 30-day month vs $1,702.94 on-demand
+- name: 'Example five: AWS Elemental Link HD input, single channel, on-demand'
+  price_text: $1.5548 per hour
+  price: 1.5548
+  currency: USD
+  period: per-use
+  unit: hour
+- name: 'Example six: AWS Elemental Link UHD inputs, standard channel, on-demand'
+  price_text: $21.791 per hour
+  price: 21.791
+  currency: USD
+  period: per-use
+  unit: hour
+rate_limit_statements:
+- The duration of each running resource will be rounded up to the nearest minute, above a 10-minute minimum.
+x-canonical:
+  generated: '2026-11-01'
+  vocabulary: engine/economics/plans-canonical.yml
+  models:
+  - hybrid
+  units:
+  - compute
+  plans:
+  - name: 'Example one: On-demand, standard channel (2 HD inputs, 5 outputs, advanced audio'
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: 'Example two: Reserved, standard channel (12-month commitment)'
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: 'Example three: On-demand, single-pipeline channel'
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: 'Example four: Reserved, single-pipeline channel (12-month commitment)'
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: 'Example five: AWS Elemental Link HD input, single channel, on-demand'
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: 'Example six: AWS Elemental Link UHD inputs, standard channel, on-demand'
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
