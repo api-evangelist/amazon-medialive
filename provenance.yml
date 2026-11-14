@@ -5,18 +5,51 @@ artifacts:
   agentic-access/amazon-medialive-agentic-access.yml:
     method: generated
     evidence: declared in the artifact
+  ai-preferences/amazon-medialive-ai-preferences.yml:
+    method: harvested
+    evidence: declared in the artifact
   authentication/amazon-medialive-authentication.yml:
     method: derived
     evidence: declared in the artifact
   capabilities/amazon-medialive-capability-edges.yml:
     method: unknown
     evidence: no authorship recorded
+  certification/observations-2026-11-11.jsonl:
+    method: unknown
+    evidence: no authorship recorded
+  certification/status.yml:
+    method: unknown
+    evidence: no authorship recorded
+  changelog/amazon-medialive-changelog.yml:
+    method: searched
+    evidence: declared in the artifact
+  cli/amazon-medialive-cli.yml:
+    method: searched
+    evidence: declared in the artifact
   collections/amazon-medialive-prod-api.opencollection.json:
     method: derived
     evidence: openapi/amazon-medialive-prod-api
   collections/amazon-medialive-prod-api.postman_collection.json:
     method: derived
     evidence: openapi/amazon-medialive-prod-api
+  compliance/amazon-medialive-compliance.yml:
+    method: harvested
+    evidence: declared in the artifact
+  conformance/amazon-medialive-conformance.yml:
+    method: derived
+    evidence: declared in the artifact
+  conventions/amazon-medialive-conventions.yml:
+    method: derived
+    evidence: declared in the artifact
+  data-model/amazon-medialive-data-model.yml:
+    method: derived
+    evidence: declared in the artifact
+  eligibility/amazon-medialive-eligibility.yml:
+    method: harvested
+    evidence: declared in the artifact
+  errors/amazon-medialive-problem-types.yml:
+    method: derived
+    evidence: declared in the artifact
   examples/medialive-api-aac-coding-mode-example.json:
     method: unknown
     evidence: no authorship recorded
@@ -1883,13 +1916,181 @@ artifacts:
   front-door-ai/2026-09-17.yml:
     method: unknown
     evidence: no authorship recorded
+  hosts/amazon-medialive-hosts.yml:
+    method: derived
+    evidence: declared in the artifact
   integrations/_index.yml:
     method: generated
     evidence: carries an API Evangelist house phrase
   integrations/amazon-medialive-integration-edges.yml:
     method: unknown
     evidence: no authorship recorded
+  json-ld/amazon-medialive-context.jsonld:
+    method: unknown
+    evidence: no authorship recorded
   json-ld/amazon-medialive-medialive-api-context.jsonld:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-batch-update-schedule-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-batch-update-schedule-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-create-channel-placement-group-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-create-channel-placement-group-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-create-input-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-create-multiplex-program-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-create-node-registration-script-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-create-node-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-create-node-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-delete-channel-placement-group-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-delete-channel-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-delete-multiplex-program-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-delete-node-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-delete-schedule-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-delete-schedule-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-describe-channel-placement-group-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-describe-channel-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-describe-input-device-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-describe-input-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-describe-multiplex-program-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-describe-node-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-describe-schedule-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-describe-schedule-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-list-alerts-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-list-alerts-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-list-cluster-alerts-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-list-cluster-alerts-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-list-multiplex-alerts-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-list-multiplex-alerts-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-list-multiplex-programs-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-list-multiplex-programs-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-purchase-offering-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-restart-channel-pipelines-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-start-channel-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-start-channel-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-start-delete-monitor-deployment-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-start-input-device-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-start-input-device-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-start-monitor-deployment-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-start-multiplex-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-start-multiplex-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-stop-channel-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-stop-channel-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-stop-input-device-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-stop-input-device-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-stop-multiplex-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-stop-multiplex-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-update-channel-placement-group-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-update-channel-placement-group-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-update-input-device-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-update-multiplex-program-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-update-node-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-update-node-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-medialive-update-node-state-response-schema.json:
     method: unknown
     evidence: no authorship recorded
   json-schema/medialive-api-aac-coding-mode-schema.json:
@@ -5615,7 +5816,7 @@ artifacts:
   kin/checks-2026-10-23T222754.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  kin/checks-2026-11-02T082323.yml:
+  kin/checks-2026-11-06T143934.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-23T000603.yml:
@@ -5684,10 +5885,21 @@ artifacts:
   kin/score-2026-11-02T082323.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  openapi/_original/amazon-medialive-openapi-original.yml:
-    method: harvested
-    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
-      to the provider's source is unverified
+  kin/score-2026-11-06T143934.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  lifecycle/amazon-medialive-lifecycle.yml:
+    method: searched
+    evidence: declared in the artifact
+  llms/amazon-medialive-llms-provenance.yml:
+    method: unknown
+    evidence: no authorship recorded
+  llms/amazon-medialive-llms.txt:
+    method: unknown
+    evidence: no authorship recorded
+  mcp/amazon-medialive-mcp.yml:
+    method: derived
+    evidence: declared in the artifact
   openapi/amazon-medialive-alerts-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
@@ -5715,6 +5927,12 @@ artifacts:
   openapi/amazon-medialive-stop-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
+  packages/amazon-medialive-packages.yml:
+    method: searched
+    evidence: declared in the artifact
+  patterns/amazon-medialive-patterns.yml:
+    method: derived
+    evidence: declared in the artifact
   plans/amazon-medialive-plans-pricing.yml:
     method: searched
     evidence: declared in the artifact
@@ -5722,9 +5940,12 @@ artifacts:
     method: derived
     evidence: openapi/amazon-medialive-prod-api
   rate-limits/amazon-medialive-rate-limits.yml:
+    method: unknown
+    evidence: no authorship recorded
+  rules/amazon-medialive-jsonschema-spectral-rules.yml:
     method: generated
     evidence: declared in the artifact
-  rules/amazon-medialive-jsonschema-spectral-rules.yml:
+  rules/amazon-medialive-rules.yml:
     method: generated
     evidence: declared in the artifact
   rules/amazon-medialive-spectral-rules.yml:
@@ -5743,8 +5964,27 @@ artifacts:
     method: generated
     evidence: declared in the artifact
   smithy/medialive-2017-10-14.json:
+    method: harvested
+    evidence: byte-identical to https://raw.githubusercontent.com/aws/api-models-aws/3cd98287b471c106254abd89279cc87308d38bfd/models/medialive/service/2017-10-14/medialive-2017-10-14.json
+      (sha256 8d5e3aa72450, fetched 2026-11-11T21:12:39+00:00)
+  terms/amazon-medialive-terms-of-service.yml:
+    method: harvested
+    evidence: declared in the artifact
+  vendors/amazon-medialive-vendors.yml:
     method: unknown
     evidence: no authorship recorded
   vocabulary/amazon-medialive-vocabulary.yaml:
+    method: unknown
+    evidence: no authorship recorded
+  vocabulary/amazon-medialive-vocabulary.yml:
+    method: derived
+    evidence: declared in the artifact
+  well-known/amazon-medialive-midway-auth-openid-configuration.json:
+    method: unknown
+    evidence: no authorship recorded
+  well-known/amazon-medialive-security.txt:
+    method: unknown
+    evidence: no authorship recorded
+  well-known/amazon-medialive-well-known.yml:
     method: unknown
     evidence: no authorship recorded

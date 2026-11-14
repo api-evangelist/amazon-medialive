@@ -1,8 +1,12 @@
 aid: amazon-medialive
+
 name: Amazon MediaLive
-description: AWS Elemental MediaLive is a broadcast-grade live video processing service that creates high-quality
-  video streams for delivery to broadcast televisions and internet-connected multiscreen devices.
+
+description: AWS Elemental MediaLive is a broadcast-grade live video processing service that creates high-quality video streams for delivery to
+  broadcast televisions and internet-connected multiscreen devices.
+
 type: Index
+
 deliveryModel:
   model: saas
   open_source: false
@@ -15,6 +19,7 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: paid
   onboarding: unknown
@@ -27,9 +32,10 @@ accessModel:
   - plans
   - authentication
   - security
-  generated: '2026-11-06'
+  generated: '2026-11-13'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-medialive.png
+
 tags:
 - Amazon Web Services
 - Broadcasting
@@ -40,121 +46,77 @@ tags_raw:
 - Broadcasting
 - Media Processing
 - Media
+
 url: https://raw.githubusercontent.com/api-evangelist/amazon-medialive/refs/heads/main/apis.yml
+
 created: '2026-03-16'
+
 modified: '2026-09-16'
+
 specificationVersion: '0.23'
-apis:
-- aid: amazon-medialive:amazon-medialive-prod-api
-  name: Amazon MediaLive Prod API
-  description: The Prod API from Amazon MediaLive — 38 operation(s) for prod.
-  humanURL: https://aws.amazon.com/medialive/
-  baseURL: http://medialive.{region}.amazonaws.com
-  tags:
-  - Prod
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-medialive-prod-api-openapi.yml
-  - type: Documentation
-    url: https://docs.aws.amazon.com/medialive/
-  - type: GettingStarted
-    url: https://aws.amazon.com/medialive/getting-started/
-  - type: Pricing
-    url: https://aws.amazon.com/medialive/pricing/
-  - type: FAQ
-    url: https://aws.amazon.com/medialive/faqs/
-- aid: amazon-medialive:amazon-medialive-alerts-api
-  name: Amazon MediaLive Medialive Alerts API
-  description: The Medialive Alerts API from Amazon MediaLive — 3 operation(s) for medialive alerts.
-  humanURL: https://aws.amazon.com/medialive/
-  baseURL: http://medialive.{region}.amazonaws.com
-  tags:
-  - Medialive Alerts
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-medialive-alerts-api-openapi.yml
-- aid: amazon-medialive:amazon-medialive-channelplacementgroups-api
-  name: Amazon MediaLive Medialive Channelplacementgroups API
-  description: >-
-    The Medialive Channelplacementgroups API from Amazon MediaLive — 2 operation(s) for medialive channelplacementgroups.
-  humanURL: https://aws.amazon.com/medialive/
-  baseURL: http://medialive.{region}.amazonaws.com
-  tags:
-  - Medialive Channelplacementgroups
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-medialive-channelplacementgroups-api-openapi.yml
-- aid: amazon-medialive:amazon-medialive-nodes-api
-  name: Amazon MediaLive Medialive Nodes API
-  description: The Medialive Nodes API from Amazon MediaLive — 2 operation(s) for medialive nodes.
-  humanURL: https://aws.amazon.com/medialive/
-  baseURL: http://medialive.{region}.amazonaws.com
-  tags:
-  - Medialive Nodes
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-medialive-nodes-api-openapi.yml
-- aid: amazon-medialive:amazon-medialive-operations-api
-  name: Amazon MediaLive Medialive Operations API
-  description: >-
-    The Medialive Operations API from Amazon MediaLive — 15 operation(s) for medialive operations.
-  humanURL: https://aws.amazon.com/medialive/
-  baseURL: http://medialive.{region}.amazonaws.com
-  tags:
-  - Medialive Operations
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-medialive-operations-api-openapi.yml
-- aid: amazon-medialive:amazon-medialive-programs-api
-  name: Amazon MediaLive Medialive Programs API
-  description: >-
-    The Medialive Programs API from Amazon MediaLive — 2 operation(s) for medialive programs.
-  humanURL: https://aws.amazon.com/medialive/
-  baseURL: http://medialive.{region}.amazonaws.com
-  tags:
-  - Medialive Programs
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-medialive-programs-api-openapi.yml
-- aid: amazon-medialive:amazon-medialive-schedule-api
-  name: Amazon MediaLive Medialive Schedule API
-  description: >-
-    The Medialive Schedule API from Amazon MediaLive — 1 operation(s) for medialive schedule.
-  humanURL: https://aws.amazon.com/medialive/
-  baseURL: http://medialive.{region}.amazonaws.com
-  tags:
-  - Medialive Schedule
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-medialive-schedule-api-openapi.yml
-- aid: amazon-medialive:amazon-medialive-start-api
-  name: Amazon MediaLive Medialive Start API
-  description: The Medialive Start API from Amazon MediaLive — 3 operation(s) for medialive start.
-  humanURL: https://aws.amazon.com/medialive/
-  baseURL: http://medialive.{region}.amazonaws.com
-  tags:
-  - Medialive Start
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-medialive-start-api-openapi.yml
-- aid: amazon-medialive:amazon-medialive-stop-api
-  name: Amazon MediaLive Medialive Stop API
-  description: The Medialive Stop API from Amazon MediaLive — 3 operation(s) for medialive stop.
-  humanURL: https://aws.amazon.com/medialive/
-  baseURL: http://medialive.{region}.amazonaws.com
-  tags:
-  - Medialive Stop
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-medialive-stop-api-openapi.yml
+
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+
 common:
+- type: Idempotency
+  url: conventions/amazon-medialive-conventions.yml
+- type: Conventions
+  url: conventions/amazon-medialive-conventions.yml
+- type: Lifecycle
+  url: lifecycle/amazon-medialive-lifecycle.yml
+- type: Spectral
+  url: rules/amazon-medialive-spectral-rules.yml
+- type: Spectral
+  url: rules/amazon-medialive-rules.yml
+- type: Spectral
+  url: rules/amazon-medialive-jsonschema-spectral-rules.yml
+- type: JSONLD
+  url: json-ld/amazon-medialive-medialive-api-context.jsonld
+- type: JSONLD
+  url: json-ld/amazon-medialive-context.jsonld
+- type: Vocabulary
+  url: vocabulary/amazon-medialive-vocabulary.yml
+- type: DataModel
+  url: data-model/amazon-medialive-data-model.yml
+- type: CLI
+  url: cli/amazon-medialive-cli.yml
+- type: ChangeLog
+  url: changelog/amazon-medialive-changelog.yml
+- type: Compliance
+  url: https://aws.amazon.com/compliance/
+- type: ErrorCatalog
+  url: errors/amazon-medialive-problem-types.yml
+- type: Conformance
+  url: conformance/amazon-medialive-conformance.yml
+- type: LLMsTxt
+  url: llms/amazon-medialive-llms.txt
+- type: SecurityTxt
+  url: well-known/amazon-medialive-security.txt
+- type: WellKnown
+  url: well-known/amazon-medialive-well-known.yml
+- type: Hosts
+  url: hosts/amazon-medialive-hosts.yml
+- type: Vendors
+  url: vendors/amazon-medialive-vendors.yml
+- type: SDKs
+  url: packages/amazon-medialive-packages.yml
+- type: Packages
+  url: packages/amazon-medialive-packages.yml
+- type: SignUp
+  url: https://signin.aws.amazon.com/signup?request_type=builderId
+- type: Security
+  url: https://aws.amazon.com/security/?nc2=h_dsc_aa_sec
+- type: Newsroom
+  url: https://aws.amazon.com/media/?nc2=h_sol_ind_med
+- type: GettingStarted
+  url: https://developer.amazon.com/frustration-free-setup
 - type: CapabilityMap
   url: capabilities/amazon-medialive-capability-edges.yml
   name: Amazon MediaLive Business Capability Map
 - type: Plans
   url: plans/amazon-medialive-plans-pricing.yml
-- type: RateLimits
-  url: rate-limits/amazon-medialive-rate-limits.yml
 - type: FinOps
   url: finops/amazon-medialive-finops.yml
 - type: Website
@@ -208,8 +170,7 @@ common:
   - name: Dynamic Ad Insertion Markers
     description: Insert SCTE-35 markers for downstream ad replacement in live streams.
   - name: Multiple Output Groups
-    description: Deliver to HLS, DASH, RTMP, archive, UDP, MediaPackage, and other output destinations
-      simultaneously.
+    description: Deliver to HLS, DASH, RTMP, archive, UDP, MediaPackage, and other output destinations simultaneously.
   - name: Input Switching
     description: Dynamically switch between input sources during a live event without interruption.
 - type: UseCases
@@ -236,6 +197,223 @@ common:
     description: Trigger workflows based on channel state change events.
 - type: Integrations
   url: https://aws.amazon.com/marketplace
+- type: UsageTerms
+  url: terms/amazon-medialive-terms-of-service.yml
+- type: Attestations
+  url: compliance/amazon-medialive-compliance.yml
+- type: Eligibility
+  url: eligibility/amazon-medialive-eligibility.yml
+- type: AIPreferences
+  url: ai-preferences/amazon-medialive-ai-preferences.yml
+
+apis:
+- aid: amazon-medialive:amazon-medialive-prod-api
+  name: Amazon MediaLive Prod API
+  description: The Prod API from Amazon MediaLive — 38 operation(s) for prod.
+  humanURL: https://aws.amazon.com/medialive/
+  baseURL: http://medialive.{region}.amazonaws.com
+  tags:
+  - Prod
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-medialive-prod-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/medialive/
+  - type: GettingStarted
+    url: https://aws.amazon.com/medialive/getting-started/
+  - type: Pricing
+    url: https://aws.amazon.com/medialive/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/medialive/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-describe-input-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-delete-channel-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-describe-channel-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-create-input-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-describe-input-device-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-update-input-device-response-schema.json
+- aid: amazon-medialive:amazon-medialive-alerts-api
+  name: Amazon MediaLive Medialive Alerts API
+  description: The Medialive Alerts API from Amazon MediaLive — 3 operation(s) for medialive alerts.
+  humanURL: https://aws.amazon.com/medialive/
+  baseURL: http://medialive.{region}.amazonaws.com
+  tags:
+  - Medialive Alerts
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-medialive-alerts-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-list-multiplex-alerts-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-list-alerts-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-list-cluster-alerts-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-list-multiplex-alerts-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-list-alerts-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-list-cluster-alerts-response-schema.json
+- aid: amazon-medialive:amazon-medialive-channelplacementgroups-api
+  name: Amazon MediaLive Medialive Channelplacementgroups API
+  description: The Medialive Channelplacementgroups API from Amazon MediaLive — 2 operation(s) for medialive channelplacementgroups.
+  humanURL: https://aws.amazon.com/medialive/
+  baseURL: http://medialive.{region}.amazonaws.com
+  tags:
+  - Medialive Channelplacementgroups
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-medialive-channelplacementgroups-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-create-channel-placement-group-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-delete-channel-placement-group-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-describe-channel-placement-group-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-update-channel-placement-group-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-create-channel-placement-group-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-update-channel-placement-group-request-schema.json
+- aid: amazon-medialive:amazon-medialive-nodes-api
+  name: Amazon MediaLive Medialive Nodes API
+  description: The Medialive Nodes API from Amazon MediaLive — 2 operation(s) for medialive nodes.
+  humanURL: https://aws.amazon.com/medialive/
+  baseURL: http://medialive.{region}.amazonaws.com
+  tags:
+  - Medialive Nodes
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-medialive-nodes-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-create-node-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-delete-node-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-describe-node-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-update-node-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-create-node-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-update-node-request-schema.json
+- aid: amazon-medialive:amazon-medialive-operations-api
+  name: Amazon MediaLive Medialive Operations API
+  description: The Medialive Operations API from Amazon MediaLive — 15 operation(s) for medialive operations.
+  humanURL: https://aws.amazon.com/medialive/
+  baseURL: http://medialive.{region}.amazonaws.com
+  tags:
+  - Medialive Operations
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-medialive-operations-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-restart-channel-pipelines-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-update-node-state-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-start-delete-monitor-deployment-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-start-monitor-deployment-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-create-node-registration-script-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-purchase-offering-request-schema.json
+- aid: amazon-medialive:amazon-medialive-programs-api
+  name: Amazon MediaLive Medialive Programs API
+  description: The Medialive Programs API from Amazon MediaLive — 2 operation(s) for medialive programs.
+  humanURL: https://aws.amazon.com/medialive/
+  baseURL: http://medialive.{region}.amazonaws.com
+  tags:
+  - Medialive Programs
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-medialive-programs-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-delete-multiplex-program-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-describe-multiplex-program-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-create-multiplex-program-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-list-multiplex-programs-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-update-multiplex-program-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-list-multiplex-programs-response-schema.json
+- aid: amazon-medialive:amazon-medialive-schedule-api
+  name: Amazon MediaLive Medialive Schedule API
+  description: The Medialive Schedule API from Amazon MediaLive — 1 operation(s) for medialive schedule.
+  humanURL: https://aws.amazon.com/medialive/
+  baseURL: http://medialive.{region}.amazonaws.com
+  tags:
+  - Medialive Schedule
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-medialive-schedule-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-batch-update-schedule-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-describe-schedule-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-describe-schedule-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-batch-update-schedule-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-delete-schedule-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-delete-schedule-response-schema.json
+- aid: amazon-medialive:amazon-medialive-start-api
+  name: Amazon MediaLive Medialive Start API
+  description: The Medialive Start API from Amazon MediaLive — 3 operation(s) for medialive start.
+  humanURL: https://aws.amazon.com/medialive/
+  baseURL: http://medialive.{region}.amazonaws.com
+  tags:
+  - Medialive Start
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-medialive-start-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-start-channel-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-start-multiplex-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-start-input-device-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-start-channel-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-start-multiplex-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-start-input-device-response-schema.json
+- aid: amazon-medialive:amazon-medialive-stop-api
+  name: Amazon MediaLive Medialive Stop API
+  description: The Medialive Stop API from Amazon MediaLive — 3 operation(s) for medialive stop.
+  humanURL: https://aws.amazon.com/medialive/
+  baseURL: http://medialive.{region}.amazonaws.com
+  tags:
+  - Medialive Stop
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-medialive-stop-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-stop-channel-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-stop-multiplex-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-stop-input-device-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-stop-channel-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-stop-multiplex-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-medialive-stop-input-device-response-schema.json
+
 integrations:
 - name: Sign in
 - name: Agent Mode
@@ -246,8 +424,12 @@ integrations:
 - name: Become a Channel Partner
 - name: Sell in AWS Marketplace
 - name: Manage Your Account
-maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
+
 x-parent: amazon-web-services
+
 x-relationship: product
+x-enrichment:
+  date: '2026-11-11'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v6
